@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+#header {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1;
+}
+#header h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 24px;
+}
+#header h2 {
+  margin: 5px 0 20px;
+  color: #ffffff;
+  font-size: 16px;
+}
+#info-panel {
+  position: absolute;
+  top: 1.5%;
+  bottom: 2%;
+  left: 0.5%;
+  width: 30%;
+  height: 95%; /* Takes up the entire height minus 2% on top and bottom */
+  background-color: #eeeeee;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 15px;
+  overflow: auto; /* Allows scrolling within the panel if content exceeds its height */
+}
+#info-panel h3 {
+  color: #333;
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+}

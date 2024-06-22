@@ -1,0 +1,6 @@
+# Ignore environment variables file
+.env
+
+# Ignore node modules directory
+node_modules/
+mapgp-backend/node_modules/

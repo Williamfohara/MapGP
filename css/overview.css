@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+#header {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1;
+}
+#header h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 24px;
+}
+#header h2 {
+  margin: 5px 0 20px;
+  color: #ffffff;
+  font-size: 16px;
+}
+#info-panel {
+  position: absolute;
+  top: 1.5%;
+  bottom: 2%;
+  left: 0.5%;
+  width: 30%;
+  height: 95%; /* Takes up the entire height minus 2% on top and bottom */
+  background-color: #eeeeee;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 15px;
+  overflow: hidden; /* Allows scrolling within the panel if content exceeds its height */
+}
+#info-panel h3 {
+  color: #333;
+  margin: 10px;
+  width: 100%; /* Ensures the h3 element takes up the full width of the container */
+  text-align: center; /* Centers the text of the h3 element within its full-width block */
+}
+#info-panel > div {
+  display: flex;
+  flex-direction: column; /* Change this if you meant the direct children of #info-panel to align vertically */
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: auto; /* Adjusted to accommodate vertical stacking */
+}
+#info-panel > div.country-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* Ensures the pseudo-element is positioned relative to the country-info div */
+  width: 100%;
+  padding: 10px 0; /* Adds padding around the text to give space for the line */
+}
+#country1-info,
+#country2-info {
+  font-size: 130%; /* Increase font size by 30% */
+}
+
+#info-panel p {
+  flex: 1;
+  text-align: center;
+  margin: 0 20px; /* Increase margin to provide clear separation */
+  position: relative; /* Required for pseudo-elements positioning */
+}
+#info-panel p:first-child::after {
+  content: ""; /* Necessary to generate the pseudo-element */
+  position: absolute;
+  left: 110%;
+  top: 0%; /* Adjusts the starting point of the line */
+  bottom: 0%; /* Adjusts the ending point of the line */
+  transform: translateX(100%); /* Correctly centers the line */
+  width: 1px; /* Line thickness */
+  background-color: #333; /* Line color */
+  height: 110%; /* Makes the line slightly taller than the p element */
+}
+.relationship-summary {
+  width: 100%; /* Takes the full width of its parent to utilize all available space */
+  min-height: 200px; /* Minimum height ensures that the div has a consistent initial size */
+  max-height: 300px; /* Maximum height before scrolling occurs */
+  padding: 10px; /* Padding inside the div to ensure text does not touch the edges */
+  background-color: #eeeeee; /* Light background color for readability */
+  overflow-y: auto; /* Allows vertical scrolling if content height exceeds the max-height */
+  box-sizing: border-box; /* Ensures padding and border are included in the width and height calculations */
+  border-bottom: 1px solid gray; /* Added horizontal line */
+}
+
+.timeline-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Ensures it takes full width of its parent */
+  overflow-y: auto;
+  align-items: flex-start; /* Aligns all children (timeline-entry divs) to the start */
+}
+.timeline-entry {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Ensures that items align at the top */
+  width: 100%; /* Ensures the entry spans the full width */
+  position: relative; /* Required for absolute positioning of pseudo-element */
+}
+
+.timeline-entry::before {
+  content: ""; /* Create the pseudo-element */
+  position: absolute; /* Position relative to the .timeline-entry */
+  left: 80px; /* Adjust the starting position of the border */
+  top: 0; /* Aligns the pseudo-element with the top of the .timeline-entry */
+  width: calc(100% - 80px); /* Sets the width to span the remaining space */
+  border-bottom: 1px solid gray; /* Style of the border */
+}
+
+.timeline-entry:first-child::before {
+  display: none; /* Hide the pseudo-element for the first timeline-entry */
+}
+
+.timeline-year {
+  flex: 0 0 80px; /* Do not grow, do not shrink, fixed width of 80px */
+  min-height: 30px; /* Ensuring consistent height */
+  text-align: left;
+  padding: 5px; /* 5px padding added around the content */
+  overflow: hidden; /* Prevents text from spilling over */
+  white-space: nowrap; /* Keeps the content on a single line */
+  text-overflow: ellipsis; /* Adds an ellipsis if the text overflows */
+  visibility: hidden; /* Hide the year initially */
+}
+
+.timeline-text {
+  flex: 1 1 auto; /* Grow to fill the space, allow shrinking, and base size is auto */
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-radius: 5px;
+  overflow: hidden; /* Optionally, hide overflow or use 'auto' to add scroll */
+  word-wrap: break-word; /* Ensures words break to prevent overflow */
+}
+
+.timeline-text:hover {
+  background-color: #d5d9dc; /* Change to gray when hovered */
+}
+
+.timeline-entry:hover .timeline-year {
+  visibility: visible; /* Show the year on hover */
+}

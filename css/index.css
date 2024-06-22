@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+#header {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1;
+}
+#header h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 24px;
+}
+#header h2 {
+  margin: 5px 0 20px;
+  color: #ffffff;
+  font-size: 16px;
+}
+.search-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+.search-bar {
+  margin-bottom: 5px;
+  padding: 5px;
+  width: 200px;
+  font-size: 14px;
+}
+.view-button {
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
