@@ -1,3 +1,4 @@
+// Use this file to view the event IDs in MongoDB
 const { MongoClient } = require("mongodb");
 const dotenv = require("dotenv");
 

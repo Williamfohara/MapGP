@@ -2,14 +2,18 @@ const { MongoClient } = require("mongodb");
 const axios = require("axios");
 const dotenv = require("dotenv");
 const fs = require("fs");
+const path = require("path");
 
-dotenv.config();
+// Specify the path to your .env file, assuming populateDatabase.js is not in the root directory
+dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
 const mongoUri = process.env.MONGO_URI;
 const client = new MongoClient(mongoUri);
 
 // Read events from events.json
-const initialEvents = JSON.parse(fs.readFileSync("events.json", "utf-8"));
+const initialEvents = JSON.parse(
+  fs.readFileSync("../data/events.json", "utf-8")
+);
 
 async function connectToMongoDB() {
   await client.connect();
@@ -17,6 +21,9 @@ async function connectToMongoDB() {
 }
 
 function formatEventDetails(details) {
+  // Remove unwanted external link markers
+  details = details.replace(/USTYPE="external_link">/g, "");
+
   // Convert ### headers to <strong> tags
   details = details.replace(/### (.*?)\n/g, "<strong>$1</strong><br>");
 
@@ -24,14 +31,15 @@ function formatEventDetails(details) {
   details = details.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
   details = details.replace(/\*(.*?)\*/g, "<em>$1</em>");
 
-  // Remove any # characters
-  details = details.replace(/#/g, "");
+  // Normalize line breaks: convert any mix of <br> with \n to just <br>
+  details = details.replace(/<br>\s*\n|\n\s*<br>/g, "<br>");
+  details = details.replace(/\n/g, "<br>");
 
   return details;
 }
 
 async function generateEventDetails(country1, country2, eventHeadline) {
-  const prompt = `Give me an in-depth geopolitical explanation of the ${eventHeadline} and how it affected the relationship between ${country1} and ${country2}.`;
+  const prompt = `I am a student trying to learn about geopolitical history who needs granular explanations. As an expert historian, write me an in-depth geopolitical explanation of the ${eventHeadline} and how it affected the relationship between ${country1} and ${country2}. Do not explain any events that happened after the year of the quote.`;
 
   try {
     const response = await axios.post(
@@ -43,7 +51,8 @@ async function generateEventDetails(country1, country2, eventHeadline) {
           { role: "user", content: prompt },
         ],
         max_tokens: 1300,
-        temperature: 0.4,
+        temperature: 0.75,
+        top_p: 0.9,
       },
       {
         headers: {
