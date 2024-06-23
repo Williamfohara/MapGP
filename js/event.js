@@ -43,9 +43,14 @@ document.addEventListener("DOMContentLoaded", async function () {
     const data = await response.json();
     console.log("Received event details:", data);
 
+    // Extract the first line of event details to display in the h3 tag
+    const eventDetailsLines = data.eventDetails.split("<br>");
+    const firstLine = eventDetailsLines[0];
+    const remainingDetails = eventDetailsLines.slice(1).join("<br>");
+
     document.getElementById("info-panel").innerHTML = `
-      <h3>Event Details</h3>
-      <p>${data.eventDetails}</p>
+      <h3>${firstLine}</h3>
+      <p>${remainingDetails}</p>
     `;
   } catch (error) {
     console.error("Failed to fetch event details or Mapbox API Key:", error);

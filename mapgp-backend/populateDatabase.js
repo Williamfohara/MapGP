@@ -24,12 +24,23 @@ function formatEventDetails(details) {
   // Remove unwanted external link markers
   details = details.replace(/USTYPE="external_link">/g, "");
 
-  // Convert ### headers to <strong> tags
-  details = details.replace(/### (.*?)\n/g, "<strong>$1</strong><br>");
+  // Convert markdown-like headers to <strong> tags
+  details = details.replace(/(#+)\s*(.*?)\n/g, function (match, hashes, text) {
+    return "<strong>" + text.trim() + "</strong><br>";
+  });
+
+  // Remove any remaining '#' characters from the text
+  details = details.replace(/#/g, "");
 
   // Convert **bold** to <strong> and *italic* to <em>
   details = details.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
   details = details.replace(/\*(.*?)\*/g, "<em>$1</em>");
+
+  // Bold single-digit numbers followed by a period and remove the period
+  details = details.replace(/(\b\d)\.(?=\s|$)/g, "<strong>$1</strong>");
+
+  // Bold numbers only if they are single digits and not already bolded, and not followed by a comma
+  details = details.replace(/(\b\d\b)(?!<\/strong>|,)/g, "<strong>$1</strong>");
 
   // Normalize line breaks: convert any mix of <br> with \n to just <br>
   details = details.replace(/<br>\s*\n|\n\s*<br>/g, "<br>");
@@ -39,7 +50,7 @@ function formatEventDetails(details) {
 }
 
 async function generateEventDetails(country1, country2, eventHeadline) {
-  const prompt = `I am a student trying to learn about geopolitical history who needs granular explanations. As an expert historian, write me an in-depth geopolitical explanation of the ${eventHeadline} and how it affected the relationship between ${country1} and ${country2}. Do not explain any events that happened after the year of the quote.`;
+  const prompt = `I am a student trying to learn about geopolitical history who needs granular explanations. As an expert historian, write me an in-depth geopolitical explanation of ${eventHeadline} and how it affected the relationship between ${country1} and ${country2} as if you are writing a non-fiction book about it (make it flow like a book but do not mention chapters). Start each response with a title that summarizes your response (10 words or less, no colons). Don't explain any events that happened after the year of the quote.`;
 
   try {
     const response = await axios.post(

@@ -43,3 +43,11 @@ body {
   padding: 5px 10px;
   margin-bottom: 5px;
 }
+
+.mapboxgl-ctrl-attrib-inner {
+  display: none !important;
+}
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}

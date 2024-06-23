@@ -157,3 +157,11 @@ body {
 .timeline-entry:hover .timeline-year {
   visibility: visible; /* Show the year on hover */
 }
+
+.mapboxgl-ctrl-attrib-inner {
+  display: none !important;
+}
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}

@@ -49,5 +49,35 @@ body {
   color: #333;
   margin: 10px;
   width: 100%;
-  text-align: center;
+  text-align: left;
+}
+.button-container {
+  position: fixed; /* Fixed position relative to the viewport */
+  bottom: 10px; /* 10px from the bottom */
+  right: 10px; /* 10px from the right */
+  display: flex; /* Display buttons inline */
+  gap: 10px; /* Space between buttons */
+}
+
+#prevEvent,
+#nextEvent {
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #ffa500; /* Orange */
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#prevEvent:hover,
+#nextEvent:hover {
+  background-color: #e69500; /* Darker shade of orange */
+}
+
+.mapboxgl-ctrl-attrib-inner {
+  display: none !important;
+}
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
 }

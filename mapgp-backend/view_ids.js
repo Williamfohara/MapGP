@@ -1,8 +1,11 @@
-// Use this file to view the event IDs in MongoDB
 const { MongoClient } = require("mongodb");
+const axios = require("axios");
 const dotenv = require("dotenv");
+const fs = require("fs");
+const path = require("path");
 
-dotenv.config();
+// Specify the path to your .env file, assuming populateDatabase.js is not in the root directory
+dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
 const mongoUri = process.env.MONGO_URI;
 const client = new MongoClient(mongoUri, {
