@@ -49,7 +49,7 @@ body {
   color: #333;
   margin: 10px;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 .button-container {
   position: fixed; /* Fixed position relative to the viewport */
@@ -83,21 +83,16 @@ body {
 }
 
 #top-right-box {
-  position: absolute; /* Position it relative to the nearest positioned ancestor */
-  top: 5px; /* Distance from the top */
-  right: 5px; /* Distance from the right */
-  width: 110px; /* Width of the box */
-  height: 50px; /* Height of the box */
-  background-color: #f8f9fa; /* Background color of the box */
-  border: 1px solid #ccc; /* Border around the box */
-  padding: 10px; /* Padding inside the box */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to the box */
-  font-size: 300%; /* Makes the font size three times larger than the inherited size */
-  overflow: hidden; /* Prevents text from overflowing */
-  display: flex; /* Uses flexbox to align content */
-  align-items: center; /* Centers content vertically */
-  justify-content: center; /* Centers content horizontally */
-  text-align: center; /* Ensures text is centered */
-  line-height: 1.2; /* Adjust line height to ensure text fits well */
-  border-radius: 10px; /* Rounds the corners of the box */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  max-width: calc(100% - 20px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 150%;
+  text-align: center;
 }

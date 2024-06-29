@@ -58,11 +58,22 @@ document.addEventListener("DOMContentLoaded", async function () {
     `;
 
     // Update the top-right-box with the event year
+    const topRightBox = document.getElementById("top-right-box");
+    if (eventYear) {
+      topRightBox.innerText = eventYear;
+    } else {
+      topRightBox.innerText = "Year not available";
+    }
+
+    // Update the top-right-box with the event year
     if (eventYear) {
       document.getElementById("top-right-box").innerText = eventYear;
     } else {
       document.getElementById("top-right-box").innerText = "Year not available";
     }
+
+    // Adjust the width of the top-right-box based on input
+    adjustTopRightBoxWidth(topRightBox);
 
     // Attach event handlers to navigation buttons
     document.getElementById("prevEvent").onclick = navigateToPreviousEvent;
@@ -75,6 +86,14 @@ document.addEventListener("DOMContentLoaded", async function () {
     `;
   }
 });
+
+function adjustTopRightBoxWidth(element) {
+  // Adjust the width of the top-right-box dynamically
+  element.style.width = "auto"; // Let the browser resize it to fit content
+  const width = element.clientWidth;
+  element.style.width = width + "px"; // Set the width to fit content
+  element.style.maxWidth = `calc(100% - ${element.offsetLeft + 10}px)`; // Ensure it doesn't touch the right edge
+}
 
 function navigateToPreviousEvent() {
   const currentIndex = eventIDs.indexOf(currentEventID);
