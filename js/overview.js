@@ -1,25 +1,9 @@
-let map; // Declare map globally
-
-function getQueryVariable(variable) {
-  var query = window.location.search.substring(1);
-  var vars = query.split("&");
-  for (var i = 0; i < vars.length; i++) {
-    var pair = vars[i].split("=");
-    if (decodeURIComponent(pair[0]) === variable) {
-      return decodeURIComponent(pair[1]);
-    }
-  }
-  return false;
-}
-
 document.addEventListener("DOMContentLoaded", function () {
   fetch("http://localhost:3000/api/config")
     .then((response) => response.json())
     .then((config) => {
-      // Use the fetched Mapbox access token
       mapboxgl.accessToken = config.mapboxAccessToken;
 
-      // Initialize the map
       map = new mapboxgl.Map({
         container: "map",
         zoom: 1.5,
@@ -29,9 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       map.on("load", () => {
-        map.setFog({}); // Set the default atmosphere style
+        map.setFog({});
 
-        // Add sources and layers once the map has loaded
         map.addSource("countries", {
           type: "geojson",
           data: "../data/countries.geojson",
@@ -75,6 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
       fetch("../data/MEXUSTimelineData.json")
         .then((response) => response.json())
         .then((data) => {
+          // Store the event IDs in local storage
+          const eventIDs = data.map((entry) => entry._id);
+          localStorage.setItem("eventIDs", JSON.stringify(eventIDs));
+
           generateTimelineEntries(data);
         });
     })
@@ -111,4 +98,16 @@ function generateTimelineEntries(timelineData) {
 
 function goToTimelineEvent(_id) {
   window.location.href = `event.html?_id=${encodeURIComponent(_id)}`;
+}
+
+function getQueryVariable(variable) {
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (var i = 0; i < vars.length; i++) {
+    var pair = vars[i].split("=");
+    if (decodeURIComponent(pair[0]) === variable) {
+      return decodeURIComponent(pair[1]);
+    }
+  }
+  return false;
 }

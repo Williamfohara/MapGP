@@ -1,4 +1,6 @@
 let map; // Declare map globally
+let eventIDs = []; // Declare eventIDs globally
+let currentEventID = null; // Declare currentEventID globally
 
 document.addEventListener("DOMContentLoaded", async function () {
   try {
@@ -43,6 +45,10 @@ document.addEventListener("DOMContentLoaded", async function () {
     const data = await response.json();
     console.log("Received event details:", data);
 
+    // Retrieve event IDs from local storage
+    eventIDs = JSON.parse(localStorage.getItem("eventIDs")) || [];
+    currentEventID = _id;
+
     // Extract the first line of event details to display in the h3 tag
     const eventDetailsLines = data.eventDetails.split("<br>");
     const firstLine = eventDetailsLines[0];
@@ -52,6 +58,10 @@ document.addEventListener("DOMContentLoaded", async function () {
       <h3>${firstLine}</h3>
       <p>${remainingDetails}</p>
     `;
+
+    // Attach event handlers to navigation buttons
+    document.getElementById("prevEvent").onclick = navigateToPreviousEvent;
+    document.getElementById("nextEvent").onclick = navigateToNextEvent;
   } catch (error) {
     console.error("Failed to fetch event details or Mapbox API Key:", error);
     document.getElementById("info-panel").innerHTML = `
@@ -60,3 +70,29 @@ document.addEventListener("DOMContentLoaded", async function () {
     `;
   }
 });
+
+function navigateToPreviousEvent() {
+  console.log("Current Event ID:", currentEventID);
+  console.log("Event IDs:", eventIDs);
+  const currentIndex = eventIDs.indexOf(currentEventID);
+  console.log("Current Index:", currentIndex);
+  if (currentIndex > 0) {
+    const previousEventID = eventIDs[currentIndex - 1];
+    console.log("Navigating to Previous Event ID:", previousEventID);
+    window.location.href = `event.html?_id=${encodeURIComponent(
+      previousEventID
+    )}`;
+  }
+}
+
+function navigateToNextEvent() {
+  console.log("Current Event ID:", currentEventID);
+  console.log("Event IDs:", eventIDs);
+  const currentIndex = eventIDs.indexOf(currentEventID);
+  console.log("Current Index:", currentIndex);
+  if (currentIndex < eventIDs.length - 1) {
+    const nextEventID = eventIDs[currentIndex + 1];
+    console.log("Navigating to Next Event ID:", nextEventID);
+    window.location.href = `event.html?_id=${encodeURIComponent(nextEventID)}`;
+  }
+}
