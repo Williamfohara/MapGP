@@ -46,43 +46,30 @@ app.get("/config", (req, res) => {
 app.get("/event-details", async (req, res) => {
   const { _id } = req.query;
 
-  console.log("Received query parameter _id:", _id);
-
   if (!_id) {
-    console.log("Missing _id query parameter");
     return res
       .status(400)
       .json({ error: "Missing required query parameter: _id" });
   }
 
   try {
-    console.log("Type of _id before conversion:", typeof _id);
-
-    // Convert the string _id to ObjectId
     const objectId = new ObjectId(_id);
-
-    // Add logging to verify conversion
-    console.log("Converted _id to ObjectId:", objectId);
-
-    const collection = db.collection("testingData"); // Ensure this matches your actual collection name
+    const collection = db.collection("testingData");
     const event = await collection.findOne({ _id: objectId });
 
     if (!event) {
-      console.log("Event not found:", { _id: objectId });
       return res.status(404).json({ error: "Event not found" });
     }
 
-    // Fetch all event IDs ordered by year
     const allEvents = await collection.find().sort({ year: 1 }).toArray();
     const allEventIDs = allEvents.map((event) => event._id.toString());
 
-    console.log("Found event:", event);
     res.json({
       eventDetails: event.eventDetails,
+      eventYear: event.year, // Ensure the year is included here
       allEventIDs: allEventIDs,
     });
   } catch (err) {
-    console.error("Database error:", err);
     res.status(500).json({ error: "Database error" });
   }
 });

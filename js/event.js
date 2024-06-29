@@ -32,8 +32,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     // Proceed to load event details
     const urlParams = new URLSearchParams(window.location.search);
     const _id = urlParams.get("_id");
-
-    console.log("Requesting event details for _id:", _id);
+    const eventYear = urlParams.get("year");
 
     const response = await fetch(
       `http://localhost:3000/event-details?_id=${encodeURIComponent(_id)}`
@@ -43,7 +42,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 
     const data = await response.json();
-    console.log("Received event details:", data);
 
     // Retrieve event IDs from local storage
     eventIDs = JSON.parse(localStorage.getItem("eventIDs")) || [];
@@ -59,6 +57,13 @@ document.addEventListener("DOMContentLoaded", async function () {
       <p>${remainingDetails}</p>
     `;
 
+    // Update the top-right-box with the event year
+    if (eventYear) {
+      document.getElementById("top-right-box").innerText = eventYear;
+    } else {
+      document.getElementById("top-right-box").innerText = "Year not available";
+    }
+
     // Attach event handlers to navigation buttons
     document.getElementById("prevEvent").onclick = navigateToPreviousEvent;
     document.getElementById("nextEvent").onclick = navigateToNextEvent;
@@ -72,27 +77,23 @@ document.addEventListener("DOMContentLoaded", async function () {
 });
 
 function navigateToPreviousEvent() {
-  console.log("Current Event ID:", currentEventID);
-  console.log("Event IDs:", eventIDs);
   const currentIndex = eventIDs.indexOf(currentEventID);
-  console.log("Current Index:", currentIndex);
   if (currentIndex > 0) {
     const previousEventID = eventIDs[currentIndex - 1];
-    console.log("Navigating to Previous Event ID:", previousEventID);
+    const previousEventYear = localStorage.getItem(previousEventID); // Get year from local storage
     window.location.href = `event.html?_id=${encodeURIComponent(
       previousEventID
-    )}`;
+    )}&year=${encodeURIComponent(previousEventYear)}`;
   }
 }
 
 function navigateToNextEvent() {
-  console.log("Current Event ID:", currentEventID);
-  console.log("Event IDs:", eventIDs);
   const currentIndex = eventIDs.indexOf(currentEventID);
-  console.log("Current Index:", currentIndex);
   if (currentIndex < eventIDs.length - 1) {
     const nextEventID = eventIDs[currentIndex + 1];
-    console.log("Navigating to Next Event ID:", nextEventID);
-    window.location.href = `event.html?_id=${encodeURIComponent(nextEventID)}`;
+    const nextEventYear = localStorage.getItem(nextEventID); // Get year from local storage
+    window.location.href = `event.html?_id=${encodeURIComponent(
+      nextEventID
+    )}&year=${encodeURIComponent(nextEventYear)}`;
   }
 }

@@ -58,9 +58,13 @@ document.addEventListener("DOMContentLoaded", function () {
       fetch("../data/MEXUSTimelineData.json")
         .then((response) => response.json())
         .then((data) => {
-          // Store the event IDs in local storage
+          // Store the event IDs and years in local storage
           const eventIDs = data.map((entry) => entry._id);
           localStorage.setItem("eventIDs", JSON.stringify(eventIDs));
+
+          data.forEach((entry) => {
+            localStorage.setItem(entry._id, entry.year); // Store year with ID
+          });
 
           generateTimelineEntries(data);
         });
@@ -87,7 +91,7 @@ function generateTimelineEntries(timelineData) {
   timelineData.forEach((entry) => {
     const div = document.createElement("div");
     div.className = "timeline-entry";
-    div.onclick = () => goToTimelineEvent(entry._id); // Pass _id when entry is clicked
+    div.onclick = () => goToTimelineEvent(entry._id, entry.year); // Pass _id and year when entry is clicked
     div.innerHTML = `
       <div class="timeline-year">${entry.year}</div>
       <div class="timeline-text">${entry.text}</div>
@@ -96,8 +100,10 @@ function generateTimelineEntries(timelineData) {
   });
 }
 
-function goToTimelineEvent(_id) {
-  window.location.href = `event.html?_id=${encodeURIComponent(_id)}`;
+function goToTimelineEvent(_id, year) {
+  window.location.href = `event.html?_id=${encodeURIComponent(
+    _id
+  )}&year=${encodeURIComponent(year)}`;
 }
 
 function getQueryVariable(variable) {
