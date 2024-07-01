@@ -1,10 +1,12 @@
 let map; // Declare map globally
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Fetch the configuration from the backend
-  fetch("http://localhost:3000/api/config")
-    .then((response) => response.json())
-    .then((config) => {
+  // Fetch the configuration from the backend using Axios
+  axios
+    .get("http://localhost:3000/api/config")
+    .then((response) => {
+      const config = response.data;
+
       // Use the fetched Mapbox access token
       mapboxgl.accessToken = config.mapboxAccessToken;
 
@@ -159,15 +161,46 @@ document
   .getElementById("search-bar-2")
   .addEventListener("input", handleCountrySelection);
 
-document.querySelector(".view-button").addEventListener("click", function () {
-  const country1 = document.getElementById("search-bar-1").value.trim();
-  const country2 = document.getElementById("search-bar-2").value.trim();
+document
+  .querySelector(".view-button")
+  .addEventListener("click", async function () {
+    const country1 = document.getElementById("search-bar-1").value.trim();
+    const country2 = document.getElementById("search-bar-2").value.trim();
 
-  if (country1 && country2) {
-    window.location.href = `overview.html?country1=${encodeURIComponent(
-      country1
-    )}&country2=${encodeURIComponent(country2)}`;
-  } else {
-    alert("Please select two countries before viewing the overview.");
-  }
-});
+    console.log("Selected countries:", country1, country2); // Debug log
+
+    if (country1 && country2) {
+      try {
+        const response = await axios.get(
+          `http://localhost:3000/api/relationship-summary`,
+          {
+            params: {
+              country1: country1,
+              country2: country2,
+            },
+          }
+        );
+
+        console.log("Response data:", response.data); // Debug log
+
+        if (response.data.relationshipSummary) {
+          localStorage.setItem(
+            "relationshipSummary",
+            response.data.relationshipSummary
+          );
+          window.location.href = `overview.html?country1=${encodeURIComponent(
+            country1
+          )}&country2=${encodeURIComponent(country2)}`;
+        } else {
+          alert("No relationship summary found for the selected countries.");
+        }
+      } catch (error) {
+        console.error("Error fetching relationship summary:", error);
+        alert(
+          "An error occurred while fetching the relationship summary. Please try again later."
+        );
+      }
+    } else {
+      alert("Please select two countries before viewing the overview.");
+    }
+  });

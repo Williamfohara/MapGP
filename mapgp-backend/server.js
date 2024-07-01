@@ -3,9 +3,11 @@ const { MongoClient, ObjectId } = require("mongodb");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const axios = require("axios");
-const configRoutes = require("./routes/configroutes.js"); // Make sure the path is correct
+const path = require("path");
+const configRoutes = require("./routes/configroutes.js"); // Adjust the path as needed
 
-dotenv.config({ path: "../.env" }); // Specify the path to your .env file
+// Load environment variables from the .env file
+dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -38,11 +40,6 @@ app.use(express.static("../html"));
 // Use the newly defined routes
 app.use("/api", configRoutes);
 
-// Add the /config endpoint to serve the Mapbox access token
-app.get("/config", (req, res) => {
-  res.json({ mapboxAccessToken: process.env.MAPBOX_API_KEY });
-});
-
 app.get("/event-details", async (req, res) => {
   const { _id } = req.query;
 
@@ -66,7 +63,7 @@ app.get("/event-details", async (req, res) => {
 
     res.json({
       eventDetails: event.eventDetails,
-      eventYear: event.year, // Ensure the year is included here
+      eventYear: event.year,
       allEventIDs: allEventIDs,
     });
   } catch (err) {
@@ -82,7 +79,7 @@ app.get("/mapbox/:endpoint", async (req, res) => {
 
   try {
     const response = await axios.get(mapboxUrl, {
-      params: req.query, // Forward query parameters if any
+      params: req.query,
     });
     res.json(response.data);
   } catch (error) {

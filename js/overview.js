@@ -55,10 +55,36 @@ document.addEventListener("DOMContentLoaded", function () {
         updateHighlightFilter();
       }
 
-      fetch("../data/MEXUSTimelineData.json")
+      const relationshipSummary = localStorage.getItem("relationshipSummary");
+      if (relationshipSummary) {
+        document.getElementById("relationship-summary").innerHTML =
+          relationshipSummary;
+      } else {
+        fetch(
+          `http://localhost:3000/api/relationship-summary?country1=${encodeURIComponent(
+            country1
+          )}&country2=${encodeURIComponent(country2)}`
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.relationshipSummary) {
+              document.getElementById("relationship-summary").innerHTML =
+                data.relationshipSummary;
+            } else {
+              document.getElementById("relationship-summary").innerHTML =
+                "No relationship summary found.";
+            }
+          })
+          .catch((error) => {
+            console.error("Error fetching relationship summary:", error);
+            document.getElementById("relationship-summary").innerHTML =
+              "An error occurred while fetching the relationship summary.";
+          });
+      }
+
+      fetch("../data/timelines/MEXUSATimeline.json")
         .then((response) => response.json())
         .then((data) => {
-          // Store the event IDs and years in local storage
           const eventIDs = data.map((entry) => entry._id);
           localStorage.setItem("eventIDs", JSON.stringify(eventIDs));
 
