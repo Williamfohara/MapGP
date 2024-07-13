@@ -18,7 +18,7 @@ const client = new MongoClient(mongoUri, {
 });
 
 client.connect().then(() => {
-  const db = client.db("mapgpTesting1");
+  const db = client.db("testingData1");
   const collection = db.collection("relationshipData");
 
   router.get("/relationship-summary", async (req, res) => {
