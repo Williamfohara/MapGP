@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
           });
       }
 
-      fetch("../data/timelines/MEXUSATimeline.json")
+      fetch("../data/timelines/MEXUSATimeline.json") //Edit this so that timeline is generated based off _id of timeline in mongoDB, not local file
         .then((response) => response.json())
         .then((data) => {
           const eventIDs = data.map((entry) => entry._id);
