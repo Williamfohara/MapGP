@@ -1,10 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const country1 = getQueryVariable("country1");
+  const country2 = getQueryVariable("country2");
+
+  if (!country1 || !country2) {
+    console.error("Missing country1 or country2 in URL parameters");
+    return;
+  }
+
+  console.log("Extracted countries from URL:", country1, country2); // Debug log
+
   fetch("http://localhost:3000/api/config")
     .then((response) => response.json())
     .then((config) => {
       mapboxgl.accessToken = config.mapboxAccessToken;
 
-      map = new mapboxgl.Map({
+      const map = new mapboxgl.Map({
         container: "map",
         zoom: 1.5,
         center: [-90, 40],
@@ -42,18 +52,19 @@ document.addEventListener("DOMContentLoaded", function () {
           },
           filter: ["in", ["get", "COUNTRY_NAME"], ["literal", []]],
         });
+
+        console.log("Map and layers are loaded");
+
+        if (selectedCountries.length > 0) {
+          console.log("Calling updateHighlightFilter");
+          updateHighlightFilter(map);
+        }
       });
 
-      var country1 = getQueryVariable("country1");
-      var country2 = getQueryVariable("country2");
+      document.getElementById("country1-info").textContent = country1;
+      document.getElementById("country2-info").textContent = country2;
 
-      if (country1 && country2) {
-        document.getElementById("country1-info").textContent = country1;
-        document.getElementById("country2-info").textContent = country2;
-
-        selectedCountries.push(country1, country2);
-        updateHighlightFilter();
-      }
+      selectedCountries.push(country1, country2);
 
       const relationshipSummary = localStorage.getItem("relationshipSummary");
       if (relationshipSummary) {
@@ -82,7 +93,11 @@ document.addEventListener("DOMContentLoaded", function () {
           });
       }
 
-      fetch("../data/timelines/MEXUSATimeline.json") //Edit this so that timeline is generated based off _id of timeline in mongoDB, not local file
+      fetch(
+        `http://localhost:3000/api/timeline?country1=${encodeURIComponent(
+          country1
+        )}&country2=${encodeURIComponent(country2)}`
+      )
         .then((response) => response.json())
         .then((data) => {
           const eventIDs = data.map((entry) => entry._id);
@@ -93,27 +108,60 @@ document.addEventListener("DOMContentLoaded", function () {
           });
 
           generateTimelineEntries(data);
-        });
+        })
+        .catch((error) => console.error("Error fetching timeline:", error));
     })
     .catch((error) => console.error("Error fetching Mapbox API Key:", error));
 });
 
 let selectedCountries = [];
 
-function updateHighlightFilter() {
-  if (map.isStyleLoaded()) {
+function updateHighlightFilter(map) {
+  console.log("updateHighlightFilter called");
+  console.log("Map instance: ", map);
+
+  if (!map) {
+    console.error("Map instance is not available");
+    return;
+  }
+
+  // Check if the map instance has the getLayer method
+  if (typeof map.getLayer !== "function") {
+    console.error(
+      "map.getLayer is not a function. Ensure Mapbox GL JS is properly integrated."
+    );
+    return;
+  }
+
+  // Check if the highlight-layer exists using getLayer
+  if (map.getLayer("highlight-layer")) {
+    console.log("highlight-layer exists");
     map.setFilter("highlight-layer", [
       "in",
       ["get", "COUNTRY_NAME"],
       ["literal", selectedCountries],
     ]);
   } else {
-    setTimeout(updateHighlightFilter, 100);
+    console.error("highlight-layer does not exist");
+    // Try to re-add the highlight-layer
+    map.addLayer({
+      id: "highlight-layer",
+      type: "fill",
+      source: "countries",
+      layout: {},
+      paint: {
+        "fill-color": "#f08",
+        "fill-opacity": 0.75,
+      },
+      filter: ["in", ["get", "COUNTRY_NAME"], ["literal", selectedCountries]],
+    });
   }
 }
 
 function generateTimelineEntries(timelineData) {
   const container = document.getElementById("timeline-container");
+  container.innerHTML = ""; // Clear existing entries
+
   timelineData.forEach((entry) => {
     const div = document.createElement("div");
     div.className = "timeline-entry";
@@ -143,3 +191,5 @@ function getQueryVariable(variable) {
   }
   return false;
 }
+
+console.log(mapboxgl);

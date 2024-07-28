@@ -1,3 +1,4 @@
+// server.js
 const express = require("express");
 const { MongoClient, ObjectId } = require("mongodb");
 const dotenv = require("dotenv");
@@ -5,6 +6,7 @@ const cors = require("cors");
 const axios = require("axios");
 const path = require("path");
 const configRoutes = require("./routes/configroutes.js"); // Adjust the path as needed
+const timelineRoutes = require("./routes/timelineRoutes"); // New timeline route
 
 // Load environment variables from the .env file
 dotenv.config({ path: path.resolve(__dirname, "../.env") });
@@ -23,7 +25,7 @@ async function connectToMongoDB() {
   try {
     await client.connect();
     console.log("Connected to MongoDB");
-    db = client.db("mapgpTesting1"); // Ensure this matches your actual database name
+    db = client.db("testingData1"); // Ensure this matches your actual database name
   } catch (error) {
     console.error("Error connecting to MongoDB", error);
   }
@@ -39,6 +41,7 @@ app.use(express.static("../html"));
 
 // Use the newly defined routes
 app.use("/api", configRoutes);
+app.use("/api", timelineRoutes); // Add timeline routes
 
 app.get("/event-details", async (req, res) => {
   const { _id } = req.query;

@@ -171,13 +171,11 @@ document
 
     if (country1 && country2) {
       try {
+        // Checking relationship summary before navigating (optional, can be skipped if not needed)
         const response = await axios.get(
           `http://localhost:3000/api/relationship-summary`,
           {
-            params: {
-              country1: country1,
-              country2: country2,
-            },
+            params: { country1, country2 },
           }
         );
 
@@ -188,12 +186,15 @@ document
             "relationshipSummary",
             response.data.relationshipSummary
           );
-          window.location.href = `overview.html?country1=${encodeURIComponent(
-            country1
-          )}&country2=${encodeURIComponent(country2)}`;
         } else {
           alert("No relationship summary found for the selected countries.");
+          return;
         }
+
+        // Navigate to overview.html with country1 and country2 as URL parameters
+        window.location.href = `overview.html?country1=${encodeURIComponent(
+          country1
+        )}&country2=${encodeURIComponent(country2)}`;
       } catch (error) {
         console.error("Error fetching relationship summary:", error);
         alert(

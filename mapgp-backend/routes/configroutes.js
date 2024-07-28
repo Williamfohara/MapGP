@@ -23,23 +23,27 @@ client.connect().then(() => {
 
   router.get("/relationship-summary", async (req, res) => {
     let { country1, country2 } = req.query;
+    console.log("Received parameters:", { country1, country2 }); // Add this line
+
+    if (!country1 || !country2) {
+      return res.status(400).json({
+        error: "Missing required query parameters: country1 and country2",
+      });
+    }
+
     country1 = country1.trim();
     country2 = country2.trim();
-    console.log("Query parameters:", country1, country2); // Debug log
 
     try {
       const query = { country1: country1, country2: country2 };
-      console.log("Query to MongoDB:", query); // Debug log
+      console.log("Query to MongoDB:", query);
       const result = await collection.findOne(query, {
         projection: { relationshipSummary: 1 },
       });
 
-      console.log("Result from MongoDB:", result); // Debug log
-
       if (result) {
         res.json({ relationshipSummary: result.relationshipSummary });
       } else {
-        console.log("No matching document found"); // Debug log
         res.json({ relationshipSummary: null });
       }
     } catch (error) {
