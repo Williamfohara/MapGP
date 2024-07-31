@@ -66,48 +66,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
       selectedCountries.push(country1, country2);
 
-      const relationshipSummary = localStorage.getItem("relationshipSummary");
-      if (relationshipSummary) {
-        document.getElementById("relationship-summary").innerHTML =
-          relationshipSummary;
-      } else {
-        fetch(
-          `http://localhost:3000/api/relationship-summary?country1=${encodeURIComponent(
-            country1
-          )}&country2=${encodeURIComponent(country2)}`
-        )
-          .then((response) => response.json())
-          .then((data) => {
-            if (data.relationshipSummary) {
-              document.getElementById("relationship-summary").innerHTML =
-                data.relationshipSummary;
-            } else {
-              document.getElementById("relationship-summary").innerHTML =
-                "No relationship summary found.";
-            }
-          })
-          .catch((error) => {
-            console.error("Error fetching relationship summary:", error);
+      fetchRelationshipSummary(country1, country2)
+        .then((summary) => {
+          if (summary) {
+            document.getElementById("relationship-summary").innerHTML = summary;
+          } else {
+            console.error("No relationship summary found.");
             document.getElementById("relationship-summary").innerHTML =
-              "An error occurred while fetching the relationship summary.";
-          });
-      }
+              "No relationship summary found.";
+          }
+        })
+        .catch((error) => {
+          console.error("Error fetching relationship summary:", error);
+          document.getElementById("relationship-summary").innerHTML =
+            "An error occurred while fetching the relationship summary.";
+        });
 
-      fetch(
-        `http://localhost:3000/api/timeline?country1=${encodeURIComponent(
-          country1
-        )}&country2=${encodeURIComponent(country2)}`
-      )
-        .then((response) => response.json())
+      fetchTimeline(country1, country2)
         .then((data) => {
-          const eventIDs = data.map((entry) => entry._id);
-          localStorage.setItem("eventIDs", JSON.stringify(eventIDs));
+          if (data && data.length > 0) {
+            const eventIDs = data.map((entry) => entry._id);
+            localStorage.setItem("eventIDs", JSON.stringify(eventIDs));
 
-          data.forEach((entry) => {
-            localStorage.setItem(entry._id, entry.year); // Store year with ID
-          });
+            data.forEach((entry) => {
+              localStorage.setItem(entry._id, entry.year); // Store year with ID
+            });
 
-          generateTimelineEntries(data);
+            generateTimelineEntries(data);
+          } else {
+            console.error("No timeline data found.");
+          }
         })
         .catch((error) => console.error("Error fetching timeline:", error));
     })
@@ -115,6 +103,52 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 let selectedCountries = [];
+
+function fetchRelationshipSummary(country1, country2) {
+  return fetch(
+    `http://localhost:3000/api/relationship-summary?country1=${encodeURIComponent(
+      country1
+    )}&country2=${encodeURIComponent(country2)}`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.relationshipSummary) {
+        return data.relationshipSummary;
+      } else {
+        // Try again with countries swapped
+        return fetch(
+          `http://localhost:3000/api/relationship-summary?country1=${encodeURIComponent(
+            country2
+          )}&country2=${encodeURIComponent(country1)}`
+        )
+          .then((response) => response.json())
+          .then((data) => data.relationshipSummary || null);
+      }
+    });
+}
+
+function fetchTimeline(country1, country2) {
+  return fetch(
+    `http://localhost:3000/api/timeline?country1=${encodeURIComponent(
+      country1
+    )}&country2=${encodeURIComponent(country2)}`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.length > 0) {
+        return data;
+      } else {
+        // Try again with countries swapped
+        return fetch(
+          `http://localhost:3000/api/timeline?country1=${encodeURIComponent(
+            country2
+          )}&country2=${encodeURIComponent(country1)}`
+        )
+          .then((response) => response.json())
+          .then((data) => (data.length > 0 ? data : null));
+      }
+    });
+}
 
 function updateHighlightFilter(map) {
   console.log("updateHighlightFilter called");

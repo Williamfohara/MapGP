@@ -3,12 +3,14 @@ body {
   padding: 0;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
+
 #map {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
 }
+
 #header {
   position: absolute;
   top: 10px;
@@ -17,16 +19,19 @@ body {
   text-align: center;
   z-index: 1;
 }
+
 #header h1 {
   margin: 0;
   color: #ffffff;
   font-size: 24px;
 }
+
 #header h2 {
   margin: 5px 0 20px;
   color: #ffffff;
   font-size: 16px;
 }
+
 #info-panel {
   position: absolute;
   top: 1.5%;
@@ -45,12 +50,14 @@ body {
   border-radius: 15px;
   overflow: hidden; /* Allows scrolling within the panel if content exceeds its height */
 }
+
 #info-panel h3 {
   color: #333;
   margin: 10px;
   width: 100%; /* Ensures the h3 element takes up the full width of the container */
   text-align: center; /* Centers the text of the h3 element within its full-width block */
 }
+
 #info-panel > div {
   display: flex;
   flex-direction: column; /* Change this if you meant the direct children of #info-panel to align vertically */
@@ -59,6 +66,7 @@ body {
   width: 100%;
   height: auto; /* Adjusted to accommodate vertical stacking */
 }
+
 #info-panel > div.country-info {
   display: flex;
   flex-direction: row;
@@ -68,6 +76,7 @@ body {
   width: 100%;
   padding: 10px 0; /* Adds padding around the text to give space for the line */
 }
+
 #country1-info,
 #country2-info {
   font-size: 130%; /* Increase font size by 30% */
@@ -79,6 +88,7 @@ body {
   margin: 0 20px; /* Increase margin to provide clear separation */
   position: relative; /* Required for pseudo-elements positioning */
 }
+
 #info-panel p:first-child::after {
   content: ""; /* Necessary to generate the pseudo-element */
   position: absolute;
@@ -90,6 +100,7 @@ body {
   background-color: #333; /* Line color */
   height: 110%; /* Makes the line slightly taller than the p element */
 }
+
 .relationship-summary {
   width: 100%; /* Takes the full width of its parent to utilize all available space */
   min-height: 200px; /* Minimum height ensures that the div has a consistent initial size */
@@ -109,6 +120,7 @@ body {
   overflow-y: auto;
   align-items: flex-start; /* Aligns all children (timeline-entry divs) to the start */
 }
+
 .timeline-entry {
   display: flex;
   flex-direction: row;
@@ -138,7 +150,7 @@ body {
   overflow: hidden; /* Prevents text from spilling over */
   white-space: nowrap; /* Keeps the content on a single line */
   text-overflow: ellipsis; /* Adds an ellipsis if the text overflows */
-  visibility: hidden; /* Hide the year initially */
+  visibility: hidden; /* Hide the year by default */
 }
 
 .timeline-text {

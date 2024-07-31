@@ -13,7 +13,7 @@ const client = new MongoClient(mongoUri);
 // Update path here to determine country relationships to generate BY REGION: node manualDBManipulation/populateDatabaseRelationshipSummaries.js
 const initialRelationships = JSON.parse(
   fs.readFileSync(
-    path.resolve(__dirname, "../../data/countryPairs/NorthAmerica.json"),
+    path.resolve(__dirname, "../../data/countryPairs/Europe.json"),
     "utf-8"
   )
 );
@@ -50,7 +50,7 @@ async function generateRelationshipSummary(country1, country2) {
     const response = await axios.post(
       "https://api.openai.com/v1/chat/completions",
       {
-        model: "gpt-4-turbo",
+        model: "gpt-4o-mini",
         messages: [
           { role: "system", content: "You are a helpful assistant." },
           { role: "user", content: prompt },
@@ -70,13 +70,16 @@ async function generateRelationshipSummary(country1, country2) {
     const relationshipSummary = response.data.choices[0].message.content.trim();
     return formatRelationshipSummary(relationshipSummary);
   } catch (error) {
-    console.error("Error generating relationship summary:", error);
+    console.error(
+      "Error generating relationship summary:",
+      error.response ? error.response.data : error.message
+    );
     return null;
   }
 }
 
 async function populateDatabase() {
-  const db = client.db("mapgpTesting1");
+  const db = client.db("testingData1");
   const collection = db.collection("relationshipData");
 
   for (const relationship of initialRelationships) {
@@ -105,7 +108,7 @@ async function populateDatabase() {
 }
 
 async function retrieveData() {
-  const db = client.db("mapgpTesting1");
+  const db = client.db("testingData1");
   const collection = db.collection("relationshipData");
 
   const relationships = await collection.find({}).toArray();
