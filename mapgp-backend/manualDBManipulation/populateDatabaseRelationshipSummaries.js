@@ -13,7 +13,7 @@ const client = new MongoClient(mongoUri);
 // Update path here to determine country relationships to generate BY REGION: node manualDBManipulation/populateDatabaseRelationshipSummaries.js
 const initialRelationships = JSON.parse(
   fs.readFileSync(
-    path.resolve(__dirname, "../../data/countryPairs/Europe.json"),
+    path.resolve(__dirname, "../../data/countryPairs/AmericaOceania.json"),
     "utf-8"
   )
 );

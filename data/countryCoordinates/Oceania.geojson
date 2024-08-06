@@ -1,0 +1,75 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Australia" },
+      "geometry": { "type": "Point", "coordinates": [133.7751, -25.2744] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Fiji" },
+      "geometry": { "type": "Point", "coordinates": [179.4144, -17.7134] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Kiribati" },
+      "geometry": { "type": "Point", "coordinates": [173.762, -3.3704] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Marshall Islands" },
+      "geometry": { "type": "Point", "coordinates": [171.1845, 7.1315] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Micronesia" },
+      "geometry": { "type": "Point", "coordinates": [150.5508, 7.4256] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Nauru" },
+      "geometry": { "type": "Point", "coordinates": [166.9315, -0.5228] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "New Zealand" },
+      "geometry": { "type": "Point", "coordinates": [174.885971, -40.900557] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Palau" },
+      "geometry": { "type": "Point", "coordinates": [134.5825, 7.5149] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Papua New Guinea" },
+      "geometry": { "type": "Point", "coordinates": [144.2489, -6.314993] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Samoa" },
+      "geometry": { "type": "Point", "coordinates": [-172.1046, -13.759] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Solomon Islands" },
+      "geometry": { "type": "Point", "coordinates": [160.156194, -9.64571] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Tonga" },
+      "geometry": { "type": "Point", "coordinates": [-175.198242, -21.178986] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Tuvalu" },
+      "geometry": { "type": "Point", "coordinates": [179.194, -7.1095] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Vanuatu" },
+      "geometry": { "type": "Point", "coordinates": [166.959158, -15.376706] }
+    }
+  ]
+}

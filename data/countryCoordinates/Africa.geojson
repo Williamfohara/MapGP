@@ -1,0 +1,279 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Algeria" },
+      "geometry": { "type": "Point", "coordinates": [1.6596, 28.0339] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Angola" },
+      "geometry": { "type": "Point", "coordinates": [17.8739, -11.2027] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Benin" },
+      "geometry": { "type": "Point", "coordinates": [2.3158, 9.3077] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Botswana" },
+      "geometry": { "type": "Point", "coordinates": [24.6849, -22.3285] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Burkina Faso" },
+      "geometry": { "type": "Point", "coordinates": [-1.5616, 12.2383] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Burundi" },
+      "geometry": { "type": "Point", "coordinates": [29.9189, -3.3731] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Cabo Verde" },
+      "geometry": { "type": "Point", "coordinates": [-23.6042, 16.5388] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Cameroon" },
+      "geometry": { "type": "Point", "coordinates": [12.3547, 7.3697] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Central African Republic" },
+      "geometry": { "type": "Point", "coordinates": [20.9394, 6.6111] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Chad" },
+      "geometry": { "type": "Point", "coordinates": [18.7322, 15.4542] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Comoros" },
+      "geometry": { "type": "Point", "coordinates": [43.8722, -11.6455] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Democratic Republic of the Congo" },
+      "geometry": { "type": "Point", "coordinates": [21.7587, -4.0383] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Djibouti" },
+      "geometry": { "type": "Point", "coordinates": [42.5903, 11.8251] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Egypt" },
+      "geometry": { "type": "Point", "coordinates": [30.8025, 26.8206] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Equatorial Guinea" },
+      "geometry": { "type": "Point", "coordinates": [10.2679, 1.6508] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Eritrea" },
+      "geometry": { "type": "Point", "coordinates": [39.7823, 15.1794] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Eswatini" },
+      "geometry": { "type": "Point", "coordinates": [31.4659, -26.5225] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Ethiopia" },
+      "geometry": { "type": "Point", "coordinates": [39.6012, 9.145] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Gabon" },
+      "geometry": { "type": "Point", "coordinates": [11.6094, -0.8037] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Gambia" },
+      "geometry": { "type": "Point", "coordinates": [-15.3101, 13.4432] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Ghana" },
+      "geometry": { "type": "Point", "coordinates": [-1.0232, 7.9465] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Guinea" },
+      "geometry": { "type": "Point", "coordinates": [-9.6966, 9.9456] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Guinea-Bissau" },
+      "geometry": { "type": "Point", "coordinates": [-15.1804, 11.8037] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Ivory Coast" },
+      "geometry": { "type": "Point", "coordinates": [-5.5471, 7.5399] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Kenya" },
+      "geometry": { "type": "Point", "coordinates": [37.9062, -0.0236] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Lesotho" },
+      "geometry": { "type": "Point", "coordinates": [28.2336, -29.6099] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Liberia" },
+      "geometry": { "type": "Point", "coordinates": [-9.4295, 6.4281] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Libya" },
+      "geometry": { "type": "Point", "coordinates": [17.2283, 26.3351] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Madagascar" },
+      "geometry": { "type": "Point", "coordinates": [46.8691, -18.7669] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Malawi" },
+      "geometry": { "type": "Point", "coordinates": [34.3015, -13.2543] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Mali" },
+      "geometry": { "type": "Point", "coordinates": [-3.9962, 17.5707] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Mauritania" },
+      "geometry": { "type": "Point", "coordinates": [-10.9408, 21.0079] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Mauritius" },
+      "geometry": { "type": "Point", "coordinates": [57.5522, -20.3484] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Morocco" },
+      "geometry": { "type": "Point", "coordinates": [-7.0926, 31.7917] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Mozambique" },
+      "geometry": { "type": "Point", "coordinates": [35.5296, -18.6657] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Namibia" },
+      "geometry": { "type": "Point", "coordinates": [18.4904, -22.9576] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Niger" },
+      "geometry": { "type": "Point", "coordinates": [8.0817, 17.6078] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Nigeria" },
+      "geometry": {
+        "type": "Point",
+
+        "coordinates": [8.6753, 9.082]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Republic of the Congo" },
+      "geometry": { "type": "Point", "coordinates": [15.8277, -0.228] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Rwanda" },
+      "geometry": { "type": "Point", "coordinates": [29.8739, -1.9403] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Sao Tome and Principe" },
+      "geometry": { "type": "Point", "coordinates": [6.6131, 0.1864] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Senegal" },
+      "geometry": { "type": "Point", "coordinates": [-14.4524, 14.4974] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Seychelles" },
+      "geometry": { "type": "Point", "coordinates": [55.491977, -4.679574] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Sierra Leone" },
+      "geometry": { "type": "Point", "coordinates": [-11.7799, 8.4606] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Somalia" },
+      "geometry": { "type": "Point", "coordinates": [46.1996, 5.1521] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "South Africa" },
+      "geometry": { "type": "Point", "coordinates": [22.9375, -30.5595] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "South Sudan" },
+      "geometry": { "type": "Point", "coordinates": [30.1545, 7.8627] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Sudan" },
+      "geometry": { "type": "Point", "coordinates": [30.2176, 12.8628] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Tanzania" },
+      "geometry": { "type": "Point", "coordinates": [34.8888, -6.369] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Togo" },
+      "geometry": { "type": "Point", "coordinates": [0.8248, 8.6195] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Tunisia" },
+      "geometry": { "type": "Point", "coordinates": [9.5375, 33.8869] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Uganda" },
+      "geometry": { "type": "Point", "coordinates": [32.2903, 1.3733] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Zambia" },
+      "geometry": { "type": "Point", "coordinates": [27.8493, -13.1339] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Zimbabwe" },
+      "geometry": { "type": "Point", "coordinates": [29.1549, -19.0154] }
+    }
+  ]
+}

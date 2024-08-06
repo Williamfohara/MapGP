@@ -63,16 +63,12 @@ for (let i = 0; i < europeanCountries.length; i++) {
       country1: europeanCountries[i],
       country2: europeanCountries[j],
     });
-    countryPairs.push({
-      country1: europeanCountries[j],
-      country2: europeanCountries[i],
-    });
   }
 }
 
 // Save to a JSON file
 fs.writeFile(
-  "european_country_pairs.json",
+  "EuropeNoFlip.json",
   JSON.stringify(countryPairs, null, 2),
   (err) => {
     if (err) throw err;

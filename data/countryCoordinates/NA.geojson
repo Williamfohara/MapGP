@@ -1,0 +1,120 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Antigua and Barbuda" },
+      "geometry": { "type": "Point", "coordinates": [-61.7964, 17.0608] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Bahamas" },
+      "geometry": { "type": "Point", "coordinates": [-77.3963, 25.0343] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Barbados" },
+      "geometry": { "type": "Point", "coordinates": [-59.5432, 13.1939] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Belize" },
+      "geometry": { "type": "Point", "coordinates": [-88.4976, 17.1899] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Canada" },
+      "geometry": { "type": "Point", "coordinates": [-106.3468, 56.1304] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Costa Rica" },
+      "geometry": { "type": "Point", "coordinates": [-83.7534, 9.7489] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Cuba" },
+      "geometry": { "type": "Point", "coordinates": [-77.7812, 21.5218] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Dominica" },
+      "geometry": { "type": "Point", "coordinates": [-61.371, 15.415] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Dominican Republic" },
+      "geometry": { "type": "Point", "coordinates": [-70.1627, 18.7357] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "El Salvador" },
+      "geometry": { "type": "Point", "coordinates": [-88.8965, 13.7942] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Grenada" },
+      "geometry": { "type": "Point", "coordinates": [-61.678, 12.1165] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Guatemala" },
+      "geometry": { "type": "Point", "coordinates": [-90.2308, 15.7835] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Haiti" },
+      "geometry": { "type": "Point", "coordinates": [-72.2852, 18.9712] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Honduras" },
+      "geometry": { "type": "Point", "coordinates": [-86.2419, 15.199] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Jamaica" },
+      "geometry": { "type": "Point", "coordinates": [-77.2975, 18.1096] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Mexico" },
+      "geometry": { "type": "Point", "coordinates": [-102.5528, 23.6345] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Nicaragua" },
+      "geometry": { "type": "Point", "coordinates": [-85.2072, 12.8654] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Panama" },
+      "geometry": { "type": "Point", "coordinates": [-80.7821, 8.538] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Saint Kitts and Nevis" },
+      "geometry": { "type": "Point", "coordinates": [-62.783, 17.3578] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Saint Lucia" },
+      "geometry": { "type": "Point", "coordinates": [-60.9789, 13.9094] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Saint Vincent and the Grenadines" },
+      "geometry": { "type": "Point", "coordinates": [-61.1971, 13.2528] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Trinidad and Tobago" },
+      "geometry": { "type": "Point", "coordinates": [-61.2225, 10.6918] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "United States" },
+      "geometry": { "type": "Point", "coordinates": [-95.7129, 37.0902] }
+    }
+  ]
+}

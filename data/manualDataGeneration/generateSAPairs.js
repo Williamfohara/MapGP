@@ -24,10 +24,6 @@ for (let i = 0; i < southAmericanCountries.length; i++) {
       country1: southAmericanCountries[i],
       country2: southAmericanCountries[j],
     });
-    countryPairs.push({
-      country1: southAmericanCountries[j],
-      country2: southAmericanCountries[i],
-    });
   }
 }
 

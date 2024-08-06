@@ -14,10 +14,7 @@ dotenv.config({ path: path.resolve(__dirname, "../.env") });
 const app = express();
 const port = process.env.PORT || 3000;
 const mongoUri = process.env.MONGO_URI;
-const client = new MongoClient(mongoUri, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+const client = new MongoClient(mongoUri);
 
 let db;
 
@@ -36,8 +33,14 @@ connectToMongoDB().catch(console.error);
 // Use CORS middleware
 app.use(cors());
 
-// Serve static files from the html directory
-app.use(express.static("../html"));
+// Serve static files from the 'html' directory
+app.use(express.static(path.join(__dirname, "../html")));
+
+// Serve static files from the 'data/countryCoordinates' directory
+app.use(
+  "/data/countryCoordinates",
+  express.static(path.join(__dirname, "../data/countryCoordinates"))
+);
 
 // Use the newly defined routes
 app.use("/api", configRoutes);

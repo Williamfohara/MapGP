@@ -1,0 +1,4326 @@
+[
+  {
+    "country1": "Afghanistan",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Bahrain"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Bangladesh"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Bhutan"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Brunei"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Cambodia"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "China"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "India"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Indonesia"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Iran"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Iraq"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Israel"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Japan"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Afghanistan",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Bahrain"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Bangladesh"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Bhutan"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Brunei"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Cambodia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "China"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "India"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Indonesia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Iran"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Iraq"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Israel"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Japan"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Bahrain"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Bangladesh"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Bhutan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Brunei"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Cambodia"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "China"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "India"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Indonesia"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Iran"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Iraq"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Israel"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Japan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Bangladesh"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Bhutan"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Brunei"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Cambodia"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "China"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "India"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Indonesia"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Iran"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Iraq"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Israel"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Japan"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Bahrain",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Bhutan"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Brunei"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Cambodia"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "China"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "India"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Indonesia"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Iran"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Iraq"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Israel"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Japan"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Bangladesh",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Brunei"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Cambodia"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "China"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "India"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Indonesia"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Iran"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Iraq"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Israel"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Japan"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Bhutan",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Cambodia"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "China"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "India"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Indonesia"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Iran"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Iraq"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Israel"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Japan"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Brunei",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "China"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "India"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Indonesia"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Iran"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Iraq"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Israel"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Japan"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Cambodia",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "China",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "China",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "China",
+    "country2": "India"
+  },
+  {
+    "country1": "China",
+    "country2": "Indonesia"
+  },
+  {
+    "country1": "China",
+    "country2": "Iran"
+  },
+  {
+    "country1": "China",
+    "country2": "Iraq"
+  },
+  {
+    "country1": "China",
+    "country2": "Israel"
+  },
+  {
+    "country1": "China",
+    "country2": "Japan"
+  },
+  {
+    "country1": "China",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "China",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "China",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "China",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "China",
+    "country2": "Laos"
+  },
+  {
+    "country1": "China",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "China",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "China",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "China",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "China",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "China",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "China",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "China",
+    "country2": "Oman"
+  },
+  {
+    "country1": "China",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "China",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "China",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "China",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "China",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "China",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "China",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "China",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "China",
+    "country2": "Syria"
+  },
+  {
+    "country1": "China",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "China",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "China",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "China",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "China",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "China",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "China",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "China",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "India"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Indonesia"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Iran"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Iraq"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Israel"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Japan"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "India"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Indonesia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Iran"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Iraq"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Israel"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Japan"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "India",
+    "country2": "Indonesia"
+  },
+  {
+    "country1": "India",
+    "country2": "Iran"
+  },
+  {
+    "country1": "India",
+    "country2": "Iraq"
+  },
+  {
+    "country1": "India",
+    "country2": "Israel"
+  },
+  {
+    "country1": "India",
+    "country2": "Japan"
+  },
+  {
+    "country1": "India",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "India",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "India",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "India",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "India",
+    "country2": "Laos"
+  },
+  {
+    "country1": "India",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "India",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "India",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "India",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "India",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "India",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "India",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "India",
+    "country2": "Oman"
+  },
+  {
+    "country1": "India",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "India",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "India",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "India",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "India",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "India",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "India",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "India",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "India",
+    "country2": "Syria"
+  },
+  {
+    "country1": "India",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "India",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "India",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "India",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "India",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "India",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "India",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "India",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Iran"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Iraq"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Israel"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Japan"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Indonesia",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Iraq"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Israel"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Japan"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Iran",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Iran",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Iran",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Iran",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Israel"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Japan"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Iraq",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Japan"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Israel",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Israel",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Israel",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Israel",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Japan",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Japan",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Japan",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Japan",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Jordan",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Kuwait",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Laos"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Kyrgyzstan",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Laos",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Laos",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Laos",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Laos",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Lebanon",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Malaysia",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Maldives",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Mongolia",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Myanmar",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "Oman"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Nepal",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "Oman"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "Syria"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "North Korea",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Oman",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "Oman",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Oman",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Oman",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Oman",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Oman",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Oman",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Oman",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Oman",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Oman",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Oman",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Oman",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Oman",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Oman",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Oman",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Oman",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Oman",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Pakistan",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "Pakistan",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Pakistan",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Pakistan",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Pakistan",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Pakistan",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Pakistan",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Pakistan",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Pakistan",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Pakistan",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Pakistan",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Pakistan",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Pakistan",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Pakistan",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Pakistan",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Pakistan",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Palestine",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "Palestine",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Palestine",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Palestine",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Palestine",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Palestine",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Palestine",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Palestine",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Palestine",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Palestine",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Palestine",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Palestine",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Palestine",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Palestine",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Palestine",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Philippines",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "Philippines",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Philippines",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Philippines",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Philippines",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Philippines",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Philippines",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Philippines",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Philippines",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Philippines",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Philippines",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Philippines",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Philippines",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Philippines",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Qatar",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "Qatar",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Qatar",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Qatar",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Qatar",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Qatar",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Qatar",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Qatar",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Qatar",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Qatar",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Qatar",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Qatar",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Qatar",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Saudi Arabia",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "Saudi Arabia",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Saudi Arabia",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Saudi Arabia",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Saudi Arabia",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Saudi Arabia",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Saudi Arabia",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Saudi Arabia",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Saudi Arabia",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Saudi Arabia",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Saudi Arabia",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Saudi Arabia",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Singapore",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "Singapore",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "Singapore",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Singapore",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Singapore",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Singapore",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Singapore",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Singapore",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Singapore",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Singapore",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Singapore",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "South Korea",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "South Korea",
+    "country2": "Syria"
+  },
+  {
+    "country1": "South Korea",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "South Korea",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "South Korea",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "South Korea",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "South Korea",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "South Korea",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "South Korea",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "South Korea",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Sri Lanka",
+    "country2": "Syria"
+  },
+  {
+    "country1": "Sri Lanka",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Sri Lanka",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Sri Lanka",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Sri Lanka",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Sri Lanka",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Sri Lanka",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Sri Lanka",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Sri Lanka",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Syria",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "Syria",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Syria",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Syria",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Syria",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Syria",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Syria",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Syria",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Tajikistan",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "Tajikistan",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Tajikistan",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Tajikistan",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Tajikistan",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Tajikistan",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Tajikistan",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Thailand",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "Thailand",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Thailand",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Thailand",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Thailand",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Thailand",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Timor-Leste",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "Timor-Leste",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Timor-Leste",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Timor-Leste",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Timor-Leste",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Turkmenistan",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "Turkmenistan",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "Turkmenistan",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Turkmenistan",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "United Arab Emirates",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "United Arab Emirates",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "United Arab Emirates",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Uzbekistan",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "Uzbekistan",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "Vietnam",
+    "country2": "Yemen"
+  }
+]

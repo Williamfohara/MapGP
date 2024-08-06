@@ -164,28 +164,25 @@ document
 document
   .querySelector(".view-button")
   .addEventListener("click", async function () {
-    const country1 = document.getElementById("search-bar-1").value.trim();
-    const country2 = document.getElementById("search-bar-2").value.trim();
+    let country1 = document.getElementById("search-bar-1").value.trim();
+    let country2 = document.getElementById("search-bar-2").value.trim();
 
     console.log("Selected countries:", country1, country2); // Debug log
 
     if (country1 && country2) {
       try {
-        // Checking relationship summary before navigating (optional, can be skipped if not needed)
-        const response = await axios.get(
-          `http://localhost:3000/api/relationship-summary`,
-          {
-            params: { country1, country2 },
+        // Checking relationship summary before navigating
+        let response = await fetchRelationshipSummary(country1, country2);
+        if (!response) {
+          console.log("Trying with countries swapped.");
+          response = await fetchRelationshipSummary(country2, country1);
+          if (response) {
+            [country1, country2] = [country2, country1];
           }
-        );
+        }
 
-        console.log("Response data:", response.data); // Debug log
-
-        if (response.data.relationshipSummary) {
-          localStorage.setItem(
-            "relationshipSummary",
-            response.data.relationshipSummary
-          );
+        if (response) {
+          localStorage.setItem("relationshipSummary", response);
         } else {
           alert("No relationship summary found for the selected countries.");
           return;
@@ -205,3 +202,22 @@ document
       alert("Please select two countries before viewing the overview.");
     }
   });
+
+async function fetchRelationshipSummary(country1, country2) {
+  try {
+    const response = await axios.get(
+      `http://localhost:3000/api/relationship-summary`,
+      {
+        params: { country1, country2 },
+      }
+    );
+    if (response.data.relationshipSummary) {
+      return response.data.relationshipSummary;
+    } else {
+      return null;
+    }
+  } catch (error) {
+    console.error("Error fetching relationship summary:", error);
+    return null;
+  }
+}
