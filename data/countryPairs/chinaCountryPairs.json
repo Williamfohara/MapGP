@@ -1,0 +1,806 @@
+[
+  {
+    "country1": "China",
+    "country2": "Albania"
+  },
+  {
+    "country1": "China",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "China",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "China",
+    "country2": "Austria"
+  },
+  {
+    "country1": "China",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "China",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "China",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "China",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "China",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "China",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "China",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "China",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "China",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "China",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "China",
+    "country2": "Finland"
+  },
+  {
+    "country1": "China",
+    "country2": "France"
+  },
+  {
+    "country1": "China",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "China",
+    "country2": "Germany"
+  },
+  {
+    "country1": "China",
+    "country2": "Greece"
+  },
+  {
+    "country1": "China",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "China",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "China",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "China",
+    "country2": "Italy"
+  },
+  {
+    "country1": "China",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "China",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "China",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "China",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "China",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "China",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "China",
+    "country2": "Malta"
+  },
+  {
+    "country1": "China",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "China",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "China",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "China",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "China",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "China",
+    "country2": "Norway"
+  },
+  {
+    "country1": "China",
+    "country2": "Poland"
+  },
+  {
+    "country1": "China",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "China",
+    "country2": "Romania"
+  },
+  {
+    "country1": "China",
+    "country2": "Russia"
+  },
+  {
+    "country1": "China",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "China",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "China",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "China",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "China",
+    "country2": "Spain"
+  },
+  {
+    "country1": "China",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "China",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "China",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "China",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "China",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "China",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "China",
+    "country2": "Algeria"
+  },
+  {
+    "country1": "China",
+    "country2": "Angola"
+  },
+  {
+    "country1": "China",
+    "country2": "Benin"
+  },
+  {
+    "country1": "China",
+    "country2": "Botswana"
+  },
+  {
+    "country1": "China",
+    "country2": "Burkina Faso"
+  },
+  {
+    "country1": "China",
+    "country2": "Burundi"
+  },
+  {
+    "country1": "China",
+    "country2": "Cabo Verde"
+  },
+  {
+    "country1": "China",
+    "country2": "Cameroon"
+  },
+  {
+    "country1": "China",
+    "country2": "Central African Republic"
+  },
+  {
+    "country1": "China",
+    "country2": "Chad"
+  },
+  {
+    "country1": "China",
+    "country2": "Comoros"
+  },
+  {
+    "country1": "China",
+    "country2": "Democratic Republic of the Congo"
+  },
+  {
+    "country1": "China",
+    "country2": "Djibouti"
+  },
+  {
+    "country1": "China",
+    "country2": "Egypt"
+  },
+  {
+    "country1": "China",
+    "country2": "Equatorial Guinea"
+  },
+  {
+    "country1": "China",
+    "country2": "Eritrea"
+  },
+  {
+    "country1": "China",
+    "country2": "Eswatini"
+  },
+  {
+    "country1": "China",
+    "country2": "Ethiopia"
+  },
+  {
+    "country1": "China",
+    "country2": "Gabon"
+  },
+  {
+    "country1": "China",
+    "country2": "Gambia"
+  },
+  {
+    "country1": "China",
+    "country2": "Ghana"
+  },
+  {
+    "country1": "China",
+    "country2": "Guinea"
+  },
+  {
+    "country1": "China",
+    "country2": "Guinea-Bissau"
+  },
+  {
+    "country1": "China",
+    "country2": "Ivory Coast"
+  },
+  {
+    "country1": "China",
+    "country2": "Kenya"
+  },
+  {
+    "country1": "China",
+    "country2": "Lesotho"
+  },
+  {
+    "country1": "China",
+    "country2": "Liberia"
+  },
+  {
+    "country1": "China",
+    "country2": "Libya"
+  },
+  {
+    "country1": "China",
+    "country2": "Madagascar"
+  },
+  {
+    "country1": "China",
+    "country2": "Malawi"
+  },
+  {
+    "country1": "China",
+    "country2": "Mali"
+  },
+  {
+    "country1": "China",
+    "country2": "Mauritania"
+  },
+  {
+    "country1": "China",
+    "country2": "Mauritius"
+  },
+  {
+    "country1": "China",
+    "country2": "Morocco"
+  },
+  {
+    "country1": "China",
+    "country2": "Mozambique"
+  },
+  {
+    "country1": "China",
+    "country2": "Namibia"
+  },
+  {
+    "country1": "China",
+    "country2": "Niger"
+  },
+  {
+    "country1": "China",
+    "country2": "Nigeria"
+  },
+  {
+    "country1": "China",
+    "country2": "Rwanda"
+  },
+  {
+    "country1": "China",
+    "country2": "Sao Tome and Principe"
+  },
+  {
+    "country1": "China",
+    "country2": "Senegal"
+  },
+  {
+    "country1": "China",
+    "country2": "Seychelles"
+  },
+  {
+    "country1": "China",
+    "country2": "Sierra Leone"
+  },
+  {
+    "country1": "China",
+    "country2": "Somalia"
+  },
+  {
+    "country1": "China",
+    "country2": "South Africa"
+  },
+  {
+    "country1": "China",
+    "country2": "South Sudan"
+  },
+  {
+    "country1": "China",
+    "country2": "Sudan"
+  },
+  {
+    "country1": "China",
+    "country2": "Tanzania"
+  },
+  {
+    "country1": "China",
+    "country2": "Togo"
+  },
+  {
+    "country1": "China",
+    "country2": "Tunisia"
+  },
+  {
+    "country1": "China",
+    "country2": "Uganda"
+  },
+  {
+    "country1": "China",
+    "country2": "Zambia"
+  },
+  {
+    "country1": "China",
+    "country2": "Zimbabwe"
+  },
+  {
+    "country1": "China",
+    "country2": "Afghanistan"
+  },
+  {
+    "country1": "China",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "China",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "China",
+    "country2": "Bahrain"
+  },
+  {
+    "country1": "China",
+    "country2": "Bangladesh"
+  },
+  {
+    "country1": "China",
+    "country2": "Bhutan"
+  },
+  {
+    "country1": "China",
+    "country2": "Brunei"
+  },
+  {
+    "country1": "China",
+    "country2": "Cambodia"
+  },
+  {
+    "country1": "China",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "China",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "China",
+    "country2": "India"
+  },
+  {
+    "country1": "China",
+    "country2": "Indonesia"
+  },
+  {
+    "country1": "China",
+    "country2": "Iran"
+  },
+  {
+    "country1": "China",
+    "country2": "Iraq"
+  },
+  {
+    "country1": "China",
+    "country2": "Israel"
+  },
+  {
+    "country1": "China",
+    "country2": "Japan"
+  },
+  {
+    "country1": "China",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "China",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "China",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "China",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "China",
+    "country2": "Laos"
+  },
+  {
+    "country1": "China",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "China",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "China",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "China",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "China",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "China",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "China",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "China",
+    "country2": "Oman"
+  },
+  {
+    "country1": "China",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "China",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "China",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "China",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "China",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "China",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "China",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "China",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "China",
+    "country2": "Syria"
+  },
+  {
+    "country1": "China",
+    "country2": "Taiwan"
+  },
+  {
+    "country1": "China",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "China",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "China",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "China",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "China",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "China",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "China",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "China",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "China",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "China",
+    "country2": "Antigua and Barbuda"
+  },
+  {
+    "country1": "China",
+    "country2": "Bahamas"
+  },
+  {
+    "country1": "China",
+    "country2": "Barbados"
+  },
+  {
+    "country1": "China",
+    "country2": "Belize"
+  },
+  {
+    "country1": "China",
+    "country2": "Canada"
+  },
+  {
+    "country1": "China",
+    "country2": "Costa Rica"
+  },
+  {
+    "country1": "China",
+    "country2": "Cuba"
+  },
+  {
+    "country1": "China",
+    "country2": "Dominica"
+  },
+  {
+    "country1": "China",
+    "country2": "Dominican Republic"
+  },
+  {
+    "country1": "China",
+    "country2": "El Salvador"
+  },
+  {
+    "country1": "China",
+    "country2": "Grenada"
+  },
+  {
+    "country1": "China",
+    "country2": "Guatemala"
+  },
+  {
+    "country1": "China",
+    "country2": "Haiti"
+  },
+  {
+    "country1": "China",
+    "country2": "Honduras"
+  },
+  {
+    "country1": "China",
+    "country2": "Jamaica"
+  },
+  {
+    "country1": "China",
+    "country2": "Mexico"
+  },
+  {
+    "country1": "China",
+    "country2": "Nicaragua"
+  },
+  {
+    "country1": "China",
+    "country2": "Panama"
+  },
+  {
+    "country1": "China",
+    "country2": "Saint Kitts and Nevis"
+  },
+  {
+    "country1": "China",
+    "country2": "Saint Lucia"
+  },
+  {
+    "country1": "China",
+    "country2": "Saint Vincent and the Grenadines"
+  },
+  {
+    "country1": "China",
+    "country2": "Trinidad and Tobago"
+  },
+  {
+    "country1": "China",
+    "country2": "United States"
+  },
+  {
+    "country1": "China",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "China",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "China",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "China",
+    "country2": "Chile"
+  },
+  {
+    "country1": "China",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "China",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "China",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "China",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "China",
+    "country2": "Peru"
+  },
+  {
+    "country1": "China",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "China",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "China",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "China",
+    "country2": "Australia"
+  },
+  {
+    "country1": "China",
+    "country2": "Fiji"
+  },
+  {
+    "country1": "China",
+    "country2": "Kiribati"
+  },
+  {
+    "country1": "China",
+    "country2": "Marshall Islands"
+  },
+  {
+    "country1": "China",
+    "country2": "Micronesia"
+  },
+  {
+    "country1": "China",
+    "country2": "Nauru"
+  },
+  {
+    "country1": "China",
+    "country2": "New Zealand"
+  },
+  {
+    "country1": "China",
+    "country2": "Palau"
+  },
+  {
+    "country1": "China",
+    "country2": "Papua New Guinea"
+  },
+  {
+    "country1": "China",
+    "country2": "Samoa"
+  },
+  {
+    "country1": "China",
+    "country2": "Solomon Islands"
+  },
+  {
+    "country1": "China",
+    "country2": "Tonga"
+  },
+  {
+    "country1": "China",
+    "country2": "Tuvalu"
+  },
+  {
+    "country1": "China",
+    "country2": "Vanuatu"
+  }
+]

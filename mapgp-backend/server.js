@@ -1,14 +1,16 @@
-// server.js
 const express = require("express");
 const { MongoClient, ObjectId } = require("mongodb");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const axios = require("axios");
 const path = require("path");
-const configRoutes = require("./routes/configroutes.js"); // Adjust the path as needed
-const timelineRoutes = require("./routes/timelineRoutes"); // New timeline route
+const configRoutes = require("./routes/configroutes.js");
+const timelineRoutes = require("./routes/timelineRoutes");
+const generateMissingTimelineAPI = require("./routes/generateMissingTimelineAPI");
+const {
+  handleGenerateSummaryRequest,
+} = require("./manualDBManipulation/generateMissingSummary");
 
-// Load environment variables from the .env file
 dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
 const app = express();
@@ -22,7 +24,7 @@ async function connectToMongoDB() {
   try {
     await client.connect();
     console.log("Connected to MongoDB");
-    db = client.db("testingData1"); // Ensure this matches your actual database name
+    db = client.db("testingData1");
   } catch (error) {
     console.error("Error connecting to MongoDB", error);
   }
@@ -30,21 +32,16 @@ async function connectToMongoDB() {
 
 connectToMongoDB().catch(console.error);
 
-// Use CORS middleware
 app.use(cors());
-
-// Serve static files from the 'html' directory
+app.use(express.json());
 app.use(express.static(path.join(__dirname, "../html")));
-
-// Serve static files from the 'data/countryCoordinates' directory
 app.use(
   "/data/countryCoordinates",
   express.static(path.join(__dirname, "../data/countryCoordinates"))
 );
-
-// Use the newly defined routes
 app.use("/api", configRoutes);
-app.use("/api", timelineRoutes); // Add timeline routes
+app.use("/api", timelineRoutes);
+app.use("/api", generateMissingTimelineAPI);
 
 app.get("/event-details", async (req, res) => {
   const { _id } = req.query;
@@ -92,6 +89,8 @@ app.get("/mapbox/:endpoint", async (req, res) => {
     res.status(500).send("Error fetching data from Mapbox");
   }
 });
+
+app.post("/api/generate-missing-summary", handleGenerateSummaryRequest);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
