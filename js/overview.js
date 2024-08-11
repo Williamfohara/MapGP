@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
-  console.log("Extracted countries from URL:", country1, country2); // Debug log
-
   fetch("http://localhost:3000/api/config")
     .then((response) => response.json())
     .then((config) => {
@@ -34,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
               country2
             );
             if (!countryCoords) {
-              console.log("Trying with countries swapped");
               countryCoords = getCountryCoordinates(
                 geojson,
                 country2,
@@ -75,18 +72,17 @@ document.addEventListener("DOMContentLoaded", function () {
                   "fill-color": "#f08",
                   "fill-opacity": 0.75,
                 },
-                filter: ["in", ["get", "COUNTRY_NAME"], ["literal", []]],
+                filter: [
+                  "in",
+                  ["get", "COUNTRY_NAME"],
+                  ["literal", selectedCountries],
+                ],
               });
 
-              console.log("Map and layers are loaded");
-
-              if (selectedCountries.length > 0) {
-                console.log("Calling updateHighlightFilter");
-                updateHighlightFilter(map);
-              }
+              updateHighlightFilter(map);
             } else {
               console.error(
-                "Could not find coordinates for the selected countries."
+                "Could not find coordinates for one or both of the selected countries."
               );
             }
           })
@@ -105,9 +101,6 @@ document.addEventListener("DOMContentLoaded", function () {
           if (summary) {
             document.getElementById("relationship-summary").innerHTML = summary;
           } else {
-            console.log(
-              "No relationship summary found, trying with countries swapped."
-            );
             return fetchRelationshipSummary(country2, country1).then(
               (swappedSummary) => {
                 if (swappedSummary) {
@@ -150,9 +143,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             generateTimelineEntries(data);
           } else {
-            console.log(
-              "No timeline data found, trying with countries swapped."
-            );
             return fetchTimeline(country2, country1).then((swappedData) => {
               if (swappedData && swappedData.length > 0) {
                 [country1, country2] = [country2, country1];
@@ -219,9 +209,6 @@ function fetchTimeline(country1, country2) {
 }
 
 function updateHighlightFilter(map) {
-  console.log("updateHighlightFilter called");
-  console.log("Map instance: ", map);
-
   if (!map) {
     console.error("Map instance is not available");
     return;
@@ -237,7 +224,6 @@ function updateHighlightFilter(map) {
 
   // Check if the highlight-layer exists using getLayer
   if (map.getLayer("highlight-layer")) {
-    console.log("highlight-layer exists");
     map.setFilter("highlight-layer", [
       "in",
       ["get", "COUNTRY_NAME"],
@@ -283,9 +269,22 @@ function generateTimelineEntries(timelineData) {
 }
 
 function goToTimelineEvent(_id, year) {
-  window.location.href = `event.html?_id=${encodeURIComponent(
-    _id
-  )}&year=${encodeURIComponent(year)}`;
+  const eventExists = localStorage.getItem(_id); // Check if event exists in localStorage
+  if (eventExists) {
+    window.location.href = `event.html?_id=${encodeURIComponent(
+      _id
+    )}&year=${encodeURIComponent(year)}`;
+  } else {
+    showEventErrorPopup(); // Show error popup if event doesn't exist
+  }
+}
+
+function showEventErrorPopup() {
+  document.getElementById("event-error-popup").style.display = "flex";
+
+  document.getElementById("close-event-popup-button").onclick = function () {
+    document.getElementById("event-error-popup").style.display = "none";
+  };
 }
 
 function getQueryVariable(variable) {
@@ -305,12 +304,23 @@ function getCountryCoordinates(geojson, country1, country2) {
   let country2Coords = null;
 
   geojson.features.forEach((feature) => {
+    // Compare with country1
     if (feature.properties.COUNTRY_NAME === country1) {
       country1Coords = feature.geometry.coordinates;
-    } else if (feature.properties.COUNTRY_NAME === country2) {
+    }
+
+    // Compare with country2
+    if (feature.properties.COUNTRY_NAME === country2) {
       country2Coords = feature.geometry.coordinates;
     }
   });
+
+  if (!country1Coords) {
+    console.error(`Could not find coordinates for country: ${country1}`);
+  }
+  if (!country2Coords) {
+    console.error(`Could not find coordinates for country: ${country2}`);
+  }
 
   return country1Coords && country2Coords
     ? [country1Coords, country2Coords]
@@ -328,5 +338,3 @@ function getMidpoint(coords1, coords2) {
 
   return [midpointLon, midpointLat];
 }
-
-console.log(mapboxgl);

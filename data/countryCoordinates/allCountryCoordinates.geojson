@@ -1164,6 +1164,16 @@
     {
       "type": "Feature",
       "properties": {
+        "COUNTRY_NAME": "Greenland"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-42.6043, 71.7069]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "COUNTRY_NAME": "India"
       },
       "geometry": {

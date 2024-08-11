@@ -12,10 +12,11 @@ router.post("/generate-missing-timeline", (req, res) => {
       .json({ success: false, message: "Both countries must be provided." });
   }
 
+  // Wrap country names with quotes to handle spaces
   const command = `node ${path.resolve(
     __dirname,
     "../manualDBManipulation/generateMissingTimeline.js"
-  )} ${country1} ${country2}`;
+  )} "${country1}" "${country2}"`;
 
   exec(command, (error, stdout, stderr) => {
     if (error) {

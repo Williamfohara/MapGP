@@ -39,13 +39,25 @@
       <h2>Your guide to geopolitics</h2>
     </div>
 
-    <!-- Custom Popup for Error Message -->
-    <div id="error-popup" class="popup" style="display: none">
+    <!-- Popup for No Relationship Summary Found -->
+    <div id="summary-error-popup" class="popup" style="display: none">
       <div class="popup-content">
-        <p id="error-message"></p>
+        <p id="summary-error-message">
+          No relationship summary found for the selected countries.
+        </p>
         <button id="generate-summary-button">Generate Summary</button>
+        <button id="close-summary-popup-button">Close</button>
+      </div>
+    </div>
+
+    <!-- Popup for No Timeline Found -->
+    <div id="timeline-error-popup" class="popup" style="display: none">
+      <div class="popup-content">
+        <p id="timeline-error-message">
+          No timeline summary found for the selected countries.
+        </p>
         <button id="generate-timeline-button">Generate Timeline</button>
-        <button id="close-popup-button">Close</button>
+        <button id="close-timeline-popup-button">Close</button>
       </div>
     </div>
 

@@ -1,5 +1,3 @@
-let map; // Declare map globally
-
 document.addEventListener("DOMContentLoaded", function () {
   // Fetch the configuration from the backend using Axios
   axios
@@ -167,14 +165,10 @@ document
     let country1 = document.getElementById("search-bar-1").value.trim();
     let country2 = document.getElementById("search-bar-2").value.trim();
 
-    console.log("Selected countries:", country1, country2); // Debug log
-
     if (country1 && country2) {
       try {
-        // Checking relationship summary before navigating
         let response = await fetchRelationshipSummary(country1, country2);
         if (!response) {
-          console.log("Trying with countries swapped.");
           response = await fetchRelationshipSummary(country2, country1);
           if (response) {
             [country1, country2] = [country2, country1];
@@ -182,16 +176,20 @@ document
         }
 
         if (response) {
-          localStorage.setItem("relationshipSummary", response);
+          const timelineExists = await checkTimelineExists(country1, country2);
+          if (timelineExists) {
+            localStorage.setItem("relationshipSummary", response);
+            window.location.href = `overview.html?country1=${encodeURIComponent(
+              country1
+            )}&country2=${encodeURIComponent(country2)}`;
+          } else {
+            // Show timeline error popup
+            showTimelineErrorPopup(country1, country2);
+          }
         } else {
-          alert("No relationship summary found for the selected countries.");
-          return;
+          // Show summary error popup
+          showSummaryErrorPopup(country1, country2);
         }
-
-        // Navigate to overview.html with country1 and country2 as URL parameters
-        window.location.href = `overview.html?country1=${encodeURIComponent(
-          country1
-        )}&country2=${encodeURIComponent(country2)}`;
       } catch (error) {
         console.error("Error fetching relationship summary:", error);
         alert(
@@ -202,6 +200,37 @@ document
       alert("Please select two countries before viewing the overview.");
     }
   });
+
+document
+  .getElementById("close-summary-popup-button")
+  .addEventListener("click", function () {
+    document.getElementById("summary-error-popup").style.display = "none";
+  });
+
+document
+  .getElementById("close-timeline-popup-button")
+  .addEventListener("click", function () {
+    document.getElementById("timeline-error-popup").style.display = "none";
+  });
+
+function generateSummary(country1, country2) {
+  return axios
+    .post("http://localhost:3000/api/generate-missing-summary", {
+      country1: country1,
+      country2: country2,
+    })
+    .then(() => {
+      alert(
+        "Summary generated successfully. Please try viewing the overview again."
+      );
+    })
+    .catch((error) => {
+      console.error("Error generating summary:", error);
+      alert(
+        "An error occurred while generating the summary. Please try again later."
+      );
+    });
+}
 
 async function fetchRelationshipSummary(country1, country2) {
   try {
@@ -220,4 +249,64 @@ async function fetchRelationshipSummary(country1, country2) {
     console.error("Error fetching relationship summary:", error);
     return null;
   }
+}
+
+async function checkTimelineExists(country1, country2) {
+  try {
+    let response = await axios.get(
+      `http://localhost:3000/api/timeline?country1=${encodeURIComponent(
+        country1
+      )}&country2=${encodeURIComponent(country2)}`
+    );
+    if (response.data && response.data.length > 0) {
+      return true;
+    } else {
+      response = await axios.get(
+        `http://localhost:3000/api/timeline?country1=${encodeURIComponent(
+          country2
+        )}&country2=${encodeURIComponent(country1)}`
+      );
+      return response.data && response.data.length > 0;
+    }
+  } catch (error) {
+    console.error("Error checking timeline:", error);
+    return false;
+  }
+}
+
+function showSummaryErrorPopup(country1, country2) {
+  document.getElementById("summary-error-popup").style.display = "flex";
+
+  document.getElementById("generate-summary-button").onclick =
+    async function () {
+      await generateSummary(country1, country2);
+      document.getElementById("summary-error-popup").style.display = "none";
+    };
+}
+
+function showTimelineErrorPopup(country1, country2) {
+  document.getElementById("timeline-error-popup").style.display = "flex";
+
+  document.getElementById("generate-timeline-button").onclick =
+    async function () {
+      await generateTimeline(country1, country2);
+      document.getElementById("timeline-error-popup").style.display = "none";
+    };
+}
+
+async function generateTimeline(country1, country2) {
+  return axios
+    .post("http://localhost:3000/api/generate-missing-timeline", {
+      country1: country1,
+      country2: country2,
+    })
+    .then(() => {
+      alert("Timeline generated successfully.");
+    })
+    .catch((error) => {
+      console.error("Error generating timeline:", error);
+      alert(
+        "An error occurred while generating the timeline. Please try again later."
+      );
+    });
 }
