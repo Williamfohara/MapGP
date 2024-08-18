@@ -34,6 +34,11 @@ document.addEventListener("DOMContentLoaded", async function () {
     const _id = urlParams.get("_id");
     const eventYear = urlParams.get("year");
 
+    if (!_id) {
+      throw new Error("Event ID is missing from URL parameters.");
+    }
+
+    // Fetch event details from the eventDetails collection using the _id
     const response = await fetch(
       `http://localhost:3000/event-details?_id=${encodeURIComponent(_id)}`
     );
@@ -43,9 +48,21 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     const data = await response.json();
 
-    // Retrieve event IDs from local storage
-    eventIDs = JSON.parse(localStorage.getItem("eventIDs")) || [];
+    // Log the entire data object to verify its structure
+    console.log("Fetched data:", data);
+
+    // Initialize eventIDs and currentEventID with the data from the response
+    eventIDs = data.allEventIDs;
     currentEventID = _id;
+
+    // Check if the response contains the expected event details
+    if (
+      !data ||
+      typeof data.eventDetails !== "string" ||
+      !data.eventDetails.trim()
+    ) {
+      throw new Error("Event details are missing from the response.");
+    }
 
     // Extract the first line of event details to display in the h3 tag
     const eventDetailsLines = data.eventDetails.split("<br>");
@@ -63,13 +80,6 @@ document.addEventListener("DOMContentLoaded", async function () {
       topRightBox.innerText = eventYear;
     } else {
       topRightBox.innerText = "Year not available";
-    }
-
-    // Update the top-right-box with the event year
-    if (eventYear) {
-      document.getElementById("top-right-box").innerText = eventYear;
-    } else {
-      document.getElementById("top-right-box").innerText = "Year not available";
     }
 
     // Adjust the width of the top-right-box based on input

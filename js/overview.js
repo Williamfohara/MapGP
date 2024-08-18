@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
+  // Display country1 and country2 in the info panel header
+  document.getElementById("country1-info").textContent = country1;
+  document.getElementById("country2-info").textContent = country2;
+
   fetch("http://localhost:3000/api/config")
     .then((response) => response.json())
     .then((config) => {
@@ -91,9 +95,6 @@ document.addEventListener("DOMContentLoaded", function () {
           );
       });
 
-      document.getElementById("country1-info").textContent = country1;
-      document.getElementById("country2-info").textContent = country2;
-
       selectedCountries.push(country1, country2);
 
       fetchRelationshipSummary(country1, country2)
@@ -141,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
               localStorage.setItem(entry._id, entry.year); // Store year with ID
             });
 
-            generateTimelineEntries(data);
+            generateTimelineEntries(data, country1, country2); // Pass country1 and country2
           } else {
             return fetchTimeline(country2, country1).then((swappedData) => {
               if (swappedData && swappedData.length > 0) {
@@ -160,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   localStorage.setItem(entry._id, entry.year); // Store year with ID
                 });
 
-                generateTimelineEntries(swappedData);
+                generateTimelineEntries(swappedData, country1, country2); // Pass country1 and country2
               } else {
                 console.error(
                   "No timeline data found for the selected countries."
@@ -246,7 +247,8 @@ function updateHighlightFilter(map) {
   }
 }
 
-function generateTimelineEntries(timelineData) {
+// Modified generateTimelineEntries to use goToTimelineEvent
+function generateTimelineEntries(timelineData, country1, country2) {
   const container = document.getElementById("timeline-container");
   container.innerHTML = ""; // Clear existing entries
 
@@ -259,7 +261,7 @@ function generateTimelineEntries(timelineData) {
 
     const div = document.createElement("div");
     div.className = "timeline-entry";
-    div.onclick = () => goToTimelineEvent(entry._id, entry.year); // Pass _id and year when entry is clicked
+    div.onclick = () => goToTimelineEvent(country1, country2, entry.year); // Pass country1, country2, and year when entry is clicked
     div.innerHTML = `
       <div class="timeline-year">${displayYear}</div>
       <div class="timeline-text">${entry.text}</div>
@@ -268,15 +270,29 @@ function generateTimelineEntries(timelineData) {
   });
 }
 
-function goToTimelineEvent(_id, year) {
-  const eventExists = localStorage.getItem(_id); // Check if event exists in localStorage
-  if (eventExists) {
-    window.location.href = `event.html?_id=${encodeURIComponent(
-      _id
-    )}&year=${encodeURIComponent(year)}`;
-  } else {
-    showEventErrorPopup(); // Show error popup if event doesn't exist
-  }
+// New goToTimelineEvent function
+function goToTimelineEvent(country1, country2, year) {
+  fetch(
+    `http://localhost:3000/api/getEventDetailsId?country1=${encodeURIComponent(
+      country1
+    )}&country2=${encodeURIComponent(country2)}&year=${encodeURIComponent(
+      year
+    )}`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      if (data._id) {
+        window.location.href = `event.html?_id=${encodeURIComponent(
+          data._id
+        )}&year=${encodeURIComponent(year)}`;
+      } else {
+        showEventErrorPopup(); // Show error popup if no corresponding event is found
+      }
+    })
+    .catch((error) => {
+      console.error("Error fetching event details ID:", error);
+      showEventErrorPopup(); // Show error popup if there's an error in fetching the ID
+    });
 }
 
 function showEventErrorPopup() {

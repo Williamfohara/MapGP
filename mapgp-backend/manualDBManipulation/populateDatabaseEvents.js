@@ -5,15 +5,10 @@ const fs = require("fs");
 const path = require("path");
 
 // Specify the path to your .env file, assuming populateDatabase.js is not in the root directory
-dotenv.config({ path: path.resolve(__dirname, "../.env") });
+dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 
 const mongoUri = process.env.MONGO_URI;
 const client = new MongoClient(mongoUri);
-
-// Read events from events file and choose which country pair you want to generate
-const initialEvents = JSON.parse(
-  fs.readFileSync("../data/events/MEXUSAEvents.json", "utf-8")
-);
 
 async function connectToMongoDB() {
   await client.connect();
@@ -21,47 +16,35 @@ async function connectToMongoDB() {
 }
 
 function formatEventDetails(details) {
-  // Remove unwanted external link markers
+  // Formatting as defined in your original script
   details = details.replace(/USTYPE="external_link">/g, "");
-
-  // Convert markdown-like headers to <strong> tags
   details = details.replace(/(#+)\s*(.*?)\n/g, function (match, hashes, text) {
     return "<strong>" + text.trim() + "</strong><br>";
   });
-
-  // Remove any remaining '#' characters from the text
   details = details.replace(/#/g, "");
-
-  // Convert **bold** to <strong> and *italic* to <em>
   details = details.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
   details = details.replace(/\*(.*?)\*/g, "<em>$1</em>");
-
-  // Bold single-digit numbers followed by a period and remove the period
   details = details.replace(/(\b\d)\.(?=\s|$)/g, "<strong>$1</strong>");
-
-  // Bold numbers only if they are single digits and not already bolded, and not followed by a comma
   details = details.replace(/(\b\d\b)(?!<\/strong>|,)/g, "<strong>$1</strong>");
-
-  // Normalize line breaks: convert any mix of <br> with \n to just <br>
   details = details.replace(/<br>\s*\n|\n\s*<br>/g, "<br>");
   details = details.replace(/\n/g, "<br>");
 
   return details;
 }
 
-async function generateEventDetails(country1, country2, eventHeadline) {
-  const prompt = `I am a student trying to learn about geopolitical history who needs granular explanations. As an expert historian, write me an in-depth geopolitical explanation of ${eventHeadline} and how it affected the relationship between ${country1} and ${country2} as if you are writing a non-fiction book about it (make it flow like a book but do not mention chapters). Start each response with a title that summarizes your response (10 words or less, no colons). Don't explain any events that happened after the year of the quote.`;
+async function generateEventDetails(country1, country2, text) {
+  const prompt = `I am a student trying to learn about geopolitical history who needs granular explanations. As an expert historian, write me an in-depth geopolitical explanation of ${text} and how it affected the relationship between ${country1} and ${country2} as if you are writing a non-fiction book about it (make it flow like a book but do not mention chapters). Start each response with a title that summarizes your response (10 words or less, no colons). Don't explain any events that happened after the year of the quote.`;
 
   try {
     const response = await axios.post(
       "https://api.openai.com/v1/chat/completions",
       {
-        model: "gpt-4-turbo",
+        model: "gpt-4o-mini",
         messages: [
           { role: "system", content: "You are a helpful assistant." },
           { role: "user", content: prompt },
         ],
-        max_tokens: 1300,
+        max_tokens: 10500,
         temperature: 0.75,
         top_p: 0.9,
       },
@@ -82,37 +65,41 @@ async function generateEventDetails(country1, country2, eventHeadline) {
 }
 
 async function populateDatabase() {
-  const db = client.db("mapgpTesting1");
-  const collection = db.collection("testingData");
+  const db = client.db("testingData1");
+  const sourceCollection = db.collection("timelineData");
+  const targetCollection = db.collection("eventDetails");
 
-  for (const event of initialEvents) {
+  // Fetch only the documents where country1 = 'United States' and country2 = 'Argentina'
+  const events = await sourceCollection
+    .find({ country1: "United States", country2: "Argentina" })
+    .toArray();
+
+  for (const event of events) {
     const eventDetails = await generateEventDetails(
       event.country1,
       event.country2,
-      event.eventHeadline
+      event.text
     );
 
     if (eventDetails) {
-      await collection.insertOne({
+      await targetCollection.insertOne({
         country1: event.country1,
         country2: event.country2,
-        eventHeadline: event.eventHeadline,
-        eventDetails: eventDetails,
+        year: event.year, // Assuming year is available in the event document
+        details: eventDetails,
       });
-      console.log(`Inserted event: ${event.eventHeadline}`);
+      console.log(`Inserted event details for: ${event.text}`);
     } else {
-      console.log(
-        `Failed to generate details for event: ${event.eventHeadline}`
-      );
+      console.log(`Failed to generate details for event: ${event.text}`);
     }
   }
 
-  console.log("Database populated with initial events");
+  console.log("Database populated with event details");
 }
 
 async function retrieveData() {
-  const db = client.db("mapgpTesting1");
-  const collection = db.collection("testingData");
+  const db = client.db("testingData1");
+  const collection = db.collection("eventDetails");
 
   const events = await collection.find({}).toArray();
   console.log("Retrieved events:", events);

@@ -43,8 +43,41 @@ app.use("/api", configRoutes);
 app.use("/api", timelineRoutes);
 app.use("/api", generateMissingTimelineAPI);
 
+// New route to fetch event details ID by country1, country2, and year
+app.get("/api/getEventDetailsId", async (req, res) => {
+  const { country1, country2, year } = req.query;
+
+  if (!country1 || !country2 || !year) {
+    return res
+      .status(400)
+      .json({
+        error: "Missing required query parameters: country1, country2, year",
+      });
+  }
+
+  try {
+    const collection = db.collection("eventDetails");
+    const event = await collection.findOne({
+      country1: country1,
+      country2: country2,
+      year: year,
+    });
+
+    if (!event) {
+      return res.status(404).json({ error: "Event not found" });
+    }
+
+    res.json({ _id: event._id });
+  } catch (err) {
+    console.error("Database error:", err);
+    res.status(500).json({ error: "Database error" });
+  }
+});
+
 app.get("/event-details", async (req, res) => {
   const { _id } = req.query;
+
+  console.log("Received request for event details with ID:", _id);
 
   if (!_id) {
     return res
@@ -54,10 +87,11 @@ app.get("/event-details", async (req, res) => {
 
   try {
     const objectId = new ObjectId(_id);
-    const collection = db.collection("testingData");
+    const collection = db.collection("eventDetails");
     const event = await collection.findOne({ _id: objectId });
 
     if (!event) {
+      console.log("Event not found for ID:", _id);
       return res.status(404).json({ error: "Event not found" });
     }
 
@@ -65,11 +99,12 @@ app.get("/event-details", async (req, res) => {
     const allEventIDs = allEvents.map((event) => event._id.toString());
 
     res.json({
-      eventDetails: event.eventDetails,
+      eventDetails: event.details,
       eventYear: event.year,
       allEventIDs: allEventIDs,
     });
   } catch (err) {
+    console.error("Database error:", err);
     res.status(500).json({ error: "Database error" });
   }
 });
