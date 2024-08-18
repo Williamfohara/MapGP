@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     // Proceed to load event details
     const urlParams = new URLSearchParams(window.location.search);
     const _id = urlParams.get("_id");
-    const eventYear = urlParams.get("year");
 
     if (!_id) {
       throw new Error("Event ID is missing from URL parameters.");
@@ -74,10 +73,10 @@ document.addEventListener("DOMContentLoaded", async function () {
       <p>${remainingDetails}</p>
     `;
 
-    // Update the top-right-box with the event year
+    // Update the top-right-box with the event year from the data object
     const topRightBox = document.getElementById("top-right-box");
-    if (eventYear) {
-      topRightBox.innerText = eventYear;
+    if (data.eventYear) {
+      topRightBox.innerText = data.eventYear; // Set the year from the data object
     } else {
       topRightBox.innerText = "Year not available";
     }
