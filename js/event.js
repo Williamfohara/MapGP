@@ -97,18 +97,22 @@ document.addEventListener("DOMContentLoaded", async function () {
 });
 
 function adjustTopRightBoxWidth(element) {
-  // Adjust the width of the top-right-box dynamically
-  element.style.width = "auto"; // Let the browser resize it to fit content
+  if (!element) return;
+
+  // Reset width to auto to calculate content width
+  element.style.width = "auto";
   const width = element.clientWidth;
-  element.style.width = width + "px"; // Set the width to fit content
-  element.style.maxWidth = `calc(100% - ${element.offsetLeft + 10}px)`; // Ensure it doesn't touch the right edge
+
+  // Set the calculated width and ensure it doesn't exceed the viewport
+  element.style.width = width + "px";
+  element.style.maxWidth = `calc(100% - ${element.offsetLeft + 10}px)`;
 }
 
 function navigateToPreviousEvent() {
   const currentIndex = eventIDs.indexOf(currentEventID);
   if (currentIndex > 0) {
     const previousEventID = eventIDs[currentIndex - 1];
-    const previousEventYear = localStorage.getItem(previousEventID); // Get year from local storage
+    const previousEventYear = localStorage.getItem(`year_${previousEventID}`); // Get year from local storage
     window.location.href = `event.html?_id=${encodeURIComponent(
       previousEventID
     )}&year=${encodeURIComponent(previousEventYear)}`;
@@ -119,7 +123,7 @@ function navigateToNextEvent() {
   const currentIndex = eventIDs.indexOf(currentEventID);
   if (currentIndex < eventIDs.length - 1) {
     const nextEventID = eventIDs[currentIndex + 1];
-    const nextEventYear = localStorage.getItem(nextEventID); // Get year from local storage
+    const nextEventYear = localStorage.getItem(`year_${nextEventID}`); // Get year from local storage
     window.location.href = `event.html?_id=${encodeURIComponent(
       nextEventID
     )}&year=${encodeURIComponent(nextEventYear)}`;

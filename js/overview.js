@@ -136,10 +136,11 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             const eventIDs = data.map((entry) => entry._id);
-            localStorage.setItem("eventIDs", JSON.stringify(eventIDs));
+            const eventIDKey = `eventIDs_${country1}_${country2}`;
+            localStorage.setItem(eventIDKey, JSON.stringify(eventIDs));
 
             data.forEach((entry) => {
-              localStorage.setItem(entry._id, entry.year); // Store year with ID
+              localStorage.setItem(`year_${entry._id}`, entry.year); // Adjusted key
             });
 
             generateTimelineEntries(data, country1, country2); // Pass country1 and country2
@@ -155,10 +156,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
 
                 const eventIDs = swappedData.map((entry) => entry._id);
-                localStorage.setItem("eventIDs", JSON.stringify(eventIDs));
+                const eventIDKey = `eventIDs_${country1}_${country2}`;
+                localStorage.setItem(eventIDKey, JSON.stringify(eventIDs));
 
                 swappedData.forEach((entry) => {
-                  localStorage.setItem(entry._id, entry.year); // Store year with ID
+                  localStorage.setItem(`year_${entry._id}`, entry.year); // Adjusted key
                 });
 
                 generateTimelineEntries(swappedData, country1, country2); // Pass country1 and country2
@@ -215,7 +217,6 @@ function updateHighlightFilter(map) {
     return;
   }
 
-  // Check if the map instance has the getLayer method
   if (typeof map.getLayer !== "function") {
     console.error(
       "map.getLayer is not a function. Ensure Mapbox GL JS is properly integrated."
@@ -223,7 +224,6 @@ function updateHighlightFilter(map) {
     return;
   }
 
-  // Check if the highlight-layer exists using getLayer
   if (map.getLayer("highlight-layer")) {
     map.setFilter("highlight-layer", [
       "in",
@@ -232,7 +232,6 @@ function updateHighlightFilter(map) {
     ]);
   } else {
     console.error("highlight-layer does not exist");
-    // Try to re-add the highlight-layer
     map.addLayer({
       id: "highlight-layer",
       type: "fill",
@@ -261,28 +260,21 @@ function generateTimelineEntries(timelineData, country1, country2) {
     const div = document.createElement("div");
     div.className = "timeline-entry";
     div.onclick = () => {
-      selectTimelineEntry(div); // New function to handle the selection
+      selectTimelineEntry(div);
       goToTimelineEvent(country1, country2, entry.year);
     };
-    div.innerHTML = `
-      <div class="timeline-year">${displayYear}</div>
-      <div class="timeline-text">${entry.text}</div>
-    `;
+    div.innerHTML = `<div class="timeline-year">${displayYear}</div><div class="timeline-text">${entry.text}</div>`;
     container.appendChild(div);
   });
 }
 
 function selectTimelineEntry(entryDiv) {
-  // Remove 'selected' class from all entries
   const allEntries = document.querySelectorAll(".timeline-entry");
   allEntries.forEach((entry) => entry.classList.remove("selected"));
-
-  // Add 'selected' class to the clicked entry
   entryDiv.classList.add("selected");
 }
 
 function goToTimelineEvent(country1, country2, year) {
-  // Log the parameters being used for the fetch request
   console.log("Fetching event details ID with parameters:", {
     country1,
     country2,
@@ -297,9 +289,7 @@ function goToTimelineEvent(country1, country2, year) {
     )}`
   )
     .then((response) => {
-      // Log the response status to check if the server responded
       console.log("Response status:", response.status);
-
       if (!response.ok) {
         console.error(
           "Failed to fetch event details. Response status:",
@@ -310,11 +300,8 @@ function goToTimelineEvent(country1, country2, year) {
       return response.json();
     })
     .then((data) => {
-      // Log the data received to verify the content
       console.log("Data received:", data);
-
       if (data._id) {
-        // Log the ID and year to be used in the redirect
         console.log(
           "Redirecting to event.html with ID and year:",
           data._id,
@@ -325,13 +312,12 @@ function goToTimelineEvent(country1, country2, year) {
         )}&year=${encodeURIComponent(year)}`;
       } else {
         console.error("No event ID found in the response data.");
-        showEventErrorPopup(); // Show error popup if no corresponding event is found
+        showEventErrorPopup();
       }
     })
     .catch((error) => {
-      // Log the specific error that occurred
       console.error("Error fetching event details ID:", error);
-      showEventErrorPopup(); // Show error popup if there's an error in fetching the ID
+      showEventErrorPopup();
     });
 }
 
@@ -353,7 +339,7 @@ function showEventErrorPopup() {
     if (generateButton) {
       generateButton.onclick = function () {
         generateEvent();
-        popup.style.display = "none"; // Close the popup after generating the event
+        popup.style.display = "none";
       };
     } else {
       console.error("Generate button for event error popup not found.");
@@ -366,26 +352,20 @@ function showEventErrorPopup() {
 function generateEvent() {
   const country1 = document.getElementById("country1-info").textContent;
   const country2 = document.getElementById("country2-info").textContent;
-
-  // Select the timeline entry that is currently selected
   const selectedTimelineEntry = document.querySelector(
     ".timeline-entry.selected .timeline-text"
   );
 
-  // Check if the selected timeline entry exists
   if (!selectedTimelineEntry) {
     console.error("No timeline entry selected or missing text.");
     return;
   }
 
   const timelineEntryText = selectedTimelineEntry.textContent;
-
-  // Get the year from the selected timeline entry's year element
   const selectedTimelineYear = document.querySelector(
     ".timeline-entry.selected .timeline-year"
   );
 
-  // Check if the selected timeline entry year exists
   if (!selectedTimelineYear) {
     console.error("No timeline entry year selected or missing.");
     return;
@@ -403,14 +383,12 @@ function generateEvent() {
 
   fetch("http://localhost:3000/api/generateEvent", {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      country1: country1,
-      country2: country2,
+      country1,
+      country2,
       text: timelineEntryText,
-      year: timelineEntryYear, // Include the year in the request
+      year: timelineEntryYear,
     }),
   })
     .then((response) => {
@@ -421,7 +399,6 @@ function generateEvent() {
     })
     .then((data) => {
       console.log("Event generated successfully:", data);
-      // You can refresh the page or update the UI as needed
     })
     .catch((error) => {
       console.error("Error generating event:", error);

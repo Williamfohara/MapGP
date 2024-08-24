@@ -67,11 +67,22 @@ app.get("/api/getEventDetailsId", async (req, res) => {
 
   try {
     const collection = db.collection("eventDetails");
-    const event = await collection.findOne({
+
+    // First attempt to find the event with the given parameters
+    let event = await collection.findOne({
       country1: country1,
       country2: country2,
       year: year,
     });
+
+    // If no event is found, attempt to find with flipped countries
+    if (!event) {
+      event = await collection.findOne({
+        country1: country2,
+        country2: country1,
+        year: year,
+      });
+    }
 
     if (!event) {
       console.error("No matching event found for:", {
@@ -89,7 +100,6 @@ app.get("/api/getEventDetailsId", async (req, res) => {
   }
 });
 
-// Route to fetch event details by _id
 app.get("/event-details", async (req, res) => {
   const { _id } = req.query;
 
@@ -111,7 +121,17 @@ app.get("/event-details", async (req, res) => {
       return res.status(404).json({ error: "Event not found" });
     }
 
-    const allEvents = await collection.find().sort({ year: 1 }).toArray();
+    // Fetch all events related to the selected countries
+    const allEvents = await collection
+      .find({
+        $or: [
+          { country1: event.country1, country2: event.country2 },
+          { country1: event.country2, country2: event.country1 },
+        ],
+      })
+      .sort({ year: 1 })
+      .toArray();
+
     const allEventIDs = allEvents.map((event) => event._id.toString());
 
     res.json({
