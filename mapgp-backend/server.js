@@ -1,3 +1,4 @@
+// Import necessary modules and routes
 const express = require("express");
 const { MongoClient, ObjectId } = require("mongodb");
 const dotenv = require("dotenv");
@@ -8,8 +9,13 @@ const configRoutes = require("./routes/configroutes.js");
 const timelineRoutes = require("./routes/timelineRoutes");
 const generateMissingTimelineAPI = require("./routes/generateMissingTimelineAPI");
 const {
+  generateEventDetails,
+  populateDatabase,
+} = require("./manualDBManipulation/populateDatabaseEvents.js");
+
+const {
   handleGenerateSummaryRequest,
-} = require("./manualDBManipulation/generateMissingSummary");
+} = require("./manualDBManipulation/generateMissingSummary.js");
 
 dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
@@ -20,6 +26,7 @@ const client = new MongoClient(mongoUri);
 
 let db;
 
+// Connect to MongoDB
 async function connectToMongoDB() {
   try {
     await client.connect();
@@ -43,16 +50,19 @@ app.use("/api", configRoutes);
 app.use("/api", timelineRoutes);
 app.use("/api", generateMissingTimelineAPI);
 
-// New route to fetch event details ID by country1, country2, and year
 app.get("/api/getEventDetailsId", async (req, res) => {
   const { country1, country2, year } = req.query;
 
+  console.log("Received request to find event with:", {
+    country1,
+    country2,
+    year,
+  }); // Log the query parameters
+
   if (!country1 || !country2 || !year) {
-    return res
-      .status(400)
-      .json({
-        error: "Missing required query parameters: country1, country2, year",
-      });
+    return res.status(400).json({
+      error: "Missing required query parameters: country1, country2, year",
+    });
   }
 
   try {
@@ -64,6 +74,11 @@ app.get("/api/getEventDetailsId", async (req, res) => {
     });
 
     if (!event) {
+      console.error("No matching event found for:", {
+        country1,
+        country2,
+        year,
+      }); // Log if no event is found
       return res.status(404).json({ error: "Event not found" });
     }
 
@@ -74,6 +89,7 @@ app.get("/api/getEventDetailsId", async (req, res) => {
   }
 });
 
+// Route to fetch event details by _id
 app.get("/event-details", async (req, res) => {
   const { _id } = req.query;
 
@@ -126,6 +142,35 @@ app.get("/mapbox/:endpoint", async (req, res) => {
 });
 
 app.post("/api/generate-missing-summary", handleGenerateSummaryRequest);
+
+// Route for generating events
+app.post("/api/generateEvent", async (req, res) => {
+  const { country1, country2, text, year } = req.body;
+
+  console.log(
+    "Received request to generate event for:",
+    country1,
+    country2,
+    text,
+    year
+  );
+
+  if (!country1 || !country2 || !text || !year) {
+    console.error("country1, country2, text, or year missing in request");
+    return res
+      .status(400)
+      .json({ error: "country1, country2, text, and year are required" });
+  }
+
+  try {
+    await connectToMongoDB();
+    await populateDatabase(country1, country2, text, year);
+    res.status(200).json({ message: "Events generated successfully" });
+  } catch (error) {
+    console.error("Error occurred while generating events:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

@@ -247,7 +247,6 @@ function updateHighlightFilter(map) {
   }
 }
 
-// Modified generateTimelineEntries to use goToTimelineEvent
 function generateTimelineEntries(timelineData, country1, country2) {
   const container = document.getElementById("timeline-container");
   container.innerHTML = ""; // Clear existing entries
@@ -261,7 +260,10 @@ function generateTimelineEntries(timelineData, country1, country2) {
 
     const div = document.createElement("div");
     div.className = "timeline-entry";
-    div.onclick = () => goToTimelineEvent(country1, country2, entry.year); // Pass country1, country2, and year when entry is clicked
+    div.onclick = () => {
+      selectTimelineEntry(div); // New function to handle the selection
+      goToTimelineEvent(country1, country2, entry.year);
+    };
     div.innerHTML = `
       <div class="timeline-year">${displayYear}</div>
       <div class="timeline-text">${entry.text}</div>
@@ -270,8 +272,23 @@ function generateTimelineEntries(timelineData, country1, country2) {
   });
 }
 
-// New goToTimelineEvent function
+function selectTimelineEntry(entryDiv) {
+  // Remove 'selected' class from all entries
+  const allEntries = document.querySelectorAll(".timeline-entry");
+  allEntries.forEach((entry) => entry.classList.remove("selected"));
+
+  // Add 'selected' class to the clicked entry
+  entryDiv.classList.add("selected");
+}
+
 function goToTimelineEvent(country1, country2, year) {
+  // Log the parameters being used for the fetch request
+  console.log("Fetching event details ID with parameters:", {
+    country1,
+    country2,
+    year,
+  });
+
   fetch(
     `http://localhost:3000/api/getEventDetailsId?country1=${encodeURIComponent(
       country1
@@ -279,28 +296,136 @@ function goToTimelineEvent(country1, country2, year) {
       year
     )}`
   )
-    .then((response) => response.json())
+    .then((response) => {
+      // Log the response status to check if the server responded
+      console.log("Response status:", response.status);
+
+      if (!response.ok) {
+        console.error(
+          "Failed to fetch event details. Response status:",
+          response.status
+        );
+        throw new Error("Event not found or other server error");
+      }
+      return response.json();
+    })
     .then((data) => {
+      // Log the data received to verify the content
+      console.log("Data received:", data);
+
       if (data._id) {
+        // Log the ID and year to be used in the redirect
+        console.log(
+          "Redirecting to event.html with ID and year:",
+          data._id,
+          year
+        );
         window.location.href = `event.html?_id=${encodeURIComponent(
           data._id
         )}&year=${encodeURIComponent(year)}`;
       } else {
+        console.error("No event ID found in the response data.");
         showEventErrorPopup(); // Show error popup if no corresponding event is found
       }
     })
     .catch((error) => {
+      // Log the specific error that occurred
       console.error("Error fetching event details ID:", error);
       showEventErrorPopup(); // Show error popup if there's an error in fetching the ID
     });
 }
 
 function showEventErrorPopup() {
-  document.getElementById("event-error-popup").style.display = "flex";
+  const popup = document.getElementById("event-error-popup");
+  if (popup) {
+    popup.style.display = "flex";
 
-  document.getElementById("close-event-popup-button").onclick = function () {
-    document.getElementById("event-error-popup").style.display = "none";
-  };
+    const closeButton = document.getElementById("close-event-popup-button");
+    if (closeButton) {
+      closeButton.onclick = function () {
+        popup.style.display = "none";
+      };
+    } else {
+      console.error("Close button for event error popup not found.");
+    }
+
+    const generateButton = document.getElementById("generate-event-button");
+    if (generateButton) {
+      generateButton.onclick = function () {
+        generateEvent();
+        popup.style.display = "none"; // Close the popup after generating the event
+      };
+    } else {
+      console.error("Generate button for event error popup not found.");
+    }
+  } else {
+    console.error("Event error popup element not found.");
+  }
+}
+
+function generateEvent() {
+  const country1 = document.getElementById("country1-info").textContent;
+  const country2 = document.getElementById("country2-info").textContent;
+
+  // Select the timeline entry that is currently selected
+  const selectedTimelineEntry = document.querySelector(
+    ".timeline-entry.selected .timeline-text"
+  );
+
+  // Check if the selected timeline entry exists
+  if (!selectedTimelineEntry) {
+    console.error("No timeline entry selected or missing text.");
+    return;
+  }
+
+  const timelineEntryText = selectedTimelineEntry.textContent;
+
+  // Get the year from the selected timeline entry's year element
+  const selectedTimelineYear = document.querySelector(
+    ".timeline-entry.selected .timeline-year"
+  );
+
+  // Check if the selected timeline entry year exists
+  if (!selectedTimelineYear) {
+    console.error("No timeline entry year selected or missing.");
+    return;
+  }
+
+  const timelineEntryYear = selectedTimelineYear.textContent;
+
+  console.log(
+    "Generating event for:",
+    country1,
+    country2,
+    timelineEntryText,
+    timelineEntryYear
+  );
+
+  fetch("http://localhost:3000/api/generateEvent", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      country1: country1,
+      country2: country2,
+      text: timelineEntryText,
+      year: timelineEntryYear, // Include the year in the request
+    }),
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to generate event");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log("Event generated successfully:", data);
+      // You can refresh the page or update the UI as needed
+    })
+    .catch((error) => {
+      console.error("Error generating event:", error);
+    });
 }
 
 function getQueryVariable(variable) {
@@ -320,12 +445,10 @@ function getCountryCoordinates(geojson, country1, country2) {
   let country2Coords = null;
 
   geojson.features.forEach((feature) => {
-    // Compare with country1
     if (feature.properties.COUNTRY_NAME === country1) {
       country1Coords = feature.geometry.coordinates;
     }
 
-    // Compare with country2
     if (feature.properties.COUNTRY_NAME === country2) {
       country2Coords = feature.geometry.coordinates;
     }
