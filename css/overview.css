@@ -38,7 +38,7 @@ body {
   bottom: 2%;
   left: 0.5%;
   width: 30%;
-  height: 95%; /* Takes up the entire height minus 2% on top and bottom */
+  height: 95%;
   background-color: #eeeeee;
   border: 1px solid #cccccc;
   padding: 10px;
@@ -48,23 +48,23 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   border-radius: 15px;
-  overflow: hidden; /* Allows scrolling within the panel if content exceeds its height */
+  overflow: hidden;
 }
 
 #info-panel h3 {
   color: #333;
   margin: 10px;
-  width: 100%; /* Ensures the h3 element takes up the full width of the container */
-  text-align: center; /* Centers the text of the h3 element within its full-width block */
+  width: 100%;
+  text-align: center;
 }
 
 #info-panel > div {
   display: flex;
-  flex-direction: column; /* Change this if you meant the direct children of #info-panel to align vertically */
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: auto; /* Adjusted to accommodate vertical stacking */
+  height: auto;
 }
 
 #info-panel > div.country-info {
@@ -72,102 +72,102 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: relative; /* Ensures the pseudo-element is positioned relative to the country-info div */
+  position: relative;
   width: 100%;
-  padding: 10px 0; /* Adds padding around the text to give space for the line */
+  padding: 10px 0;
 }
 
 #country1-info,
 #country2-info {
-  font-size: 130%; /* Increase font size by 30% */
+  font-size: 130%;
 }
 
 #info-panel p {
   flex: 1;
   text-align: center;
-  margin: 0 20px; /* Increase margin to provide clear separation */
-  position: relative; /* Required for pseudo-elements positioning */
+  margin: 0 20px;
+  position: relative;
 }
 
 #info-panel p:first-child::after {
-  content: ""; /* Necessary to generate the pseudo-element */
+  content: "";
   position: absolute;
   left: 110%;
-  top: 0%; /* Adjusts the starting point of the line */
-  bottom: 0%; /* Adjusts the ending point of the line */
-  transform: translateX(100%); /* Correctly centers the line */
-  width: 1px; /* Line thickness */
-  background-color: #333; /* Line color */
-  height: 110%; /* Makes the line slightly taller than the p element */
+  top: 0%;
+  bottom: 0%;
+  transform: translateX(100%);
+  width: 1px;
+  background-color: #333;
+  height: 110%;
 }
 
 .relationship-summary {
-  width: 100%; /* Takes the full width of its parent to utilize all available space */
-  min-height: 200px; /* Minimum height ensures that the div has a consistent initial size */
-  max-height: 300px; /* Maximum height before scrolling occurs */
-  padding: 10px; /* Padding inside the div to ensure text does not touch the edges */
-  background-color: #eeeeee; /* Light background color for readability */
-  overflow-y: auto; /* Allows vertical scrolling if content height exceeds the max-height */
-  box-sizing: border-box; /* Ensures padding and border are included in the width and height calculations */
-  border-bottom: 1px solid gray; /* Added horizontal line */
+  width: 100%;
+  min-height: 200px;
+  max-height: 300px;
+  padding: 10px;
+  background-color: #eeeeee;
+  overflow-y: auto;
+  box-sizing: border-box;
+  border-bottom: 1px solid gray;
 }
 
 .timeline-container {
   flex: 1;
   display: flex;
   flex-direction: column;
-  width: 100%; /* Ensures it takes full width of its parent */
+  width: 100%;
   overflow-y: auto;
-  align-items: flex-start; /* Aligns all children (timeline-entry divs) to the start */
+  align-items: flex-start;
 }
 
 .timeline-entry {
   display: flex;
   flex-direction: row;
-  align-items: flex-start; /* Ensures that items align at the top */
-  width: 100%; /* Ensures the entry spans the full width */
-  position: relative; /* Required for absolute positioning of pseudo-element */
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
 }
 
 .timeline-entry::before {
-  content: ""; /* Create the pseudo-element */
-  position: absolute; /* Position relative to the .timeline-entry */
-  left: 80px; /* Adjust the starting position of the border */
-  top: 0; /* Aligns the pseudo-element with the top of the .timeline-entry */
-  width: calc(100% - 80px); /* Sets the width to span the remaining space */
-  border-bottom: 1px solid gray; /* Style of the border */
+  content: "";
+  position: absolute;
+  left: 80px;
+  top: 0;
+  width: calc(100% - 80px);
+  border-bottom: 1px solid gray;
 }
 
 .timeline-entry:first-child::before {
-  display: none; /* Hide the pseudo-element for the first timeline-entry */
+  display: none;
 }
 
 .timeline-year {
-  flex: 0 0 80px; /* Do not grow, do not shrink, fixed width of 80px */
-  min-height: 30px; /* Ensuring consistent height */
+  flex: 0 0 80px;
+  min-height: 30px;
   text-align: left;
-  padding: 5px; /* 5px padding added around the content */
-  overflow: hidden; /* Prevents text from spilling over */
-  white-space: nowrap; /* Keeps the content on a single line */
-  text-overflow: ellipsis; /* Adds an ellipsis if the text overflows */
-  visibility: hidden; /* Hide the year by default */
+  padding: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  visibility: hidden;
 }
 
 .timeline-text {
-  flex: 1 1 auto; /* Grow to fill the space, allow shrinking, and base size is auto */
+  flex: 1 1 auto;
   background-color: #f0f0f0;
   padding: 5px;
   border-radius: 5px;
-  overflow: hidden; /* Optionally, hide overflow or use 'auto' to add scroll */
-  word-wrap: break-word; /* Ensures words break to prevent overflow */
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 .timeline-text:hover {
-  background-color: #d5d9dc; /* Change to gray when hovered */
+  background-color: #d5d9dc;
 }
 
 .timeline-entry:hover .timeline-year {
-  visibility: visible; /* Show the year on hover */
+  visibility: visible;
 }
 
 .mapboxgl-ctrl-attrib-inner {
@@ -181,39 +181,47 @@ body {
 /* Popup Container */
 .popup {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px; /* Adjust the width as needed */
-  background-color: white;
-  border: 1px solid #cccccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Ensure the popup is above other content */
-  display: none; /* Hidden by default, will be shown via JS */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
 /* Popup Content */
 .popup-content {
+  background-color: white;
   padding: 20px;
+  border-radius: 10px;
   text-align: center;
+  max-width: 400px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .popup-content p {
-  margin: 0 0 20px 0;
-  color: #333;
-  font-size: 16px;
+  margin: 0 0 20px 0; /* Add margin to space the message from the buttons */
 }
 
 .popup-content button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  margin: 10px 0; /* Ensure consistent vertical spacing */
+  width: 100%; /* Ensure buttons take up full width */
+  max-width: 200px; /* Limit button width for a more centered appearance */
+  padding: 10px; /* Add padding for better button aesthetics */
+  font-size: 16px; /* Ensure button text is easily readable */
+  cursor: pointer; /* Change cursor to pointer for buttons */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Add border radius for smoother edges */
+  background-color: #007bff; /* Primary button color */
+  color: white; /* White text color for contrast */
 }
 
 .popup-content button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Darken the button on hover */
 }

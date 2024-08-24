@@ -339,7 +339,7 @@ function showEventErrorPopup() {
     if (generateButton) {
       generateButton.onclick = function () {
         generateEvent();
-        popup.style.display = "none";
+        // Do not close the popup immediately after clicking the button
       };
     } else {
       console.error("Generate button for event error popup not found.");
@@ -350,6 +350,9 @@ function showEventErrorPopup() {
 }
 
 function generateEvent() {
+  const generateEventButton = document.getElementById("generate-event-button");
+  generateEventButton.innerText = "Generating..."; // Change button text to "Generating..."
+
   const country1 = document.getElementById("country1-info").textContent;
   const country2 = document.getElementById("country2-info").textContent;
   const selectedTimelineEntry = document.querySelector(
@@ -358,6 +361,7 @@ function generateEvent() {
 
   if (!selectedTimelineEntry) {
     console.error("No timeline entry selected or missing text.");
+    generateEventButton.innerText = "Generate Events"; // Revert button text
     return;
   }
 
@@ -368,6 +372,7 @@ function generateEvent() {
 
   if (!selectedTimelineYear) {
     console.error("No timeline entry year selected or missing.");
+    generateEventButton.innerText = "Generate Events"; // Revert button text
     return;
   }
 
@@ -398,9 +403,11 @@ function generateEvent() {
       return response.json();
     })
     .then((data) => {
+      generateEventButton.innerText = "Event Generated"; // Update text on success
       console.log("Event generated successfully:", data);
     })
     .catch((error) => {
+      generateEventButton.innerText = "Generate Events"; // Revert text on failure
       console.error("Error generating event:", error);
     });
 }

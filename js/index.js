@@ -214,20 +214,49 @@ document
   });
 
 function generateSummary(country1, country2) {
+  const generateSummaryButton = document.getElementById(
+    "generate-summary-button"
+  );
+  generateSummaryButton.innerText = "Generating..."; // Change button text to "Generating..."
+
   return axios
     .post("http://localhost:3000/api/generate-missing-summary", {
       country1: country1,
       country2: country2,
     })
     .then(() => {
-      alert(
-        "Summary generated successfully. Please try viewing the overview again."
-      );
+      generateSummaryButton.innerText = "Summary Generated"; // Update text on success
+      alert("Summary generated successfully. Click the View button again.");
     })
     .catch((error) => {
+      generateSummaryButton.innerText = "Generate Summary"; // Revert text on failure
       console.error("Error generating summary:", error);
       alert(
         "An error occurred while generating the summary. Please try again later."
+      );
+    });
+}
+
+function generateTimeline(country1, country2) {
+  const generateTimelineButton = document.getElementById(
+    "generate-timeline-button"
+  );
+  generateTimelineButton.innerText = "Generating..."; // Change button text to "Generating..."
+
+  return axios
+    .post("http://localhost:3000/api/generate-missing-timeline", {
+      country1: country1,
+      country2: country2,
+    })
+    .then(() => {
+      generateTimelineButton.innerText = "Timeline Generated"; // Update text on success
+      alert("Timeline generated successfully.");
+    })
+    .catch((error) => {
+      generateTimelineButton.innerText = "Generate Timeline"; // Revert text on failure
+      console.error("Error generating timeline:", error);
+      alert(
+        "An error occurred while generating the timeline. Please try again later."
       );
     });
 }
@@ -292,21 +321,4 @@ function showTimelineErrorPopup(country1, country2) {
       await generateTimeline(country1, country2);
       document.getElementById("timeline-error-popup").style.display = "none";
     };
-}
-
-async function generateTimeline(country1, country2) {
-  return axios
-    .post("http://localhost:3000/api/generate-missing-timeline", {
-      country1: country1,
-      country2: country2,
-    })
-    .then(() => {
-      alert("Timeline generated successfully.");
-    })
-    .catch((error) => {
-      console.error("Error generating timeline:", error);
-      alert(
-        "An error occurred while generating the timeline. Please try again later."
-      );
-    });
 }
