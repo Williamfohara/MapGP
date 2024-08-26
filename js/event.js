@@ -5,7 +5,7 @@ let currentEventID = null; // Declare currentEventID globally
 document.addEventListener("DOMContentLoaded", async function () {
   try {
     // Fetch the configuration from the backend
-    const configResponse = await fetch("http://localhost:3000/api/config");
+    const configResponse = await fetch("https://mapgp.co/api/config");
     if (!configResponse.ok) {
       throw new Error(`HTTP error! status: ${configResponse.status}`);
     }
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // Fetch event details from the eventDetails collection using the _id
     const response = await fetch(
-      `http://localhost:3000/event-details?_id=${encodeURIComponent(_id)}`
+      `https://mapgp.co/event-details?_id=${encodeURIComponent(_id)}`
     );
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);

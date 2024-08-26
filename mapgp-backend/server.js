@@ -6,8 +6,8 @@ const cors = require("cors");
 const axios = require("axios");
 const path = require("path");
 const configRoutes = require("./routes/configroutes.js");
-const timelineRoutes = require("./routes/timelineRoutes");
-const generateMissingTimelineAPI = require("./routes/generateMissingTimelineAPI");
+const timelineRoutes = require("./routes/timelineRoutes.js");
+const generateMissingTimelineAPI = require("./routes/generateMissingTimelineAPI.js");
 const {
   generateEventDetails,
   populateDatabase,
@@ -17,10 +17,11 @@ const {
   handleGenerateSummaryRequest,
 } = require("./manualDBManipulation/generateMissingSummary.js");
 
-dotenv.config({ path: path.resolve(__dirname, "../.env") });
+// Load environment variables from .env file
+dotenv.config({ path: path.resolve(__dirname, "/.env") });
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 443;
 const mongoUri = process.env.MONGO_URI;
 const client = new MongoClient(mongoUri);
 
@@ -39,7 +40,15 @@ async function connectToMongoDB() {
 
 connectToMongoDB().catch(console.error);
 
-app.use(cors());
+// CORS configuration to allow specific origin and methods
+app.use(
+  cors({
+    origin: "https://mapgp.co", // Replace with your frontend domain
+    methods: ["GET", "POST"], // Add other methods if needed
+    credentials: true, // If your frontend requires cookies
+  })
+);
+
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "../html")));
 app.use(
@@ -50,6 +59,15 @@ app.use("/api", configRoutes);
 app.use("/api", timelineRoutes);
 app.use("/api", generateMissingTimelineAPI);
 
+// API route for configuration
+app.get("/api/config", (req, res) => {
+  // Sending the Mapbox API key to the client
+  res.json({
+    mapboxAccessToken: process.env.MAPBOX_API_KEY,
+  });
+});
+
+// API route to get event details by ID
 app.get("/api/getEventDetailsId", async (req, res) => {
   const { country1, country2, year } = req.query;
 
@@ -100,6 +118,7 @@ app.get("/api/getEventDetailsId", async (req, res) => {
   }
 });
 
+// API route to get event details by object ID
 app.get("/event-details", async (req, res) => {
   const { _id } = req.query;
 
@@ -145,8 +164,7 @@ app.get("/event-details", async (req, res) => {
   }
 });
 
-const MAPBOX_API_KEY = process.env.MAPBOX_API_KEY;
-
+// API route for Mapbox requests
 app.get("/mapbox/:endpoint", async (req, res) => {
   const endpoint = req.params.endpoint;
   const mapboxUrl = `https://api.mapbox.com/${endpoint}?access_token=${MAPBOX_API_KEY}`;
@@ -161,6 +179,7 @@ app.get("/mapbox/:endpoint", async (req, res) => {
   }
 });
 
+// Route for handling missing summary generation
 app.post("/api/generate-missing-summary", handleGenerateSummaryRequest);
 
 // Route for generating events
@@ -192,6 +211,7 @@ app.post("/api/generateEvent", async (req, res) => {
   }
 });
 
+// Start the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
