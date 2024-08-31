@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const backendUrl = "https://map-gp-node-backend.vercel.app"; // Your backend URL
   let country1 = getQueryVariable("country1");
   let country2 = getQueryVariable("country2");
 
@@ -11,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("country1-info").textContent = country1;
   document.getElementById("country2-info").textContent = country2;
 
-  fetch("https://mapgp.co/api/config")
+  fetch(`${backendUrl}/api/config`) // Use backendUrl here
     .then((response) => response.json())
     .then((config) => {
       mapboxgl.accessToken = config.mapboxAccessToken;
@@ -187,9 +188,9 @@ let selectedCountries = [];
 
 function fetchRelationshipSummary(country1, country2) {
   return fetch(
-    `https://mapgp.co/api/relationship-summary?country1=${encodeURIComponent(
+    `${backendUrl}/api/relationship-summary?country1=${encodeURIComponent(
       country1
-    )}&country2=${encodeURIComponent(country2)}`
+    )}&country2=${encodeURIComponent(country2)}` // Use backendUrl here
   )
     .then((response) => response.json())
     .then((data) => {
@@ -203,9 +204,9 @@ function fetchRelationshipSummary(country1, country2) {
 
 function fetchTimeline(country1, country2) {
   return fetch(
-    `https://mapgp.co/api/timeline?country1=${encodeURIComponent(
+    `${backendUrl}/api/timeline?country1=${encodeURIComponent(
       country1
-    )}&country2=${encodeURIComponent(country2)}`
+    )}&country2=${encodeURIComponent(country2)}` // Use backendUrl here
   )
     .then((response) => response.json())
     .then((data) => {
@@ -288,11 +289,11 @@ function goToTimelineEvent(country1, country2, year) {
   });
 
   fetch(
-    `https://mapgp.co/api/getEventDetailsId?country1=${encodeURIComponent(
+    `${backendUrl}/api/getEventDetailsId?country1=${encodeURIComponent(
       country1
     )}&country2=${encodeURIComponent(country2)}&year=${encodeURIComponent(
       year
-    )}`
+    )}` // Use backendUrl here
   )
     .then((response) => {
       console.log("Response status:", response.status);
@@ -394,7 +395,7 @@ function generateEvent() {
     timelineEntryYear
   );
 
-  fetch("https://mapgp.co/api/generateEvent", {
+  fetch(`${backendUrl}/api/generateEvent`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({

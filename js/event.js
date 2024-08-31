@@ -3,9 +3,11 @@ let eventIDs = []; // Declare eventIDs globally
 let currentEventID = null; // Declare currentEventID globally
 
 document.addEventListener("DOMContentLoaded", async function () {
+  const backendUrl = "https://map-gp-node-backend.vercel.app"; // Replace with your actual backend URL
+
   try {
     // Fetch the configuration from the backend
-    const configResponse = await fetch("https://mapgp.co/api/config");
+    const configResponse = await fetch(`${backendUrl}/api/config`);
     if (!configResponse.ok) {
       throw new Error(`HTTP error! status: ${configResponse.status}`);
     }
@@ -39,7 +41,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // Fetch event details from the eventDetails collection using the _id
     const response = await fetch(
-      `https://mapgp.co/event-details?_id=${encodeURIComponent(_id)}`
+      `${backendUrl}/api/event-details?_id=${encodeURIComponent(_id)}`
     );
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
