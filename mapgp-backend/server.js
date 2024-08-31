@@ -40,15 +40,7 @@ async function connectToMongoDB() {
 
 connectToMongoDB().catch(console.error);
 
-// CORS configuration to allow specific origin and methods
-app.use(
-  cors({
-    origin: "https://mapgp.co", // Replace with your frontend domain
-    methods: ["GET", "POST"], // Add other methods if needed
-    credentials: true, // If your frontend requires cookies
-  })
-);
-
+app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "../html")));
 app.use(
@@ -214,4 +206,8 @@ app.post("/api/generateEvent", async (req, res) => {
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
+});
+
+app.get("/test", (req, res) => {
+  res.send("Test route is working!");
 });

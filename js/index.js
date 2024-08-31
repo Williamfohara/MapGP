@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const backendUrl = "https://your-backend-project.vercel.app"; // Replace with your actual backend URL
+
   // Fetch the configuration from the backend using Axios
   axios
-    .get("https://mapgp.co/api/config")
+    .get("http://localhost:3000/api/config")
     .then((response) => {
       const config = response.data;
 
@@ -220,7 +222,7 @@ function generateSummary(country1, country2) {
   generateSummaryButton.innerText = "Generating..."; // Change button text to "Generating..."
 
   return axios
-    .post("https://mapgp.co/api/generate-missing-summary", {
+    .post("http://localhost:3000/api/generate-missing-summary", {
       country1: country1,
       country2: country2,
     })
@@ -244,7 +246,7 @@ function generateTimeline(country1, country2) {
   generateTimelineButton.innerText = "Generating..."; // Change button text to "Generating..."
 
   return axios
-    .post("https://mapgp.co/api/generate-missing-timeline", {
+    .post("http://localhost:3000/api/generate-missing-timeline", {
       country1: country1,
       country2: country2,
     })
@@ -264,7 +266,7 @@ function generateTimeline(country1, country2) {
 async function fetchRelationshipSummary(country1, country2) {
   try {
     const response = await axios.get(
-      `https://mapgp.co/api/relationship-summary`,
+      `http://localhost:3000/api/relationship-summary`,
       {
         params: { country1, country2 },
       }
@@ -283,7 +285,7 @@ async function fetchRelationshipSummary(country1, country2) {
 async function checkTimelineExists(country1, country2) {
   try {
     let response = await axios.get(
-      `https://mapgp.co/api/timeline?country1=${encodeURIComponent(
+      `http://localhost:3000/api/timeline?country1=${encodeURIComponent(
         country1
       )}&country2=${encodeURIComponent(country2)}`
     );
@@ -291,7 +293,7 @@ async function checkTimelineExists(country1, country2) {
       return true;
     } else {
       response = await axios.get(
-        `https://mapgp.co/api/timeline?country1=${encodeURIComponent(
+        `http://localhost:3000/api/timeline?country1=${encodeURIComponent(
           country2
         )}&country2=${encodeURIComponent(country1)}`
       );
