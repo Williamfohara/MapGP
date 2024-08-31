@@ -1,27 +1,27 @@
-// Import necessary modules and routes
+// api/index.js
+
 const express = require("express");
 const { MongoClient, ObjectId } = require("mongodb");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const axios = require("axios");
 const path = require("path");
-const configRoutes = require("./routes/configroutes.js");
-const timelineRoutes = require("./routes/timelineRoutes.js");
-const generateMissingTimelineAPI = require("./routes/generateMissingTimelineAPI.js");
+const configRoutes = require("../routes/configroutes.js");
+const timelineRoutes = require("../routes/timelineRoutes.js");
+const generateMissingTimelineAPI = require("../routes/generateMissingTimelineAPI.js");
 const {
   generateEventDetails,
   populateDatabase,
-} = require("./manualDBManipulation/populateDatabaseEvents.js");
+} = require("../manualDBManipulation/populateDatabaseEvents.js");
 
 const {
   handleGenerateSummaryRequest,
-} = require("./manualDBManipulation/generateMissingSummary.js");
+} = require("../manualDBManipulation/generateMissingSummary.js");
 
 // Load environment variables from .env file
-dotenv.config({ path: path.resolve(__dirname, "../.env") });
+dotenv.config({ path: path.resolve(__dirname, "../../.env") }); // Adjust path as needed
 
 const app = express();
-const port = process.env.PORT || 3000; // Use Vercel's provided port
 const mongoUri = process.env.MONGO_URI;
 const client = new MongoClient(mongoUri);
 
@@ -42,10 +42,10 @@ connectToMongoDB().catch(console.error);
 
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "../html")));
+app.use(express.static(path.join(__dirname, "../../html")));
 app.use(
   "/data/countryCoordinates",
-  express.static(path.join(__dirname, "../data/countryCoordinates"))
+  express.static(path.join(__dirname, "../../data/countryCoordinates"))
 );
 app.use("/api", configRoutes);
 app.use("/api", timelineRoutes);
@@ -67,7 +67,7 @@ app.get("/api/getEventDetailsId", async (req, res) => {
     country1,
     country2,
     year,
-  }); // Log the query parameters
+  });
 
   if (!country1 || !country2 || !year) {
     return res.status(400).json({
@@ -77,15 +77,12 @@ app.get("/api/getEventDetailsId", async (req, res) => {
 
   try {
     const collection = db.collection("eventDetails");
-
-    // First attempt to find the event with the given parameters
     let event = await collection.findOne({
       country1: country1,
       country2: country2,
       year: year,
     });
 
-    // If no event is found, attempt to find with flipped countries
     if (!event) {
       event = await collection.findOne({
         country1: country2,
@@ -99,7 +96,7 @@ app.get("/api/getEventDetailsId", async (req, res) => {
         country1,
         country2,
         year,
-      }); // Log if no event is found
+      });
       return res.status(404).json({ error: "Event not found" });
     }
 
@@ -132,7 +129,6 @@ app.get("/event-details", async (req, res) => {
       return res.status(404).json({ error: "Event not found" });
     }
 
-    // Fetch all events related to the selected countries
     const allEvents = await collection
       .find({
         $or: [
@@ -153,21 +149,6 @@ app.get("/event-details", async (req, res) => {
   } catch (err) {
     console.error("Database error:", err);
     res.status(500).json({ error: "Database error" });
-  }
-});
-
-// API route for Mapbox requests
-app.get("/mapbox/:endpoint", async (req, res) => {
-  const endpoint = req.params.endpoint;
-  const mapboxUrl = `https://api.mapbox.com/${endpoint}?access_token=${MAPBOX_API_KEY}`;
-
-  try {
-    const response = await axios.get(mapboxUrl, {
-      params: req.query,
-    });
-    res.json(response.data);
-  } catch (error) {
-    res.status(500).send("Error fetching data from Mapbox");
   }
 });
 
@@ -203,11 +184,10 @@ app.post("/api/generateEvent", async (req, res) => {
   }
 });
 
-// Start the server
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
-
+// Test route to verify deployment
 app.get("/test", (req, res) => {
   res.send("Test route is working!");
 });
+
+// Export the app module for Vercel
+module.exports = app;
