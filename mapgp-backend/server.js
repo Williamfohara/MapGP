@@ -18,7 +18,7 @@ const {
 } = require("./manualDBManipulation/generateMissingSummary.js");
 
 // Load environment variables from .env file
-dotenv.config({ path: path.resolve(__dirname, "/.env") });
+dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
 const app = express();
 const port = process.env.PORT || 443;
