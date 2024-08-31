@@ -1,7 +1,10 @@
 const express = require("express");
+const app = express(); // Create an Express application
 
-const handler = (req, res) => {
+// Define a route handler for the `/test` endpoint
+app.get("/api/test", (req, res) => {
   res.send("Test route is working!");
-};
+});
 
-module.exports = express().get(handler);
+// Export the Express app instance
+module.exports = app;
