@@ -1,9 +1,8 @@
 const { exec } = require("child_process");
 const express = require("express");
-const path = require("path"); // Add this line to import the path module
-const router = express.Router();
+const path = require("path");
 
-router.post("/generate-missing-timeline", (req, res) => {
+const handler = (req, res) => {
   const { country1, country2 } = req.body;
 
   if (!country1 || !country2) {
@@ -12,7 +11,6 @@ router.post("/generate-missing-timeline", (req, res) => {
       .json({ success: false, message: "Both countries must be provided." });
   }
 
-  // Wrap country names with quotes to handle spaces
   const command = `node ${path.resolve(
     __dirname,
     "../manualDBManipulation/generateMissingTimeline.js"
@@ -31,6 +29,6 @@ router.post("/generate-missing-timeline", (req, res) => {
       .status(200)
       .json({ success: true, message: "Timeline generated successfully." });
   });
-});
+};
 
-module.exports = router;
+module.exports = express().post(handler);
