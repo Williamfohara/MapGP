@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("country1-info").textContent = country1;
   document.getElementById("country2-info").textContent = country2;
 
-  fetch("http://localhost:3000/api/config")
+  fetch("https://mapgp.co/api/config")
     .then((response) => response.json())
     .then((config) => {
       mapboxgl.accessToken = config.mapboxAccessToken;
@@ -48,8 +48,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (countryCoords) {
               const midpoint = getMidpoint(countryCoords[0], countryCoords[1]);
+              const distance = calculateDistance(
+                countryCoords[0],
+                countryCoords[1]
+              );
+              const zoomLevel = determineZoomLevel(distance);
+
               map.setCenter(midpoint);
-              map.setZoom(3); // Adjust zoom level as needed
+              map.setZoom(zoomLevel);
 
               map.addSource("countries", {
                 type: "geojson",
@@ -181,7 +187,7 @@ let selectedCountries = [];
 
 function fetchRelationshipSummary(country1, country2) {
   return fetch(
-    `http://localhost:3000/api/relationship-summary?country1=${encodeURIComponent(
+    `https://mapgp.co/api/relationship-summary?country1=${encodeURIComponent(
       country1
     )}&country2=${encodeURIComponent(country2)}`
   )
@@ -197,7 +203,7 @@ function fetchRelationshipSummary(country1, country2) {
 
 function fetchTimeline(country1, country2) {
   return fetch(
-    `http://localhost:3000/api/timeline?country1=${encodeURIComponent(
+    `https://mapgp.co/api/timeline?country1=${encodeURIComponent(
       country1
     )}&country2=${encodeURIComponent(country2)}`
   )
@@ -282,7 +288,7 @@ function goToTimelineEvent(country1, country2, year) {
   });
 
   fetch(
-    `http://localhost:3000/api/getEventDetailsId?country1=${encodeURIComponent(
+    `https://mapgp.co/api/getEventDetailsId?country1=${encodeURIComponent(
       country1
     )}&country2=${encodeURIComponent(country2)}&year=${encodeURIComponent(
       year
@@ -388,7 +394,7 @@ function generateEvent() {
     timelineEntryYear
   );
 
-  fetch("http://localhost:3000/api/generateEvent", {
+  fetch("https://mapgp.co/api/generateEvent", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -463,4 +469,40 @@ function getMidpoint(coords1, coords2) {
   const midpointLon = (lon1 + lon2) / 2;
 
   return [midpointLon, midpointLat];
+}
+
+function calculateDistance(coord1, coord2) {
+  const lat1 = coord1[1];
+  const lon1 = coord1[0];
+  const lat2 = coord2[1];
+  const lon2 = coord2[0];
+
+  // Haversine formula to calculate the distance between two points on the Earth
+  const R = 6371; // Radius of the Earth in kilometers
+  const dLat = ((lat2 - lat1) * Math.PI) / 180;
+  const dLon = ((lon2 - lon1) * Math.PI) / 180;
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos((lat1 * Math.PI) / 180) *
+      Math.cos((lat2 * Math.PI) / 180) *
+      Math.sin(dLon / 2) *
+      Math.sin(dLon / 2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  const distance = R * c; // Distance in kilometers
+
+  return distance;
+}
+
+function determineZoomLevel(distance) {
+  if (distance < 500) {
+    return 6; // Closest (More zoomed in)
+  } else if (distance < 1500) {
+    return 5; // Close (More zoomed in)
+  } else if (distance < 3000) {
+    return 4; // Medium (More zoomed in)
+  } else if (distance < 6000) {
+    return 3; // Far (More zoomed in)
+  } else {
+    return 2; // Farthest (More zoomed in)
+  }
 }
