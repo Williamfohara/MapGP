@@ -2,6 +2,7 @@ const express = require("express");
 const { MongoClient, ObjectId } = require("mongodb");
 const dotenv = require("dotenv");
 const path = require("path");
+const cors = require("cors");
 
 dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 
@@ -55,4 +56,6 @@ const handler = async (req, res) => {
   }
 };
 
-module.exports = express().use(handler);
+const app = express();
+app.use(cors()); // Enable CORS
+module.exports = app.use(handler);

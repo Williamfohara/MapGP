@@ -1,5 +1,6 @@
 const { exec } = require("child_process");
 const express = require("express");
+const cors = require("cors");
 const path = require("path");
 
 const handler = (req, res) => {
@@ -31,4 +32,6 @@ const handler = (req, res) => {
   });
 };
 
-module.exports = express().post(handler);
+const app = express();
+app.use(cors()); // Enable CORS
+module.exports = app.post(handler);

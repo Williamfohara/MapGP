@@ -2,6 +2,7 @@ const express = require("express");
 const { MongoClient } = require("mongodb");
 const dotenv = require("dotenv");
 const path = require("path");
+const cors = require("cors");
 const {
   populateDatabase,
 } = require("../manualDBManipulation/populateDatabaseEvents.js");
@@ -40,4 +41,6 @@ const handler = async (req, res) => {
   }
 };
 
-module.exports = express().post(handler);
+const app = express();
+app.use(cors()); // Enable CORS
+module.exports = app.post(handler);

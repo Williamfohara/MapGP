@@ -2,6 +2,7 @@ const express = require("express");
 const { MongoClient } = require("mongodb");
 const path = require("path");
 const dotenv = require("dotenv");
+const cors = require("cors");
 
 // Load environment variables from the .env file
 dotenv.config({ path: path.resolve(__dirname, "../../.env") });
@@ -43,4 +44,6 @@ const handler = async (req, res) => {
   }
 };
 
-module.exports = express().get(handler);
+const app = express();
+app.use(cors()); // Enable CORS
+module.exports = app.get(handler);
