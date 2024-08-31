@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const backendUrl = "https://map-gp-node-backend.vercel.app/"; // Your backend URL
+  const backendUrl = "https://map-gp-node-backend.vercel.app"; // Your backend URL
 
   // Fetch the configuration from the backend using Axios
   axios
