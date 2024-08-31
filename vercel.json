@@ -1,3 +1,4 @@
 {
-  "redirects": [{ "source": "/", "destination": "/html", "permanent": true }]
+  "rewrites": [{ "source": "/", "destination": "/html/index.html" }],
+  "outputDirectory": "public"
 }
