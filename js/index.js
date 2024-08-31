@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const backendUrl = "https://map-gp-node-backend.vercel.app"; // Replace with your actual backend URL
+  const backendUrl = "https://map-gp-node-backend.vercel.app/"; // Your backend URL
 
   // Fetch the configuration from the backend using Axios
   axios
-    .get("https://map-gp-node-backend.vercel.app/api/config")
+    .get(`${backendUrl}/api/configMAPBOX_API`)
     .then((response) => {
       const config = response.data;
 
@@ -222,13 +222,10 @@ function generateSummary(country1, country2) {
   generateSummaryButton.innerText = "Generating..."; // Change button text to "Generating..."
 
   return axios
-    .post(
-      "https://map-gp-node-backend.vercel.app/api/generate-missing-summary",
-      {
-        country1: country1,
-        country2: country2,
-      }
-    )
+    .post(`${backendUrl}/api/generate-missing-summary`, {
+      country1: country1,
+      country2: country2,
+    })
     .then(() => {
       generateSummaryButton.innerText = "Summary Generated"; // Update text on success
       alert("Summary generated successfully. Click the View button again.");
@@ -249,13 +246,10 @@ function generateTimeline(country1, country2) {
   generateTimelineButton.innerText = "Generating..."; // Change button text to "Generating..."
 
   return axios
-    .post(
-      "https://map-gp-node-backend.vercel.app/api/generate-missing-timeline",
-      {
-        country1: country1,
-        country2: country2,
-      }
-    )
+    .post(`${backendUrl}/api/generate-missing-timeline`, {
+      country1: country1,
+      country2: country2,
+    })
     .then(() => {
       generateTimelineButton.innerText = "Timeline Generated"; // Update text on success
       alert("Timeline generated successfully.");
@@ -271,12 +265,9 @@ function generateTimeline(country1, country2) {
 
 async function fetchRelationshipSummary(country1, country2) {
   try {
-    const response = await axios.get(
-      `https://map-gp-node-backend.vercel.app/api/relationship-summary`,
-      {
-        params: { country1, country2 },
-      }
-    );
+    const response = await axios.get(`${backendUrl}/api/MongoDB-query-config`, {
+      params: { country1, country2 },
+    });
     if (response.data.relationshipSummary) {
       return response.data.relationshipSummary;
     } else {
@@ -291,7 +282,7 @@ async function fetchRelationshipSummary(country1, country2) {
 async function checkTimelineExists(country1, country2) {
   try {
     let response = await axios.get(
-      `https://map-gp-node-backend.vercel.app/api/timeline?country1=${encodeURIComponent(
+      `${backendUrl}/api/timeline?country1=${encodeURIComponent(
         country1
       )}&country2=${encodeURIComponent(country2)}`
     );
@@ -299,7 +290,7 @@ async function checkTimelineExists(country1, country2) {
       return true;
     } else {
       response = await axios.get(
-        `https://map-gp-node-backend.vercel.app/api/timeline?country1=${encodeURIComponent(
+        `${backendUrl}/api/timeline?country1=${encodeURIComponent(
           country2
         )}&country2=${encodeURIComponent(country1)}`
       );
