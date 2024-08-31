@@ -21,7 +21,7 @@ const {
 dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
 const app = express();
-const port = process.env.PORT || 443;
+const port = process.env.PORT || 3000; // Use Vercel's provided port
 const mongoUri = process.env.MONGO_URI;
 const client = new MongoClient(mongoUri);
 
