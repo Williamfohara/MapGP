@@ -1,3 +1,4 @@
 {
+  "public": "public",
   "rewrites": [{ "source": "/", "destination": "/html/index.html" }]
 }
