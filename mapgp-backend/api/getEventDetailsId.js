@@ -57,5 +57,7 @@ const handler = async (req, res) => {
 };
 
 const app = express();
-app.use(cors()); // Enable CORS
-module.exports = app.use(handler);
+app.use(cors()); // Enable CORS for all routes
+app.get("/api/get-event-details", handler); // Define route
+
+module.exports = app;

@@ -4,7 +4,6 @@ const path = require("path");
 const dotenv = require("dotenv");
 const cors = require("cors");
 
-// Load environment variables from the .env file
 dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 
 const handler = async (req, res) => {
@@ -45,5 +44,7 @@ const handler = async (req, res) => {
 };
 
 const app = express();
-app.use(cors()); // Enable CORS
-module.exports = app.get(handler);
+app.use(cors()); // Enable CORS for all routes
+app.get("/api/mongo-query-config", handler); // Define route
+
+module.exports = app;

@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express(); // Create an Express application
 
-app.use(cors()); // Enable CORS
+app.use(cors()); // Enable CORS for all routes
 
 // Define a route handler for the `/test` endpoint
 app.get("/api/test", (req, res) => {
