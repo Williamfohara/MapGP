@@ -396,7 +396,8 @@ function generateEvent() {
     timelineEntryYear
   );
 
-  fetch(`${backendUrl}/api/generateEvent`, {
+  fetch(`${backendUrl}/api/generate-event`, {
+    // Corrected hyphenated endpoint here
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -414,6 +415,7 @@ function generateEvent() {
     })
     .then((data) => {
       generateEventButton.innerText = "Event Generated"; // Update text on success
+      generateEventButton.disabled = false; // Re-enable button after success
       console.log("Event generated successfully:", data);
     })
     .catch((error) => {
