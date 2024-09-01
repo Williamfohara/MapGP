@@ -12,7 +12,7 @@ const app = express();
 // Enable CORS for all routes by placing this before any route definitions
 app.use(
   cors({
-    origin: "https://www.mapgp.co", // Allow requests only from your frontend domain
+    origin: "*", // Allow requests only from your frontend domain
     methods: ["GET", "POST"], // Specify allowed methods
     allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
   })
