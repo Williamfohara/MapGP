@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   try {
     // Fetch the configuration from the backend
-    const configResponse = await fetch(`${backendUrl}/api/config`);
+    const configResponse = await fetch(`${backendUrl}/api/configMAPBOX_API`);
     if (!configResponse.ok) {
       throw new Error(`HTTP error! status: ${configResponse.status}`);
     }
