@@ -1,11 +1,29 @@
 const express = require("express");
-const router = express.Router();
 const { MongoClient } = require("mongodb");
 const path = require("path");
 const dotenv = require("dotenv");
+const cors = require("cors");
 
 // Load environment variables from the .env file
 dotenv.config({ path: path.resolve(__dirname, "../../.env") });
+
+const router = express.Router();
+
+// Enable CORS for all routes in this router
+router.use(
+  cors({
+    origin: "https://www.mapgp.co", // Allow requests from any origin. You can specify your domain instead.
+    methods: ["GET", "POST"], // Allow specific methods
+    allowedHeaders: ["Content-Type", "Authorization"], // Allow specific headers
+  })
+);
+
+// Initialize MongoDB client
+const mongoUri = process.env.MONGO_URI;
+const client = new MongoClient(mongoUri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 client.connect().then(() => {
   const db = client.db("testingData1");
