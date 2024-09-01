@@ -33,7 +33,11 @@ const handler = (req, res) => {
 };
 
 const app = express();
-app.use(cors()); // Enable CORS for all routes
+app.use(
+  cors({
+    origin: "https://www.mapgp.co", // Allow only your frontend domain
+  })
+); // Enable CORS for all routes
 app.post("/api/generate-missing-timeline", handler); // Define route
 
 module.exports = app;
