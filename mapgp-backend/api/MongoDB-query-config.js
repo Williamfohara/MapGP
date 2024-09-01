@@ -4,19 +4,21 @@ const path = require("path");
 const dotenv = require("dotenv");
 const cors = require("cors");
 
+// Load environment variables from the .env file
 dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 
 const app = express();
 
-// Correctly configure CORS to allow requests from your frontend domain
+// Enable CORS for all routes by placing this before any route definitions
 app.use(
   cors({
-    origin: "https://www.mapgp.co", // Allow requests only from this domain
+    origin: "https://www.mapgp.co", // Allow requests only from your frontend domain
     methods: ["GET", "POST"], // Specify allowed methods
     allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
   })
 );
 
+// Define the route handler for fetching relationship summary from MongoDB
 const handler = async (req, res) => {
   const mongoUri = process.env.MONGO_URI;
   const client = new MongoClient(mongoUri, {
@@ -54,7 +56,8 @@ const handler = async (req, res) => {
   }
 };
 
-// Ensure the route is correctly defined with CORS enabled
+// Define the API route
 app.get("/api/mongo-query-config", handler);
 
+// Export the Express app instance
 module.exports = app;
