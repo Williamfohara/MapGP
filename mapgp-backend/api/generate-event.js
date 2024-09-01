@@ -42,13 +42,20 @@ const handler = async (req, res) => {
 };
 
 const app = express();
+
+// Enable CORS with specific settings
 app.use(
   cors({
     origin: "https://www.mapgp.co", // Allow requests only from your frontend domain
-    methods: ["GET", "POST"], // Specify allowed methods
+    methods: ["GET", "POST", "FETCH"], // Specify allowed methods
     allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
+    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
   })
 );
+
+// Add middleware to parse JSON bodies
+app.use(express.json());
+
 app.post("/api/generate-event", handler); // Define route
 
 module.exports = app;
