@@ -38,42 +38,41 @@ module.exports = async (req, res) => {
   // Ensure MongoDB is connected
   await connectToMongoDB();
 
-  const { country1, country2, year } = req.query;
+  const { country1, country2 } = req.query; // Removed 'year' as it is not needed now
 
-  if (!country1 || !country2 || !year) {
-    console.error(
-      "Missing required query parameters: country1, country2, year"
-    );
+  if (!country1 || !country2) {
+    console.error("Missing required query parameters: country1, country2");
     return res.status(400).json({
-      error: "Missing required query parameters: country1, country2, year",
+      error: "Missing required query parameters: country1, country2",
     });
   }
 
   try {
     const collection = db.collection("eventDetails");
 
-    // Try to find the event with the given parameters
-    let event = await collection.findOne({ country1, country2, year });
+    // Fetch all events related to the specified countries, regardless of the year
+    const allEvents = await collection
+      .find({
+        $or: [
+          { country1: country1, country2: country2 },
+          { country1: country2, country2: country1 },
+        ],
+      })
+      .sort({ year: 1 })
+      .toArray();
 
-    // If not found, search with countries swapped
-    if (!event) {
-      event = await collection.findOne({
-        country1: country2,
-        country2: country1,
-        year,
-      });
-    }
-
-    if (!event) {
-      console.log("Event not found for query parameters:", {
+    if (allEvents.length === 0) {
+      console.log("No events found for the specified countries:", {
         country1,
         country2,
-        year,
       });
-      return res.status(404).json({ error: "Event not found" });
+      return res.status(404).json({ error: "No events found" });
     }
 
-    res.json({ _id: event._id });
+    // Map to get all event IDs as strings
+    const allEventIDs = allEvents.map((event) => event._id.toString());
+
+    res.json({ allEventIDs: allEventIDs }); // Return all relevant event IDs
   } catch (error) {
     console.error("Database error:", error);
     res.status(500).json({ error: "Database error" });
