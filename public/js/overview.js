@@ -14,11 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("country1-info").textContent = country1;
   document.getElementById("country2-info").textContent = country2;
 
-  fetch(`${backendUrl}/api/configMAPBOX_API`) // Use backendUrl here
+  fetch(`${backendUrl}/api/configMAPBOX_API`) // Ensure correct path usage
     .then((response) => response.json())
     .then((config) => {
       mapboxgl.accessToken = config.mapboxAccessToken;
 
+      // Initialize the map
       const map = new mapboxgl.Map({
         container: "map",
         zoom: 1.5,
@@ -137,7 +138,6 @@ document.addEventListener("DOMContentLoaded", function () {
       fetchTimeline(country1, country2)
         .then((data) => {
           if (data && data.length > 0) {
-            // Sort data by year
             data.sort((a, b) => {
               const yearA = parseInt(a.year.split("-")[0]);
               const yearB = parseInt(b.year.split("-")[0]);
@@ -149,15 +149,14 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem(eventIDKey, JSON.stringify(eventIDs));
 
             data.forEach((entry) => {
-              localStorage.setItem(`year_${entry._id}`, entry.year); // Adjusted key
+              localStorage.setItem(`year_${entry._id}`, entry.year);
             });
 
-            generateTimelineEntries(data, country1, country2); // Pass country1 and country2
+            generateTimelineEntries(data, country1, country2);
           } else {
             return fetchTimeline(country2, country1).then((swappedData) => {
               if (swappedData && swappedData.length > 0) {
                 [country1, country2] = [country2, country1];
-                // Sort data by year
                 swappedData.sort((a, b) => {
                   const yearA = parseInt(a.year.split("-")[0]);
                   const yearB = parseInt(b.year.split("-")[0]);
@@ -169,10 +168,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 localStorage.setItem(eventIDKey, JSON.stringify(eventIDs));
 
                 swappedData.forEach((entry) => {
-                  localStorage.setItem(`year_${entry._id}`, entry.year); // Adjusted key
+                  localStorage.setItem(`year_${entry._id}`, entry.year);
                 });
 
-                generateTimelineEntries(swappedData, country1, country2); // Pass country1 and country2
+                generateTimelineEntries(swappedData, country1, country2);
               } else {
                 console.error(
                   "No timeline data found for the selected countries."
@@ -192,7 +191,7 @@ function fetchRelationshipSummary(country1, country2) {
   return fetch(
     `${backendUrl}/api/relationship-summary?country1=${encodeURIComponent(
       country1
-    )}&country2=${encodeURIComponent(country2)}` // Use backendUrl here
+    )}&country2=${encodeURIComponent(country2)}` // Corrected path to match backend route
   )
     .then((response) => response.json())
     .then((data) => {
