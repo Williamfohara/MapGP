@@ -115,7 +115,7 @@ function navigateToPreviousEvent() {
   if (currentIndex > 0) {
     const previousEventID = eventIDs[currentIndex - 1];
     const previousEventYear = localStorage.getItem(`year_${previousEventID}`); // Get year from local storage
-    window.location.href = `event.html?_id=${encodeURIComponent(
+    window.location.href = `/html/event.html?_id=${encodeURIComponent(
       previousEventID
     )}&year=${encodeURIComponent(previousEventYear)}`;
   }
@@ -126,7 +126,7 @@ function navigateToNextEvent() {
   if (currentIndex < eventIDs.length - 1) {
     const nextEventID = eventIDs[currentIndex + 1];
     const nextEventYear = localStorage.getItem(`year_${nextEventID}`); // Get year from local storage
-    window.location.href = `event.html?_id=${encodeURIComponent(
+    window.location.href = `/html/event.html?_id=${encodeURIComponent(
       nextEventID
     )}&year=${encodeURIComponent(nextEventYear)}`;
   }
