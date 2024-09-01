@@ -29,7 +29,7 @@ client.connect().then(() => {
   const db = client.db("testingData1");
   const collection = db.collection("relationshipData");
 
-  router.get("/relationship-summary", async (req, res) => {
+  router.get("/api/relationship-summary", async (req, res) => {
     let { country1, country2 } = req.query;
     console.log("Received parameters:", { country1, country2 }); // Add this line
 
