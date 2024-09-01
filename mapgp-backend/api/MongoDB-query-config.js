@@ -6,6 +6,17 @@ const cors = require("cors");
 
 dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 
+const app = express();
+
+// Correctly configure CORS to allow requests from your frontend domain
+app.use(
+  cors({
+    origin: "https://www.mapgp.co", // Allow requests only from this domain
+    methods: ["GET", "POST"], // Specify allowed methods
+    allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
+  })
+);
+
 const handler = async (req, res) => {
   const mongoUri = process.env.MONGO_URI;
   const client = new MongoClient(mongoUri, {
@@ -43,12 +54,7 @@ const handler = async (req, res) => {
   }
 };
 
-const app = express();
-app.use(
-  cors({
-    origin: "https://www.mapgp.co", // Allow only your frontend domain
-  })
-); // Enable CORS for all routes
-app.get("/api/mongo-query-config", handler); // Define route
+// Ensure the route is correctly defined with CORS enabled
+app.get("/api/mongo-query-config", handler);
 
 module.exports = app;
