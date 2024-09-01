@@ -12,11 +12,13 @@ const client = new MongoClient(mongoUri, {
   useUnifiedTopology: true,
 });
 
+let isConnected = false; // Add a flag for connection status
+
 // Serverless function handler
 module.exports = async (req, res) => {
   // Enable CORS for this endpoint
   res.setHeader("Access-Control-Allow-Origin", "https://www.mapgp.co");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
 
   if (req.method === "OPTIONS") {
@@ -41,10 +43,12 @@ module.exports = async (req, res) => {
 
     try {
       // Check connection to MongoDB
-      if (!client.isConnected()) {
+      if (!isConnected) {
         console.log("Connecting to MongoDB...");
         await client.connect();
+        isConnected = true; // Set the flag once connected
       }
+
       const db = client.db("testingData1");
       const collection = db.collection("relationshipData");
 
