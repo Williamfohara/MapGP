@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     console.log("Fetched event details data:", data);
 
     // Initialize eventIDs and currentEventID with the data from the response
-    eventIDs = data.allEventIDs;
+    eventIDs = data.allEventIDs; // This should now include all relevant event IDs
     currentEventID = _id;
     console.log("All Event IDs:", eventIDs); // Log all event IDs
     console.log("Current Event ID:", currentEventID);

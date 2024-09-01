@@ -70,12 +70,13 @@ module.exports = async (req, res) => {
       .sort({ year: 1 })
       .toArray();
 
+    // Map to get all event IDs as strings
     const allEventIDs = allEvents.map((event) => event._id.toString());
 
     res.json({
       eventDetails: event.details,
       eventYear: event.year,
-      allEventIDs: allEventIDs,
+      allEventIDs: allEventIDs, // Return all relevant event IDs
     });
   } catch (err) {
     console.error("Database error:", err);
