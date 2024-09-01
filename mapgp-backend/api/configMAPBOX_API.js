@@ -3,20 +3,29 @@ const dotenv = require("dotenv");
 const path = require("path");
 const cors = require("cors");
 
+// Load environment variables from the .env file
 dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 
+const app = express();
+
+// Enable CORS for all routes with specific settings
+app.use(
+  cors({
+    origin: "https://www.mapgp.co", // Allow requests only from your frontend domain
+    methods: ["GET", "POST"], // Specify allowed methods
+    allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
+  })
+);
+
+// Define the route handler for serving the Mapbox API key
 const handler = (req, res) => {
   res.json({
     mapboxAccessToken: process.env.MAPBOX_API_KEY,
   });
 };
 
-const app = express();
-app.use(
-  cors({
-    origin: "https://www.mapgp.co", // Allow only your frontend domain
-  })
-); // Enable CORS for all routes
-app.get("/api/configMAPBOX_API", handler); // Set the correct path for the endpoint
+// Define the API route
+app.get("/api/configMAPBOX_API", handler);
 
+// Export the Express app instance
 module.exports = app;
