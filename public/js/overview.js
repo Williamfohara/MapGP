@@ -191,7 +191,7 @@ function fetchRelationshipSummary(country1, country2) {
   return fetch(
     `${backendUrl}/api/relationship-summary?country1=${encodeURIComponent(
       country1
-    )}&country2=${encodeURIComponent(country2)}` // Corrected path to match backend route
+    )}&country2=${encodeURIComponent(country2)}`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -207,7 +207,7 @@ function fetchTimeline(country1, country2) {
   return fetch(
     `${backendUrl}/api/timeline?country1=${encodeURIComponent(
       country1
-    )}&country2=${encodeURIComponent(country2)}` // Use backendUrl here
+    )}&country2=${encodeURIComponent(country2)}`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -269,7 +269,7 @@ function generateTimelineEntries(timelineData, country1, country2) {
     div.className = "timeline-entry";
     div.onclick = () => {
       selectTimelineEntry(div);
-      goToTimelineEvent(country1, country2, entry.year);
+      fetchEventDetailsByIDs(country1, country2); // Updated function call
     };
     div.innerHTML = `<div class="timeline-year">${displayYear}</div><div class="timeline-text">${entry.text}</div>`;
     container.appendChild(div);
@@ -282,51 +282,54 @@ function selectTimelineEntry(entryDiv) {
   entryDiv.classList.add("selected");
 }
 
-function goToTimelineEvent(country1, country2, year) {
-  console.log("Fetching event details ID with parameters:", {
-    country1,
-    country2,
-    year,
-  });
+// New function to fetch event details by IDs
+function fetchEventDetailsByIDs(country1, country2) {
+  console.log("Fetching all event IDs for:", { country1, country2 });
 
   fetch(
     `${backendUrl}/api/getEventDetailsId?country1=${encodeURIComponent(
       country1
-    )}&country2=${encodeURIComponent(country2)}&year=${encodeURIComponent(
-      year
-    )}` // Use backendUrl here
+    )}&country2=${encodeURIComponent(country2)}`
   )
-    .then((response) => {
-      console.log("Response status:", response.status);
-      if (!response.ok) {
-        console.error(
-          "Failed to fetch event details. Response status:",
-          response.status
-        );
-        throw new Error("Event not found or other server error");
-      }
-      return response.json();
-    })
+    .then((response) => response.json())
     .then((data) => {
-      console.log("Data received:", data);
-      if (data._id) {
-        console.log(
-          "Redirecting to event.html with ID and year:",
-          data._id,
-          year
-        );
-        window.location.href = `/html/event.html?_id=${encodeURIComponent(
-          data._id
-        )}&year=${encodeURIComponent(year)}`;
+      if (data.allEventIDs && data.allEventIDs.length > 0) {
+        console.log("All event IDs fetched:", data.allEventIDs);
+        data.allEventIDs.forEach((id) => {
+          fetch(`${backendUrl}/api/event-details?_id=${encodeURIComponent(id)}`)
+            .then((response) => response.json())
+            .then((eventData) => {
+              console.log("Event details fetched for ID:", id, eventData);
+              displayEventDetails(eventData);
+            })
+            .catch((error) => {
+              console.error("Error fetching event details:", error);
+              showEventErrorPopup();
+            });
+        });
       } else {
-        console.error("No event ID found in the response data.");
+        console.error("No event IDs found in the response data.");
         showEventErrorPopup();
       }
     })
     .catch((error) => {
-      console.error("Error fetching event details ID:", error);
+      console.error("Error fetching event IDs:", error);
       showEventErrorPopup();
     });
+}
+
+// Function to display event details
+function displayEventDetails(eventData) {
+  if (!eventData || typeof eventData.eventDetails !== "string") {
+    console.error("Invalid event data format.");
+    return;
+  }
+
+  const infoPanel = document.getElementById("info-panel");
+  infoPanel.innerHTML += `
+    <h3>${eventData.eventYear}</h3>
+    <p>${eventData.eventDetails}</p>
+  `;
 }
 
 function showEventErrorPopup() {
@@ -397,7 +400,6 @@ function generateEvent() {
   );
 
   fetch(`${backendUrl}/api/generate-event`, {
-    // Corrected hyphenated endpoint here
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
