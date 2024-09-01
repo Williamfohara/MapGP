@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     // Initialize eventIDs and currentEventID with the data from the response
     eventIDs = data.allEventIDs;
     currentEventID = _id;
-    console.log("Event IDs:", eventIDs);
+    console.log("All Event IDs:", eventIDs); // Log all event IDs
     console.log("Current Event ID:", currentEventID);
 
     // Check if the response contains the expected event details
@@ -121,6 +121,7 @@ function navigateToPreviousEvent() {
   console.log("Navigating to previous event...");
   const currentIndex = eventIDs.indexOf(currentEventID);
   console.log("Current Index:", currentIndex);
+  console.log("Total Events:", eventIDs.length);
 
   if (currentIndex > 0) {
     const previousEventID = eventIDs[currentIndex - 1];
@@ -139,6 +140,7 @@ function navigateToNextEvent() {
   console.log("Navigating to next event...");
   const currentIndex = eventIDs.indexOf(currentEventID);
   console.log("Current Index:", currentIndex);
+  console.log("Total Events:", eventIDs.length);
 
   if (currentIndex < eventIDs.length - 1) {
     const nextEventID = eventIDs[currentIndex + 1];
