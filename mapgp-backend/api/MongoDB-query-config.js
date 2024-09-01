@@ -9,12 +9,13 @@ dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 
 const app = express();
 
-// Enable CORS for all routes by placing this before any route definitions
+// Enable CORS for all routes with specific settings
 app.use(
   cors({
-    origin: "*", // Allow requests only from your frontend domain
+    origin: "https://www.mapgp.co", // Allow requests only from your frontend domain
     methods: ["GET", "POST"], // Specify allowed methods
     allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
+    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
   })
 );
 
