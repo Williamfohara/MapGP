@@ -9,15 +9,29 @@ dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 
 const app = express();
 
-// Enable CORS for all routes with specific settings
+// Middleware to log requests for debugging
+app.use((req, res, next) => {
+  console.log(`Incoming request: ${req.method} ${req.url}`);
+  next();
+});
+
+// Enable CORS for all routes and origins temporarily for debugging
 app.use(
   cors({
-    origin: "https://www.mapgp.co", // Allow requests only from your frontend domain
+    origin: "*", // Temporarily allow all origins for debugging purposes
     methods: ["GET", "POST"], // Specify allowed methods
     allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
-    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
   })
 );
+
+// Middleware to log responses for debugging
+app.use((req, res, next) => {
+  res.on("finish", () => {
+    console.log(`Response status: ${res.statusCode}`);
+    console.log(`CORS headers: ${res.get("Access-Control-Allow-Origin")}`);
+  });
+  next();
+});
 
 // Define the route handler for fetching relationship summary from MongoDB
 const handler = async (req, res) => {
