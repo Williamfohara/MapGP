@@ -266,7 +266,7 @@ function generateTimeline(country1, country2) {
 
 async function fetchRelationshipSummary(country1, country2) {
   try {
-    const response = await axios.get(`${backendUrl}/api/MongoDB-query-config`, {
+    const response = await axios.get(`${backendUrl}/api/mongo-query-config`, {
       params: { country1, country2 },
     });
     if (response.data.relationshipSummary) {
