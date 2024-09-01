@@ -1,5 +1,7 @@
+// Define backendUrl globally at the top of the script
+const backendUrl = "https://map-gp-node-backend.vercel.app"; // Your backend URL
+
 document.addEventListener("DOMContentLoaded", function () {
-  const backendUrl = "https://map-gp-node-backend.vercel.app"; // Your backend URL
   let country1 = getQueryVariable("country1");
   let country2 = getQueryVariable("country2");
 
