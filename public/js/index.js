@@ -182,7 +182,7 @@ document
           const timelineExists = await checkTimelineExists(country1, country2);
           if (timelineExists) {
             localStorage.setItem("relationshipSummary", response);
-            window.location.href = `overview.html?country1=${encodeURIComponent(
+            window.location.href = `/html/overview.html?country1=${encodeURIComponent(
               country1
             )}&country2=${encodeURIComponent(country2)}`;
           } else {

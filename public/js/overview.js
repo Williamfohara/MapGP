@@ -314,7 +314,7 @@ function goToTimelineEvent(country1, country2, year) {
           data._id,
           year
         );
-        window.location.href = `event.html?_id=${encodeURIComponent(
+        window.location.href = `/html/event.html?_id=${encodeURIComponent(
           data._id
         )}&year=${encodeURIComponent(year)}`;
       } else {
