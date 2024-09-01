@@ -1,6 +1,8 @@
+const express = require("express");
 const { MongoClient } = require("mongodb");
 const dotenv = require("dotenv");
 const path = require("path");
+const cors = require("cors");
 const {
   populateDatabase,
 } = require("../manualDBManipulation/populateDatabaseEvents.js");
@@ -12,7 +14,6 @@ const client = new MongoClient(mongoUri);
 
 let db;
 
-// Connect to MongoDB function
 async function connectToMongoDB() {
   if (!db) {
     await client.connect();
@@ -20,18 +21,7 @@ async function connectToMongoDB() {
   }
 }
 
-// Serverless function handler
-module.exports = async (req, res) => {
-  // Enable CORS for this endpoint
-  res.setHeader("Access-Control-Allow-Origin", "https://www.mapgp.co");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
-
-  if (req.method === "OPTIONS") {
-    res.status(204).end(); // Preflight request handling
-    return;
-  }
-
+const handler = async (req, res) => {
   await connectToMongoDB();
 
   const { country1, country2, text, year } = req.body;
@@ -50,3 +40,15 @@ module.exports = async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 };
+
+const app = express();
+app.use(
+  cors({
+    origin: "https://www.mapgp.co", // Allow requests only from your frontend domain
+    methods: ["GET", "POST"], // Specify allowed methods
+    allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
+  })
+);
+app.post("/api/generate-event", handler); // Define route
+
+module.exports = app;

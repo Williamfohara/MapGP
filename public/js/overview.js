@@ -396,7 +396,7 @@ function generateEvent() {
     timelineEntryYear
   );
 
-  fetch(`${backendUrl}/api/generateEvent`, {
+  fetch(`${backendUrl}/api/generate-event`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
