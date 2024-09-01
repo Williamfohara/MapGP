@@ -1,6 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const backendUrl = "https://map-gp-node-backend.vercel.app"; // Your backend URL
+// Declare backendUrl globally at the top of your script
+const backendUrl = "https://map-gp-node-backend.vercel.app"; // Your backend URL
 
+document.addEventListener("DOMContentLoaded", function () {
   // Fetch the configuration from the backend using Axios
   axios
     .get(`${backendUrl}/api/configMAPBOX_API`)
