@@ -1,7 +1,6 @@
 const { MongoClient } = require("mongodb");
 const path = require("path");
 const dotenv = require("dotenv");
-const cors = require("cors");
 
 // Load environment variables from the .env file
 dotenv.config({ path: path.resolve(__dirname, "../../.env") });
@@ -29,6 +28,7 @@ module.exports = async (req, res) => {
   console.log("Received parameters:", { country1, country2 });
 
   if (!country1 || !country2) {
+    console.error("Missing query parameters: country1 and/or country2");
     return res.status(400).json({
       error: "Missing required query parameters: country1 and country2",
     });
@@ -38,7 +38,11 @@ module.exports = async (req, res) => {
   country2 = country2.trim();
 
   try {
-    if (!client.isConnected()) await client.connect();
+    // Check connection to MongoDB
+    if (!client.isConnected()) {
+      console.log("Connecting to MongoDB...");
+      await client.connect();
+    }
     const db = client.db("testingData1");
     const collection = db.collection("relationshipData");
 
@@ -49,8 +53,10 @@ module.exports = async (req, res) => {
     });
 
     if (result) {
+      console.log("Found result:", result);
       res.json({ relationshipSummary: result.relationshipSummary });
     } else {
+      console.log("No result found for query:", query);
       res.json({ relationshipSummary: null });
     }
   } catch (error) {
