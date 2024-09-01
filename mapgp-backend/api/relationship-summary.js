@@ -12,7 +12,7 @@ const router = express.Router();
 // Enable CORS for all routes in this router
 router.use(
   cors({
-    origin: "https://www.mapgp.co", // Allow requests from any origin. You can specify your domain instead.
+    origin: "https://www.mapgp.co", // Allow requests only from your frontend domain
     methods: ["GET", "POST"], // Allow specific methods
     allowedHeaders: ["Content-Type", "Authorization"], // Allow specific headers
   })
@@ -31,7 +31,7 @@ client.connect().then(() => {
 
   router.get("/api/relationship-summary", async (req, res) => {
     let { country1, country2 } = req.query;
-    console.log("Received parameters:", { country1, country2 }); // Add this line
+    console.log("Received parameters:", { country1, country2 });
 
     if (!country1 || !country2) {
       return res.status(400).json({
@@ -43,7 +43,7 @@ client.connect().then(() => {
     country2 = country2.trim();
 
     try {
-      const query = { country1: country1, country2: country2 };
+      const query = { country1, country2 };
       console.log("Query to MongoDB:", query);
       const result = await collection.findOne(query, {
         projection: { relationshipSummary: 1 },
