@@ -1,5 +1,6 @@
 // Define backendUrl globally at the top of the script
 const backendUrl = "https://map-gp-node-backend.vercel.app"; // Your backend URL
+let isGenerating = false; // Flag to prevent concurrent submissions
 
 document.addEventListener("DOMContentLoaded", function () {
   let country1 = getQueryVariable("country1");
@@ -183,6 +184,14 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch((error) => console.error("Error fetching timeline:", error));
     })
     .catch((error) => console.error("Error fetching Mapbox API Key:", error));
+
+  // Event listener for the new "Generate All Events" button
+  const generateAllEventsButton = document.getElementById(
+    "generate-all-events-button"
+  );
+  generateAllEventsButton.onclick = function () {
+    generateAllEvents();
+  };
 });
 
 let selectedCountries = [];
@@ -191,7 +200,7 @@ function fetchRelationshipSummary(country1, country2) {
   return fetch(
     `${backendUrl}/api/relationship-summary?country1=${encodeURIComponent(
       country1
-    )}&country2=${encodeURIComponent(country2)}` // Corrected path to match backend route
+    )}&country2=${encodeURIComponent(country2)}`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -207,7 +216,7 @@ function fetchTimeline(country1, country2) {
   return fetch(
     `${backendUrl}/api/timeline?country1=${encodeURIComponent(
       country1
-    )}&country2=${encodeURIComponent(country2)}` // Use backendUrl here
+    )}&country2=${encodeURIComponent(country2)}`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -294,7 +303,7 @@ function goToTimelineEvent(country1, country2, year) {
       country1
     )}&country2=${encodeURIComponent(country2)}&year=${encodeURIComponent(
       year
-    )}` // Use backendUrl here
+    )}`
   )
     .then((response) => {
       console.log("Response status:", response.status);
@@ -350,6 +359,19 @@ function showEventErrorPopup() {
       };
     } else {
       console.error("Generate button for event error popup not found.");
+    }
+
+    const generateAllEventsButton = document.getElementById(
+      "generate-all-events-button"
+    );
+    if (generateAllEventsButton) {
+      generateAllEventsButton.onclick = function () {
+        generateAllEvents();
+      };
+    } else {
+      console.error(
+        "Generate All Events button for event error popup not found."
+      );
     }
   } else {
     console.error("Event error popup element not found.");
@@ -421,6 +443,125 @@ function generateEvent() {
       generateEventButton.disabled = false; // Re-enable button on failure
       console.error("Error generating event:", error);
     });
+}
+
+function generateAllEvents() {
+  const generateAllEventsButton = document.getElementById(
+    "generate-all-events-button"
+  );
+  if (isGenerating) return; // Prevent concurrent actions
+  isGenerating = true;
+
+  generateAllEventsButton.innerText = "Generating All Events..."; // Change button text
+  generateAllEventsButton.disabled = true; // Disable the button to prevent further clicks
+
+  console.log("Generating all events...");
+
+  const country1 = document.getElementById("country1-info").textContent;
+  const country2 = document.getElementById("country2-info").textContent;
+
+  let allYearsInRange = []; // Ensure this variable is defined here
+
+  // Fetch timeline data to determine the range of years
+  fetch(
+    `${backendUrl}/api/timeline?country1=${encodeURIComponent(
+      country1
+    )}&country2=${encodeURIComponent(country2)}`
+  )
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to fetch timeline data");
+      }
+      return response.json();
+    })
+    .then((timelineData) => {
+      if (!Array.isArray(timelineData) || timelineData.length === 0) {
+        throw new Error("No timeline data found or incorrect data format.");
+      }
+
+      // Extract years from timeline data
+      const allTimelineYears = timelineData.map((event) =>
+        parseInt(event.year)
+      );
+
+      // Determine the range of years
+      const firstYear = Math.min(...allTimelineYears);
+      const lastYear = Math.max(...allTimelineYears);
+
+      for (let year = firstYear; year <= lastYear; year++) {
+        allYearsInRange.push(year.toString());
+      }
+
+      // Fetch existing events to determine which years are already populated
+      return fetch(
+        `${backendUrl}/api/event-details?country1=${encodeURIComponent(
+          country1
+        )}&country2=${encodeURIComponent(country2)}`
+      );
+    })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to fetch event details");
+      }
+      return response.json();
+    })
+    .then((existingEvents) => {
+      if (!Array.isArray(existingEvents)) {
+        throw new Error("Event details response is not an array.");
+      }
+
+      const existingEventYears = existingEvents.map((event) => event.year);
+
+      console.log("Existing events years:", existingEventYears);
+
+      // Ensure this logic follows the definition of allYearsInRange
+      const yearsToGenerate = allYearsInRange.filter(
+        (year) => !existingEventYears.includes(year)
+      );
+
+      if (yearsToGenerate.length === 0) {
+        alert("All events are already generated!");
+        resetGenerateButton(generateAllEventsButton);
+        return;
+      }
+
+      // Make a request to generate all missing events
+      return fetch(`${backendUrl}/api/generate-all-events`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          country1,
+          country2,
+          excludeYears: existingEventYears, // Pass the years of already existing events to the backend
+        }),
+      });
+    })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to generate all events");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log("All events generated successfully:", data);
+      alert("All events have been generated successfully!");
+    })
+    .catch((error) => {
+      console.error("Error generating all events:", error);
+      alert("Failed to generate all events: " + error.message);
+    })
+    .finally(() => {
+      resetGenerateButton(generateAllEventsButton);
+    });
+}
+
+function resetGenerateButton(button) {
+  button.innerText =
+    button.id === "generate-event-button"
+      ? "Generate Event"
+      : "Generate All Events";
+  button.disabled = false;
+  isGenerating = false;
 }
 
 function getQueryVariable(variable) {
