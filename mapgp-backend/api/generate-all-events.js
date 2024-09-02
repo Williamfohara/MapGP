@@ -1,6 +1,8 @@
 const { MongoClient } = require("mongodb");
 const dotenv = require("dotenv");
 const path = require("path");
+const cors = require("cors");
+const express = require("express");
 const {
   populateDatabase,
 } = require("../manualDBManipulation/populateDatabaseEvents.js");
@@ -20,20 +22,29 @@ async function connectToMongoDB() {
   }
 }
 
-async function handler(req, res) {
-  // Set CORS headers
-  res.setHeader("Access-Control-Allow-Origin", "https://www.mapgp.co");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+const app = express();
 
-  // Handle preflight OPTIONS request
+// Enable CORS for all routes with specific settings
+app.use(
+  cors({
+    origin: "https://www.mapgp.co", // Allow requests only from your frontend domain
+    methods: ["GET", "POST", "OPTIONS"], // Include OPTIONS for preflight
+    allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
+    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
+  })
+);
+
+// Handle preflight OPTIONS requests
+app.options("*", cors());
+
+// Add middleware to parse JSON bodies
+app.use(express.json());
+
+// Handler for generating all events
+const handler = async (req, res) => {
   if (req.method === "OPTIONS") {
-    return res.status(204).end();
-  }
-
-  // Check if the request method is POST
-  if (req.method !== "POST") {
-    return res.status(405).json({ error: "Method not allowed" });
+    // Handle the preflight request
+    return res.status(204).send();
   }
 
   await connectToMongoDB();
@@ -103,7 +114,10 @@ async function handler(req, res) {
   } finally {
     await client.close();
   }
-}
+};
 
-// Export the handler function
-module.exports = handler;
+// Define the API route for generating all events
+app.post("/api/generate-all-events", handler);
+
+// Export the Express app instance
+module.exports = app;
