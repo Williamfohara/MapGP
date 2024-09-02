@@ -47,7 +47,7 @@ const app = express();
 app.use(
   cors({
     origin: "https://www.mapgp.co", // Allow requests only from your frontend domain
-    methods: ["GET", "POST", "FETCH"], // Specify allowed methods
+    methods: ["GET", "POST", "OPTIONS"], // Include OPTIONS for preflight
     allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
     credentials: true, // Allow credentials (cookies, authorization headers, etc.)
   })
