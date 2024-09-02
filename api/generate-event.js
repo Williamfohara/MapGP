@@ -5,7 +5,7 @@ const path = require("path");
 const cors = require("cors");
 const {
   populateDatabase,
-} = require("../manualDBManipulation/populateDatabaseEvents.js");
+} = require("../mapgp-backend/manualDBManipulation/populateDatabaseEvents.js");
 
 dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 
