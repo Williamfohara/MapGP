@@ -1,3 +1,22 @@
 {
-  "routes": [{ "src": "/", "dest": "/html/index.html" }]
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/html/index.html"
+    },
+    {
+      "src": "/api/generate-event",
+      "headers": {
+        "Access-Control-Allow-Origin": "https://www.mapgp.co",
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization"
+      },
+      "dest": "/api/generate-event"
+    }
+  ],
+  "functions": {
+    "api/generate-event.js": {
+      "maxDuration": 59
+    }
+  }
 }
