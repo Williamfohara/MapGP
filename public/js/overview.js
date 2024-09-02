@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("country1-info").textContent = country1;
   document.getElementById("country2-info").textContent = country2;
 
-  fetch(`${backendUrl}/api/configMAPBOX_API`) // Ensure correct path usage
+  fetch(`${backendUrl}/api/configMAPBOX_API`)
     .then((response) => response.json())
     .then((config) => {
       mapboxgl.accessToken = config.mapboxAccessToken;
@@ -460,8 +460,6 @@ function generateAllEvents() {
   const country1 = document.getElementById("country1-info").textContent;
   const country2 = document.getElementById("country2-info").textContent;
 
-  let allYearsInRange = []; // Ensure this variable is defined here
-
   // Fetch timeline data to determine the range of years
   fetch(
     `${backendUrl}/api/timeline?country1=${encodeURIComponent(
@@ -487,7 +485,7 @@ function generateAllEvents() {
       // Determine the range of years
       const firstYear = Math.min(...allTimelineYears);
       const lastYear = Math.max(...allTimelineYears);
-
+      const allYearsInRange = [];
       for (let year = firstYear; year <= lastYear; year++) {
         allYearsInRange.push(year.toString());
       }
