@@ -15,7 +15,7 @@
     }
   ],
   "functions": {
-    "mapgp-backend/api/generate-event.js": {
+    "mapgp-backend/api/generate-event": {
       "maxDuration": 59
     }
   }
