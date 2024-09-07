@@ -36,6 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch("/data/countryCoordinates/allCountryCoordinates.geojson")
           .then((response) => response.json())
           .then((geojson) => {
+            if (!geojson || !geojson.features) {
+              console.error("Invalid GeoJSON data.");
+              return;
+            }
+
             fetchWithCountrySwap(
               getCountryCoordinates,
               country1,
@@ -175,6 +180,28 @@ function fetchTimeline(country1, country2) {
     });
 }
 
+function fetchWithCountrySwap(fetchFunction, country1, country2) {
+  return fetchFunction(country1, country2)
+    .then((data) => {
+      if (data && data.length > 0) {
+        return { data, swapped: false }; // Data found in original order
+      } else {
+        // Try fetching again with the countries swapped
+        return fetchFunction(country2, country1).then((swappedData) => {
+          if (swappedData && swappedData.length > 0) {
+            return { data: swappedData, swapped: true }; // Data found in swapped order
+          } else {
+            return { data: null, swapped: false }; // No data found in either order
+          }
+        });
+      }
+    })
+    .catch((error) => {
+      console.error("Error during fetch with country swap:", error);
+      return { data: null, swapped: false }; // Handle errors and return no data
+    });
+}
+
 function updateHighlightFilter(map) {
   if (!map) {
     console.error("Map instance is not available");
@@ -210,6 +237,80 @@ function updateHighlightFilter(map) {
   }
 }
 
+function getCountryCoordinates(geojson, country1, country2) {
+  let country1Coords = null;
+  let country2Coords = null;
+
+  geojson.features.forEach((feature) => {
+    if (feature.properties.COUNTRY_NAME === country1) {
+      country1Coords = feature.geometry.coordinates;
+    }
+
+    if (feature.properties.COUNTRY_NAME === country2) {
+      country2Coords = feature.geometry.coordinates;
+    }
+  });
+
+  if (!country1Coords) {
+    console.error(`Could not find coordinates for country: ${country1}`);
+  }
+  if (!country2Coords) {
+    console.error(`Could not find coordinates for country: ${country2}`);
+  }
+
+  return country1Coords && country2Coords
+    ? [country1Coords, country2Coords]
+    : null;
+}
+
+function getMidpoint(coords1, coords2) {
+  const lat1 = coords1[1];
+  const lon1 = coords1[0];
+  const lat2 = coords2[1];
+  const lon2 = coords2[0];
+
+  const midpointLat = (lat1 + lat2) / 2;
+  const midpointLon = (lon1 + lon2) / 2;
+
+  return [midpointLon, midpointLat];
+}
+
+function calculateDistance(coord1, coord2) {
+  const lat1 = coord1[1];
+  const lon1 = coord1[0];
+  const lat2 = coord2[1];
+  const lon2 = coord2[0];
+
+  // Haversine formula to calculate the distance between two points on the Earth
+  const R = 6371; // Radius of the Earth in kilometers
+  const dLat = ((lat2 - lat1) * Math.PI) / 180;
+  const dLon = ((lon2 - lon1) * Math.PI) / 180;
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos((lat1 * Math.PI) / 180) *
+      Math.cos((lat2 * Math.PI) / 180) *
+      Math.sin(dLon / 2) *
+      Math.sin(dLon / 2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  const distance = R * c; // Distance in kilometers
+
+  return distance;
+}
+
+function determineZoomLevel(distance) {
+  if (distance < 500) {
+    return 6; // Closest (More zoomed in)
+  } else if (distance < 1500) {
+    return 5; // Close (More zoomed in)
+  } else if (distance < 3000) {
+    return 4; // Medium (More zoomed in)
+  } else if (distance < 6000) {
+    return 3; // Far (More zoomed in)
+  } else {
+    return 2; // Farthest (More zoomed in)
+  }
+}
+
 function generateTimelineEntries(timelineData, country1, country2) {
   const container = document.getElementById("timeline-container");
   container.innerHTML = ""; // Clear existing entries
@@ -236,28 +337,6 @@ function selectTimelineEntry(entryDiv) {
   const allEntries = document.querySelectorAll(".timeline-entry");
   allEntries.forEach((entry) => entry.classList.remove("selected"));
   entryDiv.classList.add("selected");
-}
-
-function fetchWithCountrySwap(fetchFunction, country1, country2) {
-  return fetchFunction(country1, country2)
-    .then((data) => {
-      if (data && data.length > 0) {
-        return { data, swapped: false }; // Data found in original order
-      } else {
-        // Try fetching again with the countries swapped
-        return fetchFunction(country2, country1).then((swappedData) => {
-          if (swappedData && swappedData.length > 0) {
-            return { data: swappedData, swapped: true }; // Data found in swapped order
-          } else {
-            return { data: null, swapped: false }; // No data found in either order
-          }
-        });
-      }
-    })
-    .catch((error) => {
-      console.error("Error during fetch with country swap:", error);
-      return { data: null, swapped: false }; // Handle errors and return no data
-    });
 }
 
 function goToTimelineEvent(country1, country2, year) {
@@ -561,78 +640,4 @@ function getQueryVariable(variable) {
     }
   }
   return false;
-}
-
-function getCountryCoordinates(geojson, country1, country2) {
-  let country1Coords = null;
-  let country2Coords = null;
-
-  geojson.features.forEach((feature) => {
-    if (feature.properties.COUNTRY_NAME === country1) {
-      country1Coords = feature.geometry.coordinates;
-    }
-
-    if (feature.properties.COUNTRY_NAME === country2) {
-      country2Coords = feature.geometry.coordinates;
-    }
-  });
-
-  if (!country1Coords) {
-    console.error(`Could not find coordinates for country: ${country1}`);
-  }
-  if (!country2Coords) {
-    console.error(`Could not find coordinates for country: ${country2}`);
-  }
-
-  return country1Coords && country2Coords
-    ? [country1Coords, country2Coords]
-    : null;
-}
-
-function getMidpoint(coords1, coords2) {
-  const lat1 = coords1[1];
-  const lon1 = coords1[0];
-  const lat2 = coords2[1];
-  const lon2 = coords2[0];
-
-  const midpointLat = (lat1 + lat2) / 2;
-  const midpointLon = (lon1 + lon2) / 2;
-
-  return [midpointLon, midpointLat];
-}
-
-function calculateDistance(coord1, coord2) {
-  const lat1 = coord1[1];
-  const lon1 = coord1[0];
-  const lat2 = coord2[1];
-  const lon2 = coord2[0];
-
-  // Haversine formula to calculate the distance between two points on the Earth
-  const R = 6371; // Radius of the Earth in kilometers
-  const dLat = ((lat2 - lat1) * Math.PI) / 180;
-  const dLon = ((lon2 - lon1) * Math.PI) / 180;
-  const a =
-    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-    Math.cos((lat1 * Math.PI) / 180) *
-      Math.cos((lat2 * Math.PI) / 180) *
-      Math.sin(dLon / 2) *
-      Math.sin(dLon / 2);
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  const distance = R * c; // Distance in kilometers
-
-  return distance;
-}
-
-function determineZoomLevel(distance) {
-  if (distance < 500) {
-    return 6; // Closest (More zoomed in)
-  } else if (distance < 1500) {
-    return 5; // Close (More zoomed in)
-  } else if (distance < 3000) {
-    return 4; // Medium (More zoomed in)
-  } else if (distance < 6000) {
-    return 3; // Far (More zoomed in)
-  } else {
-    return 2; // Farthest (More zoomed in)
-  }
 }
