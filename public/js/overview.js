@@ -238,6 +238,28 @@ function selectTimelineEntry(entryDiv) {
   entryDiv.classList.add("selected");
 }
 
+function fetchWithCountrySwap(fetchFunction, country1, country2) {
+  return fetchFunction(country1, country2)
+    .then((data) => {
+      if (data && data.length > 0) {
+        return { data, swapped: false }; // Data found in original order
+      } else {
+        // Try fetching again with the countries swapped
+        return fetchFunction(country2, country1).then((swappedData) => {
+          if (swappedData && swappedData.length > 0) {
+            return { data: swappedData, swapped: true }; // Data found in swapped order
+          } else {
+            return { data: null, swapped: false }; // No data found in either order
+          }
+        });
+      }
+    })
+    .catch((error) => {
+      console.error("Error during fetch with country swap:", error);
+      return { data: null, swapped: false }; // Handle errors and return no data
+    });
+}
+
 function goToTimelineEvent(country1, country2, year) {
   console.log("Fetching event details ID with parameters:", {
     country1,
