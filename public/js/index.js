@@ -138,7 +138,7 @@ function initializeMapFeatures() {
 let selectedCountries = [];
 
 function updateHighlightFilter() {
-  if (map && selectedCountries.length) {
+  if (map) {
     map.setFilter("highlight-layer", [
       "in",
       ["get", "COUNTRY_NAME"],
@@ -151,6 +151,7 @@ function handleCountrySelection() {
   const country1 = document.getElementById("search-bar-1").value.trim();
   const country2 = document.getElementById("search-bar-2").value.trim();
 
+  // Clear and update selectedCountries based on input fields
   selectedCountries = [];
   if (country1) selectedCountries.push(country1);
   if (country2) selectedCountries.push(country2);
