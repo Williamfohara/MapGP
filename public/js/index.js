@@ -113,17 +113,20 @@ function initializeMapFeatures() {
       var countryName = e.features[0].properties.COUNTRY_NAME;
       var index = selectedCountries.indexOf(countryName);
       if (index === -1 && selectedCountries.length < 2) {
+        // Add country to the selected list
         selectedCountries.push(countryName);
       } else if (index !== -1) {
+        // Remove country from the selected list if already selected
         selectedCountries.splice(index, 1);
       }
 
-      // Update search bar values based on the state of selectedCountries
+      // Update the search bar values based on the current selection
       document.getElementById("search-bar-1").value =
         selectedCountries.length > 0 ? selectedCountries[0] : "";
       document.getElementById("search-bar-2").value =
         selectedCountries.length > 1 ? selectedCountries[1] : "";
 
+      // Update the map to reflect the change in selected countries
       updateHighlightFilter();
     }
   });
