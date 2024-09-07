@@ -241,16 +241,24 @@ function getCountryCoordinates(geojson, country1, country2) {
   let country1Coords = null;
   let country2Coords = null;
 
+  // Ensure geojson and geojson.features exist
+  if (!geojson || !geojson.features) {
+    console.error("Invalid GeoJSON structure.");
+    return null;
+  }
+
+  // Iterate over features to find matching countries
   geojson.features.forEach((feature) => {
-    if (feature.properties.COUNTRY_NAME === country1) {
+    if (feature.properties && feature.properties.COUNTRY_NAME === country1) {
       country1Coords = feature.geometry.coordinates;
     }
 
-    if (feature.properties.COUNTRY_NAME === country2) {
+    if (feature.properties && feature.properties.COUNTRY_NAME === country2) {
       country2Coords = feature.geometry.coordinates;
     }
   });
 
+  // Check if both country coordinates were found
   if (!country1Coords) {
     console.error(`Could not find coordinates for country: ${country1}`);
   }
@@ -258,6 +266,7 @@ function getCountryCoordinates(geojson, country1, country2) {
     console.error(`Could not find coordinates for country: ${country2}`);
   }
 
+  // Return the coordinates if found, otherwise null
   return country1Coords && country2Coords
     ? [country1Coords, country2Coords]
     : null;
