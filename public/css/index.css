@@ -105,3 +105,13 @@ body {
 .popup-content button:hover {
   background-color: #0056b3; /* Darken the button on hover */
 }
+
+/* Remove underline from the MapGP logo link */
+#header a {
+  text-decoration: none;
+  color: inherit; /* Maintain the original text color */
+}
+
+#header a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+}
