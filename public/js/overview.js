@@ -35,71 +35,64 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch("/data/countryCoordinates/allCountryCoordinates.geojson")
           .then((response) => response.json())
           .then((geojson) => {
-            let countryCoords = getCountryCoordinates(
-              geojson,
+            fetchWithCountrySwap(
+              getCountryCoordinates,
               country1,
               country2
-            );
-            if (!countryCoords) {
-              countryCoords = getCountryCoordinates(
-                geojson,
-                country2,
-                country1
-              );
+            ).then(({ data: countryCoords }) => {
               if (countryCoords) {
-                [country1, country2] = [country2, country1];
+                const midpoint = getMidpoint(
+                  countryCoords[0],
+                  countryCoords[1]
+                );
+                const distance = calculateDistance(
+                  countryCoords[0],
+                  countryCoords[1]
+                );
+                const zoomLevel = determineZoomLevel(distance);
+
+                map.setCenter(midpoint);
+                map.setZoom(zoomLevel);
+
+                map.addSource("countries", {
+                  type: "geojson",
+                  data: "../data/countries.geojson",
+                });
+
+                map.addLayer({
+                  id: "countries-layer",
+                  type: "fill",
+                  source: "countries",
+                  layout: {},
+                  paint: {
+                    "fill-color": "#627BC1",
+                    "fill-opacity": 0.5,
+                  },
+                });
+
+                map.addLayer({
+                  id: "highlight-layer",
+                  type: "fill",
+                  source: "countries",
+                  layout: {},
+                  paint: {
+                    "fill-color": "#f08",
+                    "fill-opacity": 0.75,
+                  },
+                  filter: [
+                    "in",
+                    ["get", "COUNTRY_NAME"],
+                    ["literal", selectedCountries],
+                  ],
+                });
+
+                updateHighlightFilter(map);
+              } else {
+                console.error(
+                  "Could not find coordinates for one or both of the selected countries."
+                );
               }
-            }
-
-            if (countryCoords) {
-              const midpoint = getMidpoint(countryCoords[0], countryCoords[1]);
-              const distance = calculateDistance(
-                countryCoords[0],
-                countryCoords[1]
-              );
-              const zoomLevel = determineZoomLevel(distance);
-
-              map.setCenter(midpoint);
-              map.setZoom(zoomLevel);
-
-              map.addSource("countries", {
-                type: "geojson",
-                data: "../data/countries.geojson",
-              });
-
-              map.addLayer({
-                id: "countries-layer",
-                type: "fill",
-                source: "countries",
-                layout: {},
-                paint: {
-                  "fill-color": "#627BC1",
-                  "fill-opacity": 0.5,
-                },
-              });
-
-              map.addLayer({
-                id: "highlight-layer",
-                type: "fill",
-                source: "countries",
-                layout: {},
-                paint: {
-                  "fill-color": "#f08",
-                  "fill-opacity": 0.75,
-                },
-                filter: [
-                  "in",
-                  ["get", "COUNTRY_NAME"],
-                  ["literal", selectedCountries],
-                ],
-              });
-
-              updateHighlightFilter(map);
-            } else {
-              console.error(
-                "Could not find coordinates for one or both of the selected countries."
-              );
-            }
+            });
           })
           .catch((error) =>
             console.error("Error loading allCountryCoordinates.geojson:", error)
@@ -108,80 +101,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
       selectedCountries.push(country1, country2);
 
-      fetchRelationshipSummary(country1, country2)
-        .then((summary) => {
+      fetchWithCountrySwap(fetchRelationshipSummary, country1, country2).then(
+        ({ data: summary, swapped }) => {
           if (summary) {
             document.getElementById("relationship-summary").innerHTML = summary;
           } else {
-            return fetchRelationshipSummary(country2, country1).then(
-              (swappedSummary) => {
-                if (swappedSummary) {
-                  [country1, country2] = [country2, country1];
-                  document.getElementById("relationship-summary").innerHTML =
-                    swappedSummary;
-                } else {
-                  console.error(
-                    "No relationship summary found for the selected countries."
-                  );
-                  document.getElementById("relationship-summary").innerHTML =
-                    "No relationship summary found for the selected countries.";
-                }
-              }
+            console.error(
+              "No relationship summary found for the selected countries."
             );
           }
-        })
-        .catch((error) => {
-          console.error("Error fetching relationship summary:", error);
-          document.getElementById("relationship-summary").innerHTML =
-            "An error occurred while fetching the relationship summary.";
-        });
+        }
+      );
 
-      fetchTimeline(country1, country2)
-        .then((data) => {
-          if (data && data.length > 0) {
-            data.sort((a, b) => {
-              const yearA = parseInt(a.year.split("-")[0]);
-              const yearB = parseInt(b.year.split("-")[0]);
-              return yearA - yearB;
-            });
-
-            const eventIDs = data.map((entry) => entry._id);
-            const eventIDKey = `eventIDs_${country1}_${country2}`;
-            localStorage.setItem(eventIDKey, JSON.stringify(eventIDs));
-
-            data.forEach((entry) => {
-              localStorage.setItem(`year_${entry._id}`, entry.year);
-            });
-
-            generateTimelineEntries(data, country1, country2);
+      fetchWithCountrySwap(fetchTimeline, country1, country2).then(
+        ({ data: timelineData, swapped }) => {
+          if (timelineData) {
+            generateTimelineEntries(
+              timelineData,
+              swapped ? country2 : country1,
+              swapped ? country1 : country2
+            );
           } else {
-            return fetchTimeline(country2, country1).then((swappedData) => {
-              if (swappedData && swappedData.length > 0) {
-                [country1, country2] = [country2, country1];
-                swappedData.sort((a, b) => {
-                  const yearA = parseInt(a.year.split("-")[0]);
-                  const yearB = parseInt(b.year.split("-")[0]);
-                  return yearA - yearB;
-                });
-
-                const eventIDs = swappedData.map((entry) => entry._id);
-                const eventIDKey = `eventIDs_${country1}_${country2}`;
-                localStorage.setItem(eventIDKey, JSON.stringify(eventIDs));
-
-                swappedData.forEach((entry) => {
-                  localStorage.setItem(`year_${entry._id}`, entry.year);
-                });
-
-                generateTimelineEntries(swappedData, country1, country2);
-              } else {
-                console.error(
-                  "No timeline data found for the selected countries."
-                );
-              }
-            });
+            console.error("No timeline data found for the selected countries.");
           }
-        })
-        .catch((error) => console.error("Error fetching timeline:", error));
+        }
+      );
     })
     .catch((error) => console.error("Error fetching Mapbox API Key:", error));
 
@@ -460,88 +404,108 @@ function generateAllEvents() {
   const country1 = document.getElementById("country1-info").textContent;
   const country2 = document.getElementById("country2-info").textContent;
 
-  // Fetch timeline data to determine the range of years
-  fetch(
-    `${backendUrl}/api/timeline?country1=${encodeURIComponent(
-      country1
-    )}&country2=${encodeURIComponent(country2)}`
-  )
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to fetch timeline data");
-      }
-      return response.json();
-    })
-    .then((timelineData) => {
-      if (!Array.isArray(timelineData) || timelineData.length === 0) {
-        throw new Error("No timeline data found or incorrect data format.");
-      }
-
-      // Extract years from timeline data
-      const allTimelineYears = timelineData.map((event) =>
-        parseInt(event.year)
-      );
-
-      // Determine the range of years
-      const firstYear = Math.min(...allTimelineYears);
-      const lastYear = Math.max(...allTimelineYears);
-      const allYearsInRange = [];
-      for (let year = firstYear; year <= lastYear; year++) {
-        allYearsInRange.push(year.toString());
-      }
-
-      // Fetch existing events to determine which years are already populated
-      return fetch(
-        `${backendUrl}/api/event-details?country1=${encodeURIComponent(
-          country1
-        )}&country2=${encodeURIComponent(country2)}`
-      );
-    })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to fetch event details");
-      }
-      return response.json();
-    })
-    .then((existingEvents) => {
-      if (!Array.isArray(existingEvents)) {
-        throw new Error("Event details response is not an array.");
-      }
-
-      const existingEventYears = existingEvents.map((event) => event.year);
-
-      console.log("Existing events years:", existingEventYears);
-
-      // Ensure this logic follows the definition of allYearsInRange
-      const yearsToGenerate = allYearsInRange.filter(
-        (year) => !existingEventYears.includes(year)
-      );
-
-      if (yearsToGenerate.length === 0) {
-        alert("All events are already generated!");
-        resetGenerateButton(generateAllEventsButton);
-        return;
-      }
-
-      // Make a request to generate all missing events
-      return fetch(`${backendUrl}/api/generate-all-events`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          country1,
-          country2,
-          excludeYears: existingEventYears, // Pass the years of already existing events to the backend
-        }),
+  // Helper function to fetch timeline data
+  function fetchTimelineData(c1, c2) {
+    return fetch(
+      `${backendUrl}/api/timeline?country1=${encodeURIComponent(
+        c1
+      )}&country2=${encodeURIComponent(c2)}`
+    )
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch timeline data");
+        }
+        return response.json();
+      })
+      .then((timelineData) => {
+        if (!Array.isArray(timelineData) || timelineData.length === 0) {
+          return null; // No data found
+        }
+        return timelineData; // Return the data if found
+      })
+      .catch((error) => {
+        console.error(
+          `Error fetching timeline data for ${c1} and ${c2}:`,
+          error
+        );
+        return null; // Return null in case of error
       });
-    })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to generate all events");
+  }
+
+  // First attempt to fetch timeline data with the original country1 and country2
+  fetchTimelineData(country1, country2)
+    .then((timelineData) => {
+      if (!timelineData) {
+        // No timeline data found, try flipping the countries
+        console.log(
+          "No timeline data found for original country order, flipping countries..."
+        );
+        return fetchTimelineData(country2, country1).then(
+          (swappedTimelineData) => {
+            if (!swappedTimelineData) {
+              throw new Error(
+                "No timeline data found for either country order."
+              );
+            }
+            return { timelineData: swappedTimelineData, flipped: true }; // Return swapped data with a flag
+          }
+        );
       }
-      return response.json();
+      return { timelineData, flipped: false }; // Return original data with no flip
     })
-    .then((data) => {
-      console.log("All events generated successfully:", data);
+    .then(({ timelineData, flipped }) => {
+      const c1 = flipped ? country2 : country1; // Set country1 to the correct value
+      const c2 = flipped ? country1 : country2; // Set country2 to the correct value
+
+      const timelinePromises = timelineData.map((event) => {
+        const { year, text } = event;
+
+        // Check if event details already exist
+        return fetch(
+          `${backendUrl}/api/getEventDetailsId?country1=${encodeURIComponent(
+            c1
+          )}&country2=${encodeURIComponent(c2)}&year=${encodeURIComponent(
+            year
+          )}`
+        )
+          .then((response) => {
+            if (response.ok) {
+              return response.json(); // Event exists in MongoDB, no need to generate
+            } else {
+              // Event details not found, generate a new event
+              console.log(
+                `No event details found for year ${year}. Generating event...`
+              );
+              return fetch(`${backendUrl}/api/generate-event`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  country1: c1,
+                  country2: c2,
+                  text, // Use the text from the timeline
+                  year, // Use the year from the timeline
+                }),
+              }).then((response) => {
+                if (!response.ok) {
+                  throw new Error(`Failed to generate event for year ${year}`);
+                }
+                return response.json();
+              });
+            }
+          })
+          .catch((error) => {
+            console.error(
+              `Error checking or generating event for year ${year}:`,
+              error
+            );
+          });
+      });
+
+      // Once all events are checked and generated, finalize the process
+      return Promise.all(timelinePromises);
+    })
+    .then(() => {
+      console.log("All events have been checked and generated (if needed).");
       alert("All events have been generated successfully!");
     })
     .catch((error) => {
@@ -549,16 +513,16 @@ function generateAllEvents() {
       alert("Failed to generate all events: " + error.message);
     })
     .finally(() => {
-      resetGenerateButton(generateAllEventsButton);
+      resetGenerateButton(generateAllEventsButton, true); // Call the reset function with the disable flag
     });
 }
 
-function resetGenerateButton(button) {
-  button.innerText =
-    button.id === "generate-event-button"
-      ? "Generate Event"
-      : "Generate All Events";
-  button.disabled = false;
+// Modify the resetGenerateButton function to update the button text and disable it
+function resetGenerateButton(button, disable = false) {
+  button.innerText = "All Events Generated"; // Set the text to indicate that generation is complete
+  if (disable) {
+    button.disabled = true; // Permanently disable the button to prevent further clicks
+  }
   isGenerating = false;
 }
 
