@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       map.on("load", () => {
         map.setFog({});
 
+        // Fetch country coordinates from GeoJSON and apply them to the map
         fetch("/data/countryCoordinates/allCountryCoordinates.geojson")
           .then((response) => response.json())
           .then((geojson) => {
@@ -101,8 +102,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
       selectedCountries.push(country1, country2);
 
+      // Fetch relationship summary
       fetchWithCountrySwap(fetchRelationshipSummary, country1, country2).then(
-        ({ data: summary, swapped }) => {
+        ({ data: summary }) => {
           if (summary) {
             document.getElementById("relationship-summary").innerHTML = summary;
           } else {
@@ -113,6 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       );
 
+      // Fetch timeline data
       fetchWithCountrySwap(fetchTimeline, country1, country2).then(
         ({ data: timelineData, swapped }) => {
           if (timelineData) {
