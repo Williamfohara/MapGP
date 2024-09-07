@@ -36,69 +36,78 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch("/data/countryCoordinates/allCountryCoordinates.geojson")
           .then((response) => response.json())
           .then((geojson) => {
+            // Ensure geojson and geojson.features exist
             if (!geojson || !geojson.features) {
               console.error("Invalid GeoJSON data.");
               return;
             }
 
-            fetchWithCountrySwap(
-              getCountryCoordinates,
+            // Using the same GeoJSON handling logic as the previous working version
+            let countryCoords = getCountryCoordinates(
+              geojson,
               country1,
               country2
-            ).then(({ data: countryCoords }) => {
+            );
+            if (!countryCoords) {
+              countryCoords = getCountryCoordinates(
+                geojson,
+                country2,
+                country1
+              );
               if (countryCoords) {
-                const midpoint = getMidpoint(
-                  countryCoords[0],
-                  countryCoords[1]
-                );
-                const distance = calculateDistance(
-                  countryCoords[0],
-                  countryCoords[1]
-                );
-                const zoomLevel = determineZoomLevel(distance);
-
-                map.setCenter(midpoint);
-                map.setZoom(zoomLevel);
-
-                map.addSource("countries", {
-                  type: "geojson",
-                  data: "../data/countries.geojson",
-                });
-
-                map.addLayer({
-                  id: "countries-layer",
-                  type: "fill",
-                  source: "countries",
-                  layout: {},
-                  paint: {
-                    "fill-color": "#627BC1",
-                    "fill-opacity": 0.5,
-                  },
-                });
-
-                map.addLayer({
-                  id: "highlight-layer",
-                  type: "fill",
-                  source: "countries",
-                  layout: {},
-                  paint: {
-                    "fill-color": "#f08",
-                    "fill-opacity": 0.75,
-                  },
-                  filter: [
-                    "in",
-                    ["get", "COUNTRY_NAME"],
-                    ["literal", selectedCountries],
-                  ],
-                });
-
-                updateHighlightFilter(map);
-              } else {
-                console.error(
-                  "Could not find coordinates for one or both of the selected countries."
-                );
+                [country1, country2] = [country2, country1];
               }
-            });
+            }
+
+            if (countryCoords) {
+              const midpoint = getMidpoint(countryCoords[0], countryCoords[1]);
+              const distance = calculateDistance(
+                countryCoords[0],
+                countryCoords[1]
+              );
+              const zoomLevel = determineZoomLevel(distance);
+
+              map.setCenter(midpoint);
+              map.setZoom(zoomLevel);
+
+              map.addSource("countries", {
+                type: "geojson",
+                data: "../data/countries.geojson",
+              });
+
+              map.addLayer({
+                id: "countries-layer",
+                type: "fill",
+                source: "countries",
+                layout: {},
+                paint: {
+                  "fill-color": "#627BC1",
+                  "fill-opacity": 0.5,
+                },
+              });
+
+              map.addLayer({
+                id: "highlight-layer",
+                type: "fill",
+                source: "countries",
+                layout: {},
+                paint: {
+                  "fill-color": "#f08",
+                  "fill-opacity": 0.75,
+                },
+                filter: [
+                  "in",
+                  ["get", "COUNTRY_NAME"],
+                  ["literal", selectedCountries],
+                ],
+              });
+
+              updateHighlightFilter(map);
+            } else {
+              console.error(
+                "Could not find coordinates for one or both of the selected countries."
+              );
+            }
           })
           .catch((error) =>
             console.error("Error loading allCountryCoordinates.geojson:", error)
