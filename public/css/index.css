@@ -139,3 +139,22 @@ body {
 .popup-content button.primary:hover {
   background-color: #45a049; /* Darken the primary button on hover */
 }
+
+/* Info Button Styling */
+.info-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 3; /* Ensure it appears above other content */
+}
+
+.info-button:hover {
+  background-color: #0056b3;
+}
