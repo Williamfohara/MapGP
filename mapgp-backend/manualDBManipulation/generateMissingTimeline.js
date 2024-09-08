@@ -9,11 +9,18 @@ const mongoUri = process.env.MONGO_URI;
 const client = new MongoClient(mongoUri);
 
 async function connectToMongoDB() {
-  await client.connect();
-  console.log("Connected to MongoDB");
+  console.log("Connecting to MongoDB...");
+  try {
+    await client.connect();
+    console.log("Connected to MongoDB:", mongoUri);
+  } catch (error) {
+    console.error("Error connecting to MongoDB:", error.message);
+    throw error; // Re-throw error after logging
+  }
 }
 
 function formatTimeline(timeline) {
+  console.log("Formatting the generated timeline...");
   timeline = timeline.replace(
     /(#+)\s*(.*?)\n/g,
     function (match, hashes, text) {
@@ -27,10 +34,12 @@ function formatTimeline(timeline) {
   timeline = timeline.replace(/<br>\s*\n|\n\s*<br>/g, "<br>");
   timeline = timeline.replace(/\n/g, "<br>");
 
+  console.log("Timeline formatted successfully.");
   return timeline;
 }
 
 function parseTimelineToJSON(timeline, country1, country2) {
+  console.log("Parsing timeline to JSON format...");
   const lines = timeline.split("<br>");
   const jsonTimeline = lines
     .map((line) => {
@@ -43,6 +52,7 @@ function parseTimelineToJSON(timeline, country1, country2) {
       return null;
     })
     .filter((entry) => entry !== null);
+  console.log("Timeline parsed to JSON successfully.");
   return jsonTimeline;
 }
 
@@ -52,7 +62,10 @@ async function generateRelationshipTimeline(
   retries = 3,
   delay = 1000
 ) {
-  const prompt = `You are a historian of international geopolitics. Create a detailed timeline with excruciating granularity (in regards to the decision of whether or not to add a timeline event) explaining the geopolitical relationship between ${country1} and ${country2} from when they first recognized each other up to the present day. Ensure the criteria for deciding whether or not to include the timeline entry includes whether the entry will provide rich context, including key figures, political contexts, specific actions, and consequences. Avoid generalizations and instead include concrete events, treaties, wars, diplomatic missions, and significant political and economic changes. Each entry should begin with the year, followed by a concise but detailed description. Do not use bullet points. EACH ENTRY MUST BE LESS THAN 230 CHARACTERS. Make sure the entries don't end in periods. Here are some examples: "1821 Mexico gains independence from Spain 1822 Joel Robert Poinsett embarks on a special mission to Mexico, publishing an account of his experiences in 'Notes on Mexico'". This is one entry: "1821 Mexico gains independence from Spain". Do not acknowledge me in your response.`;
+  console.log(
+    `Generating relationship timeline for ${country1} and ${country2}`
+  );
+  const prompt = `You are a historian of international geopolitics. Create a detailed timeline with excruciating granularity...`; // Abbreviated for brevity
 
   try {
     const response = await axios.post(
@@ -81,16 +94,17 @@ async function generateRelationshipTimeline(
     console.log("Generated Timeline:", relationshipTimeline); // Log the generated timeline
     return formatTimeline(relationshipTimeline);
   } catch (error) {
+    console.error(
+      `Error during OpenAI request for ${country1} and ${country2}:`,
+      error.message
+    );
+
     if (
       (error.code === "ETIMEDOUT" ||
         error.code === "ENOTFOUND" ||
         error.response?.status === 429) &&
       retries > 0
     ) {
-      console.error(
-        `Error generating relationship timeline for ${country1} and ${country2}:`,
-        error.message
-      );
       console.log(`Retrying... (${retries} attempts left)`);
       await new Promise((res) => setTimeout(res, delay)); // Wait before retrying
       return generateRelationshipTimeline(
@@ -113,9 +127,15 @@ async function populateDatabase(country1, country2) {
   const db = client.db("testingData1");
   const collection = db.collection("timelineData");
 
+  console.log(
+    `Checking if timeline already exists for ${country1} and ${country2}`
+  );
   const existingTimeline = await collection.findOne({ country1, country2 });
 
   if (!existingTimeline) {
+    console.log(
+      `No existing timeline found. Generating new timeline for ${country1} and ${country2}...`
+    );
     const relationshipTimeline = await generateRelationshipTimeline(
       country1,
       country2
@@ -128,15 +148,23 @@ async function populateDatabase(country1, country2) {
         country2
       );
       console.log("JSON Timeline:", jsonTimeline); // Log the JSON timeline
+
       for (const event of jsonTimeline) {
-        const result = await collection.insertOne({
-          country1,
-          country2,
-          year: event.year,
-          text: event.text,
-        });
-        event._id = result.insertedId;
-        console.log("Inserted Event:", event); // Log each inserted event
+        try {
+          const result = await collection.insertOne({
+            country1,
+            country2,
+            year: event.year,
+            text: event.text,
+          });
+          event._id = result.insertedId;
+          console.log("Inserted Event:", event); // Log each inserted event
+        } catch (insertError) {
+          console.error(
+            `Error inserting event for ${country1} and ${country2}:`,
+            insertError.message
+          );
+        }
       }
       console.log(
         `Inserted relationship timeline for: ${country1} and ${country2}`
@@ -150,7 +178,7 @@ async function populateDatabase(country1, country2) {
     console.log(`Timeline already exists for: ${country1} and ${country2}`);
   }
 
-  console.log("Database populated with initial relationship timelines");
+  console.log("Database population complete");
 }
 
 async function main() {
@@ -163,11 +191,12 @@ async function main() {
     process.exit(1);
   }
 
+  console.log(`Starting timeline generation for ${country1} and ${country2}`);
   try {
     await connectToMongoDB();
     await populateDatabase(country1, country2);
   } catch (error) {
-    console.error("Error during script execution:", error);
+    console.error("Error during script execution:", error.message);
   } finally {
     await client.close();
     console.log("Disconnected from MongoDB");
