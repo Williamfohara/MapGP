@@ -7,13 +7,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeInstructionsButton = document.getElementById(
     "close-instructions-button"
   );
+  const infoButton = document.getElementById("info-button");
 
-  // Display the popup when the page loads
+  // Display the popup when the page loads (for first-time users)
   instructionsPopup.style.display = "flex";
 
   // Dismiss the popup when the "Got it!" button is clicked
   closeInstructionsButton.addEventListener("click", function () {
     instructionsPopup.style.display = "none";
+  });
+
+  // Show the instructional popup when the info button is clicked
+  infoButton.addEventListener("click", function () {
+    instructionsPopup.style.display = "flex";
   });
 
   // Fetch the configuration from the backend using Axios
@@ -74,7 +80,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function initializeMapFeatures() {
-  // Rotation controls
   const secondsPerRevolution = 120;
   const maxSpinZoom = 5;
   const slowSpinZoom = 3;
@@ -127,25 +132,18 @@ function initializeMapFeatures() {
       var countryName = e.features[0].properties.COUNTRY_NAME;
       var index = selectedCountries.indexOf(countryName);
       if (index === -1 && selectedCountries.length < 2) {
-        // Add country to the selected list
         selectedCountries.push(countryName);
       } else if (index !== -1) {
-        // Remove country from the selected list if already selected
         selectedCountries.splice(index, 1);
       }
-
-      // Update the search bar values based on the current selection
       document.getElementById("search-bar-1").value =
         selectedCountries.length > 0 ? selectedCountries[0] : "";
       document.getElementById("search-bar-2").value =
         selectedCountries.length > 1 ? selectedCountries[1] : "";
-
-      // Update the map to reflect the change in selected countries
       updateHighlightFilter();
     }
   });
 
-  // Begin the spinning interaction
   spinGlobe();
 }
 
@@ -164,12 +162,9 @@ function updateHighlightFilter() {
 function handleCountrySelection() {
   const country1 = document.getElementById("search-bar-1").value.trim();
   const country2 = document.getElementById("search-bar-2").value.trim();
-
-  // Clear and update selectedCountries based on input fields
   selectedCountries = [];
   if (country1) selectedCountries.push(country1);
   if (country2) selectedCountries.push(country2);
-
   updateHighlightFilter();
 }
 
@@ -191,11 +186,8 @@ document
         let response = await fetchRelationshipSummary(country1, country2);
         if (!response) {
           response = await fetchRelationshipSummary(country2, country1);
-          if (response) {
-            [country1, country2] = [country2, country1];
-          }
+          if (response) [country1, country2] = [country2, country1];
         }
-
         if (response) {
           const timelineExists = await checkTimelineExists(country1, country2);
           if (timelineExists) {
@@ -204,11 +196,9 @@ document
               country1
             )}&country2=${encodeURIComponent(country2)}`;
           } else {
-            // Show timeline error popup
             showTimelineErrorPopup(country1, country2);
           }
         } else {
-          // Show summary error popup
           showSummaryErrorPopup(country1, country2);
         }
       } catch (error) {
@@ -287,11 +277,7 @@ async function fetchRelationshipSummary(country1, country2) {
     const response = await axios.get(`${backendUrl}/api/mongo-query-config`, {
       params: { country1, country2 },
     });
-    if (response.data.relationshipSummary) {
-      return response.data.relationshipSummary;
-    } else {
-      return null;
-    }
+    return response.data.relationshipSummary || null;
   } catch (error) {
     console.error("Error fetching relationship summary:", error);
     return null;
@@ -307,14 +293,13 @@ async function checkTimelineExists(country1, country2) {
     );
     if (response.data && response.data.length > 0) {
       return true;
-    } else {
-      response = await axios.get(
-        `${backendUrl}/api/timeline?country1=${encodeURIComponent(
-          country2
-        )}&country2=${encodeURIComponent(country1)}`
-      );
-      return response.data && response.data.length > 0;
     }
+    response = await axios.get(
+      `${backendUrl}/api/timeline?country1=${encodeURIComponent(
+        country2
+      )}&country2=${encodeURIComponent(country1)}`
+    );
+    return response.data && response.data.length > 0;
   } catch (error) {
     console.error("Error checking timeline:", error);
     return false;
