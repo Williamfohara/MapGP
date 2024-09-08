@@ -145,16 +145,12 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
-  padding: 5px 10px;
+  padding: 1px 10px;
   font-size: 18px;
-  background-color: #007bff;
+  background-color: #0056b3;
   color: white;
   border: none;
   border-radius: 50%;
   cursor: pointer;
   z-index: 3; /* Ensure it appears above other content */
-}
-
-.info-button:hover {
-  background-color: #0056b3;
 }
