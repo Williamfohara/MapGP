@@ -2,6 +2,20 @@
 const backendUrl = "https://map-gp-node-backend.vercel.app"; // Your backend URL
 
 document.addEventListener("DOMContentLoaded", function () {
+  // Show the instructional popup on first load
+  const instructionsPopup = document.getElementById("instructions-popup");
+  const closeInstructionsButton = document.getElementById(
+    "close-instructions-button"
+  );
+
+  // Display the popup when the page loads
+  instructionsPopup.style.display = "flex";
+
+  // Dismiss the popup when the "Got it!" button is clicked
+  closeInstructionsButton.addEventListener("click", function () {
+    instructionsPopup.style.display = "none";
+  });
+
   // Fetch the configuration from the backend using Axios
   axios
     .get(`${backendUrl}/api/configMAPBOX_API`)
