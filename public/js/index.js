@@ -254,18 +254,23 @@ function generateTimeline(country1, country2) {
   );
   generateTimelineButton.innerText = "Generating..."; // Change button text to "Generating..."
 
+  // Integrating the axios call to generate the timeline
   return axios
     .post(`${backendUrl}/api/generate-missing-timeline`, {
       country1: country1,
       country2: country2,
     })
-    .then(() => {
+    .then((response) => {
+      console.log("Timeline generated successfully:", response.data); // Log success
       generateTimelineButton.innerText = "Timeline Generated"; // Update text on success
       alert("Timeline generated successfully.");
     })
     .catch((error) => {
+      console.error(
+        "Error generating timeline:",
+        error.response || error.message
+      ); // Log error
       generateTimelineButton.innerText = "Generate Timeline"; // Revert text on failure
-      console.error("Error generating timeline:", error);
       alert(
         "An error occurred while generating the timeline. Please try again later."
       );
