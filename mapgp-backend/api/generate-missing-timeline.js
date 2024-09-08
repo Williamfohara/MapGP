@@ -3,6 +3,11 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 
+const app = express();
+
+// Add this middleware to parse JSON body
+app.use(express.json());
+
 const handler = (req, res) => {
   const { country1, country2 } = req.body;
 
@@ -32,7 +37,7 @@ const handler = (req, res) => {
   });
 };
 
-const app = express();
+// Add CORS middleware
 app.use(
   cors({
     origin: "https://www.mapgp.co", // Allow requests only from your frontend domain
@@ -40,6 +45,8 @@ app.use(
     allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
   })
 );
-app.post("/api/generate-missing-timeline", handler); // Define route
+
+// Define the route for generating missing timeline
+app.post("/api/generate-missing-timeline", handler);
 
 module.exports = app;
