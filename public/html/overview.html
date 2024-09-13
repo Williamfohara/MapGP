@@ -62,6 +62,35 @@
       </div>
     </div>
 
+    <!-- Instructional Popup for First-Time Users -->
+    <div id="instructions-popup" class="popup" style="display: none">
+      <div class="popup-content">
+        <h3>Instructions</h3>
+        <p>Follow these steps to explore international relations</p>
+        <ol>
+          <li>Hover over timeline event to view the year of occurence</li>
+          <br />
+          <li>
+            Scroll through timeline to view the major events between
+            <script>
+              {
+                country1;
+              }
+            </script>
+            and
+            <script>
+              {
+                country2;
+              }
+            </script>
+          </li>
+          <br />
+          <li>Click on an event to view an in-depth description</li>
+        </ol>
+        <button id="close-instructions-button">Got it!</button>
+      </div>
+    </div>
+
     <script src="/js/overview.js"></script>
   </body>
 </html>
