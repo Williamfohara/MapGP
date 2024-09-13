@@ -153,6 +153,22 @@ document.addEventListener("DOMContentLoaded", function () {
   generateAllEventsButton.onclick = function () {
     generateAllEvents();
   };
+  // Info button and instructions popup
+  const infoButton = document.getElementById("info-button");
+  const instructionsPopup = document.getElementById("instructions-popup");
+  const closeInstructionsButton = document.getElementById(
+    "close-instructions-button"
+  );
+
+  // Show the instructions popup when the info button is clicked
+  infoButton.addEventListener("click", function () {
+    instructionsPopup.style.display = "flex";
+  });
+
+  // Hide the instructions popup when the close button is clicked
+  closeInstructionsButton.addEventListener("click", function () {
+    instructionsPopup.style.display = "none";
+  });
 });
 
 let selectedCountries = [];

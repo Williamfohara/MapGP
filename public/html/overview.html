@@ -21,6 +21,8 @@
         <h1>MapGP</h1>
       </a>
       <h2>Your guide to geopolitics</h2>
+      <!-- Add this info button -->
+      <button id="info-button">i</button>
     </div>
 
     <div id="info-panel">
@@ -41,6 +43,23 @@
         <button id="generate-all-events-button">Generate All Events</button>
         <!-- New Button Added -->
         <button id="close-event-popup-button">Close</button>
+      </div>
+    </div>
+
+    <!-- Instructions Popup -->
+    <div id="instructions-popup" class="popup" style="display: none">
+      <div class="popup-content">
+        <h3>Instructions</h3>
+        <p>
+          Welcome to the MapGP Overview page! Here you can explore the
+          geopolitical relationships between countries. - **Highlighted
+          Countries**: The two countries you selected are highlighted on the
+          map. - **Relationship Summary**: A brief overview of the relationship
+          between the two countries. - **Timeline**: Key events and milestones
+          in their relationship history. Click on a timeline entry to view more
+          details about a specific event.
+        </p>
+        <button id="close-instructions-button">Got it!</button>
       </div>
     </div>
 
