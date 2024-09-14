@@ -128,6 +128,7 @@ body {
   width: 100%;
   position: relative;
   user-select: none;
+  cursor: pointer; /* Pointer cursor for the timeline-entry */
 }
 
 .timeline-entry::before {
@@ -153,6 +154,7 @@ body {
   text-overflow: ellipsis;
   visibility: hidden;
   user-select: none;
+  cursor: pointer; /* Pointer cursor for the timeline-year */
 }
 
 .timeline-text {
@@ -163,6 +165,7 @@ body {
   overflow: hidden;
   word-wrap: break-word;
   user-select: none;
+  cursor: pointer; /* Pointer cursor for the timeline-text */
 }
 
 .timeline-text:hover {
