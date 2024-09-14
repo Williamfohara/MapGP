@@ -52,6 +52,7 @@ async function generateEventDetails(country1, country2, text) {
           Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
           "Content-Type": "application/json",
         },
+        timeout: 60000, // Set timeout to 60 seconds
       }
     );
 
