@@ -24,6 +24,7 @@ const handler = async (req, res) => {
     const timelineData = await collection
       .find({ country1, country2 })
       .project({ year: 1, text: 1 })
+      .sort({ year: 1 }) // Sort by 'year' in ascending order
       .toArray();
 
     res.json(timelineData);
