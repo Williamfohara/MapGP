@@ -127,6 +127,7 @@ body {
   align-items: flex-start;
   width: 100%;
   position: relative;
+  user-select: none;
 }
 
 .timeline-entry::before {
@@ -151,6 +152,7 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   visibility: hidden;
+  user-select: none;
 }
 
 .timeline-text {
@@ -160,6 +162,7 @@ body {
   border-radius: 5px;
   overflow: hidden;
   word-wrap: break-word;
+  user-select: none;
 }
 
 .timeline-text:hover {
