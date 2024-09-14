@@ -32,7 +32,7 @@ function formatEventDetails(details) {
 }
 
 async function generateEventDetails(country1, country2, text) {
-  const prompt = `I am a student trying to learn about geopolitical history who needs granular explanations of geopolitical events. As an expert historian, write me an in-depth geopolitical explanation of ${text} and how it affected the relationship between ${country1} and ${country2}. Make sure to start with a concise title summarizing the event.`;
+  const prompt = `I am a student trying to learn about geopolitical history who needs granular explanations. As an expert historian, write me an in-depth geopolitical explanation of ${text} and how it affected the relationship between ${country1} and ${country2} as if you are writing a non-fiction book about it (make it flow like a book but do not mention chapters). Start each response with a title that summarizes your response (10 words or less, no colons). Don't explain any events that happened after the year of the quote.`;
 
   try {
     const response = await axios.post(
