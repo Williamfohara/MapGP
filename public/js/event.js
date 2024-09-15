@@ -1,9 +1,3 @@
-const dotenv = require("dotenv");
-const path = require("path");
-
-// Load environment variables from the .env file
-dotenv.config({ path: path.resolve(__dirname, "../../.env") });
-
 let map; // Declare map globally
 let eventIDs = []; // Declare eventIDs globally
 let currentEventID = null; // Declare currentEventID globally
