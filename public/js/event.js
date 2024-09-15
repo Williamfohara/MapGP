@@ -1,30 +1,42 @@
 let map; // Declare map globally
 let eventIDs = []; // Declare eventIDs globally
 let currentEventID = null; // Declare currentEventID globally
-
 document.addEventListener("DOMContentLoaded", async function () {
+  const backendUrl = "https://map-gp-node-backend.vercel.app"; // Replace with your actual backend URL
   try {
-    // Fetch the environment variables from the backend API
-    const configResponse = await fetch("/api/configAPIs");
+    // Fetch the configuration from the backend
+    console.log("Fetching Mapbox API Key configuration...");
+    const configResponse = await fetch(`${backendUrl}/api/configMAPBOX_API`);
     if (!configResponse.ok) {
       throw new Error(`HTTP error! status: ${configResponse.status}`);
     }
-
     const config = await configResponse.json();
-    const backendUrl = config.backendUrl; // Use the backend URL from the API response
-    const mapboxApiKey = config.mapboxApiKey; // Use the Mapbox API key from the API response
-    const openAiApiKey = config.openAiApiKey; // Use the OpenAI API key from the API response
-
+    console.log("Mapbox API Key fetched:", config.mapboxAccessToken);
+    // Use the fetched Mapbox access token
+    mapboxgl.accessToken = config.mapboxAccessToken;
+    // Initialize the map
+    console.log("Initializing map...");
+    map = new mapboxgl.Map({
+      container: "map",
+      zoom: 4.4,
+      center: [-103, 23],
+      style: "mapbox://styles/pjfry/clnger6op083e01qxargvhm65",
+      projection: "globe",
+      scrollZoom: false,
+      dragRotate: false,
+    });
+    map.on("style.load", () => {
+      console.log("Map style loaded.");
+      map.setFog({});
+    });
     // Proceed to load event details
     const urlParams = new URLSearchParams(window.location.search);
     const _id = urlParams.get("_id");
     console.log("Event ID from URL:", _id);
-
     if (!_id) {
       throw new Error("Event ID is missing from URL parameters.");
     }
-
-    // Fetch event details from the backend using the _id
+    // Fetch event details from the eventDetails collection using the _id
     console.log("Fetching event details...");
     const response = await fetch(
       `${backendUrl}/api/event-details?_id=${encodeURIComponent(_id)}`
@@ -32,16 +44,13 @@ document.addEventListener("DOMContentLoaded", async function () {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-
     const data = await response.json();
     console.log("Fetched event details data:", data);
-
     // Initialize eventIDs and currentEventID with the data from the response
     eventIDs = data.allEventIDs; // This should now include all relevant event IDs
     currentEventID = _id;
     console.log("All Event IDs:", eventIDs); // Log all event IDs
     console.log("Current Event ID:", currentEventID);
-
     // Check if the response contains the expected event details
     if (
       !data ||
@@ -50,17 +59,14 @@ document.addEventListener("DOMContentLoaded", async function () {
     ) {
       throw new Error("Event details are missing from the response.");
     }
-
     // Extract the first line of event details to display in the h3 tag
     const eventDetailsLines = data.eventDetails.split("<br>");
     const firstLine = eventDetailsLines[0];
     const remainingDetails = eventDetailsLines.slice(1).join("<br>");
-
     document.getElementById("info-panel").innerHTML = `
       <h3>${firstLine}</h3>
       <p>${remainingDetails}</p>
     `;
-
     // Update the top-right-box with the event year from the data object
     const topRightBox = document.getElementById("top-right-box");
     if (data.eventYear) {
@@ -68,28 +74,16 @@ document.addEventListener("DOMContentLoaded", async function () {
     } else {
       topRightBox.innerText = "Year not available";
     }
-
     // Adjust the width of the top-right-box based on input
     adjustTopRightBoxWidth(topRightBox);
 
     // Extract and map geographic locations from the text
     const text = `${firstLine} ${remainingDetails}`;
-    const places = await extractLocationsFromText(text, openAiApiKey);
+    const places = await extractLocationsFromText(text);
 
     if (places.length > 0) {
-      const coordinates = await getCoordinatesForLocations(
-        places,
-        mapboxApiKey
-      );
-
-      // Initialize the map after coordinates are found
-      if (coordinates.length > 0) {
-        const mapCenter = coordinates[0].coordinates; // Use the first location for centering the map
-        initializeMap(mapCenter, mapboxApiKey); // Initialize map with dynamic center
-        addMarkersToMap(coordinates);
-      } else {
-        console.log("No valid coordinates found for locations.");
-      }
+      const coordinates = await getCoordinatesForLocations(places);
+      addMarkersToMap(coordinates);
     } else {
       console.log("No locations found in the text.");
     }
@@ -106,41 +100,18 @@ document.addEventListener("DOMContentLoaded", async function () {
     `;
   }
 });
-
 function adjustTopRightBoxWidth(element) {
   if (!element) return;
-
   // Reset width to auto to calculate content width
   element.style.width = "auto";
   const width = element.clientWidth;
-
   // Set the calculated width and ensure it doesn't exceed the viewport
   element.style.width = width + "px";
   element.style.maxWidth = `calc(100% - ${element.offsetLeft + 10}px)`;
 }
 
-// Initialize Map dynamically after extracting locations
-function initializeMap(center, apiKey) {
-  mapboxgl.accessToken = apiKey;
-
-  map = new mapboxgl.Map({
-    container: "map",
-    zoom: 4.4,
-    center: center, // Set dynamic center based on extracted locations
-    style: "mapbox://styles/pjfry/clnger6op083e01qxargvhm65",
-    projection: "globe",
-    scrollZoom: false,
-    dragRotate: false,
-  });
-
-  map.on("style.load", () => {
-    console.log("Map style loaded.");
-    map.setFog({});
-  });
-}
-
-// Extract locations from text using OpenAI API
-async function extractLocationsFromText(text, apiKey) {
+// New: Extract locations from text
+async function extractLocationsFromText(text) {
   const openAiUrl = "https://api.openai.com/v1/completions";
   const prompt = `Extract place names from the following text: ${text}`;
 
@@ -148,7 +119,7 @@ async function extractLocationsFromText(text, apiKey) {
     const response = await fetch(openAiUrl, {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${apiKey}`, // Pass OpenAI API key from environment variables
+        Authorization: `Bearer ${OPENAI_API_KEY}`, // Your OpenAI API key
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
@@ -169,8 +140,8 @@ async function extractLocationsFromText(text, apiKey) {
   }
 }
 
-// Get coordinates for locations using Mapbox API
-async function getCoordinatesForLocations(locations, apiKey) {
+// New: Get coordinates for locations
+async function getCoordinatesForLocations(locations) {
   const coordinates = [];
 
   for (let location of locations) {
@@ -178,7 +149,7 @@ async function getCoordinatesForLocations(locations, apiKey) {
       const geocodeResponse = await fetch(
         `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
           location
-        )}.json?access_token=${apiKey}`
+        )}.json?access_token=${mapboxgl.accessToken}`
       );
       const data = await geocodeResponse.json();
 
@@ -197,7 +168,7 @@ async function getCoordinatesForLocations(locations, apiKey) {
   return coordinates;
 }
 
-// Add markers to the map
+// New: Add markers to the map
 function addMarkersToMap(coordinates) {
   coordinates.forEach(({ place, coordinates }) => {
     const marker = new mapboxgl.Marker()
@@ -212,7 +183,6 @@ function navigateToPreviousEvent() {
   const currentIndex = eventIDs.indexOf(currentEventID);
   console.log("Current Index:", currentIndex);
   console.log("Total Events:", eventIDs.length);
-
   if (currentIndex > 0) {
     const previousEventID = eventIDs[currentIndex - 1];
     console.log("Previous Event ID:", previousEventID);
@@ -225,13 +195,11 @@ function navigateToPreviousEvent() {
     console.log("No previous event available.");
   }
 }
-
 function navigateToNextEvent() {
   console.log("Navigating to next event...");
   const currentIndex = eventIDs.indexOf(currentEventID);
   console.log("Current Index:", currentIndex);
   console.log("Total Events:", eventIDs.length);
-
   if (currentIndex < eventIDs.length - 1) {
     const nextEventID = eventIDs[currentIndex + 1];
     console.log("Next Event ID:", nextEventID);
