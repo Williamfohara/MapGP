@@ -3,11 +3,18 @@ let eventIDs = []; // Declare eventIDs globally
 let currentEventID = null; // Declare currentEventID globally
 
 document.addEventListener("DOMContentLoaded", async function () {
-  const backendUrl = process.env.BACKEND_URL; // Fetch backend URL from environment variable
-  const mapboxApiKey = process.env.MAPBOX_API_KEY; // Fetch Mapbox API key from environment variable
-  const openAiApiKey = process.env.OPENAI_API_KEY; // Fetch OpenAI API key from environment variable
-
   try {
+    // Fetch the environment variables from the backend API
+    const configResponse = await fetch("/api/configAPIs");
+    if (!configResponse.ok) {
+      throw new Error(`HTTP error! status: ${configResponse.status}`);
+    }
+
+    const config = await configResponse.json();
+    const backendUrl = config.backendUrl; // Use the backend URL from the API response
+    const mapboxApiKey = config.mapboxApiKey; // Use the Mapbox API key from the API response
+    const openAiApiKey = config.openAiApiKey; // Use the OpenAI API key from the API response
+
     // Proceed to load event details
     const urlParams = new URLSearchParams(window.location.search);
     const _id = urlParams.get("_id");
