@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("country1-info").textContent = country1;
   document.getElementById("country2-info").textContent = country2;
 
-  fetch(`${backendUrl}/api/configAPIs`)
+  fetch(`${backendUrl}/api/configMAPBOX_API`)
     .then((response) => response.json())
     .then((config) => {
       mapboxgl.accessToken = config.mapboxAccessToken;
