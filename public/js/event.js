@@ -8,26 +8,6 @@ document.addEventListener("DOMContentLoaded", async function () {
   const openAiApiKey = process.env.OPENAI_API_KEY; // Fetch OpenAI API key from environment variable
 
   try {
-    // Initialize the map using Mapbox API key
-    mapboxgl.accessToken = mapboxApiKey;
-
-    // Initialize the map
-    console.log("Initializing map...");
-    map = new mapboxgl.Map({
-      container: "map",
-      zoom: 4.4,
-      center: [-103, 23],
-      style: "mapbox://styles/pjfry/clnger6op083e01qxargvhm65",
-      projection: "globe",
-      scrollZoom: false,
-      dragRotate: false,
-    });
-
-    map.on("style.load", () => {
-      console.log("Map style loaded.");
-      map.setFog({});
-    });
-
     // Proceed to load event details
     const urlParams = new URLSearchParams(window.location.search);
     const _id = urlParams.get("_id");
@@ -94,7 +74,15 @@ document.addEventListener("DOMContentLoaded", async function () {
         places,
         mapboxApiKey
       );
-      addMarkersToMap(coordinates);
+
+      // Initialize the map after coordinates are found
+      if (coordinates.length > 0) {
+        const mapCenter = coordinates[0].coordinates; // Use the first location for centering the map
+        initializeMap(mapCenter, mapboxApiKey); // Initialize map with dynamic center
+        addMarkersToMap(coordinates);
+      } else {
+        console.log("No valid coordinates found for locations.");
+      }
     } else {
       console.log("No locations found in the text.");
     }
@@ -122,6 +110,26 @@ function adjustTopRightBoxWidth(element) {
   // Set the calculated width and ensure it doesn't exceed the viewport
   element.style.width = width + "px";
   element.style.maxWidth = `calc(100% - ${element.offsetLeft + 10}px)`;
+}
+
+// Initialize Map dynamically after extracting locations
+function initializeMap(center, apiKey) {
+  mapboxgl.accessToken = apiKey;
+
+  map = new mapboxgl.Map({
+    container: "map",
+    zoom: 4.4,
+    center: center, // Set dynamic center based on extracted locations
+    style: "mapbox://styles/pjfry/clnger6op083e01qxargvhm65",
+    projection: "globe",
+    scrollZoom: false,
+    dragRotate: false,
+  });
+
+  map.on("style.load", () => {
+    console.log("Map style loaded.");
+    map.setFog({});
+  });
 }
 
 // Extract locations from text using OpenAI API
