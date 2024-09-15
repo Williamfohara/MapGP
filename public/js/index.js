@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Fetch the configuration from the backend using Axios
   axios
-    .get(`${backendUrl}/api/configMAPBOX_API`)
+    .get(`${backendUrl}/api/configAPIs`)
     .then((response) => {
       const config = response.data;
 

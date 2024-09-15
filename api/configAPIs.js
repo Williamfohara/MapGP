@@ -17,15 +17,17 @@ app.use(
   })
 );
 
-// Define the route handler for serving the Mapbox API key
+// Define the route handler for serving the API keys
 const handler = (req, res) => {
   res.json({
-    mapboxAccessToken: process.env.MAPBOX_API_KEY,
+    mapboxApiKey: process.env.MAPBOX_API_KEY,
+    backendUrl: process.env.BACKEND_URL,
+    openAiApiKey: process.env.OPENAI_API_KEY,
   });
 };
 
 // Define the API route
-app.get("/api/configMAPBOX_API", handler);
+app.get("/api/configAPIs", handler);
 
 // Export the Express app instance
 module.exports = app;
