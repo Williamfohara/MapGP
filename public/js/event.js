@@ -1,22 +1,21 @@
+const dotenv = require("dotenv");
+const path = require("path");
+
+// Load environment variables from the .env file
+dotenv.config({ path: path.resolve(__dirname, "../../.env") });
+
 let map; // Declare map globally
 let eventIDs = []; // Declare eventIDs globally
 let currentEventID = null; // Declare currentEventID globally
 
 document.addEventListener("DOMContentLoaded", async function () {
-  const backendUrl = "https://map-gp-node-backend.vercel.app"; // Replace with your actual backend URL
+  const backendUrl = process.env.BACKEND_URL; // Fetch backend URL from environment variable
+  const mapboxApiKey = process.env.MAPBOX_API_KEY; // Fetch Mapbox API key from environment variable
+  const openAiApiKey = process.env.OPENAI_API_KEY; // Fetch OpenAI API key from environment variable
 
   try {
-    // Fetch the configuration from the backend
-    console.log("Fetching Mapbox API Key configuration...");
-    const configResponse = await fetch(`${backendUrl}/api/configMAPBOX_API`);
-    if (!configResponse.ok) {
-      throw new Error(`HTTP error! status: ${configResponse.status}`);
-    }
-    const config = await configResponse.json();
-    console.log("Mapbox API Key fetched:", config.mapboxAccessToken);
-
-    // Use the fetched Mapbox access token
-    mapboxgl.accessToken = config.mapboxAccessToken;
+    // Initialize the map using Mapbox API key
+    mapboxgl.accessToken = mapboxApiKey;
 
     // Initialize the map
     console.log("Initializing map...");
@@ -44,7 +43,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       throw new Error("Event ID is missing from URL parameters.");
     }
 
-    // Fetch event details from the eventDetails collection using the _id
+    // Fetch event details from the backend using the _id
     console.log("Fetching event details...");
     const response = await fetch(
       `${backendUrl}/api/event-details?_id=${encodeURIComponent(_id)}`
@@ -94,10 +93,13 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // Extract and map geographic locations from the text
     const text = `${firstLine} ${remainingDetails}`;
-    const places = await extractLocationsFromText(text);
+    const places = await extractLocationsFromText(text, openAiApiKey);
 
     if (places.length > 0) {
-      const coordinates = await getCoordinatesForLocations(places);
+      const coordinates = await getCoordinatesForLocations(
+        places,
+        mapboxApiKey
+      );
       addMarkersToMap(coordinates);
     } else {
       console.log("No locations found in the text.");
@@ -128,8 +130,8 @@ function adjustTopRightBoxWidth(element) {
   element.style.maxWidth = `calc(100% - ${element.offsetLeft + 10}px)`;
 }
 
-// New: Extract locations from text
-async function extractLocationsFromText(text) {
+// Extract locations from text using OpenAI API
+async function extractLocationsFromText(text, apiKey) {
   const openAiUrl = "https://api.openai.com/v1/completions";
   const prompt = `Extract place names from the following text: ${text}`;
 
@@ -137,7 +139,7 @@ async function extractLocationsFromText(text) {
     const response = await fetch(openAiUrl, {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${OPENAI_API_KEY}`, // Your OpenAI API key
+        Authorization: `Bearer ${apiKey}`, // Pass OpenAI API key from environment variables
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
@@ -158,8 +160,8 @@ async function extractLocationsFromText(text) {
   }
 }
 
-// New: Get coordinates for locations
-async function getCoordinatesForLocations(locations) {
+// Get coordinates for locations using Mapbox API
+async function getCoordinatesForLocations(locations, apiKey) {
   const coordinates = [];
 
   for (let location of locations) {
@@ -167,7 +169,7 @@ async function getCoordinatesForLocations(locations) {
       const geocodeResponse = await fetch(
         `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
           location
-        )}.json?access_token=${mapboxgl.accessToken}`
+        )}.json?access_token=${apiKey}`
       );
       const data = await geocodeResponse.json();
 
@@ -186,7 +188,7 @@ async function getCoordinatesForLocations(locations) {
   return coordinates;
 }
 
-// New: Add markers to the map
+// Add markers to the map
 function addMarkersToMap(coordinates) {
   coordinates.forEach(({ place, coordinates }) => {
     const marker = new mapboxgl.Marker()
