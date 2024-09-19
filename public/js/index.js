@@ -94,6 +94,9 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch((error) => console.error("Error fetching Mapbox API Key:", error));
 });
 
+let firstCountry = null;
+let secondCountry = null;
+
 function initializeMapFeatures() {
   const secondsPerRevolution = 120;
   const maxSpinZoom = 5;
@@ -146,61 +149,65 @@ function initializeMapFeatures() {
   map.on("click", "countries-layer", function (e) {
     if (e.features.length > 0) {
       var countryName = e.features[0].properties.COUNTRY_NAME;
-      var index = selectedCountries.indexOf(countryName);
-      if (index === -1 && selectedCountries.length < 2) {
-        selectedCountries.push(countryName);
-      } else if (index !== -1) {
-        selectedCountries.splice(index, 1);
-      }
-      document.getElementById("search-bar-1").value =
-        selectedCountries.length > 0 ? selectedCountries[0] : "";
-      document.getElementById("search-bar-2").value =
-        selectedCountries.length > 1 ? selectedCountries[1] : "";
-      updateHighlightFilter();
+      handleCountrySelection(countryName);
     }
   });
 
   spinGlobe();
 }
 
-let selectedCountries = [];
-
-function updateHighlightFilter() {
-  if (map) {
-    const firstCountry = selectedCountries[0] || "";
-    const secondCountry = selectedCountries[1] || "";
-
-    // Update the first highlight layer for the first country
-    map.setFilter("highlight-layer-1", [
-      "in",
-      ["get", "COUNTRY_NAME"],
-      ["literal", firstCountry ? [firstCountry] : []],
-    ]);
-
-    // Update the second highlight layer for the second country
-    map.setFilter("highlight-layer-2", [
-      "in",
-      ["get", "COUNTRY_NAME"],
-      ["literal", secondCountry ? [secondCountry] : []],
-    ]);
+function handleCountrySelection(countryName) {
+  if (!firstCountry && !secondCountry) {
+    firstCountry = countryName; // Assign to the first slot
+  } else if (!secondCountry && firstCountry !== countryName) {
+    secondCountry = countryName; // Assign to the second slot
+  } else if (firstCountry === countryName) {
+    firstCountry = null; // Deselect the first country
+  } else if (secondCountry === countryName) {
+    secondCountry = null; // Deselect the second country
   }
+
+  updateHighlightFilter();
+  updateCountryInputs();
 }
 
-function handleCountrySelection() {
-  const country1 = document.getElementById("search-bar-1").value.trim();
-  const country2 = document.getElementById("search-bar-2").value.trim();
-  selectedCountries = [];
-  if (country1) selectedCountries.push(country1);
-  if (country2) selectedCountries.push(country2);
-  updateHighlightFilter();
+function updateHighlightFilter() {
+  // Update the first highlight layer for the first country
+  map.setFilter("highlight-layer-1", [
+    "in",
+    ["get", "COUNTRY_NAME"],
+    ["literal", firstCountry ? [firstCountry] : []],
+  ]);
+
+  // Update the second highlight layer for the second country
+  map.setFilter("highlight-layer-2", [
+    "in",
+    ["get", "COUNTRY_NAME"],
+    ["literal", secondCountry ? [secondCountry] : []],
+  ]);
+}
+
+function updateCountryInputs() {
+  document.getElementById("search-bar-1").value = firstCountry || "";
+  document.getElementById("search-bar-2").value = secondCountry || "";
 }
 
 document
   .getElementById("search-bar-1")
-  .addEventListener("input", handleCountrySelection);
+  .addEventListener("input", handleManualCountrySelection);
 document
   .getElementById("search-bar-2")
-  .addEventListener("input", handleCountrySelection);
+  .addEventListener("input", handleManualCountrySelection);
+
+function handleManualCountrySelection() {
+  const country1 = document.getElementById("search-bar-1").value.trim();
+  const country2 = document.getElementById("search-bar-2").value.trim();
+
+  firstCountry = country1 || null;
+  secondCountry = country2 || null;
+
+  updateHighlightFilter();
+}
 
 document
   .querySelector(".view-button")
