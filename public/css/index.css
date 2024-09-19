@@ -94,7 +94,7 @@ body {
 .popup-content h3 {
   font-size: 20px;
   color: #000000;
-  text-align: left;
+  font-weight: normal; /* This removes the bolding */
 }
 
 /* Buttons inside the popups */
