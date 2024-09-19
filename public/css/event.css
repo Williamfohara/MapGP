@@ -3,12 +3,14 @@ body {
   padding: 0;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
+
 #map {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
 }
+
 #header {
   position: absolute;
   top: 10px;
@@ -17,16 +19,19 @@ body {
   text-align: center;
   z-index: 1;
 }
+
 #header h1 {
   margin: 0;
   color: #ffffff;
   font-size: 24px;
 }
+
 #header h2 {
   margin: 5px 0 20px;
   color: #ffffff;
   font-size: 16px;
 }
+
 #info-panel {
   position: absolute;
   top: 1.5%;
@@ -45,12 +50,18 @@ body {
   border-radius: 15px;
   overflow: auto; /* Allows scrolling within the panel if content exceeds its height */
 }
+
 #info-panel h3 {
   color: #333;
-  margin: 10px;
+  margin: 5px 0; /* Reduced margin to minimize vertical space */
   width: 100%;
   text-align: center;
 }
+
+#info-panel p {
+  margin: 5px 0; /* Reduced margin to match h3 and reduce vertical gap */
+}
+
 .button-container {
   position: fixed; /* Fixed position relative to the viewport */
   bottom: 10px; /* 10px from the bottom */
