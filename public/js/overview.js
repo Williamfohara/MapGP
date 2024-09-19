@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 source: "countries",
                 layout: {},
                 paint: {
-                  "fill-color": "#ffd700", // Vibrant yellow for the second selected country
+                  "fill-color": "#ffeb75", // Vibrant yellow for the second selected country
                   "fill-opacity": 0.8, // Opaque to make the second selected country pop
                 },
                 filter: ["in", ["get", "COUNTRY_NAME"], ["literal", []]],
