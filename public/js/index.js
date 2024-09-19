@@ -61,15 +61,28 @@ document.addEventListener("DOMContentLoaded", function () {
           },
         });
 
-        // Highlight layer for selected countries
+        // Highlight layer for the first selected country
         map.addLayer({
-          id: "highlight-layer",
+          id: "highlight-layer-1",
           type: "fill",
           source: "countries",
           layout: {},
           paint: {
-            "fill-color": "#ff6b6b", // Vibrant pink or red for selected countries
-            "fill-opacity": 0.8, // Opaque to make selected countries pop
+            "fill-color": "#ff6b6b", // Vibrant pink or red for first selected country
+            "fill-opacity": 0.8, // Opaque to make the first selected country pop
+          },
+          filter: ["in", ["get", "COUNTRY_NAME"], ["literal", []]],
+        });
+
+        // Highlight layer for the second selected country
+        map.addLayer({
+          id: "highlight-layer-2",
+          type: "fill",
+          source: "countries",
+          layout: {},
+          paint: {
+            "fill-color": "#ffd700", // Vibrant yellow for the second selected country
+            "fill-opacity": 0.8, // Opaque to make the second selected country pop
           },
           filter: ["in", ["get", "COUNTRY_NAME"], ["literal", []]],
         });
@@ -154,10 +167,21 @@ let selectedCountries = [];
 
 function updateHighlightFilter() {
   if (map) {
-    map.setFilter("highlight-layer", [
+    const firstCountry = selectedCountries[0] || "";
+    const secondCountry = selectedCountries[1] || "";
+
+    // Update the first highlight layer for the first country
+    map.setFilter("highlight-layer-1", [
       "in",
       ["get", "COUNTRY_NAME"],
-      ["literal", selectedCountries],
+      ["literal", firstCountry ? [firstCountry] : []],
+    ]);
+
+    // Update the second highlight layer for the second country
+    map.setFilter("highlight-layer-2", [
+      "in",
+      ["get", "COUNTRY_NAME"],
+      ["literal", secondCountry ? [secondCountry] : []],
     ]);
   }
 }
