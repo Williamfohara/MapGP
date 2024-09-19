@@ -29,7 +29,7 @@ body {
 #header h2 {
   margin: 5px 0 20px;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .search-container {
@@ -92,8 +92,9 @@ body {
 }
 
 .popup-content h3 {
-  font-size: 16px;
+  font-size: 20px;
   color: #000000;
+  text-align: left;
 }
 
 /* Buttons inside the popups */
