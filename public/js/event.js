@@ -1,8 +1,10 @@
 let map; // Declare map globally
 let eventIDs = []; // Declare eventIDs globally
 let currentEventID = null; // Declare currentEventID globally
+
 document.addEventListener("DOMContentLoaded", async function () {
   const backendUrl = "https://map-gp-node-backend.vercel.app"; // Replace with your actual backend URL
+
   try {
     // Fetch the configuration from the backend
     console.log("Fetching Mapbox API Key configuration...");
@@ -12,8 +14,10 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
     const config = await configResponse.json();
     console.log("Mapbox API Key fetched:", config.mapboxAccessToken);
+
     // Use the fetched Mapbox access token
     mapboxgl.accessToken = config.mapboxAccessToken;
+
     // Initialize the map
     console.log("Initializing map...");
     map = new mapboxgl.Map({
@@ -25,17 +29,21 @@ document.addEventListener("DOMContentLoaded", async function () {
       scrollZoom: false,
       dragRotate: false,
     });
+
     map.on("style.load", () => {
       console.log("Map style loaded.");
       map.setFog({});
     });
+
     // Proceed to load event details
     const urlParams = new URLSearchParams(window.location.search);
     const _id = urlParams.get("_id");
     console.log("Event ID from URL:", _id);
+
     if (!_id) {
       throw new Error("Event ID is missing from URL parameters.");
     }
+
     // Fetch event details from the eventDetails collection using the _id
     console.log("Fetching event details...");
     const response = await fetch(
@@ -44,13 +52,16 @@ document.addEventListener("DOMContentLoaded", async function () {
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
+
     const data = await response.json();
     console.log("Fetched event details data:", data);
+
     // Initialize eventIDs and currentEventID with the data from the response
     eventIDs = data.allEventIDs; // This should now include all relevant event IDs
     currentEventID = _id;
     console.log("All Event IDs:", eventIDs); // Log all event IDs
     console.log("Current Event ID:", currentEventID);
+
     // Check if the response contains the expected event details
     if (
       !data ||
@@ -59,6 +70,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     ) {
       throw new Error("Event details are missing from the response.");
     }
+
     // Extract the first line of event details to display in the h3 tag
     const eventDetailsLines = data.eventDetails.split("<br>");
     const firstLine = eventDetailsLines[0];
@@ -67,6 +79,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       <h3>${firstLine}</h3>
       <p>${remainingDetails}</p>
     `;
+
     // Update the top-right-box with the event year from the data object
     const topRightBox = document.getElementById("top-right-box");
     if (data.eventYear) {
@@ -74,6 +87,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     } else {
       topRightBox.innerText = "Year not available";
     }
+
     // Adjust the width of the top-right-box based on input
     adjustTopRightBoxWidth(topRightBox);
 
@@ -99,7 +113,59 @@ document.addEventListener("DOMContentLoaded", async function () {
       <p>Error loading event details or accessing Mapbox API.</p>
     `;
   }
+
+  // Add feedback form logic
+  const feedbackButton = document.getElementById("feedback-button");
+  const feedbackForm = document.getElementById("feedback-form");
+  const feedbackText = document.getElementById("feedback-text");
+  const submitFeedbackButton = document.getElementById("submit-feedback");
+  const cancelFeedbackButton = document.getElementById("cancel-feedback");
+
+  // Show the feedback form when the feedback button is clicked
+  feedbackButton.addEventListener("click", function () {
+    feedbackForm.style.display = "block";
+    feedbackButton.style.display = "none"; // Hide the button when form is shown
+  });
+
+  // Handle the submission of feedback
+  submitFeedbackButton.addEventListener("click", async function () {
+    const feedback = feedbackText.value.trim();
+    if (!feedback) {
+      alert("Please enter your feedback.");
+      return;
+    }
+
+    try {
+      const response = await fetch(`${backendUrl}/api/submit-feedback`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ feedback }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Failed to submit feedback: ${response.statusText}`);
+      }
+
+      alert("Thank you for your feedback!");
+      feedbackForm.style.display = "none";
+      feedbackButton.style.display = "block";
+      feedbackText.value = ""; // Clear the textarea
+    } catch (error) {
+      console.error("Error submitting feedback:", error);
+      alert(
+        "There was an error submitting your feedback. Please try again later."
+      );
+    }
+  });
+
+  // Handle canceling the feedback form
+  cancelFeedbackButton.addEventListener("click", function () {
+    feedbackForm.style.display = "none";
+    feedbackButton.style.display = "block";
+    feedbackText.value = ""; // Clear the textarea
+  });
 });
+
 function adjustTopRightBoxWidth(element) {
   if (!element) return;
   // Reset width to auto to calculate content width
@@ -195,6 +261,7 @@ function navigateToPreviousEvent() {
     console.log("No previous event available.");
   }
 }
+
 function navigateToNextEvent() {
   console.log("Navigating to next event...");
   const currentIndex = eventIDs.indexOf(currentEventID);
