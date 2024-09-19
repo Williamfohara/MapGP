@@ -62,22 +62,41 @@ body {
   margin: 5px 0; /* Reduced margin to match h3 and reduce vertical gap */
 }
 
-.button-container {
-  position: fixed; /* Fixed position relative to the viewport */
-  bottom: 10px; /* 10px from the bottom */
-  right: 10px; /* 10px from the right */
-  display: flex; /* Display buttons inline */
-  gap: 10px; /* Space between buttons */
+#top-right-box {
+  position: absolute;
+  top: 10px;
+  right: 160px; /* Adjusted to make space for the buttons */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  max-width: calc(100% - 20px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 150%;
+  text-align: center;
 }
 
+/* Positioning the navigation buttons next to the top-right-box */
 #prevEvent,
 #nextEvent {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   padding: 8px 16px;
   cursor: pointer;
   background-color: #ffa500; /* Orange */
   color: white;
   border: none;
   border-radius: 5px;
+}
+
+#nextEvent {
+  right: 10px; /* Position for the next button */
+}
+
+#prevEvent {
+  right: 110px; /* Position for the previous button */
 }
 
 #prevEvent:hover,
@@ -93,21 +112,6 @@ body {
   display: none !important;
 }
 
-#top-right-box {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 5px 10px;
-  border-radius: 4px;
-  white-space: nowrap;
-  max-width: calc(100% - 20px);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 150%;
-  text-align: center;
-}
-
 /* Feedback Button and Form */
 #feedback-container {
   position: fixed;
@@ -118,7 +122,7 @@ body {
 
 #feedback-button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #ff0000; /* Red color for the feedback button */
   color: white;
   border: none;
   border-radius: 5px;
