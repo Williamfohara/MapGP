@@ -49,25 +49,27 @@ document.addEventListener("DOMContentLoaded", function () {
           data: "../data/countries.geojson",
         });
 
+        // Base layer for countries
         map.addLayer({
           id: "countries-layer",
           type: "fill",
           source: "countries",
           layout: {},
           paint: {
-            "fill-color": "#627BC1",
-            "fill-opacity": 0.5,
+            "fill-color": "#a0d6ff", // Light blue base layer color for non-selected countries
+            "fill-opacity": 0.2, // Semi-transparent for non-selected countries
           },
         });
 
+        // Highlight layer for selected countries
         map.addLayer({
           id: "highlight-layer",
           type: "fill",
           source: "countries",
           layout: {},
           paint: {
-            "fill-color": "#f08",
-            "fill-opacity": 0.75,
+            "fill-color": "#ff6b6b", // Vibrant pink or red for selected countries
+            "fill-opacity": 0.8, // Opaque to make selected countries pop
           },
           filter: ["in", ["get", "COUNTRY_NAME"], ["literal", []]],
         });
@@ -127,6 +129,7 @@ function initializeMapFeatures() {
     spinGlobe();
   });
 
+  // Event listener for country selection and highlighting
   map.on("click", "countries-layer", function (e) {
     if (e.features.length > 0) {
       var countryName = e.features[0].properties.COUNTRY_NAME;
