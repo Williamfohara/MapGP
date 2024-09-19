@@ -36,13 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch("/data/countryCoordinates/allCountryCoordinates.geojson")
           .then((response) => response.json())
           .then((geojson) => {
-            // Ensure geojson and geojson.features exist
             if (!geojson || !geojson.features) {
               console.error("Invalid GeoJSON data.");
               return;
             }
 
-            // Using the same GeoJSON handling logic as the previous working version
             let countryCoords = getCountryCoordinates(
               geojson,
               country1,
@@ -75,31 +73,42 @@ document.addEventListener("DOMContentLoaded", function () {
                 data: "../data/countries.geojson",
               });
 
+              // Base layer for countries
               map.addLayer({
                 id: "countries-layer",
                 type: "fill",
                 source: "countries",
                 layout: {},
                 paint: {
-                  "fill-color": "#627BC1",
-                  "fill-opacity": 0.5,
+                  "fill-color": "#a0d6ff", // Light blue base layer color for non-selected countries
+                  "fill-opacity": 0.2, // Semi-transparent for non-selected countries
                 },
               });
 
+              // Highlight layer for the first selected country
               map.addLayer({
-                id: "highlight-layer",
+                id: "highlight-layer-1",
                 type: "fill",
                 source: "countries",
                 layout: {},
                 paint: {
-                  "fill-color": "#f08",
-                  "fill-opacity": 0.75,
+                  "fill-color": "#ff6b6b", // Vibrant pink or red for first selected country
+                  "fill-opacity": 0.8, // Opaque to make the first selected country pop
                 },
-                filter: [
-                  "in",
-                  ["get", "COUNTRY_NAME"],
-                  ["literal", selectedCountries],
-                ],
+                filter: ["in", ["get", "COUNTRY_NAME"], ["literal", []]],
+              });
+
+              // Highlight layer for the second selected country
+              map.addLayer({
+                id: "highlight-layer-2",
+                type: "fill",
+                source: "countries",
+                layout: {},
+                paint: {
+                  "fill-color": "#ffd700", // Vibrant yellow for the second selected country
+                  "fill-opacity": 0.8, // Opaque to make the second selected country pop
+                },
+                filter: ["in", ["get", "COUNTRY_NAME"], ["literal", []]],
               });
 
               updateHighlightFilter(map);
@@ -153,6 +162,7 @@ document.addEventListener("DOMContentLoaded", function () {
   generateAllEventsButton.onclick = function () {
     generateAllEvents();
   };
+
   // Info button and instructions popup
   const infoButton = document.getElementById("info-button");
   const instructionsPopup = document.getElementById("instructions-popup");
@@ -160,12 +170,10 @@ document.addEventListener("DOMContentLoaded", function () {
     "close-instructions-button"
   );
 
-  // Show the instructions popup when the info button is clicked
   infoButton.addEventListener("click", function () {
     instructionsPopup.style.display = "flex";
   });
 
-  // Hide the instructions popup when the close button is clicked
   closeInstructionsButton.addEventListener("click", function () {
     instructionsPopup.style.display = "none";
   });
@@ -211,7 +219,6 @@ function fetchWithCountrySwap(fetchFunction, country1, country2) {
       if (data && data.length > 0) {
         return { data, swapped: false }; // Data found in original order
       } else {
-        // Try fetching again with the countries swapped
         return fetchFunction(country2, country1).then((swappedData) => {
           if (swappedData && swappedData.length > 0) {
             return { data: swappedData, swapped: true }; // Data found in swapped order
@@ -240,25 +247,20 @@ function updateHighlightFilter(map) {
     return;
   }
 
-  if (map.getLayer("highlight-layer")) {
-    map.setFilter("highlight-layer", [
+  if (map.getLayer("highlight-layer-1") && map.getLayer("highlight-layer-2")) {
+    map.setFilter("highlight-layer-1", [
       "in",
       ["get", "COUNTRY_NAME"],
-      ["literal", selectedCountries],
+      ["literal", selectedCountries.length > 0 ? [selectedCountries[0]] : []],
+    ]);
+
+    map.setFilter("highlight-layer-2", [
+      "in",
+      ["get", "COUNTRY_NAME"],
+      ["literal", selectedCountries.length > 1 ? [selectedCountries[1]] : []],
     ]);
   } else {
-    console.error("highlight-layer does not exist");
-    map.addLayer({
-      id: "highlight-layer",
-      type: "fill",
-      source: "countries",
-      layout: {},
-      paint: {
-        "fill-color": "#f08",
-        "fill-opacity": 0.75,
-      },
-      filter: ["in", ["get", "COUNTRY_NAME"], ["literal", selectedCountries]],
-    });
+    console.error("highlight-layer-1 or highlight-layer-2 does not exist");
   }
 }
 
@@ -266,13 +268,11 @@ function getCountryCoordinates(geojson, country1, country2) {
   let country1Coords = null;
   let country2Coords = null;
 
-  // Ensure geojson and geojson.features exist
   if (!geojson || !geojson.features) {
     console.error("Invalid GeoJSON structure.");
     return null;
   }
 
-  // Iterate over features to find matching countries
   geojson.features.forEach((feature) => {
     if (feature.properties && feature.properties.COUNTRY_NAME === country1) {
       country1Coords = feature.geometry.coordinates;
@@ -283,7 +283,6 @@ function getCountryCoordinates(geojson, country1, country2) {
     }
   });
 
-  // Check if both country coordinates were found
   if (!country1Coords) {
     console.error(`Could not find coordinates for country: ${country1}`);
   }
@@ -291,7 +290,6 @@ function getCountryCoordinates(geojson, country1, country2) {
     console.error(`Could not find coordinates for country: ${country2}`);
   }
 
-  // Return the coordinates if found, otherwise null
   return country1Coords && country2Coords
     ? [country1Coords, country2Coords]
     : null;
@@ -315,7 +313,6 @@ function calculateDistance(coord1, coord2) {
   const lat2 = coord2[1];
   const lon2 = coord2[0];
 
-  // Haversine formula to calculate the distance between two points on the Earth
   const R = 6371; // Radius of the Earth in kilometers
   const dLat = ((lat2 - lat1) * Math.PI) / 180;
   const dLon = ((lon2 - lon1) * Math.PI) / 180;
@@ -542,7 +539,6 @@ function generateAllEvents() {
   const country1 = document.getElementById("country1-info").textContent;
   const country2 = document.getElementById("country2-info").textContent;
 
-  // Helper function to fetch timeline data
   function fetchTimelineData(c1, c2) {
     return fetch(
       `${backendUrl}/api/timeline?country1=${encodeURIComponent(
@@ -557,24 +553,22 @@ function generateAllEvents() {
       })
       .then((timelineData) => {
         if (!Array.isArray(timelineData) || timelineData.length === 0) {
-          return null; // No data found
+          return null;
         }
-        return timelineData; // Return the data if found
+        return timelineData;
       })
       .catch((error) => {
         console.error(
           `Error fetching timeline data for ${c1} and ${c2}:`,
           error
         );
-        return null; // Return null in case of error
+        return null;
       });
   }
 
-  // First attempt to fetch timeline data with the original country1 and country2
   fetchTimelineData(country1, country2)
     .then((timelineData) => {
       if (!timelineData) {
-        // No timeline data found, try flipping the countries
         console.log(
           "No timeline data found for original country order, flipping countries..."
         );
@@ -585,20 +579,19 @@ function generateAllEvents() {
                 "No timeline data found for either country order."
               );
             }
-            return { timelineData: swappedTimelineData, flipped: true }; // Return swapped data with a flag
+            return { timelineData: swappedTimelineData, flipped: true };
           }
         );
       }
-      return { timelineData, flipped: false }; // Return original data with no flip
+      return { timelineData, flipped: false };
     })
     .then(({ timelineData, flipped }) => {
-      const c1 = flipped ? country2 : country1; // Set country1 to the correct value
-      const c2 = flipped ? country1 : country2; // Set country2 to the correct value
+      const c1 = flipped ? country2 : country1;
+      const c2 = flipped ? country1 : country2;
 
       const timelinePromises = timelineData.map((event) => {
         const { year, text } = event;
 
-        // Check if event details already exist
         return fetch(
           `${backendUrl}/api/getEventDetailsId?country1=${encodeURIComponent(
             c1
@@ -608,9 +601,8 @@ function generateAllEvents() {
         )
           .then((response) => {
             if (response.ok) {
-              return response.json(); // Event exists in MongoDB, no need to generate
+              return response.json();
             } else {
-              // Event details not found, generate a new event
               console.log(
                 `No event details found for year ${year}. Generating event...`
               );
@@ -620,8 +612,8 @@ function generateAllEvents() {
                 body: JSON.stringify({
                   country1: c1,
                   country2: c2,
-                  text, // Use the text from the timeline
-                  year, // Use the year from the timeline
+                  text,
+                  year,
                 }),
               }).then((response) => {
                 if (!response.ok) {
@@ -639,7 +631,6 @@ function generateAllEvents() {
           });
       });
 
-      // Once all events are checked and generated, finalize the process
       return Promise.all(timelinePromises);
     })
     .then(() => {
@@ -651,15 +642,14 @@ function generateAllEvents() {
       alert("Failed to generate all events: " + error.message);
     })
     .finally(() => {
-      resetGenerateButton(generateAllEventsButton, true); // Call the reset function with the disable flag
+      resetGenerateButton(generateAllEventsButton, true);
     });
 }
 
-// Modify the resetGenerateButton function to update the button text and disable it
 function resetGenerateButton(button, disable = false) {
-  button.innerText = "All Events Generated"; // Set the text to indicate that generation is complete
+  button.innerText = "All Events Generated";
   if (disable) {
-    button.disabled = true; // Permanently disable the button to prevent further clicks
+    button.disabled = true;
   }
   isGenerating = false;
 }
