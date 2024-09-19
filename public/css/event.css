@@ -62,10 +62,11 @@ body {
   margin: 5px 0; /* Reduced margin to match h3 and reduce vertical gap */
 }
 
+/* Top-right-box remains in its original position */
 #top-right-box {
   position: absolute;
   top: 10px;
-  right: 160px; /* Adjusted to make space for the buttons */
+  right: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 5px 10px;
   border-radius: 4px;
@@ -77,12 +78,12 @@ body {
   text-align: center;
 }
 
-/* Positioning the navigation buttons next to the top-right-box */
+/* Positioning the navigation buttons to the left of the top-right-box */
 #prevEvent,
 #nextEvent {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 170px; /* Adjusted to the left of the top-right-box */
   padding: 8px 16px;
   cursor: pointer;
   background-color: #ffa500; /* Orange */
@@ -92,11 +93,7 @@ body {
 }
 
 #nextEvent {
-  right: 10px; /* Position for the next button */
-}
-
-#prevEvent {
-  right: 110px; /* Position for the previous button */
+  right: 90px; /* Adjusted position for the next button */
 }
 
 #prevEvent:hover,
