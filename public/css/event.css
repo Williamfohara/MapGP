@@ -49,7 +49,6 @@ body {
   align-items: flex-start;
   border-radius: 15px;
   overflow: auto; /* Allows scrolling within the panel if content exceeds its height */
-  position: relative;
 }
 
 #info-panel h3 {
@@ -61,41 +60,6 @@ body {
 
 #info-panel p {
   margin: 5px 0; /* Reduced margin to match h3 and reduce vertical gap */
-}
-
-/* New button footer at the bottom of the info-panel */
-#button-footer {
-  position: sticky;
-  bottom: 0;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.9
-  ); /* Semi-transparent white background */
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between; /* Space between the buttons */
-  border-top: 1px solid #cccccc;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Style for the previous and next buttons */
-#prevEvent,
-#nextEvent {
-  padding: 8px 16px;
-  cursor: pointer;
-  background-color: #ffa500; /* Orange */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-#prevEvent:hover,
-#nextEvent:hover {
-  background-color: #e69500; /* Darker shade of orange */
 }
 
 /* Top-right-box remains in its original position */
@@ -112,6 +76,29 @@ body {
   text-overflow: ellipsis;
   font-size: 150%;
   text-align: center;
+}
+
+/* Positioning the navigation buttons to the left of the top-right-box */
+#prevEvent,
+#nextEvent {
+  position: absolute;
+  top: 10px;
+  right: 170px; /* Adjusted to the left of the top-right-box */
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #ffa500; /* Orange */
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#nextEvent {
+  right: 90px; /* Adjusted position for the next button */
+}
+
+#prevEvent:hover,
+#nextEvent:hover {
+  background-color: #e69500; /* Darker shade of orange */
 }
 
 .mapboxgl-ctrl-attrib-inner {
