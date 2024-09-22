@@ -162,3 +162,13 @@ body {
 #cancel-feedback {
   background-color: #6c757d;
 }
+
+#purple-overlay {
+  position: absolute;
+  bottom: 0; /* Place it at the bottom of the info-panel */
+  height: 25%; /* Cover the bottom quarter */
+  width: 100%; /* Full width of the info-panel */
+  background-color: rgba(128, 0, 128, 0.7); /* Purple with 70% opacity */
+  pointer-events: none; /* Allow clicking through the overlay */
+  z-index: 1; /* Ensure it is above other elements in the info-panel */
+}
