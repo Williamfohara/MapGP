@@ -32,23 +32,24 @@ body {
   font-size: 16px;
 }
 
-/* Updated #info-panel styles */
+/* Updated #info-panel */
 #info-panel {
-  position: relative; /* Changed from absolute to relative for proper child positioning */
+  position: absolute; /* Keep absolute to avoid overflow and make sure it's inside the map */
   top: 1.5%;
   bottom: 2%;
   left: 0.5%;
   width: 30%;
-  height: 95%; /* Takes up the entire height minus 2% on top and bottom */
+  height: auto; /* Let the height adjust based on content */
   background-color: #eeeeee;
   border: 1px solid #cccccc;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between; /* Flexbox to position content and overlay */
   align-items: flex-start;
   border-radius: 15px;
+  max-height: 95%; /* Ensure it doesn't extend beyond the map's height */
   overflow: auto; /* Allows scrolling within the panel if content exceeds its height */
 }
 
@@ -67,6 +68,15 @@ body {
 
 #info-panel p {
   margin: 5px 0; /* Reduced margin to match h3 and reduce vertical gap */
+}
+
+/* Purple overlay, now flexed at the bottom */
+#purple-overlay {
+  height: 4%; /* Adjust height to the desired size */
+  width: 100%; /* Full width of the info-panel */
+  background-color: rgba(128, 0, 128, 0.7); /* Purple with 70% opacity */
+  z-index: 1; /* Ensure it is above other elements in the info-panel */
+  pointer-events: none; /* Allow interaction with content behind it */
 }
 
 /* Top-right-box remains in its original position */
@@ -168,15 +178,4 @@ body {
 
 #cancel-feedback {
   background-color: #6c757d;
-}
-
-/* Updated #purple-overlay styles */
-#purple-overlay {
-  position: absolute;
-  bottom: 0; /* Place it at the bottom of the info-panel */
-  height: 25%; /* Cover the bottom quarter */
-  width: 100%; /* Full width of the info-panel */
-  background-color: rgba(128, 0, 128, 0.7); /* Purple with 70% opacity */
-  z-index: 1; /* Ensure it is above other elements in the info-panel */
-  pointer-events: none; /* Allow interaction with content behind it */
 }
