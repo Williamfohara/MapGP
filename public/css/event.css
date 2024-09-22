@@ -34,19 +34,18 @@ body {
 
 /* Updated #info-panel */
 #info-panel {
-  position: absolute; /* Keep absolute to avoid overflow and make sure it's inside the map */
+  position: absolute;
   top: 1.5%;
   bottom: 2%;
   left: 0.5%;
   width: 30%;
-  height: auto; /* Let the height adjust based on content */
+  height: auto; /* Adjust height based on content */
   background-color: #eeeeee;
   border: 1px solid #cccccc;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Flexbox to position content and overlay */
   align-items: flex-start;
   border-radius: 15px;
   max-height: 95%; /* Ensure it doesn't extend beyond the map's height */
@@ -61,17 +60,19 @@ body {
 
 #info-panel h3 {
   color: #333;
-  margin: 5px 0; /* Reduced margin to minimize vertical space */
+  margin: 5px 0;
   width: 100%;
   text-align: center;
 }
 
 #info-panel p {
-  margin: 5px 0; /* Reduced margin to match h3 and reduce vertical gap */
+  margin: 5px 0;
 }
 
-/* Purple overlay, now flexed at the bottom */
+/* Sticky purple overlay at the bottom */
 #purple-overlay {
+  position: sticky;
+  bottom: 0; /* Sticks to the bottom of the #info-panel */
   height: 4%; /* Adjust height to the desired size */
   width: 100%; /* Full width of the info-panel */
   background-color: rgba(128, 0, 128, 0.7); /* Purple with 70% opacity */
@@ -100,22 +101,22 @@ body {
 #nextEvent {
   position: absolute;
   top: 10px;
-  right: 170px; /* Adjusted to the left of the top-right-box */
+  right: 170px;
   padding: 8px 16px;
   cursor: pointer;
-  background-color: #ffa500; /* Orange */
+  background-color: #ffa500;
   color: white;
   border: none;
   border-radius: 5px;
 }
 
 #nextEvent {
-  right: 90px; /* Adjusted position for the next button */
+  right: 90px;
 }
 
 #prevEvent:hover,
 #nextEvent:hover {
-  background-color: #e69500; /* Darker shade of orange */
+  background-color: #e69500;
 }
 
 .mapboxgl-ctrl-attrib-inner {
@@ -136,7 +137,7 @@ body {
 
 #feedback-button {
   padding: 10px 20px;
-  background-color: #ff0000; /* Red color for the feedback button */
+  background-color: #ff0000;
   color: white;
   border: none;
   border-radius: 5px;
