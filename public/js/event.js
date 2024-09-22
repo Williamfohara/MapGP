@@ -80,6 +80,17 @@ document.addEventListener("DOMContentLoaded", async function () {
       <p>${remainingDetails}</p>
     `;
 
+    // Dynamically add the purple overlay after loading the content
+    const purpleOverlay = document.createElement("div");
+    purpleOverlay.id = "purple-overlay";
+    purpleOverlay.style.position = "absolute";
+    purpleOverlay.style.bottom = "0";
+    purpleOverlay.style.height = "25%";
+    purpleOverlay.style.width = "100%";
+    purpleOverlay.style.backgroundColor = "rgba(128, 0, 128, 0.7)";
+    purpleOverlay.style.zIndex = "1";
+    document.getElementById("info-panel").appendChild(purpleOverlay);
+
     // Update the top-right-box with the event year from the data object
     const topRightBox = document.getElementById("top-right-box");
     if (data.eventYear) {
