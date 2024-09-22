@@ -1,46 +1,56 @@
 const { MongoClient } = require("mongodb");
+const dotenv = require("dotenv");
+dotenv.config();
 
-const mongoUri = process.env.MONGO_URI; // Vercel uses environment variables from the dashboard
-let client = null;
-let db = null;
+const mongoUri = process.env.MONGO_URI;
+const client = new MongoClient(mongoUri);
 
-// Reuse the MongoDB connection across requests
+let db;
+
 async function connectToMongoDB() {
-  if (!client) {
-    client = new MongoClient(mongoUri, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+  if (!db) {
     await client.connect();
-    db = client.db("testingData1"); // Your database name
-  }
-  return db;
-}
-
-export default async function handler(req, res) {
-  if (req.method === "POST") {
-    const { feedback } = req.body;
-
-    if (!feedback) {
-      return res.status(400).json({ error: "Feedback is required" });
-    }
-
-    try {
-      // Connect to MongoDB
-      const db = await connectToMongoDB();
-
-      // Insert feedback into the "userFeedback" collection
-      const feedbackCollection = db.collection("userFeedback");
-      await feedbackCollection.insertOne({ feedback, submittedAt: new Date() });
-
-      // Return success response
-      res.status(200).json({ message: "Feedback submitted successfully" });
-    } catch (error) {
-      console.error("Error occurred while submitting feedback:", error);
-      res.status(500).json({ error: "Internal server error" });
-    }
-  } else {
-    res.setHeader("Allow", ["POST"]);
-    res.status(405).end(`Method ${req.method} Not Allowed`);
+    db = client.db("testingData1"); // Connect to the "testingData1" database
   }
 }
+
+module.exports = async (req, res) => {
+  // Handle CORS Preflight Request
+  if (req.method === "OPTIONS") {
+    res.setHeader("Access-Control-Allow-Credentials", "true");
+    res.setHeader("Access-Control-Allow-Origin", "https://www.mapgp.co"); // Allow requests from this origin
+    res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+    res.status(200).end(); // Respond with a 200 status for preflight checks
+    return;
+  }
+
+  // Handle POST request
+  if (req.method !== "POST") {
+    return res.status(405).json({ message: "Method Not Allowed" });
+  }
+
+  await connectToMongoDB();
+
+  const { feedback } = req.body;
+
+  // Validate that feedback is provided
+  if (!feedback) {
+    return res.status(400).json({ error: "Feedback is required" });
+  }
+
+  try {
+    // Insert feedback into the "userFeedback" collection
+    const feedbackCollection = db.collection("userFeedback");
+    await feedbackCollection.insertOne({ feedback, submittedAt: new Date() });
+
+    // Set CORS headers
+    res.setHeader("Access-Control-Allow-Origin", "https://www.mapgp.co"); // Allow requests from your domain
+    res.setHeader("Access-Control-Allow-Credentials", "true");
+
+    return res.status(200).json({ message: "Feedback submitted successfully" });
+  } catch (error) {
+    console.error("Error occurred while submitting feedback:", error);
+    return res.status(500).json({ error: "Internal server error" });
+  }
+};
