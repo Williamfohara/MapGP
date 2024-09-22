@@ -32,8 +32,9 @@ body {
   font-size: 16px;
 }
 
+/* Updated #info-panel styles */
 #info-panel {
-  position: absolute;
+  position: relative; /* Changed from absolute to relative for proper child positioning */
   top: 1.5%;
   bottom: 2%;
   left: 0.5%;
@@ -49,6 +50,12 @@ body {
   align-items: flex-start;
   border-radius: 15px;
   overflow: auto; /* Allows scrolling within the panel if content exceeds its height */
+}
+
+/* Ensure text scrolls under the purple overlay */
+#info-panel h3,
+#info-panel p {
+  z-index: 0; /* Text should be behind the purple overlay */
 }
 
 #info-panel h3 {
@@ -163,6 +170,7 @@ body {
   background-color: #6c757d;
 }
 
+/* Updated #purple-overlay styles */
 #purple-overlay {
   position: absolute;
   bottom: 0; /* Place it at the bottom of the info-panel */
@@ -170,4 +178,5 @@ body {
   width: 100%; /* Full width of the info-panel */
   background-color: rgba(128, 0, 128, 0.7); /* Purple with 70% opacity */
   z-index: 1; /* Ensure it is above other elements in the info-panel */
+  pointer-events: none; /* Allow interaction with content behind it */
 }
