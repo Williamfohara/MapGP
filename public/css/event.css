@@ -62,11 +62,11 @@ body {
   margin: 5px 0; /* Reduced margin to match h3 and reduce vertical gap */
 }
 
-/* Top-right-box remains in its original position */
+/* Updated top-right-box to ensure no overlap */
 #top-right-box {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 180px; /* Moved further left to avoid overlap */
   background-color: rgba(255, 255, 255, 0.8);
   padding: 5px 10px;
   border-radius: 4px;
@@ -78,22 +78,24 @@ body {
   text-align: center;
 }
 
-/* Positioning the navigation buttons to the left of the top-right-box */
-#prevEvent,
-#nextEvent {
+/* Button container and buttons styling */
+.button-container {
   position: absolute;
   top: 10px;
-  right: 170px; /* Adjusted to the left of the top-right-box */
+  right: 10px;
+  display: flex;
+  gap: 10px; /* Adds a gap between the buttons */
+}
+
+#prevEvent,
+#nextEvent {
   padding: 8px 16px;
   cursor: pointer;
   background-color: #ffa500; /* Orange */
   color: white;
   border: none;
   border-radius: 5px;
-}
-
-#nextEvent {
-  right: 90px; /* Adjusted position for the next button */
+  font-size: 14px;
 }
 
 #prevEvent:hover,
@@ -101,6 +103,7 @@ body {
   background-color: #e69500; /* Darker shade of orange */
 }
 
+/* Hide Mapbox attribution and logo */
 .mapboxgl-ctrl-attrib-inner {
   display: none !important;
 }
