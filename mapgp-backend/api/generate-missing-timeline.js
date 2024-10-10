@@ -1,9 +1,9 @@
-const { MongoClient } = require("mongodb");
+const express = require("express");
+const cors = require("cors");
 const axios = require("axios");
 const dotenv = require("dotenv");
 const path = require("path");
-const express = require("express");
-const cors = require("cors");
+const { MongoClient } = require("mongodb");
 
 dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 
@@ -17,10 +17,20 @@ app.use(express.json()); // To parse JSON body
 app.use(
   cors({
     origin: "https://www.mapgp.co", // Allow requests only from your frontend domain
-    methods: ["GET", "POST"], // Specify allowed methods
-    allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
+    methods: ["GET", "POST", "OPTIONS"], // Include OPTIONS for preflight
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true, // Allow credentials such as cookies
   })
 );
+
+// Handle preflight CORS requests for all routes
+app.options("*", cors());
+
+// Set a timeout for requests
+app.use((req, res, next) => {
+  req.setTimeout(240000); // Set timeout to 240 seconds (4 minutes)
+  next();
+});
 
 async function connectToMongoDB() {
   await client.connect();
@@ -144,7 +154,6 @@ async function populateDatabase(country1, country2) {
   console.log("Database populated with initial relationship timelines");
 }
 
-// API handler for generating the missing timeline
 app.post("/api/generate-missing-timeline", async (req, res) => {
   const { country1, country2 } = req.body;
 
@@ -161,6 +170,7 @@ app.post("/api/generate-missing-timeline", async (req, res) => {
       .status(200)
       .json({ success: true, message: "Timeline generated successfully." });
   } catch (error) {
+    res.setHeader("Access-Control-Allow-Origin", "https://www.mapgp.co");
     console.error("Error generating timeline:", error);
     res
       .status(500)
