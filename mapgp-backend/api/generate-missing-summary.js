@@ -9,13 +9,19 @@ const handler = (req, res) => {
 };
 
 const app = express();
+app.use(express.json()); // To parse JSON body
+
+// Updated CORS setup
 app.use(
   cors({
     origin: "https://www.mapgp.co", // Allow requests only from your frontend domain
     methods: ["GET", "POST"], // Specify allowed methods
     allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
+    credentials: true, // Allow sending cookies and authorization headers
   })
 );
-app.post("/api/generate-missing-summary", handler); // Define route
+
+// Define route
+app.post("/api/generate-missing-summary", handler);
 
 module.exports = app;
