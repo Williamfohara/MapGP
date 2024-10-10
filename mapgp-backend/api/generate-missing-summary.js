@@ -25,3 +25,28 @@ app.use(
 app.post("/api/generate-missing-summary", handler);
 
 module.exports = app;
+
+// Update in the handleGenerateSummaryRequest function
+async function handleGenerateSummaryRequest(req, res) {
+  const { country1, country2 } = req.body;
+
+  if (!country1 || !country2) {
+    return res
+      .status(400)
+      .json({ success: false, message: "Both countries must be provided." });
+  }
+
+  try {
+    const result = await generateAndStoreSummary(country1, country2);
+    res.json(result);
+  } catch (error) {
+    // Set the CORS headers manually if not applied
+    res.setHeader("Access-Control-Allow-Origin", "https://www.mapgp.co");
+    res.setHeader(
+      "Access-Control-Allow-Headers",
+      "Content-Type, Authorization"
+    );
+    console.error("Error handling generate summary request:", error);
+    res.status(500).json({ success: false, message: "Internal server error" });
+  }
+}
