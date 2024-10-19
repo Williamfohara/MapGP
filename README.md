@@ -1,4 +1,6 @@
-MapGP (MapGeopolitical) is a web application that provides users with a geopolitical history of relationships between countries. Users can explore a timeline of key events and view detailed information about each event through interactive maps and text descriptions. The goal of MapGP is to help users understand the complexities of international relationships and how they have evolved over time.
+MapGP (MapGeopolitical)
+
+A web application that provides users with a geopolitical history of relationships between countries. Users can explore a timeline of key events and view detailed information about each event through interactive maps and text descriptions. The goal of MapGP is to help users understand the complexities of international relationships and how they have evolved over time.
 
 Project Structure
 MapGP consists of two main branches:
