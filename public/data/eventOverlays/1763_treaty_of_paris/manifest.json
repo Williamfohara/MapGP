@@ -1,0 +1,20 @@
+{
+  "overlays": [
+    {
+      "label": "Post-Treaty Boundaries (1763)",
+      "file": "01_post_treaty_boundaries.geojson"
+    },
+    {
+      "label": "Proclamation Line (1763)",
+      "file": "02_proclamation_line.geojson"
+    },
+    {
+      "label": "Québec Act Cultural Zone (1774)",
+      "file": "03_quebec_act_cultural_zone.geojson"
+    },
+    {
+      "label": "Loyalist Migration to Canada (post-1783)",
+      "file": "04_loyalist_migration.geojson"
+    }
+  ]
+}

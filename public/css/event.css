@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#header {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1;
+}
+
+#header h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+#header h2 {
+  margin: 5px 0 20px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* Updated #info-panel */
+#info-panel {
+  position: absolute;
+  top: 1.5%;
+  bottom: 2%;
+  left: 0.5%;
+  width: 30%;
+  height: auto; /* Adjust height based on content */
+  background-color: #eeeeee;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 15px;
+  max-height: 95%; /* Ensure it doesn't extend beyond the map's height */
+  overflow: auto; /* Allows scrolling within the panel if content exceeds its height */
+}
+
+/* Ensure text scrolls under the purple overlay */
+#info-panel h3,
+#info-panel p {
+  z-index: 0; /* Text should be behind the purple overlay */
+}
+
+#info-panel h3 {
+  color: #333;
+  margin: 5px 0;
+  width: 100%;
+  text-align: center;
+}
+
+#info-panel p {
+  margin: 5px 0;
+}
+
+/* Sticky purple overlay at the bottom */
+#purple-overlay {
+  position: sticky;
+  bottom: 0; /* Sticks to the bottom of the #info-panel */
+  height: 4%; /* Adjust height to the desired size */
+  width: 100%; /* Full width of the info-panel */
+  background-color: rgba(128, 0, 128, 0.7); /* Purple with 70% opacity */
+  z-index: 1; /* Ensure it is above other elements in the info-panel */
+  pointer-events: none; /* Allow interaction with content behind it */
+}
+
+/* Top-right-box remains in its original position */
+#top-right-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  max-width: calc(100% - 20px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 150%;
+  text-align: center;
+}
+
+#key-players-box {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 90vw;
+  text-align: left;
+}
+
+.key-player-country {
+  font-weight: normal;
+  margin-top: 5px;
+  background-color: #f1f1f1;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+/* Positioning the navigation buttons to the left of the top-right-box */
+#prevEvent,
+#nextEvent {
+  position: absolute;
+  bottom: 19px;
+  width: 130px;
+  right: 1170px;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#nextEvent {
+  right: 1030px;
+}
+
+#prevEvent:hover,
+#nextEvent:hover {
+  background-color: #e69500;
+}
+
+.mapboxgl-ctrl-attrib-inner {
+  display: none !important;
+}
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
+/* Feedback Button and Form */
+#feedback-container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+#feedback-button {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#feedback-form {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+#feedback-text {
+  width: 250px;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: none;
+}
+
+#submit-feedback,
+#cancel-feedback {
+  padding: 8px 16px;
+  margin-top: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#cancel-feedback {
+  background-color: #6c757d;
+}

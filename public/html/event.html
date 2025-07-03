@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Event Details</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link href="/css/event.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="info-panel">
+      <h3></h3>
+      <p></p>
+    </div>
+    <div id="top-right-box">
+      <p></p>
+    </div>
+    <div id="key-players-box">Key Players</div>
+    <div class="button-container">
+      <button id="prevEvent">Previous Event</button>
+      <button id="nextEvent">Next Event</button>
+    </div>
+    <div id="loading-spinner" class="spinner" style="display: none"></div>
+    <!-- Feedback button and form -->
+    <div id="feedback-container">
+      <button id="feedback-button">Submit Feedback</button>
+      <div id="feedback-form" style="display: none">
+        <textarea
+          id="feedback-text"
+          placeholder="Enter your feedback, suggestions, questions, etc. here... I WILL TAKE YOUR FEEDBACK VERY SERIOUSLY!"
+        ></textarea>
+        <button id="submit-feedback">Submit</button>
+        <button id="cancel-feedback">Cancel</button>
+      </div>
+    </div>
+
+    <script src="/js/event.js"></script>
+  </body>
+</html>

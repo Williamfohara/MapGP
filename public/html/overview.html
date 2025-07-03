@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Create a rotating globe</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link href="/css/overview.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="header">
+      <a href="/">
+        <h1>MapGP</h1>
+      </a>
+      <h2>Your guide to geopolitics</h2>
+    </div>
+
+    <!-- Add this info button -->
+    <button id="info-button">i</button>
+
+    <div id="info-panel">
+      <h3>International Relations</h3>
+      <div class="country-info">
+        <p><span id="country1-info"></span></p>
+        <p><span id="country2-info"></span></p>
+      </div>
+      <div class="relationship-summary" id="relationship-summary"></div>
+      <div class="timeline-container" id="timeline-container"></div>
+    </div>
+
+    <div id="side-button-panel">
+      <button class="side-button">Defense</button>
+      <button class="side-button">Treaties</button>
+      <button class="side-button">Economics</button>
+      <button class="side-button">Resources</button>
+      <button class="side-button">Migration</button>
+    </div>
+
+    <!-- Error Popup for Missing Event -->
+    <div id="event-error-popup" class="popup" style="display: none">
+      <div class="popup-content">
+        <p id="event-error-message">The selected event does not exist.</p>
+        <button id="generate-event-button">Generate Event</button>
+        <button id="generate-all-events-button">Generate All Events</button>
+        <!-- New Button Added -->
+        <button id="close-event-popup-button">Close</button>
+      </div>
+    </div>
+
+    <!-- Instructions Popup -->
+    <div id="instructions-popup" class="popup" style="display: none">
+      <div class="popup-content">
+        <h3>Instructions</h3>
+        <p>Follow these steps to explore international relations</p>
+        <ol>
+          <li>Hover over timeline event to view the year of occurence</li>
+          <br />
+          <li>
+            Scroll through timeline to view the major events between the
+            countries
+          </li>
+          <br />
+          <li>Click on an event to view an in-depth description</li>
+          <br />
+        </ol>
+        <button id="close-instructions-button">Got it!</button>
+      </div>
+    </div>
+
+    <script src="/js/overview.js"></script>
+  </body>
+</html>

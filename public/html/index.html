@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta charset="utf-8" />
+    <title>Create a rotating globe</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link href="/css/index.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+  </head>
+  <body>
+    <div class="search-container">
+      <input
+        type="text"
+        id="search-bar-1"
+        class="search-bar"
+        placeholder="Search Country 1"
+      />
+      <input
+        type="text"
+        id="search-bar-2"
+        class="search-bar"
+        placeholder="Search Country 2"
+      />
+      <button class="view-button">View</button>
+    </div>
+
+    <div id="map"></div>
+    <div id="header">
+      <a href="/">
+        <h1>MapGP</h1>
+      </a>
+      <h2>Your guide to geopolitics</h2>
+    </div>
+
+    <!-- Info Button for Triggering Instructions -->
+    <button id="info-button" class="info-button" title="Show Instructions">
+      i
+    </button>
+
+    <!-- Popup for No Relationship Summary Found -->
+    <div id="summary-error-popup" class="popup" style="display: none">
+      <div class="popup-content">
+        <p id="summary-error-message">
+          No relationship summary found for the selected countries.
+        </p>
+        <button id="generate-summary-button">Generate Summary</button>
+        <button id="close-summary-popup-button">Close</button>
+      </div>
+    </div>
+
+    <!-- Popup for No Timeline Found -->
+    <div id="timeline-error-popup" class="popup" style="display: none">
+      <div class="popup-content">
+        <p id="timeline-error-message">
+          No timeline summary found for the selected countries.
+        </p>
+        <button id="generate-timeline-button">Generate Timeline</button>
+        <button id="close-timeline-popup-button">Close</button>
+      </div>
+    </div>
+
+    <!-- Instructional Popup -->
+    <div id="instructions-popup" class="popup" style="display: none">
+      <div class="popup-content">
+        <h2>Welcome to MapGP!</h2>
+        <h3>Learn about the political relations between 2 countries</h3>
+        <ol>
+          <li>
+            Select two countries by clicking on the map or using the search bars
+          </li>
+          <br />
+          <li>Click the "View" button to see their historical relationship</li>
+          <br />
+          <li>
+            Explore the timeline and click on events for more details and maps
+          </li>
+        </ol>
+        <button id="close-instructions-button">Got it!</button>
+      </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Loyalist Migration Corridor - Maritime Route" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-75, 41],
+            [-63, 45],
+            [-62, 46],
+            [-64, 47],
+            [-70, 44],
+            [-76, 42],
+            [-75, 41]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Loyalist Migration Corridor - Upper Canada Route"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-77, 42],
+            [-75, 43],
+            [-78, 45],
+            [-81, 46],
+            [-82, 45],
+            [-79, 43],
+            [-77, 42]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Loyalist Settlement - Maritime Provinces" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-68, 47],
+            [-59, 47],
+            [-59, 43],
+            [-68, 43],
+            [-68, 47]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Loyalist Settlement - Upper Canada" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-83, 46],
+            [-74, 46],
+            [-74, 42],
+            [-83, 42],
+            [-83, 46]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Departure Region - Thirteen Colonies" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-84, 36],
+            [-70, 43],
+            [-70, 32],
+            [-84, 32],
+            [-84, 36]
+          ]
+        ]
+      }
+    }
+  ]
+}

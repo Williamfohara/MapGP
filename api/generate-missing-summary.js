@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const {
   handleGenerateSummaryRequest,
-} = require("../manualDBManipulation/generateMissingSummary.js");
+} = require("../mapgp-backend/manualDBManipulation/generateMissingSummary.js");
 
 const handler = (req, res) => {
   handleGenerateSummaryRequest(req, res);
