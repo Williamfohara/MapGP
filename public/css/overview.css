@@ -180,7 +180,7 @@ body {
 #side-button-panel {
   position: absolute;
   top: 1.5%;
-  left: 31.5%; /* Just to the right of #info-panel (which is 30% + 0.5%) */
+  left: 32%; /* Just to the right of #info-panel (which is 30% + 0.5%) */
   display: flex;
   flex-direction: column;
   gap: 10px;
