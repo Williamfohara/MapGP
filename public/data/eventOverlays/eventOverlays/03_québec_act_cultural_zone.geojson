@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "French Cultural Protection (Québec Act)" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-80, 52],
+            [-60, 52],
+            [-60, 45],
+            [-80, 45],
+            [-80, 52]
+          ]
+        ]
+      }
+    }
+  ]
+}

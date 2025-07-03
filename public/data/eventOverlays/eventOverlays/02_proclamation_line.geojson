@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Proclamation Line" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-83, 50],
+            [-83, 33],
+            [-81, 33],
+            [-81, 50],
+            [-83, 50]
+          ]
+        ]
+      }
+    }
+  ]
+}
