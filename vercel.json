@@ -1,7 +1,7 @@
 {
   "functions": {
-    "generate-event.js": { "maxDuration": 59 },
-    "generate-all-events.js": { "maxDuration": 59 },
-    "extract-key-countries.js": { "maxDuration": 59 }
+    "api/generate-event.js": { "maxDuration": 59 },
+    "api/generate-all-events.js": { "maxDuration": 59 },
+    "api/extract-key-countries.js": { "maxDuration": 59 }
   }
 }
