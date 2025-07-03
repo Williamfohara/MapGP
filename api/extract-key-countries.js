@@ -1,30 +1,20 @@
-const express = require("express");
-const { Configuration, OpenAIApi } = require("openai");
-const cors = require("cors");
-const dotenv = require("dotenv");
-const path = require("path");
+import { Configuration, OpenAIApi } from "openai";
 
-dotenv.config({ path: path.resolve(__dirname, "../../.env") });
+export default async function handler(req, res) {
+  // Set CORS headers
+  res.setHeader("Access-Control-Allow-Origin", "https://www.mapgp.co");
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
-const router = express.Router();
+  // Handle preflight
+  if (req.method === "OPTIONS") {
+    return res.status(200).end();
+  }
 
-// ✅ Add CORS just for this route (or globally in server.js)
-router.use(
-  cors({
-    origin: "https://www.mapgp.co",
-    methods: ["POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type"],
-  })
-);
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" });
+  }
 
-// ✅ Middleware to parse JSON body
-router.use(express.json());
-
-router.options("/", (req, res) => {
-  res.sendStatus(200);
-});
-
-router.post("/", async (req, res) => {
   const { text } = req.body;
 
   if (!text) {
@@ -61,6 +51,4 @@ router.post("/", async (req, res) => {
     console.error("OpenAI error:", error.response?.data || error.message);
     return res.status(500).json({ error: "Failed to fetch countries" });
   }
-});
-
-module.exports = router;
+}
