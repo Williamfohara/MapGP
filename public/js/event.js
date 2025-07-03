@@ -2,9 +2,9 @@ let map; // Declare map globally
 let eventIDs = []; // Declare eventIDs globally
 let currentEventID = null; // Declare currentEventID globally
 
-document.addEventListener("DOMContentLoaded", async function () {
-  const backendUrl = "https://map-gp-node-backend.vercel.app"; // Replace with your actual backend URL
+const backendUrl = "https://map-gp-node-backend.vercel.app"; // Replace with your actual backend URL
 
+document.addEventListener("DOMContentLoaded", async function () {
   try {
     // Fetch the configuration from the backend
     console.log("Fetching Mapbox API Key configuration...");
