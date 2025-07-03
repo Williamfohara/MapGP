@@ -1,37 +1,4 @@
 {
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/html/index.html"
-    },
-    {
-      "src": "/api/generate-event",
-      "headers": {
-        "Access-Control-Allow-Origin": "https://www.mapgp.co",
-        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization"
-      },
-      "dest": "/api/generate-event"
-    },
-    {
-      "src": "/api/generate-all-events",
-      "headers": {
-        "Access-Control-Allow-Origin": "https://www.mapgp.co",
-        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization"
-      },
-      "dest": "/api/generate-all-events"
-    },
-    {
-      "src": "/api/extract-key-countries",
-      "headers": {
-        "Access-Control-Allow-Origin": "https://www.mapgp.co",
-        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization"
-      },
-      "dest": "/api/extract-key-countries"
-    }
-  ],
   "functions": {
     "api/generate-event.js": { "maxDuration": 59 },
     "api/generate-all-events.js": { "maxDuration": 59 },
