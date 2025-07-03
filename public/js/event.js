@@ -253,18 +253,26 @@ function addMarkersToMap(coordinates) {
 }
 
 async function loadEventOverlays(eventSlug) {
-  const manifestUrl = `/data/eventOverlays/${eventSlug}/manifest.json`;
+  const manifestUrl = `/eventOverlays/${eventSlug}/manifest.json`;
   const response = await fetch(manifestUrl);
   const manifestData = await response.json();
   const overlays = manifestData.overlays;
 
-  overlays.forEach(async (overlay, index) => {
+  let allFeatures = [];
+
+  for (let index = 0; index < overlays.length; index++) {
+    const overlay = overlays[index];
     const sourceId = `${eventSlug}-source-${index}`;
     const layerId = `${eventSlug}-layer-${index}`;
+    const geojsonUrl = `/eventOverlays/${eventSlug}/${overlay.file}`;
+
+    const geojsonRes = await fetch(geojsonUrl);
+    const geojson = await geojsonRes.json();
+    allFeatures.push(...geojson.features);
 
     map.addSource(sourceId, {
       type: "geojson",
-      data: `/eventOverlays/${eventSlug}/${overlay.file}`,
+      data: geojson,
     });
 
     map.addLayer({
@@ -276,7 +284,16 @@ async function loadEventOverlays(eventSlug) {
         "fill-opacity": 0.4,
       },
     });
-  });
+  }
+
+  // Combine all features into one bounding box
+  if (allFeatures.length > 0) {
+    const bbox = turf.bbox({
+      type: "FeatureCollection",
+      features: allFeatures,
+    });
+    map.fitBounds(bbox, { padding: 40, duration: 1000 });
+  }
 }
 
 function navigateToPreviousEvent() {
