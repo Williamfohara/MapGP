@@ -106,7 +106,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  width: 400px; /* Increased from default ~200px */
+  width: 200px; /* Increased from default ~200px */
   max-width: 90vw;
   text-align: center;
 }
