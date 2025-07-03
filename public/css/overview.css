@@ -177,6 +177,31 @@ body {
   cursor: pointer;
 }
 
+#side-button-panel {
+  position: absolute;
+  top: 1.5%;
+  left: 31.5%; /* Just to the right of #info-panel (which is 30% + 0.5%) */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 2;
+}
+
+.side-button {
+  width: 140px;
+  height: 40px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.side-button:hover {
+  background-color: #0056b3;
+}
+
 .mapboxgl-ctrl-attrib-inner {
   display: none !important;
 }
