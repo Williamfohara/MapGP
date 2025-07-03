@@ -59,6 +59,9 @@ document.addEventListener("DOMContentLoaded", async function () {
     // Initialize eventIDs and currentEventID with the data from the response
     eventIDs = data.allEventIDs; // This should now include all relevant event IDs
     currentEventID = _id;
+
+    await loadEventOverlays("1763_treaty_of_paris");
+
     console.log("All Event IDs:", eventIDs); // Log all event IDs
     console.log("Current Event ID:", currentEventID);
 
@@ -246,6 +249,33 @@ function addMarkersToMap(coordinates) {
       .setLngLat(coordinates)
       .setPopup(new mapboxgl.Popup().setHTML(`<h3>${place}</h3>`)) // Add a popup
       .addTo(map);
+  });
+}
+
+async function loadEventOverlays(eventSlug) {
+  const manifestUrl = `/eventOverlays/${eventSlug}/manifest.json`;
+  const response = await fetch(manifestUrl);
+  const manifestData = await response.json();
+  const overlays = manifestData.overlays;
+
+  overlays.forEach(async (overlay, index) => {
+    const sourceId = `${eventSlug}-source-${index}`;
+    const layerId = `${eventSlug}-layer-${index}`;
+
+    map.addSource(sourceId, {
+      type: "geojson",
+      data: `/eventOverlays/${eventSlug}/${overlay.file}`,
+    });
+
+    map.addLayer({
+      id: layerId,
+      type: "fill",
+      source: sourceId,
+      paint: {
+        "fill-color": "#ffaa00",
+        "fill-opacity": 0.4,
+      },
+    });
   });
 }
 
