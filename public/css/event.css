@@ -96,6 +96,20 @@ body {
   text-align: center;
 }
 
+#key-players-box {
+  position: absolute;
+  top: 60px; /* Adjust depending on how far below the top-right-box you want it */
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  text-align: center;
+}
+
 /* Positioning the navigation buttons to the left of the top-right-box */
 #prevEvent,
 #nextEvent {
