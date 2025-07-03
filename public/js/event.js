@@ -101,14 +101,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // Extract and map geographic locations from the text
     const text = `${firstLine} ${remainingDetails}`;
-    const places = await extractLocationsFromText(text);
-
-    if (places.length > 0) {
-      const coordinates = await getCoordinatesForLocations(places);
-      addMarkersToMap(coordinates);
-    } else {
-      console.log("No locations found in the text.");
-    }
 
     // ✅ Move this here so text is in scope
     await displayKeyCountries(text);
@@ -185,74 +177,6 @@ function adjustTopRightBoxWidth(element) {
   // Set the calculated width and ensure it doesn't exceed the viewport
   element.style.width = width + "px";
   element.style.maxWidth = `calc(100% - ${element.offsetLeft + 10}px)`;
-}
-
-// New: Extract locations from text
-async function extractLocationsFromText(text) {
-  const openAiUrl = "https://api.openai.com/v1/completions";
-  const prompt = `Extract place names from the following text: ${text}`;
-
-  try {
-    const response = await fetch(openAiUrl, {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${OPENAI_API_KEY}`, // Your OpenAI API key
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        model: "text-davinci-003",
-        prompt: prompt,
-        max_tokens: 200,
-      }),
-    });
-
-    const data = await response.json();
-    return data.choices[0].text
-      .trim()
-      .split(",")
-      .map((location) => location.trim());
-  } catch (error) {
-    console.error("Error extracting locations:", error);
-    return [];
-  }
-}
-
-// New: Get coordinates for locations
-async function getCoordinatesForLocations(locations) {
-  const coordinates = [];
-
-  for (let location of locations) {
-    try {
-      const geocodeResponse = await fetch(
-        `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
-          location
-        )}.json?access_token=${mapboxgl.accessToken}`
-      );
-      const data = await geocodeResponse.json();
-
-      if (data.features && data.features.length > 0) {
-        const { center } = data.features[0]; // Get the first result's coordinates
-        coordinates.push({
-          place: location,
-          coordinates: center,
-        });
-      }
-    } catch (error) {
-      console.error(`Error fetching coordinates for ${location}:`, error);
-    }
-  }
-
-  return coordinates;
-}
-
-// New: Add markers to the map
-function addMarkersToMap(coordinates) {
-  coordinates.forEach(({ place, coordinates }) => {
-    const marker = new mapboxgl.Marker()
-      .setLngLat(coordinates)
-      .setPopup(new mapboxgl.Popup().setHTML(`<h3>${place}</h3>`)) // Add a popup
-      .addTo(map);
-  });
 }
 
 async function loadEventOverlays(eventSlug) {
