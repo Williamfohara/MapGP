@@ -253,7 +253,7 @@ function addMarkersToMap(coordinates) {
 }
 
 async function loadEventOverlays(eventSlug) {
-  const manifestUrl = `/eventOverlays/${eventSlug}/manifest.json`;
+  const manifestUrl = `/data/eventOverlays/${eventSlug}/manifest.json`;
   const response = await fetch(manifestUrl);
   const manifestData = await response.json();
   const overlays = manifestData.overlays;
