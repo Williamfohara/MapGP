@@ -101,7 +101,8 @@ body {
 #nextEvent {
   position: absolute;
   bottom: 19px;
-  right: 1040px;
+  width: 130px;
+  right: 1170px;
   padding: 8px 16px;
   cursor: pointer;
   background-color: #ffa500;
@@ -111,7 +112,7 @@ body {
 }
 
 #nextEvent {
-  right: 940px;
+  right: 1030px;
 }
 
 #prevEvent:hover,

@@ -198,7 +198,7 @@ async function generateRelationshipTimeline(
   2000 Marking the end of 71 years of Institutional Revolutionary Party rule, Vicente Fox is elected President of Mexico, promising to combat drug cartels
 "
   
-  Continue in this detailed manner up to the year 2000. Do not acknowledge me.`;
+  Continue in this detailed manner up to the present year. Do not acknowledge me.`;
 
   try {
     const response = await axios.post(
