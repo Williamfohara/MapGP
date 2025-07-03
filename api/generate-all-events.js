@@ -24,13 +24,19 @@ async function connectToMongoDB() {
 
 const app = express();
 
-// Enable CORS for all routes with specific settings
 app.use(
   cors({
-    origin: "https://www.mapgp.co", // Allow requests only from your frontend domain
-    methods: ["GET", "POST", "OPTIONS"], // Include OPTIONS for preflight
-    allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
-    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        console.log("❌ Blocked CORS origin:", origin);
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
   })
 );
 

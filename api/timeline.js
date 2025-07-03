@@ -39,11 +39,20 @@ const handler = async (req, res) => {
 const app = express();
 app.use(
   cors({
-    origin: "https://www.mapgp.co", // Allow requests only from your frontend domain
-    methods: ["GET", "POST"], // Specify allowed methods
-    allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        console.log("❌ Blocked CORS origin:", origin);
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
   })
 );
+
 app.get("/api/timeline", handler); // Define route
 
 module.exports = app;

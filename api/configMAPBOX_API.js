@@ -8,14 +8,32 @@ dotenv.config({ path: path.resolve(__dirname, "../../.env") });
 
 const app = express();
 
-// Enable CORS for all routes with specific settings
+// Define allowed origins
+const allowedOrigins = [
+  "https://www.mapgp.co", // production domain
+  "https://mapgp.vercel.app", // Vercel production fallback
+  "https://map-aeoy9ja19-williamfoharas-projects.vercel.app", // Vercel preview deploy
+];
+
+// Enable CORS for all routes with dynamic origin checking
 app.use(
   cors({
-    origin: "https://www.mapgp.co", // Allow requests only from your frontend domain
-    methods: ["GET", "POST"], // Specify allowed methods
-    allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        console.log("❌ Blocked CORS origin:", origin);
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
   })
 );
+
+// Handle preflight requests
+app.options("*", cors());
 
 // Define the route handler for serving the API keys
 const handler = (req, res) => {
@@ -27,7 +45,7 @@ const handler = (req, res) => {
 };
 
 // Define the API route
-app.get("/api/configAPIs", handler);
+app.get("/api/configMAPBOX_API", handler);
 
 // Export the Express app instance
 module.exports = app;

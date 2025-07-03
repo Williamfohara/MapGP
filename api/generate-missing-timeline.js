@@ -13,13 +13,19 @@ const client = new MongoClient(mongoUri);
 const app = express();
 app.use(express.json()); // To parse JSON body
 
-// CORS setup
 app.use(
   cors({
-    origin: "https://www.mapgp.co", // Allow requests only from your frontend domain
-    methods: ["GET", "POST", "OPTIONS"], // Include OPTIONS for preflight
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        console.log("❌ Blocked CORS origin:", origin);
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    methods: ["GET", "POST", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true, // Allow credentials such as cookies
+    credentials: true,
   })
 );
 
