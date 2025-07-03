@@ -1,16 +1,17 @@
 import { Configuration, OpenAIApi } from "openai";
 
 export default async function handler(req, res) {
-  // ✅ Allow requests from your frontend origin
+  // Always set CORS headers
   res.setHeader("Access-Control-Allow-Origin", "https://www.mapgp.co");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
-  // ✅ Handle preflight (OPTIONS) request
+  // Handle preflight request
   if (req.method === "OPTIONS") {
     return res.status(200).end();
   }
 
+  // Block non-POST requests
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
@@ -21,15 +22,15 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "Missing text input" });
   }
 
-  const configuration = new Configuration({
-    apiKey: process.env.OPENAI_API_KEY,
-  });
-
-  const openai = new OpenAIApi(configuration);
-
-  const prompt = `From the following text, identify only the major countries or nation-states involved. Do not include individuals or vague entities. Return only a comma-separated list of country names. Text: """${text}"""`;
-
   try {
+    const configuration = new Configuration({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
+
+    const openai = new OpenAIApi(configuration);
+
+    const prompt = `From the following text, identify only the major countries or nation-states involved. Do not include individuals or vague entities. Return only a comma-separated list of country names. Text: """${text}"""`;
+
     const completion = await openai.createChatCompletion({
       model: "gpt-4o",
       messages: [
