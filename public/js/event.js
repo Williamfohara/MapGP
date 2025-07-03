@@ -110,6 +110,9 @@ document.addEventListener("DOMContentLoaded", async function () {
       console.log("No locations found in the text.");
     }
 
+    // ✅ Move this here so text is in scope
+    await displayKeyCountries(text);
+
     // Attach event handlers to navigation buttons
     document.getElementById("prevEvent").onclick = navigateToPreviousEvent;
     document.getElementById("nextEvent").onclick = navigateToNextEvent;
@@ -329,5 +332,53 @@ function navigateToNextEvent() {
     )}&year=${encodeURIComponent(nextEventYear)}`;
   } else {
     console.log("No next event available.");
+  }
+}
+
+async function displayKeyCountries(text) {
+  const keyPlayersBox = document.getElementById("key-players-box");
+  keyPlayersBox.innerHTML = "<strong>Key Players</strong><br>";
+
+  const prompt = `From the following text, identify only the major countries or nation-states involved. Do not include individuals or vague entities. Return only a comma-separated list of country names. Text: """${text}"""`;
+
+  try {
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${OPENAI_API_KEY}`, // Make sure this is available
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: "gpt-4o",
+        messages: [
+          { role: "system", content: "You are a helpful assistant." },
+          { role: "user", content: prompt },
+        ],
+        max_tokens: 100,
+        temperature: 0.2,
+      }),
+    });
+
+    const reply = await response.json();
+    const raw = reply.choices[0].message.content;
+    const countries = raw
+      .split(",")
+      .map((c) => c.trim())
+      .filter(Boolean);
+
+    if (countries.length === 0) {
+      keyPlayersBox.innerHTML += "<em>No countries identified.</em>";
+      return;
+    }
+
+    countries.forEach((country) => {
+      const div = document.createElement("div");
+      div.className = "key-player-country";
+      div.innerText = country;
+      keyPlayersBox.appendChild(div);
+    });
+  } catch (err) {
+    console.error("Error fetching key countries:", err);
+    keyPlayersBox.innerHTML += "<em>Failed to load countries.</em>";
   }
 }
