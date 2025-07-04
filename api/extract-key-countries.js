@@ -36,7 +36,7 @@ export default async function handler(req, res) {
         { role: "system", content: "You are a helpful assistant." },
         { role: "user", content: prompt },
       ],
-      max_tokens: 100,
+      max_tokens: 200,
       temperature: 0.2,
     });
 

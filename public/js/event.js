@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     console.log("Initializing map...");
     map = new mapboxgl.Map({
       container: "map",
-      zoom: 4.4,
+      zoom: 0.0,
       center: [-103, 23],
       style: "mapbox://styles/pjfry/clnger6op083e01qxargvhm65",
       projection: "globe",
