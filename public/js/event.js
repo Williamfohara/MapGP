@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     console.log("Mapbox API Key fetched:", config.mapboxAccessToken);
 
     // Use the fetched Mapbox access token
-    mapboxgl.accessToken = config.mapboxAccessToken;
+    mapboxgl.accessToken = config.mapboxApiKey;
 
     // Initialize the map
     console.log("Initializing map...");

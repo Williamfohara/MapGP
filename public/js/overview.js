@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch(`${backendUrl}/api/configMAPBOX_API`)
     .then((response) => response.json())
     .then((config) => {
-      mapboxgl.accessToken = config.mapboxAccessToken;
+      mapboxgl.accessToken = config.mapboxApiKey;
 
       // Initialize the map
       const map = new mapboxgl.Map({
