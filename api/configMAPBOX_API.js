@@ -33,11 +33,18 @@ app.use(
 app.options("*", cors()); // handle pre-flight
 /* ---------------------------------------------------------------------- */
 
-// Catch any path / any method the function receives
-app.all("*", (_req, res) => {
+// Catch any path / any method
+app.all("*", (req, res) => {
+  // 👇 print the first 6 characters so we don't leak the whole key
+  console.log(
+    "MAPBOX_API_KEY prefix:",
+    process.env.MAPBOX_API_KEY
+      ? process.env.MAPBOX_API_KEY.slice(0, 6)
+      : "undefined"
+  );
+
   res.json({
-    mapboxApiKey: process.env.MAPBOX_API_KEY,
-    openAiApiKey: process.env.OPENAI_API_KEY, // remove if you don’t want to expose it
+    mapboxApiKey: process.env.MAPBOX_API_KEY || null,
   });
 });
 
