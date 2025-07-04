@@ -1,0 +1,2210 @@
+[
+  {
+    "country1": "Argentina",
+    "country2": "Antigua and Barbuda"
+  },
+  {
+    "country1": "Antigua and Barbuda",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Bahamas"
+  },
+  {
+    "country1": "Bahamas",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Barbados"
+  },
+  {
+    "country1": "Barbados",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Belize"
+  },
+  {
+    "country1": "Belize",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Canada"
+  },
+  {
+    "country1": "Canada",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Costa Rica"
+  },
+  {
+    "country1": "Costa Rica",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Cuba"
+  },
+  {
+    "country1": "Cuba",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Dominica"
+  },
+  {
+    "country1": "Dominica",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Dominican Republic"
+  },
+  {
+    "country1": "Dominican Republic",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "El Salvador"
+  },
+  {
+    "country1": "El Salvador",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Grenada"
+  },
+  {
+    "country1": "Grenada",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Guatemala"
+  },
+  {
+    "country1": "Guatemala",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Haiti"
+  },
+  {
+    "country1": "Haiti",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Honduras"
+  },
+  {
+    "country1": "Honduras",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Jamaica"
+  },
+  {
+    "country1": "Jamaica",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Mexico"
+  },
+  {
+    "country1": "Mexico",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Nicaragua"
+  },
+  {
+    "country1": "Nicaragua",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Panama"
+  },
+  {
+    "country1": "Panama",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Saint Kitts and Nevis"
+  },
+  {
+    "country1": "Saint Kitts and Nevis",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Saint Lucia"
+  },
+  {
+    "country1": "Saint Lucia",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Saint Vincent and the Grenadines"
+  },
+  {
+    "country1": "Saint Vincent and the Grenadines",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "Trinidad and Tobago"
+  },
+  {
+    "country1": "Trinidad and Tobago",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Argentina",
+    "country2": "United States"
+  },
+  {
+    "country1": "United States",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Antigua and Barbuda"
+  },
+  {
+    "country1": "Antigua and Barbuda",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Bahamas"
+  },
+  {
+    "country1": "Bahamas",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Barbados"
+  },
+  {
+    "country1": "Barbados",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Belize"
+  },
+  {
+    "country1": "Belize",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Canada"
+  },
+  {
+    "country1": "Canada",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Costa Rica"
+  },
+  {
+    "country1": "Costa Rica",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Cuba"
+  },
+  {
+    "country1": "Cuba",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Dominica"
+  },
+  {
+    "country1": "Dominica",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Dominican Republic"
+  },
+  {
+    "country1": "Dominican Republic",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "El Salvador"
+  },
+  {
+    "country1": "El Salvador",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Grenada"
+  },
+  {
+    "country1": "Grenada",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Guatemala"
+  },
+  {
+    "country1": "Guatemala",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Haiti"
+  },
+  {
+    "country1": "Haiti",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Honduras"
+  },
+  {
+    "country1": "Honduras",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Jamaica"
+  },
+  {
+    "country1": "Jamaica",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Mexico"
+  },
+  {
+    "country1": "Mexico",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Nicaragua"
+  },
+  {
+    "country1": "Nicaragua",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Panama"
+  },
+  {
+    "country1": "Panama",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Saint Kitts and Nevis"
+  },
+  {
+    "country1": "Saint Kitts and Nevis",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Saint Lucia"
+  },
+  {
+    "country1": "Saint Lucia",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Saint Vincent and the Grenadines"
+  },
+  {
+    "country1": "Saint Vincent and the Grenadines",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "Trinidad and Tobago"
+  },
+  {
+    "country1": "Trinidad and Tobago",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Bolivia",
+    "country2": "United States"
+  },
+  {
+    "country1": "United States",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Antigua and Barbuda"
+  },
+  {
+    "country1": "Antigua and Barbuda",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Bahamas"
+  },
+  {
+    "country1": "Bahamas",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Barbados"
+  },
+  {
+    "country1": "Barbados",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Belize"
+  },
+  {
+    "country1": "Belize",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Canada"
+  },
+  {
+    "country1": "Canada",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Costa Rica"
+  },
+  {
+    "country1": "Costa Rica",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Cuba"
+  },
+  {
+    "country1": "Cuba",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Dominica"
+  },
+  {
+    "country1": "Dominica",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Dominican Republic"
+  },
+  {
+    "country1": "Dominican Republic",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "El Salvador"
+  },
+  {
+    "country1": "El Salvador",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Grenada"
+  },
+  {
+    "country1": "Grenada",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Guatemala"
+  },
+  {
+    "country1": "Guatemala",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Haiti"
+  },
+  {
+    "country1": "Haiti",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Honduras"
+  },
+  {
+    "country1": "Honduras",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Jamaica"
+  },
+  {
+    "country1": "Jamaica",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Mexico"
+  },
+  {
+    "country1": "Mexico",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Nicaragua"
+  },
+  {
+    "country1": "Nicaragua",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Panama"
+  },
+  {
+    "country1": "Panama",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Saint Kitts and Nevis"
+  },
+  {
+    "country1": "Saint Kitts and Nevis",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Saint Lucia"
+  },
+  {
+    "country1": "Saint Lucia",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Saint Vincent and the Grenadines"
+  },
+  {
+    "country1": "Saint Vincent and the Grenadines",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "Trinidad and Tobago"
+  },
+  {
+    "country1": "Trinidad and Tobago",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Brazil",
+    "country2": "United States"
+  },
+  {
+    "country1": "United States",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Antigua and Barbuda"
+  },
+  {
+    "country1": "Antigua and Barbuda",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Bahamas"
+  },
+  {
+    "country1": "Bahamas",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Barbados"
+  },
+  {
+    "country1": "Barbados",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Belize"
+  },
+  {
+    "country1": "Belize",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Canada"
+  },
+  {
+    "country1": "Canada",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Costa Rica"
+  },
+  {
+    "country1": "Costa Rica",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Cuba"
+  },
+  {
+    "country1": "Cuba",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Dominica"
+  },
+  {
+    "country1": "Dominica",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Dominican Republic"
+  },
+  {
+    "country1": "Dominican Republic",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "El Salvador"
+  },
+  {
+    "country1": "El Salvador",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Grenada"
+  },
+  {
+    "country1": "Grenada",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Guatemala"
+  },
+  {
+    "country1": "Guatemala",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Haiti"
+  },
+  {
+    "country1": "Haiti",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Honduras"
+  },
+  {
+    "country1": "Honduras",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Jamaica"
+  },
+  {
+    "country1": "Jamaica",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Mexico"
+  },
+  {
+    "country1": "Mexico",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Nicaragua"
+  },
+  {
+    "country1": "Nicaragua",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Panama"
+  },
+  {
+    "country1": "Panama",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Saint Kitts and Nevis"
+  },
+  {
+    "country1": "Saint Kitts and Nevis",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Saint Lucia"
+  },
+  {
+    "country1": "Saint Lucia",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Saint Vincent and the Grenadines"
+  },
+  {
+    "country1": "Saint Vincent and the Grenadines",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "Trinidad and Tobago"
+  },
+  {
+    "country1": "Trinidad and Tobago",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Chile",
+    "country2": "United States"
+  },
+  {
+    "country1": "United States",
+    "country2": "Chile"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Antigua and Barbuda"
+  },
+  {
+    "country1": "Antigua and Barbuda",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Bahamas"
+  },
+  {
+    "country1": "Bahamas",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Barbados"
+  },
+  {
+    "country1": "Barbados",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Belize"
+  },
+  {
+    "country1": "Belize",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Canada"
+  },
+  {
+    "country1": "Canada",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Costa Rica"
+  },
+  {
+    "country1": "Costa Rica",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Cuba"
+  },
+  {
+    "country1": "Cuba",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Dominica"
+  },
+  {
+    "country1": "Dominica",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Dominican Republic"
+  },
+  {
+    "country1": "Dominican Republic",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "El Salvador"
+  },
+  {
+    "country1": "El Salvador",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Grenada"
+  },
+  {
+    "country1": "Grenada",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Guatemala"
+  },
+  {
+    "country1": "Guatemala",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Haiti"
+  },
+  {
+    "country1": "Haiti",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Honduras"
+  },
+  {
+    "country1": "Honduras",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Jamaica"
+  },
+  {
+    "country1": "Jamaica",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Mexico"
+  },
+  {
+    "country1": "Mexico",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Nicaragua"
+  },
+  {
+    "country1": "Nicaragua",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Panama"
+  },
+  {
+    "country1": "Panama",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Saint Kitts and Nevis"
+  },
+  {
+    "country1": "Saint Kitts and Nevis",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Saint Lucia"
+  },
+  {
+    "country1": "Saint Lucia",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Saint Vincent and the Grenadines"
+  },
+  {
+    "country1": "Saint Vincent and the Grenadines",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "Trinidad and Tobago"
+  },
+  {
+    "country1": "Trinidad and Tobago",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Colombia",
+    "country2": "United States"
+  },
+  {
+    "country1": "United States",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Antigua and Barbuda"
+  },
+  {
+    "country1": "Antigua and Barbuda",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Bahamas"
+  },
+  {
+    "country1": "Bahamas",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Barbados"
+  },
+  {
+    "country1": "Barbados",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Belize"
+  },
+  {
+    "country1": "Belize",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Canada"
+  },
+  {
+    "country1": "Canada",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Costa Rica"
+  },
+  {
+    "country1": "Costa Rica",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Cuba"
+  },
+  {
+    "country1": "Cuba",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Dominica"
+  },
+  {
+    "country1": "Dominica",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Dominican Republic"
+  },
+  {
+    "country1": "Dominican Republic",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "El Salvador"
+  },
+  {
+    "country1": "El Salvador",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Grenada"
+  },
+  {
+    "country1": "Grenada",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Guatemala"
+  },
+  {
+    "country1": "Guatemala",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Haiti"
+  },
+  {
+    "country1": "Haiti",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Honduras"
+  },
+  {
+    "country1": "Honduras",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Jamaica"
+  },
+  {
+    "country1": "Jamaica",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Mexico"
+  },
+  {
+    "country1": "Mexico",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Nicaragua"
+  },
+  {
+    "country1": "Nicaragua",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Panama"
+  },
+  {
+    "country1": "Panama",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Saint Kitts and Nevis"
+  },
+  {
+    "country1": "Saint Kitts and Nevis",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Saint Lucia"
+  },
+  {
+    "country1": "Saint Lucia",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Saint Vincent and the Grenadines"
+  },
+  {
+    "country1": "Saint Vincent and the Grenadines",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "Trinidad and Tobago"
+  },
+  {
+    "country1": "Trinidad and Tobago",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Ecuador",
+    "country2": "United States"
+  },
+  {
+    "country1": "United States",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Antigua and Barbuda"
+  },
+  {
+    "country1": "Antigua and Barbuda",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Bahamas"
+  },
+  {
+    "country1": "Bahamas",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Barbados"
+  },
+  {
+    "country1": "Barbados",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Belize"
+  },
+  {
+    "country1": "Belize",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Canada"
+  },
+  {
+    "country1": "Canada",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Costa Rica"
+  },
+  {
+    "country1": "Costa Rica",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Cuba"
+  },
+  {
+    "country1": "Cuba",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Dominica"
+  },
+  {
+    "country1": "Dominica",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Dominican Republic"
+  },
+  {
+    "country1": "Dominican Republic",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "El Salvador"
+  },
+  {
+    "country1": "El Salvador",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Grenada"
+  },
+  {
+    "country1": "Grenada",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Guatemala"
+  },
+  {
+    "country1": "Guatemala",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Haiti"
+  },
+  {
+    "country1": "Haiti",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Honduras"
+  },
+  {
+    "country1": "Honduras",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Jamaica"
+  },
+  {
+    "country1": "Jamaica",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Mexico"
+  },
+  {
+    "country1": "Mexico",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Nicaragua"
+  },
+  {
+    "country1": "Nicaragua",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Panama"
+  },
+  {
+    "country1": "Panama",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Saint Kitts and Nevis"
+  },
+  {
+    "country1": "Saint Kitts and Nevis",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Saint Lucia"
+  },
+  {
+    "country1": "Saint Lucia",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Saint Vincent and the Grenadines"
+  },
+  {
+    "country1": "Saint Vincent and the Grenadines",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "Trinidad and Tobago"
+  },
+  {
+    "country1": "Trinidad and Tobago",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Guyana",
+    "country2": "United States"
+  },
+  {
+    "country1": "United States",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Antigua and Barbuda"
+  },
+  {
+    "country1": "Antigua and Barbuda",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Bahamas"
+  },
+  {
+    "country1": "Bahamas",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Barbados"
+  },
+  {
+    "country1": "Barbados",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Belize"
+  },
+  {
+    "country1": "Belize",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Canada"
+  },
+  {
+    "country1": "Canada",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Costa Rica"
+  },
+  {
+    "country1": "Costa Rica",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Cuba"
+  },
+  {
+    "country1": "Cuba",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Dominica"
+  },
+  {
+    "country1": "Dominica",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Dominican Republic"
+  },
+  {
+    "country1": "Dominican Republic",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "El Salvador"
+  },
+  {
+    "country1": "El Salvador",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Grenada"
+  },
+  {
+    "country1": "Grenada",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Guatemala"
+  },
+  {
+    "country1": "Guatemala",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Haiti"
+  },
+  {
+    "country1": "Haiti",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Honduras"
+  },
+  {
+    "country1": "Honduras",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Jamaica"
+  },
+  {
+    "country1": "Jamaica",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Mexico"
+  },
+  {
+    "country1": "Mexico",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Nicaragua"
+  },
+  {
+    "country1": "Nicaragua",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Panama"
+  },
+  {
+    "country1": "Panama",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Saint Kitts and Nevis"
+  },
+  {
+    "country1": "Saint Kitts and Nevis",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Saint Lucia"
+  },
+  {
+    "country1": "Saint Lucia",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Saint Vincent and the Grenadines"
+  },
+  {
+    "country1": "Saint Vincent and the Grenadines",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "Trinidad and Tobago"
+  },
+  {
+    "country1": "Trinidad and Tobago",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Paraguay",
+    "country2": "United States"
+  },
+  {
+    "country1": "United States",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Antigua and Barbuda"
+  },
+  {
+    "country1": "Antigua and Barbuda",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Bahamas"
+  },
+  {
+    "country1": "Bahamas",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Barbados"
+  },
+  {
+    "country1": "Barbados",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Belize"
+  },
+  {
+    "country1": "Belize",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Canada"
+  },
+  {
+    "country1": "Canada",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Costa Rica"
+  },
+  {
+    "country1": "Costa Rica",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Cuba"
+  },
+  {
+    "country1": "Cuba",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Dominica"
+  },
+  {
+    "country1": "Dominica",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Dominican Republic"
+  },
+  {
+    "country1": "Dominican Republic",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "El Salvador"
+  },
+  {
+    "country1": "El Salvador",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Grenada"
+  },
+  {
+    "country1": "Grenada",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Guatemala"
+  },
+  {
+    "country1": "Guatemala",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Haiti"
+  },
+  {
+    "country1": "Haiti",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Honduras"
+  },
+  {
+    "country1": "Honduras",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Jamaica"
+  },
+  {
+    "country1": "Jamaica",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Mexico"
+  },
+  {
+    "country1": "Mexico",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Nicaragua"
+  },
+  {
+    "country1": "Nicaragua",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Panama"
+  },
+  {
+    "country1": "Panama",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Saint Kitts and Nevis"
+  },
+  {
+    "country1": "Saint Kitts and Nevis",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Saint Lucia"
+  },
+  {
+    "country1": "Saint Lucia",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Saint Vincent and the Grenadines"
+  },
+  {
+    "country1": "Saint Vincent and the Grenadines",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "Trinidad and Tobago"
+  },
+  {
+    "country1": "Trinidad and Tobago",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Peru",
+    "country2": "United States"
+  },
+  {
+    "country1": "United States",
+    "country2": "Peru"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Antigua and Barbuda"
+  },
+  {
+    "country1": "Antigua and Barbuda",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Bahamas"
+  },
+  {
+    "country1": "Bahamas",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Barbados"
+  },
+  {
+    "country1": "Barbados",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Belize"
+  },
+  {
+    "country1": "Belize",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Canada"
+  },
+  {
+    "country1": "Canada",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Costa Rica"
+  },
+  {
+    "country1": "Costa Rica",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Cuba"
+  },
+  {
+    "country1": "Cuba",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Dominica"
+  },
+  {
+    "country1": "Dominica",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Dominican Republic"
+  },
+  {
+    "country1": "Dominican Republic",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "El Salvador"
+  },
+  {
+    "country1": "El Salvador",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Grenada"
+  },
+  {
+    "country1": "Grenada",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Guatemala"
+  },
+  {
+    "country1": "Guatemala",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Haiti"
+  },
+  {
+    "country1": "Haiti",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Honduras"
+  },
+  {
+    "country1": "Honduras",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Jamaica"
+  },
+  {
+    "country1": "Jamaica",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Mexico"
+  },
+  {
+    "country1": "Mexico",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Nicaragua"
+  },
+  {
+    "country1": "Nicaragua",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Panama"
+  },
+  {
+    "country1": "Panama",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Saint Kitts and Nevis"
+  },
+  {
+    "country1": "Saint Kitts and Nevis",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Saint Lucia"
+  },
+  {
+    "country1": "Saint Lucia",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Saint Vincent and the Grenadines"
+  },
+  {
+    "country1": "Saint Vincent and the Grenadines",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "Trinidad and Tobago"
+  },
+  {
+    "country1": "Trinidad and Tobago",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Suriname",
+    "country2": "United States"
+  },
+  {
+    "country1": "United States",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Antigua and Barbuda"
+  },
+  {
+    "country1": "Antigua and Barbuda",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Bahamas"
+  },
+  {
+    "country1": "Bahamas",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Barbados"
+  },
+  {
+    "country1": "Barbados",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Belize"
+  },
+  {
+    "country1": "Belize",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Canada"
+  },
+  {
+    "country1": "Canada",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Costa Rica"
+  },
+  {
+    "country1": "Costa Rica",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Cuba"
+  },
+  {
+    "country1": "Cuba",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Dominica"
+  },
+  {
+    "country1": "Dominica",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Dominican Republic"
+  },
+  {
+    "country1": "Dominican Republic",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "El Salvador"
+  },
+  {
+    "country1": "El Salvador",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Grenada"
+  },
+  {
+    "country1": "Grenada",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Guatemala"
+  },
+  {
+    "country1": "Guatemala",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Haiti"
+  },
+  {
+    "country1": "Haiti",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Honduras"
+  },
+  {
+    "country1": "Honduras",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Jamaica"
+  },
+  {
+    "country1": "Jamaica",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Mexico"
+  },
+  {
+    "country1": "Mexico",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Nicaragua"
+  },
+  {
+    "country1": "Nicaragua",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Panama"
+  },
+  {
+    "country1": "Panama",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Saint Kitts and Nevis"
+  },
+  {
+    "country1": "Saint Kitts and Nevis",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Saint Lucia"
+  },
+  {
+    "country1": "Saint Lucia",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Saint Vincent and the Grenadines"
+  },
+  {
+    "country1": "Saint Vincent and the Grenadines",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "Trinidad and Tobago"
+  },
+  {
+    "country1": "Trinidad and Tobago",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Uruguay",
+    "country2": "United States"
+  },
+  {
+    "country1": "United States",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Antigua and Barbuda"
+  },
+  {
+    "country1": "Antigua and Barbuda",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Bahamas"
+  },
+  {
+    "country1": "Bahamas",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Barbados"
+  },
+  {
+    "country1": "Barbados",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Belize"
+  },
+  {
+    "country1": "Belize",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Canada"
+  },
+  {
+    "country1": "Canada",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Costa Rica"
+  },
+  {
+    "country1": "Costa Rica",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Cuba"
+  },
+  {
+    "country1": "Cuba",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Dominica"
+  },
+  {
+    "country1": "Dominica",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Dominican Republic"
+  },
+  {
+    "country1": "Dominican Republic",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "El Salvador"
+  },
+  {
+    "country1": "El Salvador",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Grenada"
+  },
+  {
+    "country1": "Grenada",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Guatemala"
+  },
+  {
+    "country1": "Guatemala",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Haiti"
+  },
+  {
+    "country1": "Haiti",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Honduras"
+  },
+  {
+    "country1": "Honduras",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Jamaica"
+  },
+  {
+    "country1": "Jamaica",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Mexico"
+  },
+  {
+    "country1": "Mexico",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Nicaragua"
+  },
+  {
+    "country1": "Nicaragua",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Panama"
+  },
+  {
+    "country1": "Panama",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Saint Kitts and Nevis"
+  },
+  {
+    "country1": "Saint Kitts and Nevis",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Saint Lucia"
+  },
+  {
+    "country1": "Saint Lucia",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Saint Vincent and the Grenadines"
+  },
+  {
+    "country1": "Saint Vincent and the Grenadines",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "Trinidad and Tobago"
+  },
+  {
+    "country1": "Trinidad and Tobago",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "Venezuela",
+    "country2": "United States"
+  },
+  {
+    "country1": "United States",
+    "country2": "Venezuela"
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Argentina" },
+      "geometry": { "type": "Point", "coordinates": [-63.6167, -38.4161] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Bolivia" },
+      "geometry": { "type": "Point", "coordinates": [-63.5887, -16.2902] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Brazil" },
+      "geometry": { "type": "Point", "coordinates": [-51.9253, -14.235] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Chile" },
+      "geometry": { "type": "Point", "coordinates": [-71.5429, -35.6751] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Colombia" },
+      "geometry": { "type": "Point", "coordinates": [-74.2973, 4.5709] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Ecuador" },
+      "geometry": { "type": "Point", "coordinates": [-78.1834, -1.8312] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Guyana" },
+      "geometry": { "type": "Point", "coordinates": [-58.9302, 4.8604] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Paraguay" },
+      "geometry": { "type": "Point", "coordinates": [-58.4438, -23.4425] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Peru" },
+      "geometry": { "type": "Point", "coordinates": [-75.0152, -9.19] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Suriname" },
+      "geometry": { "type": "Point", "coordinates": [-56.0278, 3.9193] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Uruguay" },
+      "geometry": { "type": "Point", "coordinates": [-55.7658, -32.5228] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "COUNTRY_NAME": "Venezuela" },
+      "geometry": { "type": "Point", "coordinates": [-66.5897, 6.4238] }
+    }
+  ]
+}

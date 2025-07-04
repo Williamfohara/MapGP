@@ -1,0 +1,806 @@
+[
+  {
+    "country1": "India",
+    "country2": "Albania"
+  },
+  {
+    "country1": "India",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "India",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "India",
+    "country2": "Austria"
+  },
+  {
+    "country1": "India",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "India",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "India",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "India",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "India",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "India",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "India",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "India",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "India",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "India",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "India",
+    "country2": "Finland"
+  },
+  {
+    "country1": "India",
+    "country2": "France"
+  },
+  {
+    "country1": "India",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "India",
+    "country2": "Germany"
+  },
+  {
+    "country1": "India",
+    "country2": "Greece"
+  },
+  {
+    "country1": "India",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "India",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "India",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "India",
+    "country2": "Italy"
+  },
+  {
+    "country1": "India",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "India",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "India",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "India",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "India",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "India",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "India",
+    "country2": "Malta"
+  },
+  {
+    "country1": "India",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "India",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "India",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "India",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "India",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "India",
+    "country2": "Norway"
+  },
+  {
+    "country1": "India",
+    "country2": "Poland"
+  },
+  {
+    "country1": "India",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "India",
+    "country2": "Romania"
+  },
+  {
+    "country1": "India",
+    "country2": "Russia"
+  },
+  {
+    "country1": "India",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "India",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "India",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "India",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "India",
+    "country2": "Spain"
+  },
+  {
+    "country1": "India",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "India",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "India",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "India",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "India",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "India",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "India",
+    "country2": "Algeria"
+  },
+  {
+    "country1": "India",
+    "country2": "Angola"
+  },
+  {
+    "country1": "India",
+    "country2": "Benin"
+  },
+  {
+    "country1": "India",
+    "country2": "Botswana"
+  },
+  {
+    "country1": "India",
+    "country2": "Burkina Faso"
+  },
+  {
+    "country1": "India",
+    "country2": "Burundi"
+  },
+  {
+    "country1": "India",
+    "country2": "Cabo Verde"
+  },
+  {
+    "country1": "India",
+    "country2": "Cameroon"
+  },
+  {
+    "country1": "India",
+    "country2": "Central African Republic"
+  },
+  {
+    "country1": "India",
+    "country2": "Chad"
+  },
+  {
+    "country1": "India",
+    "country2": "Comoros"
+  },
+  {
+    "country1": "India",
+    "country2": "Democratic Republic of the Congo"
+  },
+  {
+    "country1": "India",
+    "country2": "Djibouti"
+  },
+  {
+    "country1": "India",
+    "country2": "Egypt"
+  },
+  {
+    "country1": "India",
+    "country2": "Equatorial Guinea"
+  },
+  {
+    "country1": "India",
+    "country2": "Eritrea"
+  },
+  {
+    "country1": "India",
+    "country2": "Eswatini"
+  },
+  {
+    "country1": "India",
+    "country2": "Ethiopia"
+  },
+  {
+    "country1": "India",
+    "country2": "Gabon"
+  },
+  {
+    "country1": "India",
+    "country2": "Gambia"
+  },
+  {
+    "country1": "India",
+    "country2": "Ghana"
+  },
+  {
+    "country1": "India",
+    "country2": "Guinea"
+  },
+  {
+    "country1": "India",
+    "country2": "Guinea-Bissau"
+  },
+  {
+    "country1": "India",
+    "country2": "Ivory Coast"
+  },
+  {
+    "country1": "India",
+    "country2": "Kenya"
+  },
+  {
+    "country1": "India",
+    "country2": "Lesotho"
+  },
+  {
+    "country1": "India",
+    "country2": "Liberia"
+  },
+  {
+    "country1": "India",
+    "country2": "Libya"
+  },
+  {
+    "country1": "India",
+    "country2": "Madagascar"
+  },
+  {
+    "country1": "India",
+    "country2": "Malawi"
+  },
+  {
+    "country1": "India",
+    "country2": "Mali"
+  },
+  {
+    "country1": "India",
+    "country2": "Mauritania"
+  },
+  {
+    "country1": "India",
+    "country2": "Mauritius"
+  },
+  {
+    "country1": "India",
+    "country2": "Morocco"
+  },
+  {
+    "country1": "India",
+    "country2": "Mozambique"
+  },
+  {
+    "country1": "India",
+    "country2": "Namibia"
+  },
+  {
+    "country1": "India",
+    "country2": "Niger"
+  },
+  {
+    "country1": "India",
+    "country2": "Nigeria"
+  },
+  {
+    "country1": "India",
+    "country2": "Rwanda"
+  },
+  {
+    "country1": "India",
+    "country2": "Sao Tome and Principe"
+  },
+  {
+    "country1": "India",
+    "country2": "Senegal"
+  },
+  {
+    "country1": "India",
+    "country2": "Seychelles"
+  },
+  {
+    "country1": "India",
+    "country2": "Sierra Leone"
+  },
+  {
+    "country1": "India",
+    "country2": "Somalia"
+  },
+  {
+    "country1": "India",
+    "country2": "South Africa"
+  },
+  {
+    "country1": "India",
+    "country2": "South Sudan"
+  },
+  {
+    "country1": "India",
+    "country2": "Sudan"
+  },
+  {
+    "country1": "India",
+    "country2": "Tanzania"
+  },
+  {
+    "country1": "India",
+    "country2": "Togo"
+  },
+  {
+    "country1": "India",
+    "country2": "Tunisia"
+  },
+  {
+    "country1": "India",
+    "country2": "Uganda"
+  },
+  {
+    "country1": "India",
+    "country2": "Zambia"
+  },
+  {
+    "country1": "India",
+    "country2": "Zimbabwe"
+  },
+  {
+    "country1": "India",
+    "country2": "Afghanistan"
+  },
+  {
+    "country1": "India",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "India",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "India",
+    "country2": "Bahrain"
+  },
+  {
+    "country1": "India",
+    "country2": "Bangladesh"
+  },
+  {
+    "country1": "India",
+    "country2": "Bhutan"
+  },
+  {
+    "country1": "India",
+    "country2": "Brunei"
+  },
+  {
+    "country1": "India",
+    "country2": "Cambodia"
+  },
+  {
+    "country1": "India",
+    "country2": "China"
+  },
+  {
+    "country1": "India",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "India",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "India",
+    "country2": "Indonesia"
+  },
+  {
+    "country1": "India",
+    "country2": "Iran"
+  },
+  {
+    "country1": "India",
+    "country2": "Iraq"
+  },
+  {
+    "country1": "India",
+    "country2": "Israel"
+  },
+  {
+    "country1": "India",
+    "country2": "Japan"
+  },
+  {
+    "country1": "India",
+    "country2": "Jordan"
+  },
+  {
+    "country1": "India",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "India",
+    "country2": "Kuwait"
+  },
+  {
+    "country1": "India",
+    "country2": "Kyrgyzstan"
+  },
+  {
+    "country1": "India",
+    "country2": "Laos"
+  },
+  {
+    "country1": "India",
+    "country2": "Lebanon"
+  },
+  {
+    "country1": "India",
+    "country2": "Malaysia"
+  },
+  {
+    "country1": "India",
+    "country2": "Maldives"
+  },
+  {
+    "country1": "India",
+    "country2": "Mongolia"
+  },
+  {
+    "country1": "India",
+    "country2": "Myanmar"
+  },
+  {
+    "country1": "India",
+    "country2": "Nepal"
+  },
+  {
+    "country1": "India",
+    "country2": "North Korea"
+  },
+  {
+    "country1": "India",
+    "country2": "Oman"
+  },
+  {
+    "country1": "India",
+    "country2": "Pakistan"
+  },
+  {
+    "country1": "India",
+    "country2": "Palestine"
+  },
+  {
+    "country1": "India",
+    "country2": "Philippines"
+  },
+  {
+    "country1": "India",
+    "country2": "Qatar"
+  },
+  {
+    "country1": "India",
+    "country2": "Saudi Arabia"
+  },
+  {
+    "country1": "India",
+    "country2": "Singapore"
+  },
+  {
+    "country1": "India",
+    "country2": "South Korea"
+  },
+  {
+    "country1": "India",
+    "country2": "Sri Lanka"
+  },
+  {
+    "country1": "India",
+    "country2": "Syria"
+  },
+  {
+    "country1": "India",
+    "country2": "Taiwan"
+  },
+  {
+    "country1": "India",
+    "country2": "Tajikistan"
+  },
+  {
+    "country1": "India",
+    "country2": "Thailand"
+  },
+  {
+    "country1": "India",
+    "country2": "Timor-Leste"
+  },
+  {
+    "country1": "India",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "India",
+    "country2": "Turkmenistan"
+  },
+  {
+    "country1": "India",
+    "country2": "United Arab Emirates"
+  },
+  {
+    "country1": "India",
+    "country2": "Uzbekistan"
+  },
+  {
+    "country1": "India",
+    "country2": "Vietnam"
+  },
+  {
+    "country1": "India",
+    "country2": "Yemen"
+  },
+  {
+    "country1": "India",
+    "country2": "Antigua and Barbuda"
+  },
+  {
+    "country1": "India",
+    "country2": "Bahamas"
+  },
+  {
+    "country1": "India",
+    "country2": "Barbados"
+  },
+  {
+    "country1": "India",
+    "country2": "Belize"
+  },
+  {
+    "country1": "India",
+    "country2": "Canada"
+  },
+  {
+    "country1": "India",
+    "country2": "Costa Rica"
+  },
+  {
+    "country1": "India",
+    "country2": "Cuba"
+  },
+  {
+    "country1": "India",
+    "country2": "Dominica"
+  },
+  {
+    "country1": "India",
+    "country2": "Dominican Republic"
+  },
+  {
+    "country1": "India",
+    "country2": "El Salvador"
+  },
+  {
+    "country1": "India",
+    "country2": "Grenada"
+  },
+  {
+    "country1": "India",
+    "country2": "Guatemala"
+  },
+  {
+    "country1": "India",
+    "country2": "Haiti"
+  },
+  {
+    "country1": "India",
+    "country2": "Honduras"
+  },
+  {
+    "country1": "India",
+    "country2": "Jamaica"
+  },
+  {
+    "country1": "India",
+    "country2": "Mexico"
+  },
+  {
+    "country1": "India",
+    "country2": "Nicaragua"
+  },
+  {
+    "country1": "India",
+    "country2": "Panama"
+  },
+  {
+    "country1": "India",
+    "country2": "Saint Kitts and Nevis"
+  },
+  {
+    "country1": "India",
+    "country2": "Saint Lucia"
+  },
+  {
+    "country1": "India",
+    "country2": "Saint Vincent and the Grenadines"
+  },
+  {
+    "country1": "India",
+    "country2": "Trinidad and Tobago"
+  },
+  {
+    "country1": "India",
+    "country2": "United States"
+  },
+  {
+    "country1": "India",
+    "country2": "Argentina"
+  },
+  {
+    "country1": "India",
+    "country2": "Bolivia"
+  },
+  {
+    "country1": "India",
+    "country2": "Brazil"
+  },
+  {
+    "country1": "India",
+    "country2": "Chile"
+  },
+  {
+    "country1": "India",
+    "country2": "Colombia"
+  },
+  {
+    "country1": "India",
+    "country2": "Ecuador"
+  },
+  {
+    "country1": "India",
+    "country2": "Guyana"
+  },
+  {
+    "country1": "India",
+    "country2": "Paraguay"
+  },
+  {
+    "country1": "India",
+    "country2": "Peru"
+  },
+  {
+    "country1": "India",
+    "country2": "Suriname"
+  },
+  {
+    "country1": "India",
+    "country2": "Uruguay"
+  },
+  {
+    "country1": "India",
+    "country2": "Venezuela"
+  },
+  {
+    "country1": "India",
+    "country2": "Australia"
+  },
+  {
+    "country1": "India",
+    "country2": "Fiji"
+  },
+  {
+    "country1": "India",
+    "country2": "Kiribati"
+  },
+  {
+    "country1": "India",
+    "country2": "Marshall Islands"
+  },
+  {
+    "country1": "India",
+    "country2": "Micronesia"
+  },
+  {
+    "country1": "India",
+    "country2": "Nauru"
+  },
+  {
+    "country1": "India",
+    "country2": "New Zealand"
+  },
+  {
+    "country1": "India",
+    "country2": "Palau"
+  },
+  {
+    "country1": "India",
+    "country2": "Papua New Guinea"
+  },
+  {
+    "country1": "India",
+    "country2": "Samoa"
+  },
+  {
+    "country1": "India",
+    "country2": "Solomon Islands"
+  },
+  {
+    "country1": "India",
+    "country2": "Tonga"
+  },
+  {
+    "country1": "India",
+    "country2": "Tuvalu"
+  },
+  {
+    "country1": "India",
+    "country2": "Vanuatu"
+  }
+]

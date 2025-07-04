@@ -1,0 +1,10202 @@
+[
+  {
+    "country1": "Albania",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Albania",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Albania"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Andorra",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Andorra"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Armenia",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Armenia"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Austria",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Austria"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Azerbaijan",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Azerbaijan"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belarus",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Belarus"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Belgium",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Belgium"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bosnia and Herzegovina",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Bosnia and Herzegovina"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Bulgaria",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Bulgaria"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Croatia",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Croatia"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Cyprus",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Cyprus"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Czech Republic",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Czech Republic"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Denmark",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Denmark"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Estonia",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Estonia"
+  },
+  {
+    "country1": "Finland",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Finland"
+  },
+  {
+    "country1": "Finland",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Finland"
+  },
+  {
+    "country1": "France",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "France"
+  },
+  {
+    "country1": "France",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "France"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Georgia",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Georgia"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Germany",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Germany"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Greece",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Greece"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Hungary",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Hungary"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Iceland",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Iceland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Ireland",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Ireland"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Italy",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Italy"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kazakhstan",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Kazakhstan"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Kosovo",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Kosovo"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Latvia",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Latvia"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Liechtenstein",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Liechtenstein"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Lithuania",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Lithuania"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Luxembourg",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Luxembourg"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Malta",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Malta"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Moldova",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Moldova"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Monaco",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Monaco"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Montenegro",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Montenegro"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "Netherlands",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Netherlands"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "North Macedonia",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "North Macedonia"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Norway",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Norway"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Poland",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Poland"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Portugal",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Portugal"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Romania",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Romania"
+  },
+  {
+    "country1": "Russia",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Russia"
+  },
+  {
+    "country1": "Russia",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Russia"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "San Marino",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "San Marino"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Serbia",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Serbia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovakia",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Slovakia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Slovenia",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Slovenia"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Spain",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Spain"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Sweden",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Sweden"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Switzerland",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Switzerland"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Turkey",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Turkey"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "United Kingdom"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "Ukraine",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "Ukraine"
+  },
+  {
+    "country1": "United Kingdom",
+    "country2": "Vatican City"
+  },
+  {
+    "country1": "Vatican City",
+    "country2": "United Kingdom"
+  }
+]
