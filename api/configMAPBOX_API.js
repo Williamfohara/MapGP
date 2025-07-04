@@ -47,8 +47,8 @@ const handler = (req, res) => {
   });
 };
 
-// API route
-app.get("/api/configMAPBOX_API", handler);
+// API route — no duplicate segment
+app.get("/", handler);
 
 // Export the Express app instance
 module.exports = app;
