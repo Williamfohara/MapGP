@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const config = response.data;
 
       // Use the fetched Mapbox access token
-      mapboxgl.accessToken = config.mapboxAccessToken;
+      mapboxgl.accessToken = config.mapboxApiKey;
 
       // Initialize the map
       map = new mapboxgl.Map({
