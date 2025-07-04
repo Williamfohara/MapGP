@@ -11,11 +11,11 @@ const app = express();
 
 /* ----- CORS ------------------------------------------------------------ */
 const allowedOrigins = [
-  "https://www.mapgp.co",
-  "https://mapgp.co",
-  "https://mapgp.vercel.app",
-  "https://map-gp.vercel.app",
-  "http://localhost:3000",
+  "https://www.mapgp.co", // production (www)
+  "https://mapgp.co", // production (bare)
+  "https://mapgp.vercel.app", // Vercel production
+  "https://map-gp.vercel.app", // Vercel production (dashed)
+  "http://localhost:3000", // local dev
 ];
 
 app.use(
@@ -30,14 +30,14 @@ app.use(
   })
 );
 
-app.options("*", cors());
+app.options("*", cors()); // handle pre-flight
 /* ---------------------------------------------------------------------- */
 
-// Serve keys
-app.get("/", (req, res) => {
+// Catch any path / any method the function receives
+app.all("*", (_req, res) => {
   res.json({
     mapboxApiKey: process.env.MAPBOX_API_KEY,
-    openAiApiKey: process.env.OPENAI_API_KEY, // keep if you really need it
+    openAiApiKey: process.env.OPENAI_API_KEY, // remove if you don’t want to expose it
   });
 });
 
