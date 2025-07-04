@@ -2,7 +2,7 @@ let map; // Declare map globally
 let eventIDs = []; // Declare eventIDs globally
 let currentEventID = null; // Declare currentEventID globally
 
-const backendUrl = "https://map-gp-node-backend.vercel.app"; // Replace with your actual backend URL
+const backendUrl = ""; // Replace with your actual backend URL
 
 document.addEventListener("DOMContentLoaded", async function () {
   try {
