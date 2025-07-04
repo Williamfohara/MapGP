@@ -1,5 +1,5 @@
 // Define backendUrl globally at the top of the script
-const backendUrl = "https://map-gp-node-backend.vercel.app"; // Your backend URL
+const backendUrl = ""; // Your backend URL
 let isGenerating = false; // Flag to prevent concurrent submissions
 
 document.addEventListener("DOMContentLoaded", function () {

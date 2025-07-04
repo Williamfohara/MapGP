@@ -1,5 +1,5 @@
 // Declare backendUrl globally at the top of your script
-const backendUrl = "https://map-gp-node-backend.vercel.app"; // Your backend URL
+const backendUrl = ""; // Your backend URL
 
 document.addEventListener("DOMContentLoaded", function () {
   // Show the instructional popup on first load
