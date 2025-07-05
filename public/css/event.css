@@ -133,7 +133,7 @@ body {
 /* Expanded drill-down state */
 .key-player-country.expanded {
   flex: 0 0 100%; /* force full row in the flex container   */
-  width: 100%; /* stretch to match #countries-list width */
+  width: 300%; /* stretch to match #countries-list width */
   background-color: #f1f1f1; /* same light-gray as the normal pill   */
   color: #000; /* default text color                     */
   font-weight: bold;
