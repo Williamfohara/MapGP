@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       throw new Error(`HTTP error! status: ${configResponse.status}`);
     }
     const config = await configResponse.json();
-    console.log("Mapbox API Key fetched:", config.mapboxAccessToken);
+    console.log("Mapbox API Key fetched:", config.mapboxApiKey);
 
     // Use the fetched Mapbox access token
     mapboxgl.accessToken = config.mapboxApiKey;
