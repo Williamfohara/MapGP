@@ -260,31 +260,31 @@ function navigateToNextEvent() {
 }
 
 async function displayKeyCountries(text) {
-  const keyPlayersBox = document.getElementById("key-players-box");
-  keyPlayersBox.innerHTML = "<strong>Key Players</strong><br>";
+  // keep header box untouched
+  const list = document.getElementById("countries-list");
+  list.innerHTML = ""; // clear previous pills
 
   try {
-    const response = await fetch(`${backendUrl}/api/extract-key-countries`, {
+    const res = await fetch(`${backendUrl}/api/extract-key-countries`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text }),
     });
+    const data = await res.json();
 
-    const data = await response.json();
-
-    if (!data.countries || data.countries.length === 0) {
-      keyPlayersBox.innerHTML += "<em>No countries identified.</em>";
+    if (!data.countries?.length) {
+      list.innerHTML = "<em>No countries identified.</em>";
       return;
     }
 
     data.countries.forEach((country) => {
-      const div = document.createElement("div");
-      div.className = "key-player-country";
-      div.innerText = country;
-      keyPlayersBox.appendChild(div);
+      const pill = document.createElement("div");
+      pill.className = "key-player-country";
+      pill.textContent = country;
+      list.appendChild(pill);
     });
   } catch (err) {
     console.error("Error fetching key countries:", err);
-    keyPlayersBox.innerHTML += "<em>Failed to load countries.</em>";
+    list.innerHTML = "<em>Failed to load countries.</em>";
   }
 }

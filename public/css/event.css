@@ -124,6 +124,22 @@ body {
   margin-bottom: 6px;
 }
 
+/* Pill container that lives under #key-players-box */
+#countries-list {
+  position: absolute;
+  top: calc(60px + 40px); /* 60px (same top as box) + ≈box height */
+  right: 10px;
+  max-width: 400px; /* match the box width */
+  background: transparent; /* no extra panel chrome */
+}
+
+/* optional: allow pills to wrap nicely */
+#countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
 /* ─────────── Navigation buttons (new) ─────────── */
 .button-container {
   /* align with bottom of info-panel */
