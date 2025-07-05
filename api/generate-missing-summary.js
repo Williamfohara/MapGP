@@ -1,36 +1,65 @@
-const express = require("express");
-const cors = require("cors");
+/*  /api/generate-missing-summary.js  – no Express, ready for Vercel  */
+const path = require("path");
+require("dotenv").config({ path: path.resolve(__dirname, "../../.env") });
+
 const {
   handleGenerateSummaryRequest,
 } = require("../mapgp-backend/manualDBManipulation/generateMissingSummary.js");
 
-const handler = (req, res) => {
-  handleGenerateSummaryRequest(req, res);
-};
+/* ────────── CORS setup ────────── */
+const allowedOrigins = [
+  "https://www.mapgp.co",
+  "https://mapgp.co",
+  "https://mapgp.vercel.app",
+  "https://map-gp.vercel.app",
+  "http://localhost:3000",
+];
 
-const app = express();
-app.use(express.json()); // To parse JSON body
-
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        console.log("❌ Blocked CORS origin:", origin);
-        callback(new Error("Not allowed by CORS"));
+/* ────────── helper: read JSON body ────────── */
+async function readJson(req) {
+  return new Promise((resolve, reject) => {
+    let body = "";
+    req.on("data", (chunk) => (body += chunk));
+    req.on("end", () => {
+      try {
+        resolve(JSON.parse(body || "{}"));
+      } catch {
+        reject(new Error("Invalid JSON body"));
       }
-    },
-    methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
-  })
-);
+    });
+  });
+}
 
-// Handle preflight requests for CORS
-app.options("*", cors()); // Enable pre-flight for all routes
+/* ────────── main handler ────────── */
+module.exports = async (req, res) => {
+  /* CORS & pre-flight */
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    allowedOrigins.includes(req.headers.origin) ? req.headers.origin : "null"
+  );
+  res.setHeader("Access-Control-Allow-Methods", "POST,OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  if (req.method === "OPTIONS") return res.status(204).end();
 
-// Define route
-app.post("/api/generate-missing-summary", handler);
+  /* Only POST allowed */
+  if (req.method !== "POST") {
+    res.setHeader("Allow", "POST, OPTIONS");
+    return res.status(405).end("Method Not Allowed");
+  }
 
-module.exports = app;
+  /* Parse JSON and attach to req.body so the existing helper keeps working */
+  try {
+    req.body = await readJson(req);
+  } catch (e) {
+    return res.status(400).json({ error: e.message });
+  }
+
+  /* Delegate to your existing generator */
+  try {
+    await handleGenerateSummaryRequest(req, res);
+  } catch (err) {
+    console.error("generate-missing-summary error:", err);
+    if (!res.headersSent)
+      return res.status(500).json({ error: "Internal server error" });
+  }
+};

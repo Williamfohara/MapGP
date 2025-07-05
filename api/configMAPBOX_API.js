@@ -1,41 +1,34 @@
-// /api/configMAPBOX_API.js
-const express = require("express");
-const dotenv = require("dotenv");
+/*  /api/configMAPBOX_API.js  – no Express, ready for Vercel  */
 const path = require("path");
-const cors = require("cors");
+require("dotenv").config({ path: path.resolve(__dirname, "../../.env") });
 
-// Load env vars
-dotenv.config({ path: path.resolve(__dirname, "../../.env") });
-
-const app = express();
-
-/* ----- CORS ------------------------------------------------------------ */
+/* ────────── CORS setup ────────── */
 const allowedOrigins = [
-  "https://www.mapgp.co", // production (www)
-  "https://mapgp.co", // production (bare)
-  "https://mapgp.vercel.app", // Vercel production
-  "https://map-gp.vercel.app", // Vercel production (dashed)
-  "http://localhost:3000", // local dev
+  "https://www.mapgp.co",
+  "https://mapgp.co",
+  "https://mapgp.vercel.app",
+  "https://map-gp.vercel.app",
+  "http://localhost:3000",
 ];
 
-app.use(
-  cors({
-    origin: (origin, cb) =>
-      !origin || allowedOrigins.includes(origin)
-        ? cb(null, true)
-        : cb(new Error("Not allowed by CORS")),
-    methods: ["GET", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
-  })
-);
+/* ────────── main handler ────────── */
+module.exports = async (req, res) => {
+  /* CORS & pre-flight */
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    allowedOrigins.includes(req.headers.origin) ? req.headers.origin : "null"
+  );
+  res.setHeader("Access-Control-Allow-Methods", "GET,OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  if (req.method === "OPTIONS") return res.status(204).end();
 
-app.options("*", cors()); // handle pre-flight
-/* ---------------------------------------------------------------------- */
+  /* Only GET (all paths) */
+  if (req.method !== "GET") {
+    res.setHeader("Allow", "GET, OPTIONS");
+    return res.status(405).end("Method Not Allowed");
+  }
 
-// Catch any path / any method
-app.all("*", (req, res) => {
-  // 👇 print the first 6 characters so we don't leak the whole key
+  /* Log prefix but never full key */
   console.log(
     "MAPBOX_API_KEY prefix:",
     process.env.MAPBOX_API_KEY
@@ -43,9 +36,8 @@ app.all("*", (req, res) => {
       : "undefined"
   );
 
-  res.json({
+  /* Respond with the key */
+  return res.json({
     mapboxApiKey: process.env.MAPBOX_API_KEY || null,
   });
-});
-
-module.exports = app;
+};

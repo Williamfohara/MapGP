@@ -1,70 +1,64 @@
-const express = require("express");
+/*  /api/mongo-query-config.js  – no Express, ready for Vercel  */
 const { MongoClient } = require("mongodb");
 const path = require("path");
-const dotenv = require("dotenv");
-const cors = require("cors");
+require("dotenv").config({ path: path.resolve(__dirname, "../../.env") });
 
-// Load environment variables from the .env file
-dotenv.config({ path: path.resolve(__dirname, "../../.env") });
+/* ────────── config ────────── */
+const mongoUri = process.env.MONGO_URI;
+const allowedOrigins = [
+  "https://www.mapgp.co",
+  "https://mapgp.co",
+  "https://mapgp.vercel.app",
+  "https://map-gp.vercel.app",
+  "http://localhost:3000",
+];
 
-const app = express();
+/* ────────── reuse one Mongo connection across invocations ────────── */
+let cachedClient;
+async function getDb() {
+  if (!cachedClient) cachedClient = await new MongoClient(mongoUri).connect();
+  return cachedClient.db("testingData1");
+}
 
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        console.log("❌ Blocked CORS origin:", origin);
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
-  })
-);
+/* ────────── main handler ────────── */
+module.exports = async (req, res) => {
+  /* CORS & pre-flight */
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    allowedOrigins.includes(req.headers.origin) ? req.headers.origin : "null"
+  );
+  res.setHeader("Access-Control-Allow-Methods", "GET,OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  if (req.method === "OPTIONS") return res.status(204).end();
 
-// Define the route handler for fetching relationship summary from MongoDB
-const handler = async (req, res) => {
-  const mongoUri = process.env.MONGO_URI;
-  const client = new MongoClient(mongoUri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+  /* Only GET allowed */
+  if (req.method !== "GET") {
+    res.setHeader("Allow", "GET, OPTIONS");
+    return res.status(405).end("Method Not Allowed");
+  }
+
+  const { country1, country2 } = req.query;
+  if (!country1 || !country2)
+    return res
+      .status(400)
+      .json({ error: "country1 and country2 query params required" });
 
   try {
-    await client.connect();
-    const db = client.db("testingData1");
-    const collection = db.collection("relationshipData");
+    const db = await getDb();
+    const coll = db.collection("relationshipData");
 
-    const { country1, country2 } = req.query;
-    if (!country1 || !country2) {
-      return res.status(400).json({
-        error: "Missing required query parameters: country1 and country2",
-      });
-    }
-
-    const result = await collection.findOne(
+    const doc = await coll.findOne(
       { country1: country1.trim(), country2: country2.trim() },
       { projection: { relationshipSummary: 1 } }
     );
 
-    res.json({
-      relationshipSummary: result ? result.relationshipSummary : null,
+    return res.json({
+      relationshipSummary: doc ? doc.relationshipSummary : null,
     });
-  } catch (error) {
-    console.error("Error fetching relationship summary:", error);
-    res.status(500).json({
+  } catch (err) {
+    console.error("Error fetching relationship summary:", err);
+    return res.status(500).json({
       error: "An error occurred while fetching the relationship summary.",
     });
-  } finally {
-    await client.close();
   }
 };
-
-// Define the API route
-app.get("/api/mongo-query-config", handler);
-
-// Export the Express app instance
-module.exports = app;
