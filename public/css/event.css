@@ -1,3 +1,4 @@
+/* ───────────── Base layout ───────────── */
 body {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ body {
   width: 100%;
 }
 
+/* ───────────── Header (hidden in this view but kept) ───────────── */
 #header {
   position: absolute;
   top: 10px;
@@ -32,14 +34,14 @@ body {
   font-size: 16px;
 }
 
-/* Updated #info-panel */
+/* ───────────── Info panel ───────────── */
 #info-panel {
   position: absolute;
   top: 1.5%;
   bottom: 2%;
   left: 0.5%;
   width: 30%;
-  height: auto; /* Adjust height based on content */
+  height: auto; /* grows with content */
   background-color: #eeeeee;
   border: 1px solid #cccccc;
   padding: 10px;
@@ -48,14 +50,14 @@ body {
   flex-direction: column;
   align-items: flex-start;
   border-radius: 15px;
-  max-height: 95%; /* Ensure it doesn't extend beyond the map's height */
-  overflow: auto; /* Allows scrolling within the panel if content exceeds its height */
+  max-height: 95%; /* never taller than map */
+  overflow: auto; /* scroll inside if needed */
 }
 
-/* Ensure text scrolls under the purple overlay */
+/* text layers sit below the purple overlay */
 #info-panel h3,
 #info-panel p {
-  z-index: 0; /* Text should be behind the purple overlay */
+  z-index: 0;
 }
 
 #info-panel h3 {
@@ -69,18 +71,18 @@ body {
   margin: 5px 0;
 }
 
-/* Sticky purple overlay at the bottom */
+/* Sticky purple overlay at bottom of info-panel */
 #purple-overlay {
   position: sticky;
-  bottom: 0; /* Sticks to the bottom of the #info-panel */
-  height: 4%; /* Adjust height to the desired size */
-  width: 100%; /* Full width of the info-panel */
-  background-color: rgba(128, 0, 128, 0.7); /* Purple with 70% opacity */
-  z-index: 1; /* Ensure it is above other elements in the info-panel */
-  pointer-events: none; /* Allow interaction with content behind it */
+  bottom: 0;
+  height: 4%;
+  width: 100%;
+  background-color: rgba(128, 0, 128, 0.7);
+  z-index: 1;
+  pointer-events: none;
 }
 
-/* Top-right-box remains in its original position */
+/* ───────────── Top-right info boxes ───────────── */
 #top-right-box {
   position: absolute;
   top: 10px;
@@ -122,39 +124,39 @@ body {
   margin-bottom: 6px;
 }
 
-/* Positioning the navigation buttons to the left of the top-right-box */
-#prevEvent,
-#nextEvent {
+/* ─────────── Navigation buttons (new) ─────────── */
+.button-container {
+  /* align with bottom of info-panel */
   position: absolute;
-  bottom: 19px;
-  width: 130px;
-  right: 1170px;
+  bottom: 2%; /* same bottom offset as #info-panel */
+  /* 20 px to the right of info-panel */
+  left: calc(0.5% + 30% + 20px); /* panel left (0.5%) + width (30%) + 20px */
+  display: flex;
+  gap: 10px;
+  z-index: 2; /* above the map layer */
+}
+
+.button-container button {
+  position: static; /* override any inherited absolute */
   padding: 8px 16px;
   cursor: pointer;
   background-color: #ffa500;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 5px;
 }
 
-#nextEvent {
-  right: 1030px;
-}
-
-#prevEvent:hover,
-#nextEvent:hover {
+.button-container button:hover {
   background-color: #e69500;
 }
 
-.mapboxgl-ctrl-attrib-inner {
-  display: none !important;
-}
-
+/* ───────────── Mapbox attribution & logo hidden ───────────── */
+.mapboxgl-ctrl-attrib-inner,
 .mapboxgl-ctrl-logo {
   display: none !important;
 }
 
-/* Feedback Button and Form */
+/* ───────────── Feedback widget ───────────── */
 #feedback-container {
   position: fixed;
   bottom: 10px;
@@ -165,7 +167,7 @@ body {
 #feedback-button {
   padding: 10px 20px;
   background-color: #ff0000;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -199,7 +201,7 @@ body {
   margin-top: 5px;
   cursor: pointer;
   background-color: #007bff;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 5px;
 }
