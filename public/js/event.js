@@ -281,6 +281,14 @@ async function displayKeyCountries(text) {
       const pill = document.createElement("div");
       pill.className = "key-player-country";
       pill.textContent = country;
+
+      pill.addEventListener("click", () => {
+        Array.from(list.children).forEach((node) => {
+          if (node !== pill) node.remove();
+        });
+        pill.classList.add("expanded");
+      });
+
       list.appendChild(pill);
     });
   } catch (err) {
