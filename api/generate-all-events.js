@@ -1,129 +1,117 @@
+/*  /api/generate-all-events.js  – no Express, ready for Vercel  */
 const { MongoClient } = require("mongodb");
-const dotenv = require("dotenv");
 const path = require("path");
-const cors = require("cors");
-const express = require("express");
+require("dotenv").config({ path: path.resolve(__dirname, "../../.env") });
+
 const {
   populateDatabase,
 } = require("../manualDBManipulation/populateDatabaseEvents.js");
 
-dotenv.config({ path: path.resolve(__dirname, "../../.env") });
-
+/* ────────── config ────────── */
 const mongoUri = process.env.MONGO_URI;
-const client = new MongoClient(mongoUri);
+const allowedOrigins = ["https://www.mapgp.co", "https://mapgp.vercel.app"];
 
-let db;
-
-// Function to connect to MongoDB
-async function connectToMongoDB() {
-  if (!db) {
-    await client.connect();
-    db = client.db("testingData1");
-  }
+/* ────────── reuse one Mongo connection across invocations ────────── */
+let cachedClient;
+async function getDb() {
+  if (!cachedClient) cachedClient = await new MongoClient(mongoUri).connect();
+  return cachedClient.db("testingData1");
 }
 
-const app = express();
-
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        console.log("❌ Blocked CORS origin:", origin);
-        callback(new Error("Not allowed by CORS"));
+/* ────────── helper: read JSON body (for POST) ────────── */
+async function readJson(req) {
+  return new Promise((resolve, reject) => {
+    let body = "";
+    req.on("data", (chunk) => (body += chunk));
+    req.on("end", () => {
+      try {
+        resolve(JSON.parse(body || "{}"));
+      } catch {
+        reject(new Error("Invalid JSON body"));
       }
-    },
-    methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
-  })
-);
-
-// Handle preflight OPTIONS requests
-app.options("*", cors());
-
-// Add middleware to parse JSON bodies
-app.use(express.json());
-
-// Handler for generating all events
-const handler = async (req, res) => {
-  if (req.method === "OPTIONS") {
-    // Handle the preflight request
-    return res.status(204).send();
-  }
-
-  await connectToMongoDB();
-
-  const { country1, country2 } = req.body;
-
-  if (!country1 || !country2) {
-    return res.status(400).json({
-      error: "country1 and country2 are required",
     });
+  });
+}
+
+/* ────────── main handler ────────── */
+module.exports = async (req, res) => {
+  /* CORS (incl. pre-flight) */
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    allowedOrigins.includes(req.headers.origin) ? req.headers.origin : "null"
+  );
+  res.setHeader("Access-Control-Allow-Methods", "POST,OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  if (req.method === "OPTIONS") return res.status(204).end();
+
+  /* Accept POST only */
+  if (req.method !== "POST") {
+    res.setHeader("Allow", "POST, OPTIONS");
+    return res.status(405).end("Method Not Allowed");
   }
+
+  /* Parse body */
+  let body;
+  try {
+    body = await readJson(req);
+  } catch (e) {
+    return res.status(400).json({ error: e.message });
+  }
+
+  const { country1, country2 } = body;
+  if (!country1 || !country2)
+    return res
+      .status(400)
+      .json({ error: "country1 and country2 are required" });
 
   try {
-    // Fetch the timeline data to determine the range of years
-    const timelineCollection = db.collection("timelineData");
-    const timelineData = await timelineCollection
+    const db = await getDb();
+
+    /* fetch existing timeline years */
+    const timelineYears = await db
+      .collection("timelineData")
       .find({ country1, country2 })
       .project({ year: 1 })
       .toArray();
 
-    if (timelineData.length === 0) {
+    if (!timelineYears.length)
       return res
         .status(404)
         .json({ error: "No timeline data found for these countries." });
-    }
 
-    // Extract the range of years from the timeline data
-    const allTimelineYears = timelineData.map((event) => parseInt(event.year));
-    const firstYear = Math.min(...allTimelineYears);
-    const lastYear = Math.max(...allTimelineYears);
-    const allYearsInRange = [];
-    for (let year = firstYear; year <= lastYear; year++) {
-      allYearsInRange.push(year.toString());
-    }
+    const allYears = timelineYears.map((e) => +e.year);
+    const first = Math.min(...allYears);
+    const last = Math.max(...allYears);
+    const range = Array.from({ length: last - first + 1 }, (_, i) =>
+      String(first + i)
+    );
 
-    // Determine which years have fully populated event details
-    const eventDetailsCollection = db.collection("eventDetails");
-    const existingEvents = await eventDetailsCollection
+    /* fetch already-generated event years */
+    const existingEvents = await db
+      .collection("eventDetails")
       .find({ country1, country2 })
       .project({ year: 1 })
       .toArray();
-    const existingEventYears = existingEvents.map((event) => event.year);
+    const doneYears = existingEvents.map((e) => e.year);
 
-    // Calculate the years that still need events generated
-    const yearsToGenerate = allYearsInRange.filter(
-      (year) => !existingEventYears.includes(year)
-    );
-
-    if (yearsToGenerate.length === 0) {
+    /* figure out which years still need events */
+    const toGenerate = range.filter((year) => !doneYears.includes(year));
+    if (!toGenerate.length)
       return res
         .status(200)
         .json({ message: "All events are already generated!" });
-    }
 
-    // Iterate over each year and generate events
-    for (const year of yearsToGenerate) {
-      const text = `Event description for ${country1} and ${country2} in ${year}`; // Example text, replace with actual data
+    /* generate missing events */
+    for (const year of toGenerate) {
+      const text = `Event description for ${country1} and ${country2} in ${year}`; // placeholder
       await populateDatabase(country1, country2, text, year);
     }
 
-    res
+    return res
       .status(200)
       .json({ message: "All missing events generated successfully" });
-  } catch (error) {
-    console.error("Error occurred while generating all events:", error);
-    res.status(500).json({ error: "Internal server error" });
-  } finally {
-    await client.close();
+  } catch (err) {
+    console.error("Error generating all events:", err);
+    return res.status(500).json({ error: "Internal server error" });
   }
 };
-
-// Define the API route for generating all events
-app.post("/api/generate-all-events", handler);
-
-// Export the Express app instance
-module.exports = app;
