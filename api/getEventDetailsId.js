@@ -1,81 +1,56 @@
+/*  /api/getEventDetailsId.js  – no Express, ready for Vercel  */
 const { MongoClient } = require("mongodb");
-const dotenv = require("dotenv");
 const path = require("path");
+require("dotenv").config({ path: path.resolve(__dirname, "../../.env") });
 
-// Load environment variables from the .env file
-dotenv.config({ path: path.resolve(__dirname, "../../.env") });
-
-// Initialize MongoDB client
+/* ────────── config ────────── */
 const mongoUri = process.env.MONGO_URI;
-const client = new MongoClient(mongoUri, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+const allowedOrigins = ["https://www.mapgp.co", "https://mapgp.vercel.app"];
 
-let db; // To store the database connection
-
-// Connect to MongoDB function
-async function connectToMongoDB() {
-  if (!db) {
-    console.log("Connecting to MongoDB...");
-    await client.connect();
-    db = client.db("testingData1");
-  }
+/* ────────── reuse one Mongo connection across invocations ────────── */
+let cachedClient;
+async function getDb() {
+  if (!cachedClient) cachedClient = await new MongoClient(mongoUri).connect();
+  return cachedClient.db("testingData1");
 }
 
-// Serverless function handler
+/* ────────── main handler ────────── */
 module.exports = async (req, res) => {
-  // Enable CORS for this endpoint
-  res.setHeader("Access-Control-Allow-Origin", "https://www.mapgp.co");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  /* CORS & pre-flight */
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    allowedOrigins.includes(req.headers.origin) ? req.headers.origin : "null"
+  );
+  res.setHeader("Access-Control-Allow-Methods", "GET,OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  if (req.method === "OPTIONS") return res.status(204).end();
 
-  if (req.method === "OPTIONS") {
-    res.status(204).end(); // Preflight request handling
-    return;
+  /* Only GET supported */
+  if (req.method !== "GET") {
+    res.setHeader("Allow", "GET, OPTIONS");
+    return res.status(405).end("Method Not Allowed");
   }
-
-  // Ensure MongoDB is connected
-  await connectToMongoDB();
 
   const { country1, country2, year } = req.query;
-
-  if (!country1 || !country2 || !year) {
-    console.error(
-      "Missing required query parameters: country1, country2, year"
-    );
-    return res.status(400).json({
-      error: "Missing required query parameters: country1, country2, year",
-    });
-  }
+  if (!country1 || !country2 || !year)
+    return res
+      .status(400)
+      .json({ error: "country1, country2 and year query params required" });
 
   try {
-    const collection = db.collection("eventDetails");
+    const db = await getDb();
+    const coll = db.collection("eventDetails");
 
-    // Try to find the event with the given parameters
-    let event = await collection.findOne({ country1, country2, year });
+    /* try original order, then swapped */
+    const event =
+      (await coll.findOne({ country1, country2, year })) ||
+      (await coll.findOne({ country1: country2, country2: country1, year }));
 
-    // If not found, search with countries swapped
-    if (!event) {
-      event = await collection.findOne({
-        country1: country2,
-        country2: country1,
-        year,
-      });
-    }
+    if (!event) return res.status(404).json({ error: "Event not found" });
 
-    if (!event) {
-      console.log("Event not found for query parameters:", {
-        country1,
-        country2,
-        year,
-      });
-      return res.status(404).json({ error: "Event not found" });
-    }
-
-    res.json({ _id: event._id });
-  } catch (error) {
-    console.error("Database error:", error);
-    res.status(500).json({ error: "Database error" });
+    return res.json({ _id: event._id });
+  } catch (err) {
+    console.error("Database error:", err);
+    return res.status(500).json({ error: "Database error" });
   }
 };
