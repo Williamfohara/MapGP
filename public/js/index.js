@@ -290,7 +290,7 @@ function generateTimeline(country1, country2) {
 
   // Integrating the axios call to generate the timeline
   return axios
-    .post(`${backendUrl}/api/timeline`, {
+    .post(`${backendUrl}/api/generate-missing-timeline`, {
       country1: country1,
       country2: country2,
     })
