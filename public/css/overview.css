@@ -24,7 +24,6 @@ body {
   margin: 0;
   color: #ffffff;
   font-size: 24px;
-  text-decoration: none !important;
 }
 
 #header h2 {
@@ -301,4 +300,13 @@ body {
 
 #info-button:hover {
   background-color: #004080;
+}
+
+/* Remove underline from the MapGP logo link */
+#header a,
+#header a:visited,
+#header a:hover,
+#header a:active {
+  text-decoration: none !important; /* ← force-off */
+  color: inherit; /* keep the same white text */
 }

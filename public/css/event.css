@@ -26,7 +26,6 @@ body {
   margin: 0;
   color: #ffffff;
   font-size: 24px;
-  text-decoration: none !important;
 }
 
 #header h2 {
@@ -247,4 +246,13 @@ body {
 
 #cancel-feedback {
   background-color: #6c757d;
+}
+
+/* Remove underline from the MapGP logo link */
+#header a,
+#header a:visited,
+#header a:hover,
+#header a:active {
+  text-decoration: none !important; /* ← force-off */
+  color: inherit; /* keep the same white text */
 }
