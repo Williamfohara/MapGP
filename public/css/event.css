@@ -130,25 +130,25 @@ body {
   cursor: pointer;
 }
 
-/* 2️⃣  Let the expanded pill fill that width */
+/* 2️⃣  Expanded pill now fills that width, padding matches the title box */
 .key-player-country.expanded {
-  flex: 0 0 100%; /* full row in flex layout */
-  width: 100%; /* now = 400 px (or less on narrow screens) */
+  flex: 0 0 100%;
+  width: 100%;
   background-color: #f1f1f1;
   color: #000;
   font-weight: bold;
   border-radius: 4px;
-  padding: 8px 10px;
+  padding: 8px 15px; /* ← same side-padding as #key-players-box */
   box-sizing: border-box;
 }
 
-/* 1️⃣  Make the list container exactly as wide as the title box */
+/* 1️⃣  Exact same outer width as #key-players-box (400 + 15 + 15) */
 #countries-list {
   position: absolute;
-  top: calc(60px + 40px); /* unchanged */
+  top: calc(60px + 40px);
   right: 10px;
-  width: 400px; /* ⬅️ fixed width, same as #key-players-box */
-  max-width: 90vw; /* keep the old safety cap */
+  width: 430px; /* ← matches box’s real width */
+  max-width: 90vw;
   background: transparent;
   display: flex;
   flex-wrap: wrap;
