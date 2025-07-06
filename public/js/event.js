@@ -260,9 +260,33 @@ function navigateToNextEvent() {
 }
 
 async function displayKeyCountries(text) {
-  // keep header box untouched
   const list = document.getElementById("countries-list");
-  list.innerHTML = ""; // clear previous pills
+
+  // helper that draws the full list of pills
+  function renderList(countries) {
+    list.innerHTML = "";
+    countries.forEach((country) => {
+      const pill = document.createElement("div");
+      pill.className = "key-player-country";
+      pill.textContent = country;
+
+      pill.addEventListener("click", () => {
+        // If already expanded → collapse back to full list
+        if (pill.classList.contains("expanded")) {
+          renderList(countries);
+          return;
+        }
+
+        // Otherwise expand this pill and hide the rest
+        Array.from(list.children).forEach((node) => {
+          if (node !== pill) node.remove();
+        });
+        pill.classList.add("expanded");
+      });
+
+      list.appendChild(pill);
+    });
+  }
 
   try {
     const res = await fetch(`${backendUrl}/api/extract-key-countries`, {
@@ -277,20 +301,7 @@ async function displayKeyCountries(text) {
       return;
     }
 
-    data.countries.forEach((country) => {
-      const pill = document.createElement("div");
-      pill.className = "key-player-country";
-      pill.textContent = country;
-
-      pill.addEventListener("click", () => {
-        Array.from(list.children).forEach((node) => {
-          if (node !== pill) node.remove();
-        });
-        pill.classList.add("expanded");
-      });
-
-      list.appendChild(pill);
-    });
+    renderList(data.countries); // 🔁 initial render
   } catch (err) {
     console.error("Error fetching key countries:", err);
     list.innerHTML = "<em>Failed to load countries.</em>";
