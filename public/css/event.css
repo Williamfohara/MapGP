@@ -130,25 +130,29 @@ body {
   cursor: pointer;
 }
 
-/* Expanded drill-down state */
+/* 2️⃣  Let the expanded pill fill that width */
 .key-player-country.expanded {
-  flex: 0 0 100%; /* force full row in the flex container   */
-  width: 300%; /* stretch to match #countries-list width */
-  background-color: #f1f1f1; /* same light-gray as the normal pill   */
-  color: #000; /* default text color                     */
+  flex: 0 0 100%; /* full row in flex layout */
+  width: 100%; /* now = 400 px (or less on narrow screens) */
+  background-color: #f1f1f1;
+  color: #000;
   font-weight: bold;
   border-radius: 4px;
   padding: 8px 10px;
-  box-sizing: border-box; /* include padding in the width calc      */
+  box-sizing: border-box;
 }
 
-/* Pill container that lives under #key-players-box */
+/* 1️⃣  Make the list container exactly as wide as the title box */
 #countries-list {
   position: absolute;
-  top: calc(60px + 40px); /* 60px (same top as box) + ≈box height */
+  top: calc(60px + 40px); /* unchanged */
   right: 10px;
-  max-width: 400px; /* match the box width */
-  background: transparent; /* no extra panel chrome */
+  width: 400px; /* ⬅️ fixed width, same as #key-players-box */
+  max-width: 90vw; /* keep the old safety cap */
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 /* optional: allow pills to wrap nicely */
